@@ -1,0 +1,164 @@
+% arara: pdflatex: {synctex: yes, action: nonstopmode}
+% arara: pdflatex 
+% arara: bibtex 
+% arara: pdflatex
+% arara: pdflatex
+% arara: nomencl
+% arara: pdflatex: {synctex: yes, action: nonstopmode}
+
+%\documentclass[a4crop]{ntnuthesis} 
+\documentclass{ntnuthesis}  
+\usepackage{amsmath} %equations and spacings
+\usepackage{lipsum} 
+\usepackage{graphicx}
+\usepackage[small,bf]{caption}
+\usepackage[labelformat=simple]{subcaption}
+\renewcommand\thesubfigure{(\alph{subfigure})} % see subcaption doc
+
+%spaces under sections
+\usepackage[compact]{titlesec}
+\titlespacing{\section}{0pt}{*0}{*0}
+\titlespacing{\subsection}{0pt}{*0}{*0}
+\titlespacing{\subsubsection}{0pt}{*0}{*0}
+
+%Abbreviations or Acronyms
+%\usepackage[intoc]{nomencl}
+\usepackage{nomencl}
+\renewcommand{\nomname}{List of Abbreviations}
+\makenomenclature
+
+%Bibliography
+%\usepackage{url}
+\usepackage{natbib}%\usepackage[sectionbib]{natbib}
+\usepackage{chapterbib}
+%\bibpunct[:]{(}{)}{;}{a}{}{,} %citation structure
+\bibpunct{(}{)}{,}{a}{}{;} 
+%\bibpunct{[}{]}{,}{a}{}{;}
+%\bibpunct{(}{)}{;}{a}{}{,} % to follow the A&A style
+%\usepackage{chapterbib}
+\usepackage{hyperref}
+%\hypersetup{colorlinks=true,citecolor=blue}
+\hypersetup{colorlinks=true,citecolor=blue,linkcolor=blue,urlcolor=blue}
+
+%To change box color around the links and citations, you have these other options :
+%\hypersetup{citebordercolor=Violet,filebordercolor=Red,linkbordercolor=Blue}
+
+\newcommand{\cmt}[1]{}%inline comment
+  
+%tabularx
+\usepackage{tabularx}
+\usepackage{tabulary}
+\usepackage{longtable} %table on several pages
+\usepackage{booktabs}
+\usepackage{multirow}
+\usepackage{dcolumn}
+
+%graphics
+\usepackage{epstopdf} %support for eps.
+\DeclareGraphicsExtensions{.eps,.ps,.pdf,.png,.jpg}
+\usepackage{float} % figure placing [H]
+
+%landscape Option
+\usepackage{lscape} %Left down
+%usepackage{pdflscape} %Left up)
+
+\usepackage[draft]{todonotes}   % notes showed (JJUNJU)
+% Select what to do with command \comment:  
+% \newcommand{\comment}[1]{}  %comment not showed
+\newcommand{\comment}[1]
+{\par {\bfseries \color{red} #1 \par}} %comment showed
+
+%Section Numbering and TOC depth
+\setcounter{secnumdepth}{2}
+\setcounter{tocdepth}{3}
+
+%chapter biblio
+\usepackage{chapterbib}
+
+%To generate list of symbols
+\newcommand{\addsymbol}[3]{%
+  \symboldisplay{#1}{#2}\\%
+  \setelem{#3}{#1}
+}
+\newcommand{\symboldisplay}[2]{%
+  $#1$ \parbox{5in}{\dotfill #2}%
+  %$#1$ \parbox{5in}{ #2}%
+}
+%\def\setelem#1{\expandafter\def\csname myarray(#1)\endcsname}
+\def\setelem#1{\expandafter\gdef\csname myarray(#1)\endcsname}
+\def\dispsymbol#1{\csname myarray(#1)\endcsname} 
+
+%START!!
+%Titles
+\title{Exploration of energy \\efficient memory \\organizations exploiting \\data variable based \\system scenarios}
+%\subtitle{Subtitle of the thesis here}
+\author{Iason Filippopoulos}
+
+\def \thesisAuthor{Iason Filippopoulos}
+
+%\degreetype{PhD}
+\faculty{Faculty of Information Technology, Mathematics and Electrical Engineering}
+\department{Department of Electronics and Telecommunications}
+\copyrightnotice{All rights reserved}
+\isbnprinted{}
+\isbnelectronic{}
+\serialnumber{}
+\setyear{2015}
+\setmonth{September}
+
+\begin{document}
+
+\frontmatter
+\maketitle
+
+%<<byman
+%% Configuration of the header strings for the frontmatter pages.
+\fancyhead[RO]{{\footnotesize\rightmark}\hspace{1em}\thepage}
+\setcounter{tocdepth}{2}
+\fancyhead[LE]{\thepage\hspace{1em}\footnotesize{\leftmark}}
+\fancyhead[RE,LO]{}
+\fancyhead[RO]{{\footnotesize\rightmark}\hspace{1em}\thepage}
+%byman>>
+
+\input{abstract}
+\input{preface}
+\input{acknowledgements}
+%TOC
+\tableofcontents
+%\addcontentsline{toc}{chapter}{Contents}
+\cleardoublepage
+
+\listoftables	
+\addcontentsline{toc}{chapter}{List of Tables}
+\cleardoublepage
+
+\listoffigures	
+\addcontentsline{toc}{chapter}{List of Figures}
+\cleardoublepage
+
+%Abbreviations
+\newpage
+%\thispagestyle{empty}
+\printnomenclature
+\cleardoublepage
+
+%Symbols
+\newpage
+\chapter*{List of Symbols\hfill} 
+\addcontentsline{toc}{chapter}{List of Symbols}
+\begin{flushleft}
+%	\input{symbols}
+\end{flushleft}
+
+\mainmatter
+
+\cleardoublepage
+%Chapters
+\input{intro} 
+\input{background}
+\input{method}
+\input{research}
+\input{conclusions}    
+
+
+\end{document}
