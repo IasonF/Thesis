@@ -37,6 +37,8 @@
 %\bibpunct{(}{)}{;}{a}{}{,} % to follow the A&A style
 %\usepackage{chapterbib}
 \usepackage{hyperref}
+%for blank pages:
+\usepackage{afterpage}
 %\hypersetup{colorlinks=true,citecolor=blue}
 \hypersetup{colorlinks=true,citecolor=blue,linkcolor=blue,urlcolor=blue}
 
@@ -88,6 +90,7 @@
 \def\setelem#1{\expandafter\gdef\csname myarray(#1)\endcsname}
 \def\dispsymbol#1{\csname myarray(#1)\endcsname} 
 
+
 %START!!
 %Titles
 \title{Exploration of energy \\efficient memory \\organizations exploiting \\data variable based \\system scenarios}
@@ -121,8 +124,6 @@
 %byman>>
 
 \input{abstract}
-\input{preface}
-\input{acknowledgements}
 %TOC
 \tableofcontents
 %\addcontentsline{toc}{chapter}{Contents}

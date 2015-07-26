@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2014.6.24)  15 JUN 2015 14:57
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2014.6.24)  27 JUL 2015 00:26
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -344,7 +344,13 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 )
 \Hy@SectionHShift=\skip60
 )
-Package hyperref Info: Option `colorlinks' set `true' on input line 41.
+(/usr/local/texlive/2014/texmf-dist/tex/latex/tools/afterpage.sty
+Package: afterpage 1995/10/27 v1.08 After-Page Package (DPC)
+\AP@output=\toks22
+\AP@partial=\box29
+\AP@footins=\box30
+)
+Package hyperref Info: Option `colorlinks' set `true' on input line 43.
 
 (/usr/local/texlive/2014/texmf-dist/tex/latex/tools/tabularx.sty
 Package: tabularx 2014/05/13 v2.10 `tabularx' package (DPC)
@@ -353,7 +359,7 @@ Package: tabularx 2014/05/13 v2.10 `tabularx' package (DPC)
 Package: array 2008/09/09 v2.4c Tabular extension package (FMi)
 \col@sep=\dimen142
 \extrarowheight=\dimen143
-\NC@list=\toks22
+\NC@list=\toks23
 \extratabsurround=\skip61
 \backup@length=\skip62
 )
@@ -363,7 +369,7 @@ Package: array 2008/09/09 v2.4c Tabular extension package (FMi)
 \TX@target=\dimen147
 \TX@delta=\dimen148
 \TX@cols=\count122
-\TX@ftn=\toks23
+\TX@ftn=\toks24
 )
 (/usr/local/texlive/2014/texmf-dist/tex/latex/tabulary/tabulary.sty
 Package: tabulary 2008/12/01 v0.9 tabulary package (DPC)
@@ -381,15 +387,15 @@ Package: longtable 2004/02/01 v4.11 Multi-page Table package (DPC)
 \LTpost=\skip66
 \LTchunksize=\count124
 \LTcapwidth=\dimen153
-\LT@head=\box29
-\LT@firsthead=\box30
-\LT@foot=\box31
-\LT@lastfoot=\box32
+\LT@head=\box31
+\LT@firsthead=\box32
+\LT@foot=\box33
+\LT@lastfoot=\box34
 \LT@cols=\count125
 \LT@rows=\count126
 \c@LT@tables=\count127
 \c@LT@chunks=\count128
-\LT@p@ftn=\toks24
+\LT@p@ftn=\toks25
 )
 (/usr/local/texlive/2014/texmf-dist/tex/latex/booktabs/booktabs.sty
 Package: booktabs 2005/04/14 v1.61803 publication quality tables
@@ -438,10 +444,10 @@ e
 (/usr/local/texlive/2014/texmf-dist/tex/latex/float/float.sty
 Package: float 2001/11/08 v1.3d Float enhancements (AL)
 \c@float@type=\count133
-\float@exts=\toks25
-\float@box=\box33
-\@float@everytoks=\toks26
-\@floatcapt=\box34
+\float@exts=\toks26
+\float@box=\box35
+\@float@everytoks=\toks27
+\@floatcapt=\box36
 )
 (/usr/local/texlive/2014/texmf-dist/tex/latex/graphics/lscape.sty
 Package: lscape 2000/10/22 v3.01 Landscape Pages (DPC)
@@ -454,8 +460,8 @@ Package: todonotes 2012/07/25
 Package: xkeyval 2014/05/09 v2.6d package option processing (HA)
 
 (/usr/local/texlive/2014/texmf-dist/tex/generic/xkeyval/xkeyval.tex
-\XKV@toks=\toks27
-\XKV@tempa@toks=\toks28
+\XKV@toks=\toks28
+\XKV@tempa@toks=\toks29
 \XKV@depth=\count134
 File: xkeyval.tex 2014/05/09 v2.6d key=value parser (HA)
 ))
@@ -482,14 +488,14 @@ Package xcolor Info: Model `wave' substituted by `hsb' on input line 1360.
 (/usr/local/texlive/2014/texmf-dist/tex/latex/pgf/utilities/pgfrcs.sty
 (/usr/local/texlive/2014/texmf-dist/tex/generic/pgf/utilities/pgfutil-common.te
 x
-\pgfutil@everybye=\toks29
+\pgfutil@everybye=\toks30
 \pgfutil@tempdima=\dimen168
 \pgfutil@tempdimb=\dimen169
 
 (/usr/local/texlive/2014/texmf-dist/tex/generic/pgf/utilities/pgfutil-common-li
 sts.tex))
 (/usr/local/texlive/2014/texmf-dist/tex/generic/pgf/utilities/pgfutil-latex.def
-\pgfutil@abb=\box35
+\pgfutil@abb=\box37
 (/usr/local/texlive/2014/texmf-dist/tex/latex/ms/everyshi.sty
 Package: everyshi 2001/05/15 v3.00 EveryShipout Package (MS)
 ))
@@ -502,12 +508,12 @@ Package: pgf 2013/12/18 v3.0.0 (rcs-revision 1.14)
 (/usr/local/texlive/2014/texmf-dist/tex/generic/pgf/systemlayer/pgfsys.code.tex
 Package: pgfsys 2013/11/30 v3.0.0 (rcs-revision 1.47)
 (/usr/local/texlive/2014/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex
-\pgfkeys@pathtoks=\toks30
-\pgfkeys@temptoks=\toks31
+\pgfkeys@pathtoks=\toks31
+\pgfkeys@temptoks=\toks32
 
 (/usr/local/texlive/2014/texmf-dist/tex/generic/pgf/utilities/pgfkeysfiltered.c
 ode.tex
-\pgfkeys@tmptoks=\toks32
+\pgfkeys@tmptoks=\toks33
 ))
 \pgf@x=\dimen170
 \pgf@y=\dimen171
@@ -523,9 +529,9 @@ ode.tex
 \c@pgf@countb=\count136
 \c@pgf@countc=\count137
 \c@pgf@countd=\count138
-\t@pgf@toka=\toks33
-\t@pgf@tokb=\toks34
-\t@pgf@tokc=\toks35
+\t@pgf@toka=\toks34
+\t@pgf@tokb=\toks35
+\t@pgf@tokc=\toks36
 
 (/usr/local/texlive/2014/texmf-dist/tex/generic/pgf/systemlayer/pgf.cfg
 File: pgf.cfg 2008/05/14  (rcs-revision 1.7)
@@ -558,10 +564,10 @@ Package: pgfcore 2010/04/11 v3.0.0 (rcs-revision 1.7)
 (/usr/local/texlive/2014/texmf-dist/tex/generic/pgf/math/pgfmathparser.code.tex
 \pgfmath@dimen=\dimen178
 \pgfmath@count=\count141
-\pgfmath@box=\box36
-\pgfmath@toks=\toks36
-\pgfmath@stack@operand=\toks37
-\pgfmath@stack@operation=\toks38
+\pgfmath@box=\box38
+\pgfmath@toks=\toks37
+\pgfmath@stack@operand=\toks38
+\pgfmath@stack@operation=\toks39
 )
 (/usr/local/texlive/2014/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.code.
 tex
@@ -617,9 +623,9 @@ File: pgfcorepathusage.code.tex 2013/12/13  (rcs-revision 1.23)
 (/usr/local/texlive/2014/texmf-dist/tex/generic/pgf/basiclayer/pgfcorescopes.co
 de.tex
 File: pgfcorescopes.code.tex 2013/10/09  (rcs-revision 1.44)
-\pgfpic=\box37
-\pgf@hbox=\box38
-\pgf@layerbox@main=\box39
+\pgfpic=\box39
+\pgf@hbox=\box40
+\pgf@layerbox@main=\box41
 \pgf@picture@serial@count=\count143
 )
 (/usr/local/texlive/2014/texmf-dist/tex/generic/pgf/basiclayer/pgfcoregraphicst
@@ -664,7 +670,7 @@ File: pgfcoreimage.code.tex 2013/07/15  (rcs-revision 1.18)
 (/usr/local/texlive/2014/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreexternal.
 code.tex
 File: pgfcoreexternal.code.tex 2013/07/15  (rcs-revision 1.20)
-\pgfexternal@startupbox=\box40
+\pgfexternal@startupbox=\box42
 ))
 (/usr/local/texlive/2014/texmf-dist/tex/generic/pgf/basiclayer/pgfcorelayers.co
 de.tex
@@ -681,7 +687,7 @@ File: pgfcorepatterns.code.tex 2013/11/07  (rcs-revision 1.5)
 (/usr/local/texlive/2014/texmf-dist/tex/generic/pgf/modules/pgfmoduleshapes.cod
 e.tex
 File: pgfmoduleshapes.code.tex 2013/10/31  (rcs-revision 1.34)
-\pgfnodeparttextbox=\box41
+\pgfnodeparttextbox=\box43
 )
 (/usr/local/texlive/2014/texmf-dist/tex/generic/pgf/modules/pgfmoduleplot.code.
 tex
@@ -708,8 +714,8 @@ Package: pgffor 2013/12/13 v3.0.0 (rcs-revision 1.25)
 (/usr/local/texlive/2014/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex)
 \pgffor@iter=\dimen205
 \pgffor@skip=\dimen206
-\pgffor@stack=\toks39
-\pgffor@toks=\toks40
+\pgffor@stack=\toks40
+\pgffor@toks=\toks41
 ))
 (/usr/local/texlive/2014/texmf-dist/tex/generic/pgf/frontendlayer/tikz/tikz.cod
 e.tex
@@ -727,10 +733,10 @@ File: pgflibraryplothandlers.code.tex 2013/08/31 v3.0.0 (rcs-revision 1.20)
 \tikz@lastysaved=\dimen211
 \tikzleveldistance=\dimen212
 \tikzsiblingdistance=\dimen213
-\tikz@figbox=\box42
-\tikz@figbox@bg=\box43
-\tikz@tempbox=\box44
-\tikz@tempbox@bg=\box45
+\tikz@figbox=\box44
+\tikz@figbox@bg=\box45
+\tikz@tempbox=\box46
+\tikz@tempbox@bg=\box47
 \tikztreelevel=\count146
 \tikznumberofchildren=\count147
 \tikznumberofcurrentchild=\count148
@@ -770,20 +776,20 @@ LaTeX Info: Redefining \addtolength on input line 76.
 ) (./Thesis.aux)
 \openout1 = `Thesis.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 109.
-LaTeX Font Info:    ... okay on input line 109.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 109.
-LaTeX Font Info:    ... okay on input line 109.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 109.
-LaTeX Font Info:    ... okay on input line 109.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 109.
-LaTeX Font Info:    ... okay on input line 109.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 109.
-LaTeX Font Info:    ... okay on input line 109.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 109.
-LaTeX Font Info:    ... okay on input line 109.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 109.
-LaTeX Font Info:    ... okay on input line 109.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 112.
+LaTeX Font Info:    ... okay on input line 112.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 112.
+LaTeX Font Info:    ... okay on input line 112.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 112.
+LaTeX Font Info:    ... okay on input line 112.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 112.
+LaTeX Font Info:    ... okay on input line 112.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 112.
+LaTeX Font Info:    ... okay on input line 112.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 112.
+LaTeX Font Info:    ... okay on input line 112.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 112.
+LaTeX Font Info:    ... okay on input line 112.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -824,19 +830,19 @@ LaTeX Font Info:    ... okay on input line 109.
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count158
 \scratchdimen=\dimen216
-\scratchbox=\box46
+\scratchbox=\box48
 \nofMPsegments=\count159
 \nofMParguments=\count160
-\everyMPshowfont=\toks41
+\everyMPshowfont=\toks42
 \MPscratchCnt=\count161
 \MPscratchDim=\dimen217
 \MPnumerator=\count162
 \makeMPintoPDFobject=\count163
-\everyMPtoPDFconversion=\toks42
+\everyMPtoPDFconversion=\toks43
 )
-Package crop Info: requested driver: `' on input line 109.
-Package crop Info: detected driver: `pdftex' on input line 109.
-Package crop Info: using `pdftex' graphics driver on input line 109.
+Package crop Info: requested driver: `' on input line 112.
+Package crop Info: detected driver: `pdftex' on input line 112.
+Package crop Info: using `pdftex' graphics driver on input line 112.
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: float package is loaded.
 Package caption Info: hyperref package is loaded.
@@ -845,8 +851,8 @@ Package caption Info: longtable package is loaded.
 Package: ltcaption 2013/02/03 v1.3-62 longtable captions (AR)
 )
 Package caption Info: End \AtBeginDocument code.
-\AtBeginShipoutBox=\box47
-Package hyperref Info: Link coloring ON on input line 109.
+\AtBeginShipoutBox=\box49
+Package hyperref Info: Link coloring ON on input line 112.
 
 (/usr/local/texlive/2014/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
@@ -856,9 +862,9 @@ Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
 \c@section@level=\count164
 )
-LaTeX Info: Redefining \ref on input line 109.
-LaTeX Info: Redefining \pageref on input line 109.
-LaTeX Info: Redefining \nameref on input line 109.
+LaTeX Info: Redefining \ref on input line 112.
+LaTeX Info: Redefining \pageref on input line 112.
+LaTeX Info: Redefining \nameref on input line 112.
 
 (./Thesis.out) (./Thesis.out)
 \@outlinefile=\write5
@@ -868,7 +874,7 @@ LaTeX Info: Redefining \nameref on input line 109.
 <NTNUlogo.pdf, id=161, 449.55353pt x 130.88266pt>
 File: NTNUlogo.pdf Graphic file (type pdf)
  <use NTNUlogo.pdf>
-Package pdftex.def Info: NTNUlogo.pdf used on input line 113.
+Package pdftex.def Info: NTNUlogo.pdf used on input line 116.
 (pdftex.def)             Requested size: 143.3997pt x 41.74948pt.
  [1
 
@@ -876,49 +882,49 @@ Package pdftex.def Info: NTNUlogo.pdf used on input line 113.
 
 {/usr/local/texlive/2014/texmf-var/fonts/map/pdftex/updmap/pdftex.map} <./NTNUl
 ogo.pdf>]
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 113.
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 116.
 
  (/usr/local/texlive/2014/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <8> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 113.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 116.
  [2]
-(./abstract.tex) (./preface.tex) (./acknowledgements.tex) [3] [4
+(./abstract.tex [3] [4]) [5] [6
 
-] (./Thesis.toc
-Overfull \hbox (9.96335pt too wide) in paragraph at lines 23--23
+] (./Thesis.toc [7]
+Overfull \hbox (9.96335pt too wide) in paragraph at lines 27--27
  [][] [][][]\OT1/cmr/m/n/10.95 Run-time sys-tem sce-nario de-tec-tion and switc
 h-ing based 
  []
 
-[5])
+)
 \tf@toc=\write6
 \openout6 = `Thesis.toc'.
 
- [6] (./Thesis.lot)
+ [8] (./Thesis.lot)
 \tf@lot=\write7
 \openout7 = `Thesis.lot'.
 
- [7
+ [9
 
 
-] [8
+] [10
 
 ] (./Thesis.lof)
 \tf@lof=\write8
 \openout8 = `Thesis.lof'.
 
- [9
+ [11
 
-] [10
+] [12
 
 ]
 No file Thesis.nls.
-[11
+[13
 
 
-] [12
+] [14
 
 ] (./intro.tex
 Chapter 1.
@@ -934,12 +940,12 @@ Chapter 2.
 ]
 Chapter 3.
 
-Overfull \hbox (4.44658pt too wide) in paragraph at lines 4--4
+Overfull \hbox (4.44658pt too wide) in paragraph at lines 13--13
  |[]\OT1/cmr/bx/n/14.4 Data vari-able based memory-aware sys-tem sce-
  []
 
 
-Overfull \hbox (8.84946pt too wide) in paragraph at lines 12--12
+Overfull \hbox (8.84946pt too wide) in paragraph at lines 21--21
  |[]\OT1/cmr/bx/n/12 Run-time sys-tem sce-nario de-tec-tion and switch-ing base
 d
  []
@@ -958,20 +964,20 @@ Overfull \hbox (0.84485pt too wide) in paragraph at lines 4--4
 ]
 Chapter 5.
 ) [9]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 164.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 164.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 167.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 167.
  (./Thesis.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 164.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 164.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 167.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 167.
 Package rerunfilecheck Info: File `Thesis.out' has not changed.
-(rerunfilecheck)             Checksum: B2438FC0942BE1161D1675E1372C8866;2744.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 164.
+(rerunfilecheck)             Checksum: AFE2D5FA46CE65DE28971AF3F151B3E7;2990.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 167.
  ) 
 Here is how much of TeX's memory you used:
- 19165 strings out of 493117
- 349509 string characters out of 6135433
- 515387 words of memory out of 5000000
- 22175 multiletter control sequences out of 15000+600000
+ 19179 strings out of 493117
+ 349730 string characters out of 6135433
+ 516866 words of memory out of 5000000
+ 22190 multiletter control sequences out of 15000+600000
  10998 words of font info for 39 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  62i,12n,56p,440b,373s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -985,10 +991,10 @@ cal/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/loca
 l/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/t
 exlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/texl
 ive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
-Output written on Thesis.pdf (21 pages, 544688 bytes).
+Output written on Thesis.pdf (23 pages, 552491 bytes).
 PDF statistics:
- 381 PDF objects out of 1000 (max. 8388607)
- 320 compressed objects within 4 object streams
- 59 named destinations out of 1000 (max. 500000)
+ 393 PDF objects out of 1000 (max. 8388607)
+ 330 compressed objects within 4 object streams
+ 61 named destinations out of 1000 (max. 500000)
  330 words of extra memory for PDF output out of 10000 (max. 10000000)
 
