@@ -13,13 +13,15 @@
 \usepackage{graphicx}
 \usepackage[small,bf]{caption}
 \usepackage[labelformat=simple]{subcaption}
+\usepackage{pdfpages}
+\usepackage{amssymb}
+%\usepackage{amsfonts}
+\usepackage{array}
+\usepackage{multirow}
+\usepackage{algorithmic}
+\usepackage{algorithm}
+\usepackage{pdflscape}
 \renewcommand\thesubfigure{(\alph{subfigure})} % see subcaption doc
-
-%spaces under sections
-\usepackage[compact]{titlesec}
-\titlespacing{\section}{0pt}{*0}{*0}
-\titlespacing{\subsection}{0pt}{*0}{*0}
-\titlespacing{\subsubsection}{0pt}{*0}{*0}
 
 %Abbreviations or Acronyms
 %\usepackage[intoc]{nomencl}
@@ -29,10 +31,10 @@
 
 %Bibliography
 %\usepackage{url}
-\usepackage{natbib}%\usepackage[sectionbib]{natbib}
+%\usepackage{natbib}%\usepackage[sectionbib]{natbib} DEN ITAN COMMENTED
 \usepackage{chapterbib}
-%\bibpunct[:]{(}{)}{;}{a}{}{,} %citation structure
-\bibpunct{(}{)}{,}{a}{}{;} 
+%\bibpunct[:]{(}{)}{;}{a}{}{,} %citation structure DEN ITAN COMMENTED
+%\bibpunct{(}{)}{,}{a}{}{;} 
 %\bibpunct{[}{]}{,}{a}{}{;}
 %\bibpunct{(}{)}{;}{a}{}{,} % to follow the A&A style
 %\usepackage{chapterbib}
@@ -63,6 +65,17 @@
 %landscape Option
 \usepackage{lscape} %Left down
 %usepackage{pdflscape} %Left up)
+
+%spaces under sections
+\usepackage[compact]{titlesec}
+%\titlespacing{\section}{0pt}{*0}{*0}
+%\titlespacing{\subsection}{0pt}{*0}{*0}
+%\titlespacing{\subsubsection}{0pt}{*0}{*0}
+\titlespacing*{\section}
+{0pt}{5.5ex plus 1ex minus .2ex}{4.3ex plus .2ex}
+\titlespacing*{\subsection}
+{0pt}{5.5ex plus 1ex minus .2ex}{4.3ex plus .2ex}
+
 
 \usepackage[draft]{todonotes}   % notes showed (JJUNJU)
 % Select what to do with command \comment:  
@@ -100,8 +113,8 @@
 \def \thesisAuthor{Iason Filippopoulos}
 
 %\degreetype{PhD}
-\faculty{Faculty of Information Technology, Mathematics and Electrical Engineering}
-\department{Department of Electronics and Telecommunications}
+\faculty{Faculty of Information Technology, Mathematics and Electrical Engineering \\ Department of Electronics and Telecommunications \\}
+\department{Catholic University of Leuven \\ Department of Electrical Engineering}
 \copyrightnotice{All rights reserved}
 \isbnprinted{}
 \isbnelectronic{}
@@ -161,5 +174,19 @@
 \input{research}
 \input{conclusions}    
 
+%<<byman
+%% Configuration of the header strings for the Appendices
+%\renewcommand{\chaptermark}[1]{%
+%  \markboth{\MakeUppercase{\appendixname\ \thechapter}}%
+%  {\MakeUppercase{#1}}
+%}
+%\fancyhead[RE,LO]{}
+%
+%\appendix
+%byman>>
+\appendix
+\include{A/norchip} 
+\include{B/meaow} 
+\include{C/DAES}
 
 \end{document}

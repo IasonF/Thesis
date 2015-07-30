@@ -3,3 +3,20 @@
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
+\gdef \the@ipfilectr {@-1}
+\addvspace {10\p@ }
+\contentsline {table}{\numberline {A.1}{\ignorespaces Energy costs per second and access for a reference memory bank (size: 120 bytes, technology: 90nm) in clustered L1' memory \relax }}{23}{table.caption.8}
+\contentsline {table}{\numberline {A.2}{\ignorespaces Constraint length for SNR levels on the channel (BER $ \leqslant 10^{-5} $)\relax }}{26}{table.caption.10}
+\gdef \the@ipfilectr {}
+\gdef \the@ipfilectr {@-2}
+\addvspace {10\p@ }
+\contentsline {table}{\numberline {B.1}{\ignorespaces Benchmark applications overview\relax }}{50}{table.caption.18}
+\gdef \the@ipfilectr {}
+\gdef \the@ipfilectr {@-3}
+\addvspace {10\p@ }
+\contentsline {table}{\numberline {C.1}{\ignorespaces Relative dynamic energy for a range of memories with varying capacity and type\relax }}{78}{table.caption.28}
+\contentsline {table}{\numberline {C.2}{\ignorespaces Relative static power for a range of memories with varying capacity and type\relax }}{78}{table.caption.29}
+\contentsline {table}{\numberline {C.3}{\ignorespaces Benchmark applications overview\relax }}{83}{table.caption.30}
+\contentsline {table}{\numberline {C.4}{\ignorespaces Characterization of benchmark applications (See Tab.\nobreakspace {}\ref {tab:app1} for index\relax }}{85}{table.caption.31}
+\contentsline {table}{\numberline {C.5}{\ignorespaces Range of energy gains on the memory subsystem\relax }}{89}{table.caption.34}
+\gdef \the@ipfilectr {}

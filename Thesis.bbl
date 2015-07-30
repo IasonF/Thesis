@@ -1,0 +1,150 @@
+\begin{thebibliography}{10}
+
+\bibitem{Artes2011}
+A.~Artes et~al.
+\newblock Run-time self-tuning banked loop buffer architecture for power
+  optimization of dynamic workload applications.
+\newblock In {\em VLSI and System-on-Chip (VLSI-SoC), 2011 IEEE/IFIP 19th
+  International Conference on}, pages 136 --141, oct. 2011.
+
+\bibitem{Ben00c}
+L.~Benini et~al.
+\newblock Increasing energy efficiency of embedded systems by
+  application-specific memory hierarchy generation.
+\newblock {\em Design Test of Computers, IEEE}, 17(2):74 --85, apr-jun 2000.
+
+\bibitem{Ben00b}
+L.~Benini, A.~Macii, and M.~Poncino.
+\newblock A recursive algorithm for low-power memory partitioning.
+\newblock In {\em Low Power Electronics and Design, 2000. ISLPED '00.
+  Proceedings of the 2000 International Symposium on}, pages 78 -- 83, 2000.
+
+\bibitem{dtse}
+Francky Catthoor, Sven Wuytack, G.E. de~Greef, Florin Banica, Lode
+  Nachtergaele, and Arnout Vandecappelle.
+\newblock {\em Custom Memory Management Methodology: Exploration of Memory
+  Organisation for Embedded Multimedia System Design}.
+\newblock Springer, 1998.
+
+\bibitem{Che09}
+E.~Cheung, H.~Hsieh, and F.~Balarin.
+\newblock Memory subsystem simulation in software tlm/t models.
+\newblock In {\em Design Automation Conference, 2009. ASP-DAC 2009. Asia and
+  South Pacific}, pages 811 --816, jan. 2009.
+
+\bibitem{Garcia}
+Philip Garcia, Katherine Compton, Michael Schulte, Emily Blem, and Wenyin Fu.
+\newblock An overview of reconfigurable hardware in embedded systems.
+\newblock {\em EURASIP J. Embedded Syst.}, 2006(1):13--13, January 2006.
+
+\bibitem{Gheorghita2007}
+Stefan~Valentin Gheorghita, , et~al.
+\newblock System-scenario-based design of dynamic embedded systems.
+\newblock {\em ACM Trans. Des. Autom. Electron. Syst.}, 14(1):3:1--3:45,
+  January 2009.
+
+\bibitem{Gonzalez1996}
+R.~Gonzalez and M.~Horowitz.
+\newblock Energy dissipation in general purpose microprocessors.
+\newblock {\em Solid-State Circuits, IEEE Journal of}, 31(9):1277 --1284, sep
+  1996.
+
+\bibitem{Elena2010}
+E.~Hammari, F.~Catthoor, J.~Huisken, and P~G Kjeldsberg.
+\newblock Application of medium-grain multiprocessor mapping methodology to
+  epileptic seizure predictor.
+\newblock In {\em NORCHIP, 2010}, pages 1 --6, nov. 2010.
+
+\bibitem{graybox}
+Stefaan Himpe, Geert Deconinck, Francky Catthoor, and J~van Meerbergen.
+\newblock Mtg* and grey-box: modelling dynamic multimedia applications with
+  concurrency and non-determinism.
+\newblock In {\em System Specification and Design Languages: Best of FDL’02},
+  2002.
+
+\bibitem{Iasemidis2005}
+L.D. Iasemidis et~al.
+\newblock Long-term prospective on-line real-time seizure prediction.
+\newblock {\em Clinical Neurophysiology}, 116(3):532--544, 2005.
+
+\bibitem{tcm}
+Zhe Ma et~al.
+\newblock {\em Systematic Methodology for Real-Time Cost-Effective Mapping of
+  Dynamic Concurrent Task-Based Systems on Heterogenous Platforms}.
+\newblock Springer Publishing Company, Incorporated, 1st edition, 2007.
+
+\bibitem{Mac02}
+A.~Macii, L.~Benini, and M.~Poncino.
+\newblock {\em Memory Design Techniques for Low-Energy Embedded Systems}.
+\newblock Kluwer Academic Publishers, 2002.
+
+\bibitem{narasinga}
+Narasinga~Rao Miniskar.
+\newblock {\em System Scenario Based Resource Management of Processing Elements
+  on MPSoC}.
+\newblock PhD thesis, Katholieke Universiteit Leuven, 2012.
+
+\bibitem{Valgrind}
+Nicholas Nethercote and Julian Seward.
+\newblock How to shadow every byte of memory used by a program.
+\newblock In {\em Proceedings of the Third International ACM SIGPLAN/SIGOPS
+  Conference on Virtual Execution Environments}, 2007.
+
+\bibitem{Pal07}
+M.~Palkovic, H.~Corporaal, and F.~Catthoor.
+\newblock Heuristics for scenario creation to enable general loop
+  transformations.
+\newblock In {\em System-on-Chip, 2007 International Symposium on}, pages 1
+  --4, nov. 2007.
+
+\bibitem{Pal06}
+Martin Palkovic, Francky Catthoor, and Henk Corporaal.
+\newblock Dealing with variable trip count loops in system level exploration.
+\newblock In {\em ODES: 4th Workshop on Optimizations for DSP and Embedded
+  Systems}, 2006.
+
+\bibitem{Pal06b}
+Martin Palkovic et~al.
+\newblock Systematic preprocessing of data dependent constructs for embedded
+  systems.
+\newblock {\em Journal of Low Power Electronics, Volume 2, Number 1}, 2006.
+
+\bibitem{Pgk01}
+P.~R. Panda et~al.
+\newblock Data and memory optimization techniques for embedded systems.
+\newblock {\em ACM Trans. Des. Autom. Electron. Syst.}, 6(2):149--206, April
+  2001.
+
+\bibitem{patterson}
+D.A. Patterson and J.L. Hennessy.
+\newblock {\em Exploiting Memory Hierarchy in Computer Organization and Design
+  the HW/SW Intelface}.
+\newblock Morgan Kaufmann, 1994.
+
+\bibitem{dvfs}
+A.~Portero et~al.
+\newblock Dynamic voltage scaling for power efficient mpeg4-sp implementation.
+\newblock In {\em Application-specific Systems, Architectures and Processors,
+  2006. ASAP '06. International Conference on}, pages 257 --260, sept. 2006.
+
+\bibitem{Ben99}
+T.~Simunic, L.~Benini, and G.~De~Micheli.
+\newblock Cycle-accurate simulation of energy consumption in embedded systems.
+\newblock In {\em Design Automation Conference, 1999. Proceedings. 36th}, pages
+  867 --872, 1999.
+
+\bibitem{avd}
+Sriram Swaminathan et~al.
+\newblock A dynamically reconfigurable adaptive viterbi decoder.
+\newblock In {\em Proceedings of the 2002 ACM/SIGDA tenth international
+  symposium on Field-programmable gate arrays}, FPGA '02, pages 227--236, New
+  York, NY, USA, 2002. ACM.
+
+\bibitem{viterbi}
+A.~Viterbi.
+\newblock Error bounds for convolutional codes and an asymptotically optimum
+  decoding algorithm.
+\newblock {\em Information Theory, IEEE Transactions on}, 13(2):260 --269,
+  april 1967.
+
+\end{thebibliography}

@@ -59,7 +59,8 @@
 \LoadClass[b5paper,11pt,twoside,openright,onecolumn,titlepage]{book}
 
 % Set appropriate margins
-\RequirePackage[\GeometryOptions,includeheadfoot,headheight=14.5pt]{geometry}
+%\RequirePackage[\GeometryOptions,includeheadfoot,headheight=14.5pt]{geometry}
+\RequirePackage[\GeometryOptions,includeheadfoot,headheight=24pt]{geometry}
 
 % Set cropping marks, if a4crop has been specified.
 \RequirePackage[\CropOptions,\CropLandscapeFlag]{crop}
@@ -104,14 +105,16 @@
 
 	{\large Doctoral thesis\\for the degree of \DegreeType
 
-	Trondheim, \Month\ \Year
+	\Month\ \Year
 
 	Norwegian University of Science and Technology\\
 	\Faculty\ \\
 	\Department}
 	\printandscreen{\vspace{2cm}}{\vspace{0.75cm}}
 
-	\includegraphics[width=0.4\textwidth]{NTNUlogo}
+	\includegraphics[width=\textwidth]{NTNUlogo}
+%Old line:	
+%\includegraphics[width=0.4\textwidth]{NTNUlogo}
 
 	\newpage
 	{~}

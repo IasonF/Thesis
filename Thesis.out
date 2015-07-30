@@ -37,3 +37,53 @@
 \BOOKMARK [1][-]{section.4.9}{Paper C.I}{chapter.4}% 37
 \BOOKMARK [1][-]{section.4.10}{Paper D.I}{chapter.4}% 38
 \BOOKMARK [0][-]{chapter.5}{Conclusions}{}% 39
+\BOOKMARK [0][-]{appendix.A}{Energy Impact of Memory-Aware System Scenario Approach}{}% 40
+\BOOKMARK [1][-]{section.A.1}{Introduction}{appendix.A}% 41
+\BOOKMARK [1][-]{section.A.2}{Related Work and Contribution Discussion}{appendix.A}% 42
+\BOOKMARK [1][-]{section.A.3}{Extended System Scenario Methodology}{appendix.A}% 43
+\BOOKMARK [2][-]{subsection.A.3.1}{General description of system scenario methodology}{section.A.3}% 44
+\BOOKMARK [2][-]{subsection.A.3.2}{Design-time Profiling}{section.A.3}% 45
+\BOOKMARK [2][-]{subsection.A.3.3}{Design-time Scenario Identification and Prediction}{section.A.3}% 46
+\BOOKMARK [2][-]{subsection.A.3.4}{Run-time Identification, Detection, and Switching}{section.A.3}% 47
+\BOOKMARK [1][-]{section.A.4}{Target Platform}{appendix.A}% 48
+\BOOKMARK [1][-]{section.A.5}{Application Benchmarks}{appendix.A}% 49
+\BOOKMARK [2][-]{subsection.A.5.1}{Epileptic Seizure Predictor}{section.A.5}% 50
+\BOOKMARK [2][-]{subsection.A.5.2}{Viterbi Algorithm Encoder}{section.A.5}% 51
+\BOOKMARK [1][-]{section.A.6}{Results}{appendix.A}% 52
+\BOOKMARK [1][-]{section.A.7}{Conclusion}{appendix.A}% 53
+\BOOKMARK [0][-]{appendix.B}{Exploration of energy efficient memory organisations for dynamic multimedia applications using system scenarios}{}% 54
+\BOOKMARK [1][-]{section.B.1}{Introduction}{appendix.B}% 55
+\BOOKMARK [1][-]{section.B.2}{Motivation and Related Work}{appendix.B}% 56
+\BOOKMARK [1][-]{section.B.3}{Data Variable Based Memory-Aware System Scenario Methodology}{appendix.B}% 57
+\BOOKMARK [2][-]{subsection.B.3.1}{Design-time Profiling Based on Data Variables}{section.B.3}% 58
+\BOOKMARK [2][-]{subsection.B.3.2}{Design-time System Scenario Identification and Prediction Based on Data Variables}{section.B.3}% 59
+\BOOKMARK [2][-]{subsection.B.3.3}{Run-time System Scenario Detection and Switching Based on Data Variables}{section.B.3}% 60
+\BOOKMARK [1][-]{section.B.4}{Target Platform and energy models}{appendix.B}% 61
+\BOOKMARK [2][-]{subsection.B.4.1}{Models of Different Memory Types}{section.B.4}% 62
+\BOOKMARK [2][-]{subsection.B.4.2}{Energy consumption calculation}{section.B.4}% 63
+\BOOKMARK [2][-]{subsection.B.4.3}{Architecture Exploration}{section.B.4}% 64
+\BOOKMARK [1][-]{section.B.5}{Application Benchmarks}{appendix.B}% 65
+\BOOKMARK [1][-]{section.B.6}{Results}{appendix.B}% 66
+\BOOKMARK [1][-]{section.B.7}{Conclusion}{appendix.B}% 67
+\BOOKMARK [0][-]{appendix.C}{Exploration of energy efficient memory organisations for dynamic multimedia applications using system scenarios}{}% 68
+\BOOKMARK [1][-]{section.C.1}{Introduction}{appendix.C}% 69
+\BOOKMARK [1][-]{section.C.2}{Motivational Example}{appendix.C}% 70
+\BOOKMARK [1][-]{section.C.3}{Related Work and Contribution Discussion}{appendix.C}% 71
+\BOOKMARK [1][-]{section.C.4}{Data Variable Based Memory-Aware System Scenario Methodology}{appendix.C}% 72
+\BOOKMARK [2][-]{subsection.C.4.1}{Design-time Profiling Based on Data Variables}{section.C.4}% 73
+\BOOKMARK [2][-]{subsection.C.4.2}{Design-time System Scenario Identification Based on Data Variables}{section.C.4}% 74
+\BOOKMARK [2][-]{subsection.C.4.3}{Run-time System Scenario Detection and Switching Based on Data Variables}{section.C.4}% 75
+\BOOKMARK [1][-]{section.C.5}{Target Platform and Energy Models}{appendix.C}% 76
+\BOOKMARK [2][-]{subsection.C.5.1}{Target Memory Platform Architecture}{section.C.5}% 77
+\BOOKMARK [2][-]{subsection.C.5.2}{Models of Different Memory Types}{section.C.5}% 78
+\BOOKMARK [2][-]{subsection.C.5.3}{Total Energy Consumption Calculation}{section.C.5}% 79
+\BOOKMARK [2][-]{subsection.C.5.4}{Memory Architecture Exploration}{section.C.5}% 80
+\BOOKMARK [1][-]{section.C.6}{Application Benchmarks}{appendix.C}% 81
+\BOOKMARK [2][-]{subsection.C.6.1}{Benchmark Applications and Corresponding Input Databases}{section.C.6}% 82
+\BOOKMARK [2][-]{subsection.C.6.2}{Classification of Applications Based on Dynamic Characteristics}{section.C.6}% 83
+\BOOKMARK [1][-]{section.C.7}{Results}{appendix.C}% 84
+\BOOKMARK [2][-]{subsection.C.7.1}{Classification of the Applications}{section.C.7}% 85
+\BOOKMARK [2][-]{subsection.C.7.2}{Switching Overhead}{section.C.7}% 86
+\BOOKMARK [2][-]{subsection.C.7.3}{Comparison with Use Case Scenario}{section.C.7}% 87
+\BOOKMARK [2][-]{subsection.C.7.4}{Run-Time Overhead}{section.C.7}% 88
+\BOOKMARK [1][-]{section.C.8}{Conclusions}{appendix.C}% 89

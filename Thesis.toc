@@ -1,9 +1,9 @@
 \contentsline {section}{Abstract}{iii}{Doc-Start}
 \contentsline {section}{Preface}{v}{Doc-Start}
 \contentsline {section}{Acknowledgements}{v}{Doc-Start}
-\contentsline {chapter}{List of Tables}{ix}{chapter*.2}
-\contentsline {chapter}{List of Figures}{xi}{chapter*.3}
-\contentsline {chapter}{List of Symbols}{xiii}{chapter*.4}
+\contentsline {chapter}{List of Tables}{xi}{chapter*.2}
+\contentsline {chapter}{List of Figures}{xiv}{chapter*.3}
+\contentsline {chapter}{List of Symbols}{xv}{chapter*.4}
 \contentsline {chapter}{\numberline {1}Introduction}{1}{chapter.1}
 \contentsline {section}{\numberline {1.1}Embedded Systems and Energy Consumption - what is our general goal}{1}{section.1.1}
 \contentsline {section}{\numberline {1.2}Data Intensive Applications - what is our general goal}{1}{section.1.2}
@@ -16,24 +16,80 @@
 \contentsline {section}{\numberline {2.2}System Scenarios - all the literature with focus on the ones related}{3}{section.2.2}
 \contentsline {section}{\numberline {2.3}DTSE}{3}{section.2.3}
 \contentsline {chapter}{\numberline {3}Methodology}{5}{chapter.3}
-\contentsline {section}{\numberline {3.1}System Scenario Platform}{5}{section.3.1}
-\contentsline {subsection}{\numberline {3.1.1}Target memory platform architecture}{5}{subsection.3.1.1}
-\contentsline {subsection}{\numberline {3.1.2}Memory models}{5}{subsection.3.1.2}
-\contentsline {subsection}{\numberline {3.1.3}Technology scaling}{5}{subsection.3.1.3}
-\contentsline {section}{\numberline {3.2}Data variable based memory-aware system scenario methodology}{5}{section.3.2}
-\contentsline {subsection}{\numberline {3.2.1}Interleaving exploration based on data variables}{5}{subsection.3.2.1}
-\contentsline {subsection}{\numberline {3.2.2}Design-time profiling based on data variables}{5}{subsection.3.2.2}
-\contentsline {subsection}{\numberline {3.2.3}Design-time system scenario identification based on data variables}{5}{subsection.3.2.3}
-\contentsline {subsection}{\numberline {3.2.4}Run-time system scenario detection and switching based on data variables}{5}{subsection.3.2.4}
+\contentsline {section}{\numberline {3.1}System Scenario Platform}{6}{section.3.1}
+\contentsline {subsection}{\numberline {3.1.1}Target memory platform architecture}{6}{subsection.3.1.1}
+\contentsline {subsection}{\numberline {3.1.2}Memory models}{6}{subsection.3.1.2}
+\contentsline {subsection}{\numberline {3.1.3}Technology scaling}{6}{subsection.3.1.3}
+\contentsline {section}{\numberline {3.2}Data variable based memory-aware system scenario methodology}{6}{section.3.2}
+\contentsline {subsection}{\numberline {3.2.1}Interleaving exploration based on data variables}{6}{subsection.3.2.1}
+\contentsline {subsection}{\numberline {3.2.2}Design-time profiling based on data variables}{6}{subsection.3.2.2}
+\contentsline {subsection}{\numberline {3.2.3}Design-time system scenario identification based on data variables}{6}{subsection.3.2.3}
+\contentsline {subsection}{\numberline {3.2.4}Run-time system scenario detection and switching based on data variables}{6}{subsection.3.2.4}
 \contentsline {chapter}{\numberline {4}Research Results and Contributions}{7}{chapter.4}
-\contentsline {section}{\numberline {4.1}Contribution A: Memory-Aware Methodology Development}{7}{section.4.1}
-\contentsline {section}{\numberline {4.2}Contribution B: System Scenarios on Memory and PEs}{7}{section.4.2}
-\contentsline {section}{\numberline {4.3}Contribution C: Integrated Interleaving and Data-to-Memory Mapping}{7}{section.4.3}
-\contentsline {section}{\numberline {4.4}Contribution D: Interconnection Cost Scaling}{7}{section.4.4}
-\contentsline {section}{\numberline {4.5}Paper A.I - Abstract - My contribution}{7}{section.4.5}
-\contentsline {section}{\numberline {4.6}Paper A.II}{7}{section.4.6}
-\contentsline {section}{\numberline {4.7}Paper A.III}{7}{section.4.7}
-\contentsline {section}{\numberline {4.8}Paper B.I}{7}{section.4.8}
-\contentsline {section}{\numberline {4.9}Paper C.I}{7}{section.4.9}
-\contentsline {section}{\numberline {4.10}Paper D.I}{7}{section.4.10}
+\contentsline {section}{\numberline {4.1}Contribution A: Memory-Aware Methodology Development}{8}{section.4.1}
+\contentsline {section}{\numberline {4.2}Contribution B: System Scenarios on Memory and PEs}{8}{section.4.2}
+\contentsline {section}{\numberline {4.3}Contribution C: Integrated Interleaving and Data-to-Memory Mapping}{8}{section.4.3}
+\contentsline {section}{\numberline {4.4}Contribution D: Interconnection Cost Scaling}{8}{section.4.4}
+\contentsline {section}{\numberline {4.5}Paper A.I - Abstract - My contribution}{8}{section.4.5}
+\contentsline {section}{\numberline {4.6}Paper A.II}{8}{section.4.6}
+\contentsline {section}{\numberline {4.7}Paper A.III}{8}{section.4.7}
+\contentsline {section}{\numberline {4.8}Paper B.I}{8}{section.4.8}
+\contentsline {section}{\numberline {4.9}Paper C.I}{8}{section.4.9}
+\contentsline {section}{\numberline {4.10}Paper D.I}{8}{section.4.10}
 \contentsline {chapter}{\numberline {5}Conclusions}{9}{chapter.5}
+\gdef \the@ipfilectr {@-1}
+\contentsline {chapter}{\numberline {A}Energy Impact of Memory-Aware System Scenario Approach}{11}{appendix.A}
+\contentsline {section}{\numberline {A.1}Introduction}{15}{section.A.1}
+\contentsline {section}{\numberline {A.2}Related Work and Contribution Discussion}{16}{section.A.2}
+\contentsline {section}{\numberline {A.3}Extended System Scenario Methodology}{16}{section.A.3}
+\contentsline {subsection}{\numberline {A.3.1}General description of system scenario methodology}{17}{subsection.A.3.1}
+\contentsline {subsection}{\numberline {A.3.2}Design-time Profiling}{18}{subsection.A.3.2}
+\contentsline {subsection}{\numberline {A.3.3}Design-time Scenario Identification and Prediction}{19}{subsection.A.3.3}
+\contentsline {subsection}{\numberline {A.3.4}Run-time Identification, Detection, and Switching}{21}{subsection.A.3.4}
+\contentsline {section}{\numberline {A.4}Target Platform}{21}{section.A.4}
+\contentsline {section}{\numberline {A.5}Application Benchmarks}{23}{section.A.5}
+\contentsline {subsection}{\numberline {A.5.1}Epileptic Seizure Predictor}{24}{subsection.A.5.1}
+\contentsline {subsection}{\numberline {A.5.2}Viterbi Algorithm Encoder}{25}{subsection.A.5.2}
+\contentsline {section}{\numberline {A.6}Results}{26}{section.A.6}
+\contentsline {section}{\numberline {A.7}Conclusion}{28}{section.A.7}
+\gdef \the@ipfilectr {}
+\gdef \the@ipfilectr {@-2}
+\contentsline {chapter}{\numberline {B}Exploration of energy efficient memory organisations for dynamic multimedia applications using system scenarios}{35}{appendix.B}
+\contentsline {section}{\numberline {B.1}Introduction}{39}{section.B.1}
+\contentsline {section}{\numberline {B.2}Motivation and Related Work}{40}{section.B.2}
+\contentsline {section}{\numberline {B.3}Data Variable Based Memory-Aware System Scenario Methodology}{41}{section.B.3}
+\contentsline {subsection}{\numberline {B.3.1}Design-time Profiling Based on Data Variables}{41}{subsection.B.3.1}
+\contentsline {subsection}{\numberline {B.3.2}Design-time System Scenario Identification and Prediction Based on Data Variables}{43}{subsection.B.3.2}
+\contentsline {subsection}{\numberline {B.3.3}Run-time System Scenario Detection and Switching Based on Data Variables}{44}{subsection.B.3.3}
+\contentsline {section}{\numberline {B.4}Target Platform and energy models}{45}{section.B.4}
+\contentsline {subsection}{\numberline {B.4.1}Models of Different Memory Types}{46}{subsection.B.4.1}
+\contentsline {subsection}{\numberline {B.4.2}Energy consumption calculation}{47}{subsection.B.4.2}
+\contentsline {subsection}{\numberline {B.4.3}Architecture Exploration}{48}{subsection.B.4.3}
+\contentsline {section}{\numberline {B.5}Application Benchmarks}{49}{section.B.5}
+\contentsline {section}{\numberline {B.6}Results}{51}{section.B.6}
+\contentsline {section}{\numberline {B.7}Conclusion}{53}{section.B.7}
+\gdef \the@ipfilectr {}
+\gdef \the@ipfilectr {@-3}
+\contentsline {chapter}{\numberline {C}Exploration of energy efficient memory organisations for dynamic multimedia applications using system scenarios}{57}{appendix.C}
+\contentsline {section}{\numberline {C.1}Introduction}{61}{section.C.1}
+\contentsline {section}{\numberline {C.2}Motivational Example}{62}{section.C.2}
+\contentsline {section}{\numberline {C.3}Related Work and Contribution Discussion}{64}{section.C.3}
+\contentsline {section}{\numberline {C.4}Data Variable Based Memory-Aware System Scenario Methodology}{66}{section.C.4}
+\contentsline {subsection}{\numberline {C.4.1}Design-time Profiling Based on Data Variables}{68}{subsection.C.4.1}
+\contentsline {subsection}{\numberline {C.4.2}Design-time System Scenario Identification Based on Data Variables}{69}{subsection.C.4.2}
+\contentsline {subsection}{\numberline {C.4.3}Run-time System Scenario Detection and Switching Based on Data Variables}{72}{subsection.C.4.3}
+\contentsline {section}{\numberline {C.5}Target Platform and Energy Models}{74}{section.C.5}
+\contentsline {subsection}{\numberline {C.5.1}Target Memory Platform Architecture}{75}{subsection.C.5.1}
+\contentsline {subsection}{\numberline {C.5.2}Models of Different Memory Types}{76}{subsection.C.5.2}
+\contentsline {subsection}{\numberline {C.5.3}Total Energy Consumption Calculation}{79}{subsection.C.5.3}
+\contentsline {subsection}{\numberline {C.5.4}Memory Architecture Exploration}{80}{subsection.C.5.4}
+\contentsline {section}{\numberline {C.6}Application Benchmarks}{82}{section.C.6}
+\contentsline {subsection}{\numberline {C.6.1}Benchmark Applications and Corresponding Input Databases}{83}{subsection.C.6.1}
+\contentsline {subsection}{\numberline {C.6.2}Classification of Applications Based on Dynamic Characteristics}{84}{subsection.C.6.2}
+\contentsline {section}{\numberline {C.7}Results}{86}{section.C.7}
+\contentsline {subsection}{\numberline {C.7.1}Classification of the Applications}{87}{subsection.C.7.1}
+\contentsline {subsection}{\numberline {C.7.2}Switching Overhead}{89}{subsection.C.7.2}
+\contentsline {subsection}{\numberline {C.7.3}Comparison with Use Case Scenario}{90}{subsection.C.7.3}
+\contentsline {subsection}{\numberline {C.7.4}Run-Time Overhead}{91}{subsection.C.7.4}
+\contentsline {section}{\numberline {C.8}Conclusions}{91}{section.C.8}
+\gdef \the@ipfilectr {}
