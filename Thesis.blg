@@ -19,7 +19,16 @@ Illegal, another \bibstyle command---line 119 of file C/DAES.aux
 I'm skipping whatever remains of this command
 Illegal, another \bibdata command---line 120 of file C/DAES.aux
  : \bibdata
- :         {C/reference.bib}
+ :         {C/reference}
+I'm skipping whatever remains of this command
+A level-1 auxiliary file: D/LayoutStorageOpt.aux
+Illegal, another \bibstyle command---line 95 of file D/LayoutStorageOpt.aux
+ : \bibstyle
+ :          {plain}
+I'm skipping whatever remains of this command
+Illegal, another \bibdata command---line 96 of file D/LayoutStorageOpt.aux
+ : \bibdata
+ :         {D/LayoutStorageOpt}
 I'm skipping whatever remains of this command
 Database file #1: A/reference.bib
 Warning--I didn't find a database entry for "Mar03"
@@ -47,9 +56,23 @@ Warning--I didn't find a database entry for "schmit1997synthesis"
 Warning--I didn't find a database entry for "oshima1997high"
 Warning--I didn't find a database entry for "Fil12"
 Warning--I didn't find a database entry for "Math"
+Warning--I didn't find a database entry for "malik2000low"
+Warning--I didn't find a database entry for "guo2013data"
+Warning--I didn't find a database entry for "mittal2014survey"
+Warning--I didn't find a database entry for "4"
+Warning--I didn't find a database entry for "5"
+Warning--I didn't find a database entry for "6"
+Warning--I didn't find a database entry for "7"
+Warning--I didn't find a database entry for "8"
+Warning--I didn't find a database entry for "sharma2013data"
+Warning--I didn't find a database entry for "filippopoulos2013exploration"
+Warning--I didn't find a database entry for "lee2003compilation"
+Warning--I didn't find a database entry for "cadencecompiler"
+Warning--I didn't find a database entry for "kai2003synopsys"
+Warning--I didn't find a database entry for "kritikakou2013phd"
 You've used 24 entries,
             2118 wiz_defined-function locations,
-            697 strings with 8832 characters,
+            710 strings with 9003 characters,
 and the built_in function-call counts, 8706 in all, are:
 = -- 840
 > -- 390
@@ -88,4 +111,4 @@ warning$ -- 0
 while$ -- 76
 width$ -- 26
 write$ -- 262
-(There were 4 error messages)
+(There were 6 error messages)

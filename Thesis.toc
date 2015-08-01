@@ -93,3 +93,24 @@
 \contentsline {subsection}{\numberline {C.7.4}Run-Time Overhead}{91}{subsection.C.7.4}
 \contentsline {section}{\numberline {C.8}Conclusions}{91}{section.C.8}
 \gdef \the@ipfilectr {}
+\gdef \the@ipfilectr {@-4}
+\contentsline {chapter}{\numberline {D}Integrated Exploration Methodology for Data Interleaving and Data-to-Memory Mapping on SIMD architectures}{99}{appendix.D}
+\contentsline {section}{\numberline {D.1}Introduction}{103}{section.D.1}
+\contentsline {section}{\numberline {D.2}Motivational Example}{104}{section.D.2}
+\contentsline {section}{\numberline {D.3}Related work}{109}{section.D.3}
+\contentsline {section}{\numberline {D.4}Target Architecture and Energy Models}{110}{section.D.4}
+\contentsline {subsection}{\numberline {D.4.1}Memory Models}{111}{subsection.D.4.1}
+\contentsline {subsection}{\numberline {D.4.2}Functional Unit Models}{113}{subsection.D.4.2}
+\contentsline {section}{\numberline {D.5}System Design Exploration Work-flow}{114}{section.D.5}
+\contentsline {subsection}{\numberline {D.5.1}Formal Model Representation of Access Patterns }{117}{subsection.D.5.1}
+\contentsline {subsection}{\numberline {D.5.2}Data Interleaving Exploration}{117}{subsection.D.5.2}
+\contentsline {subsection}{\numberline {D.5.3}Data-to-Memory Mapping Exploration}{118}{subsection.D.5.3}
+\contentsline {subsection}{\numberline {D.5.4}One way constraint propagation}{120}{subsection.D.5.4}
+\contentsline {section}{\numberline {D.6}Applications}{120}{section.D.6}
+\contentsline {section}{\numberline {D.7}Results}{121}{section.D.7}
+\contentsline {subsection}{\numberline {D.7.1}Motivational Example}{122}{subsection.D.7.1}
+\contentsline {subsection}{\numberline {D.7.2}SOR Benchmark}{124}{subsection.D.7.2}
+\contentsline {subsection}{\numberline {D.7.3}FFT Benchmark}{125}{subsection.D.7.3}
+\contentsline {subsection}{\numberline {D.7.4}Motion Estimation Benchmark}{126}{subsection.D.7.4}
+\contentsline {section}{\numberline {D.8}Conclusion}{127}{section.D.8}
+\gdef \the@ipfilectr {}

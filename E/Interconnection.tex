@@ -1,0 +1,193 @@
+\documentclass[12pt,a4paper]{article}
+\usepackage[latin1]{inputenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\author{Iason Filippopoulos \and Francky Catthoor \and Per Gunnar Kjeldsberg}
+\title{Technology scaling impact on the interconnect of clustered scratchpad memory architectures}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+This work
+\end{abstract}
+
+\section{Introduction}
+
+
+\section{Related Work}
+
+
+\section{Technology Scaling}
+
+\subsection{Memory Banks}
+
+\subsection{Interconnection}
+
+
+\section{Example design synthesis and simulation}
+
+\subsection{Generic Work-flow}
+
+Interconnection models are work-in-progress with the help of Jan. There are no results yet, but the following procedure is followed:
+
+\begin{itemize}
+	\item Choose a number of memories compiled by Jan (currently two)
+	\item Create RTL description of the design connecting the memories using MUX, signals etc. (Done for two memories)
+	\item Simulate to see if it works (Done for two memories)
+	\item Select target technology and run logic synthesis (wip)
+	\item Run floorplanning and place \& route (wip)
+	\item Extract parasitics 
+	\item Run static timing analysis and create SDF file 
+	\item Annotate timing to the netlist	
+	\item Run dynamic timing and power simulation
+\end{itemize}
+
+I still work on getting results for the first design that connects two memories. Then, I could estimate the time needed for making every new design. I would like to discuss with you how we should build a more generic model from those results, as it would not be possible to make the procedure outside IMEC for future configurations.
+
+\begin{enumerate}
+\item RTL description of the design (Done)
+\item Simulation and verification of correct operation (Done)
+\item Logic synthesis on the target technology (Done)
+\item Floor-planning (Done)
+\item Place and route (Errors) 
+\item Timing and power analysis (Not done)
+\end{enumerate}
+
+\begin{itemize}
+\item An example of two memories is shown on the figure below.
+\item Dimensions for all SCMEMs are available from the floorplanning step.
+\item Number of wires for each design are available.
+\item Capacitance values for the wires on the figure are available. 
+\end{itemize}
+
+ 
+\textbf{Model:}
+
+\begin{itemize}
+\item Given the dimensions of the memories an estimation about length of the needed wires can be made.
+\item Capacitance for the wires can be approximated by the results given for the studied example.
+\item Power can be calculated as $Power = \dfrac{1}{2} \times f \times C \times V_{dd}^{2} $
+\end{itemize}
+
+
+\section{Model Construction and Projection Results}
+
+
+\section{Conclusion}
+
+
+\end{document}
+
+
+
+
+
+%%OLD....
+%\RequirePackage{fix-cm}
+%%\documentclass[smallextended]{svjour3}
+%\documentclass[smallcondensed]{svjour3}  
+%\smartqed  % flush right qed marks, e.g. at end of proof
+%
+%\usepackage{graphicx}
+%\usepackage{amsfonts}
+%\usepackage{amssymb}
+%\usepackage{array}
+%\usepackage{amsmath}
+%\usepackage{multirow}
+%\usepackage{algorithmic}
+%\usepackage{algorithm}
+%
+%\begin{document}
+%
+%\title{Technology scaling impact on the interconnect of clustered scratchpad memory architectures}
+%
+%\titlerunning{Technology scaling impact on the interconnect} 
+%
+%\author{Iason Filippopoulos \and Francky Catthoor \and Per Gunnar Kjeldsberg}
+%
+%\authorrunning{Filippopoulos et al.} % if too long for running head
+%
+%\institute{Iason Filippopoulos, Per Gunnar Kjeldsberg 
+%		\at Department of Electronics and Telecommunications \\ Norwegian University of Science and Technology (NTNU), Norway\\
+%		\email{iason.filippopoulos, pgk@iet.ntnu.no} \\
+%		\and
+%		Francky Catthoor 
+%		\at IMEC \& KU Leuven, Belgium \\
+%		\email{catthoor@imec.be} \\
+%}
+%
+%\date{Received: date / Accepted: date}
+%% The correct dates will be entered by the editor
+%
+%
+%\maketitle
+%
+%\begin{abstract}
+%We propose a memory-aware system scenario approach that exploits variations in memory needs during the lifetime of an application in order to optimize energy usage. 
+%Different system scenarios capture the application's different resource requirements that change dynamically at run-time. 
+%In addition to computational resources, the many possible memory platform configurations and data-to-memory assignments are important system scenario parameters. 
+%In this work we focus on clustering of different memory requirements into groups and presenting the system scenario generation in detail.
+%The clustering is a non-trivial problem due to the many different memory requirements, which leads to a very large exploration space.
+%An extended memory model is used as a practical enabler, in order to evaluate the methodology. 
+%\keywords{System Scenarios \and Design Space Exploration \and Reconfigurable Design \and Memory Reconfiguration \and Dynamic Multimedia Applications} 
+%\end{abstract}
+%
+%
+%\section{Introduction}
+%\label{sec:introduction}
+%
+%Modern embedded systems are becoming more and more powerful as the semiconductor processing techniques keep increasing the number of transistors on a single chip. 
+%Consequently, demanding applications, e.g., in the signal processing and multimedia domains, can be executed on these devices \cite{narasinga}. 
+%On the other hand, the desired performance has to be delivered with minimum power consumption due to the limited energy available in mobile devices \cite{tcm}. 
+%System scenario methodologies propose the use of different platform configurations in order to exploit run-time variations in computational and memory needs often seen in such applications \cite{tcm}.
+%
+%Platform reconfiguration is performed through tuning of different system parameters, also called system knobs. 
+%For the memory-aware system scenario methodology, a platform can be reconfigured through a number of potential knobs, each resulting in different performance and power consumption in the memory subsystem. 
+%Foremost, modern memories support different energy states, e.g., through power gating techniques and by switching to lower power modes when not accessed. 
+%The second platform knob is the assignment of data to the available memory banks.
+%The data assignment decisions affect both the energy per access for the mapped data, the data conflicts as a result of suboptimal assignment, and the number of active banks. 
+%In this work a reconfigurable memory platform is constructed using detailed memory models. 
+%This is followed by experiments with dynamic multimedia applications in order to study the effectiveness of the methodology.
+%
+%The main contribution of the current work is the development of data variable \cite{Elena2012} based system scenarios.
+%Previous control variable based system scenarios \cite{Gheorghita2007} are unable to handle the fine-grain behaviour of the studied multimedia applications due to their significant variation under different execution situations. 
+%Furthermore, compared with use case scenario approaches in which scenarios are generated based on a user's behaviour \cite{usecase}, the system scenario methodology focuses on the behaviour of the system to generate scenarios and can, therefore, fully exploit the detailed platform mapping information. 
+%Compared with previous work on system scenarios that has focused on the processing cores, the current work analyses the use of system scenarios on the memory organisation. 
+%More specifically, this work focuses on the system scenario identification phase of the methodology.
+%The wide range of memory requirements, the amount of different cases, and the different frequency in which each case occurs, results in a very large exploration space.
+%Therefore, there is a need for developing an algorithmic approach that can efficiently tackle this problem.
+%
+%Another significant contribution is the extensive number of benchmark applications on which the methodology is applied.
+%The chosen set is representative for the domain of multimedia applications.
+%Furthermore, we present a categorisation of applications based on their dynamic characteristics, also applicable to the entire multimedia domain. 
+%For the experimental needs of this work we present for the purpose sufficiently detailed and accurate  memory models, which are used for the system design exploration.
+%For the multimedia domain, the current work presents a comprehensive methodology for optimising energy consumption in the memory subsystem.
+%
+%This article is organized as follows. 
+%Section~\ref{sec:motivation} motivates the study of optimization of the memory organisation. 
+%Section~\ref{sec:related} surveys related work on system level memory exploration and on system scenario methodologies and compares it with the current work. 
+%Section~\ref{sec:methodology} presents the chosen methodology with main focus on the memory organisation study. 
+%In Section~\ref{sec:platform} the target platform is described accompanied by a detailed description of the employed memory models, while the multimedia benchmarks and their characteristics are analysed in Section~\ref{sec:applications}. 
+%Results of applying the described methodology to the targeted applications are shown in Section~\ref{sec:results}, while conclusions are drawn in Section~\ref{sec:conclusion}. 
+%
+%\section{Motivational Example}
+%\label{sec:motivation}
+%
+%\section{Related Work and Contribution Discussion}
+%\label{sec:related}
+%
+%\section{Conclusions}
+%\label{sec:conclusion}
+%
+%The scope of this work is to apply the memory-aware system scenario methodology to a wide range of multimedia application and test its effectiveness based on an extensive memory energy model. 
+%A wide range of applications is studied that allow us to draw conclusions about different kinds of dynamic behaviour and their effect on the energy gains achieved using the methodology. 
+%The results demonstrate the effectiveness of the methodology reducing the memory energy consumption with between 35\% and 55\%. 
+%Since memory size requirements are still met in all situations, performance is not reduced. 
+%The memory-aware system scenario methodology is suited for applications that experience dynamic behaviour with respect to memory organisation utilization during their execution.
+%
+%
+%
+%\end{document}

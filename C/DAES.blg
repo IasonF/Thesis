@@ -1,0 +1,49 @@
+This is BibTeX, Version 0.99d (TeX Live 2014)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: DAES.aux
+The style file: plain.bst
+Database file #1: reference.bib
+Warning--empty booktitle in graybox
+Warning--empty title in Pal06
+You've used 41 entries,
+            2118 wiz_defined-function locations,
+            758 strings with 12802 characters,
+and the built_in function-call counts, 17174 in all, are:
+= -- 1673
+> -- 915
+< -- 20
++ -- 366
+- -- 318
+* -- 1225
+:= -- 2728
+add.period$ -- 133
+call.type$ -- 41
+change.case$ -- 271
+chr.to.int$ -- 0
+cite$ -- 43
+duplicate$ -- 666
+empty$ -- 1278
+format.name$ -- 318
+if$ -- 3698
+int.to.chr$ -- 0
+int.to.str$ -- 41
+missing$ -- 42
+newline$ -- 206
+num.names$ -- 82
+pop$ -- 328
+preamble$ -- 1
+purify$ -- 234
+quote$ -- 0
+skip$ -- 507
+stack$ -- 0
+substring$ -- 990
+swap$ -- 221
+text.length$ -- 20
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 158
+warning$ -- 2
+while$ -- 151
+width$ -- 43
+write$ -- 455
+(There were 2 warnings)

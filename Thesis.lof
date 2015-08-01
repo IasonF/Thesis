@@ -33,3 +33,15 @@
 \contentsline {figure}{\numberline {C.7}{\ignorespaces Bank sizes for the most efficient of the tested organisations for each benchmark\relax }}{88}{figure.caption.33}
 \contentsline {figure}{\numberline {C.8}{\ignorespaces Energy gain for use case scenarios and system scenarios\relax }}{90}{figure.caption.35}
 \gdef \the@ipfilectr {}
+\gdef \the@ipfilectr {@-4}
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {D.1}{\ignorespaces Motivational Example. Representation of the initial set of data (a) and the interleaved set of data (b). Data-to-memory mapping for the initial (c) and the interleaved data (d) on a clustered scratch-pad memory architecture.\relax }}{107}{figure.caption.37}
+\contentsline {figure}{\numberline {D.2}{\ignorespaces Exploration options and system knobs depending on a general platform architecture\relax }}{112}{figure.caption.38}
+\contentsline {figure}{\numberline {D.3}{\ignorespaces Methodology steps\relax }}{115}{figure.caption.41}
+\contentsline {figure}{\numberline {D.4}{\ignorespaces Extraction of access pattern from application code\relax }}{117}{figure.caption.42}
+\contentsline {figure}{\numberline {D.5}{\ignorespaces Example of combination between two arrays and their access patterns\relax }}{119}{figure.caption.43}
+\contentsline {figure}{\numberline {D.6}{\ignorespaces Motivational Example\relax }}{123}{figure.caption.44}
+\contentsline {figure}{\numberline {D.7}{\ignorespaces SOR Benchmark\relax }}{124}{figure.caption.45}
+\contentsline {figure}{\numberline {D.8}{\ignorespaces FFT Benchmark\relax }}{126}{figure.caption.46}
+\contentsline {figure}{\numberline {D.9}{\ignorespaces Motion Estimation Benchmark\relax }}{127}{figure.caption.47}
+\gdef \the@ipfilectr {}

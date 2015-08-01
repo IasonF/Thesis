@@ -20,3 +20,8 @@
 \contentsline {table}{\numberline {C.4}{\ignorespaces Characterization of benchmark applications (See Tab.\nobreakspace {}\ref {tab:app1} for index\relax }}{85}{table.caption.31}
 \contentsline {table}{\numberline {C.5}{\ignorespaces Range of energy gains on the memory subsystem\relax }}{89}{table.caption.34}
 \gdef \the@ipfilectr {}
+\gdef \the@ipfilectr {@-4}
+\addvspace {10\p@ }
+\contentsline {table}{\numberline {D.1}{\ignorespaces Relative dynamic energy for a range of memories with varying capacity and type\relax }}{114}{table.caption.39}
+\contentsline {table}{\numberline {D.2}{\ignorespaces Relative dynamic energy for different FU models\relax }}{116}{table.caption.40}
+\gdef \the@ipfilectr {}
