@@ -27,41 +27,92 @@ This work
 \subsection{Interconnection}
 
 
-\section{Example design synthesis and simulation}
+\section{Current technology}
 
 \subsection{Generic Work-flow}
 
-Interconnection models are work-in-progress with the help of Jan. There are no results yet, but the following procedure is followed:
+The current technology is studied as a first step towards the development of an interconnection cost model. 
+CAD tools allow the design of the described clustered memory architectures.
+The synthesis and the simulation provide reliable data for the area and the power consumption of the different parts of the memory architecture.
+The goal is to synthesize a clustered memory architecture and extract power data for the memory banks and the interconnection logic separately.
+The work-flow is divided in several sub-steps:
 
 \begin{itemize}
-	\item Choose a number of memories compiled by Jan (currently two)
-	\item Create RTL description of the design connecting the memories using MUX, signals etc. (Done for two memories)
-	\item Simulate to see if it works (Done for two memories)
-	\item Select target technology and run logic synthesis (wip)
-	\item Run floorplanning and place \& route (wip)
-	\item Extract parasitics 
-	\item Run static timing analysis and create SDF file 
-	\item Annotate timing to the netlist	
-	\item Run dynamic timing and power simulation
+	\item A number of memory banks is chosen from a library, which contains several SotA designs.
+	\item An RTL description for connecting the memory banks into a full memory architecture design is written.
+	\item A simulation is performed to verify the correct functionality of the memory architecture.
+	\item A target technology is chosen and the logic synthesis of the memory architecture is performed.
+	\item The floor-planning and the placing \& routing of the memory design is performed.
+	\item The dynamic timing and the power simulation are performed and the results are provided.
 \end{itemize}
 
-I still work on getting results for the first design that connects two memories. Then, I could estimate the time needed for making every new design. I would like to discuss with you how we should build a more generic model from those results, as it would not be possible to make the procedure outside IMEC for future configurations.
+Regarding the first step, the memory models include existing state-of-the-art memories, available from industry and academia, presented in \cite{filippopoulos2013exploration}.
+For the memory banks based on the commercial SRAM memories, the energy numbers are derived from a commercial memory compiler.
+For the memory banks based on the experimental standard cell-based memories (SCMEM) \cite{Mei11},  the energy numbers are result of synthesis.
 
-\begin{enumerate}
-\item RTL description of the design (Done)
-\item Simulation and verification of correct operation (Done)
-\item Logic synthesis on the target technology (Done)
-\item Floor-planning (Done)
-\item Place and route (Errors) 
-\item Timing and power analysis (Not done)
-\end{enumerate}
+For the second step, the RTL description connects the memories using MUX, signals and other components into a functional clustered memory architecture. 
+On the third step, the simulation and the verification performs a flash-write followed by a read on the whole memory architecture. 
+The target technology depends on the available libraries.
+In this work, the TSMC library on 45nm is used.
+The place and route can be either performed automatically through the CAD tool or manually by the designer.
 
-\begin{itemize}
-\item An example of two memories is shown on the figure below.
-\item Dimensions for all SCMEMs are available from the floorplanning step.
-\item Number of wires for each design are available.
-\item Capacitance values for the wires on the figure are available. 
-\end{itemize}
+The final step, includes the extraction of  parasitic, the static timing analysis and the annotation of the timing to the netlist.
+Afterwords, power simulations on the synthesized design are carried out using Synopsys PrimeTime, in order to obtain energy numbers.
+
+\subsection{Example design: synthesis and simulation}
+
+A group of clustered memory architectures is designed and synthesized following the presented work-flow.
+The simulation provides results for the current technology and the contribution of the interconnection to the overall energy consumption.
+The study includes clustered memories with an increasing number of memory banks, beginning with only one memory bank and continue up to five memory banks.
+The breakdown of energy consumption is split into two parts of the memory.
+The first part is the energy consumption inside each memory bank, which includes the memory cells, the necessary logic to connect the cells and the addressing circuit.
+The second part is the interconnection cost between the different memory banks, which includes the necessary logic to locate and transfer the data outside of the banks. 
+In other words, the interconnection outside the memory banks is given separately. 
+The interconnection between the different memory cells inside one bank is included on the energy of the memory bank.
+
+The energy breakdown between the first part of the memory banks and the second part of the interconnection (part2) is presented in Fig.\ref{fig:energyE}.
+The energy cost of the interconnection logic is small compared to the energy cost for the write and read operations on the memory banks.
+Tab.\ref{tab:overhead} contains the exact percentages of the energy overhead on the interconnection. 
+
+\begin{figure}
+ \centering
+ \includegraphics[width = \textwidth]{energy.pdf}
+  \caption{Energy breakdown between the memory banks and the interconnection}
+ \label{fig:energyE}
+ \end{figure}
+
+\begin{table} 
+\caption{Percentage of energy overhead on interconnection}
+\label{tab:overhead}
+\centering
+\begin{tabular}{|c|c|c|c|c|c|}
+\hline 
+Banks & 1 & 2 & 3 & 4 & 5 \\
+\hline 
+Overhead(\%) & 0	&	1.2627 & 1.3687 & 1.7683 & 3.0067 \\ 
+ \hline 
+ \end{tabular} 
+\end{table} 
+ 
+The changes in the area of the design is presented in Fig.\ref{fig:areaE}.
+The area used for the placement of the memory banks is separated from the area occupied by the interconnection.
+
+\begin{figure}
+ \centering
+ \includegraphics[width = \textwidth]{area.pdf}
+  \caption{Area breakdown between the memory banks and the interconnection}
+ \label{fig:areaE}
+ \end{figure}
+  
+In addition, the synthesis and simulation of the memory designs provide useful information about the dimensions of the memory banks, the length and the capacitance of the wires.
+Several interesting observations are possible based on the study of the current technology.
+The energy overhead on the interconnection of the banks grows when there are more memory banks connected, as expected.
+However, the overhead is just over 3\% even for a clustered memory with five banks. 
+The area overhead is significantly higher and grows exponentially for an increasing number of memory banks.  
+The maximum area overhead is less than 10\%.
+This is explained by the need for extra wiring to connect the different memory banks.
+
+\section{Model Construction and Projection Results}
 
  
 \textbf{Model:}
@@ -72,122 +123,9 @@ I still work on getting results for the first design that connects two memories.
 \item Power can be calculated as $Power = \dfrac{1}{2} \times f \times C \times V_{dd}^{2} $
 \end{itemize}
 
-
-\section{Model Construction and Projection Results}
-
-
 \section{Conclusion}
 
+\bibliographystyle{plain}
+\bibliography{reference}
 
 \end{document}
-
-
-
-
-
-%%OLD....
-%\RequirePackage{fix-cm}
-%%\documentclass[smallextended]{svjour3}
-%\documentclass[smallcondensed]{svjour3}  
-%\smartqed  % flush right qed marks, e.g. at end of proof
-%
-%\usepackage{graphicx}
-%\usepackage{amsfonts}
-%\usepackage{amssymb}
-%\usepackage{array}
-%\usepackage{amsmath}
-%\usepackage{multirow}
-%\usepackage{algorithmic}
-%\usepackage{algorithm}
-%
-%\begin{document}
-%
-%\title{Technology scaling impact on the interconnect of clustered scratchpad memory architectures}
-%
-%\titlerunning{Technology scaling impact on the interconnect} 
-%
-%\author{Iason Filippopoulos \and Francky Catthoor \and Per Gunnar Kjeldsberg}
-%
-%\authorrunning{Filippopoulos et al.} % if too long for running head
-%
-%\institute{Iason Filippopoulos, Per Gunnar Kjeldsberg 
-%		\at Department of Electronics and Telecommunications \\ Norwegian University of Science and Technology (NTNU), Norway\\
-%		\email{iason.filippopoulos, pgk@iet.ntnu.no} \\
-%		\and
-%		Francky Catthoor 
-%		\at IMEC \& KU Leuven, Belgium \\
-%		\email{catthoor@imec.be} \\
-%}
-%
-%\date{Received: date / Accepted: date}
-%% The correct dates will be entered by the editor
-%
-%
-%\maketitle
-%
-%\begin{abstract}
-%We propose a memory-aware system scenario approach that exploits variations in memory needs during the lifetime of an application in order to optimize energy usage. 
-%Different system scenarios capture the application's different resource requirements that change dynamically at run-time. 
-%In addition to computational resources, the many possible memory platform configurations and data-to-memory assignments are important system scenario parameters. 
-%In this work we focus on clustering of different memory requirements into groups and presenting the system scenario generation in detail.
-%The clustering is a non-trivial problem due to the many different memory requirements, which leads to a very large exploration space.
-%An extended memory model is used as a practical enabler, in order to evaluate the methodology. 
-%\keywords{System Scenarios \and Design Space Exploration \and Reconfigurable Design \and Memory Reconfiguration \and Dynamic Multimedia Applications} 
-%\end{abstract}
-%
-%
-%\section{Introduction}
-%\label{sec:introduction}
-%
-%Modern embedded systems are becoming more and more powerful as the semiconductor processing techniques keep increasing the number of transistors on a single chip. 
-%Consequently, demanding applications, e.g., in the signal processing and multimedia domains, can be executed on these devices \cite{narasinga}. 
-%On the other hand, the desired performance has to be delivered with minimum power consumption due to the limited energy available in mobile devices \cite{tcm}. 
-%System scenario methodologies propose the use of different platform configurations in order to exploit run-time variations in computational and memory needs often seen in such applications \cite{tcm}.
-%
-%Platform reconfiguration is performed through tuning of different system parameters, also called system knobs. 
-%For the memory-aware system scenario methodology, a platform can be reconfigured through a number of potential knobs, each resulting in different performance and power consumption in the memory subsystem. 
-%Foremost, modern memories support different energy states, e.g., through power gating techniques and by switching to lower power modes when not accessed. 
-%The second platform knob is the assignment of data to the available memory banks.
-%The data assignment decisions affect both the energy per access for the mapped data, the data conflicts as a result of suboptimal assignment, and the number of active banks. 
-%In this work a reconfigurable memory platform is constructed using detailed memory models. 
-%This is followed by experiments with dynamic multimedia applications in order to study the effectiveness of the methodology.
-%
-%The main contribution of the current work is the development of data variable \cite{Elena2012} based system scenarios.
-%Previous control variable based system scenarios \cite{Gheorghita2007} are unable to handle the fine-grain behaviour of the studied multimedia applications due to their significant variation under different execution situations. 
-%Furthermore, compared with use case scenario approaches in which scenarios are generated based on a user's behaviour \cite{usecase}, the system scenario methodology focuses on the behaviour of the system to generate scenarios and can, therefore, fully exploit the detailed platform mapping information. 
-%Compared with previous work on system scenarios that has focused on the processing cores, the current work analyses the use of system scenarios on the memory organisation. 
-%More specifically, this work focuses on the system scenario identification phase of the methodology.
-%The wide range of memory requirements, the amount of different cases, and the different frequency in which each case occurs, results in a very large exploration space.
-%Therefore, there is a need for developing an algorithmic approach that can efficiently tackle this problem.
-%
-%Another significant contribution is the extensive number of benchmark applications on which the methodology is applied.
-%The chosen set is representative for the domain of multimedia applications.
-%Furthermore, we present a categorisation of applications based on their dynamic characteristics, also applicable to the entire multimedia domain. 
-%For the experimental needs of this work we present for the purpose sufficiently detailed and accurate  memory models, which are used for the system design exploration.
-%For the multimedia domain, the current work presents a comprehensive methodology for optimising energy consumption in the memory subsystem.
-%
-%This article is organized as follows. 
-%Section~\ref{sec:motivation} motivates the study of optimization of the memory organisation. 
-%Section~\ref{sec:related} surveys related work on system level memory exploration and on system scenario methodologies and compares it with the current work. 
-%Section~\ref{sec:methodology} presents the chosen methodology with main focus on the memory organisation study. 
-%In Section~\ref{sec:platform} the target platform is described accompanied by a detailed description of the employed memory models, while the multimedia benchmarks and their characteristics are analysed in Section~\ref{sec:applications}. 
-%Results of applying the described methodology to the targeted applications are shown in Section~\ref{sec:results}, while conclusions are drawn in Section~\ref{sec:conclusion}. 
-%
-%\section{Motivational Example}
-%\label{sec:motivation}
-%
-%\section{Related Work and Contribution Discussion}
-%\label{sec:related}
-%
-%\section{Conclusions}
-%\label{sec:conclusion}
-%
-%The scope of this work is to apply the memory-aware system scenario methodology to a wide range of multimedia application and test its effectiveness based on an extensive memory energy model. 
-%A wide range of applications is studied that allow us to draw conclusions about different kinds of dynamic behaviour and their effect on the energy gains achieved using the methodology. 
-%The results demonstrate the effectiveness of the methodology reducing the memory energy consumption with between 35\% and 55\%. 
-%Since memory size requirements are still met in all situations, performance is not reduced. 
-%The memory-aware system scenario methodology is suited for applications that experience dynamic behaviour with respect to memory organisation utilization during their execution.
-%
-%
-%
-%\end{document}
