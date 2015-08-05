@@ -16,16 +16,9 @@ This work
 
 \section{Introduction}
 
+Power will be the key limiter to  as interconnection networks take up an increasingly significant portion of system power. 
 
 \section{Related Work}
-
-
-\section{Technology Scaling}
-
-\subsection{Memory Banks}
-
-\subsection{Interconnection}
-
 
 \section{Current technology}
 
@@ -74,14 +67,21 @@ The energy breakdown between the first part of the memory banks and the second p
 The energy cost of the interconnection logic is small compared to the energy cost for the write and read operations on the memory banks.
 Tab.\ref{tab:overhead} contains the exact percentages of the energy overhead on the interconnection. 
 
-\begin{figure}
+\begin{figure}[t!]
  \centering
  \includegraphics[width = \textwidth]{energy.pdf}
   \caption{Energy breakdown between the memory banks and the interconnection}
  \label{fig:energyE}
  \end{figure}
-
-\begin{table} 
+ 
+ \begin{figure}[t!]
+ \centering
+ \includegraphics[width = \textwidth]{area.pdf}
+  \caption{Area breakdown between the memory banks and the interconnection}
+ \label{fig:areaE}
+ \end{figure}
+ 
+ \begin{table}[t!]
 \caption{Percentage of energy overhead on interconnection}
 \label{tab:overhead}
 \centering
@@ -96,13 +96,6 @@ Overhead(\%) & 0	&	1.2627 & 1.3687 & 1.7683 & 3.0067 \\
  
 The changes in the area of the design is presented in Fig.\ref{fig:areaE}.
 The area used for the placement of the memory banks is separated from the area occupied by the interconnection.
-
-\begin{figure}
- \centering
- \includegraphics[width = \textwidth]{area.pdf}
-  \caption{Area breakdown between the memory banks and the interconnection}
- \label{fig:areaE}
- \end{figure}
   
 In addition, the synthesis and simulation of the memory designs provide useful information about the dimensions of the memory banks, the length and the capacitance of the wires.
 Several interesting observations are possible based on the study of the current technology.
@@ -111,6 +104,55 @@ However, the overhead is just over 3\% even for a clustered memory with five ban
 The area overhead is significantly higher and grows exponentially for an increasing number of memory banks.  
 The maximum area overhead is less than 10\%.
 This is explained by the need for extra wiring to connect the different memory banks.
+
+\section{Technology Scaling}
+
+The technology scaling projections are based on the reports released by the International Technology Roadmap for Semiconductors (ITRS) \cite{itrs}.
+The clustered memory architecture can be divided into two parts, i.e. the memory banks and the interconnection.
+
+\subsection{Memory Banks}
+
+The memory banks consist of the memory cells, which are built using gates.
+Thus, the predictions about the future behavior of the memory banks is based on the ITRS reports for logic.
+In the following years, the gate of the length is expected to be reduced as shown in \ref{fig:gateE}.
+The values are approaching 5nm around 2028, which is potentially the limit using the current manufacturing process.
+
+\begin{figure}[t!]
+ \centering
+ \includegraphics[width = \textwidth]{gate.pdf}
+  \caption{Impact of technology scaling into gate length}
+ \label{fig:gateE}
+ \end{figure}
+ 
+ \begin{figure}[t!]
+ \centering
+ \includegraphics[width = \textwidth]{cellpower.pdf}
+  \caption{Normalized dynamic power and technology scaling}
+ \label{fig:powerE}
+ \end{figure}
+
+The reduction on the gate length leads to a reduction of the memory cell and naturally smaller memory banks.
+The smaller memory banks affect the area of the design and the power consumption.
+The projections provided by ITRS regarding the power are presented in \ref{fig:powerE}. 
+There is a significant reduction on the power consumption in the short term and slighter reduction at the end of the projections.
+
+\subsection{Interconnection}
+
+The interconnection cost is based on the projections about wiring, which differentiate compared to the projections regarding the logic gates.
+However, the change on the size of the memory banks affects the length of the needed wires.
+The most important parameters for the current study is the capacitance and the power of the interconnection.
+Based on the data provided by ITRS, the curves for the two parameters are presented in \ref{fig:intpowerE}.
+The capacitance is expected to be reduced in the following year.
+However, the rate of reduction is lower compared to the expected reduction for the memory banks.
+The power values are per length unit and there are expected to raise, mostly due to ...
+
+ \begin{figure}[t!]
+ \centering
+ \includegraphics[width = \textwidth]{intpower.pdf}
+  \caption{Impact of technology scaling into the capacitance and the power of the interconnection part}
+ \label{fig:intpowerE}
+ \end{figure}
+
 
 \section{Model Construction and Projection Results}
 
