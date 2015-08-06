@@ -25,3 +25,7 @@
 \contentsline {table}{\numberline {D.1}{\ignorespaces Relative dynamic energy for a range of memories with varying capacity and type\relax }}{114}{table.caption.39}
 \contentsline {table}{\numberline {D.2}{\ignorespaces Relative dynamic energy for different FU models\relax }}{116}{table.caption.40}
 \gdef \the@ipfilectr {}
+\gdef \the@ipfilectr {@-5}
+\addvspace {10\p@ }
+\contentsline {table}{\numberline {E.1}{\ignorespaces Percentage of energy overhead on interconnection\relax }}{141}{table.caption.51}
+\gdef \the@ipfilectr {}

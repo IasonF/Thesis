@@ -106,3 +106,14 @@
 \BOOKMARK [2][-]{subsection.D.7.3}{FFT Benchmark}{section.D.7}% 106
 \BOOKMARK [2][-]{subsection.D.7.4}{Motion Estimation Benchmark}{section.D.7}% 107
 \BOOKMARK [1][-]{section.D.8}{Conclusion}{appendix.D}% 108
+\BOOKMARK [0][-]{appendix.E}{Technology scaling impact on the interconnection of clustered scratchpad memory architectures}{}% 109
+\BOOKMARK [1][-]{section.E.1}{Introduction}{appendix.E}% 110
+\BOOKMARK [1][-]{section.E.2}{Related Work}{appendix.E}% 111
+\BOOKMARK [1][-]{section.E.3}{Current technology}{appendix.E}% 112
+\BOOKMARK [2][-]{subsection.E.3.1}{Generic Work-flow}{section.E.3}% 113
+\BOOKMARK [2][-]{subsection.E.3.2}{Example design: synthesis and simulation}{section.E.3}% 114
+\BOOKMARK [1][-]{section.E.4}{Technology Scaling}{appendix.E}% 115
+\BOOKMARK [2][-]{subsection.E.4.1}{Memory Banks}{section.E.4}% 116
+\BOOKMARK [2][-]{subsection.E.4.2}{Interconnection}{section.E.4}% 117
+\BOOKMARK [1][-]{section.E.5}{Model Construction and Projection Results}{appendix.E}% 118
+\BOOKMARK [1][-]{section.E.6}{Conclusion}{appendix.E}% 119

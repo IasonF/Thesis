@@ -45,3 +45,12 @@
 \contentsline {figure}{\numberline {D.8}{\ignorespaces FFT Benchmark\relax }}{126}{figure.caption.46}
 \contentsline {figure}{\numberline {D.9}{\ignorespaces Motion Estimation Benchmark\relax }}{127}{figure.caption.47}
 \gdef \the@ipfilectr {}
+\gdef \the@ipfilectr {@-5}
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {E.1}{\ignorespaces Energy breakdown between the memory banks and the interconnection\relax }}{141}{figure.caption.49}
+\contentsline {figure}{\numberline {E.2}{\ignorespaces Area breakdown between the memory banks and the interconnection\relax }}{142}{figure.caption.50}
+\contentsline {figure}{\numberline {E.3}{\ignorespaces Impact of technology scaling into gate length\relax }}{143}{figure.caption.52}
+\contentsline {figure}{\numberline {E.4}{\ignorespaces Normalized dynamic power and technology scaling\relax }}{144}{figure.caption.53}
+\contentsline {figure}{\numberline {E.5}{\ignorespaces Impact of technology scaling into the capacitance and the power of the interconnection part\relax }}{146}{figure.caption.54}
+\contentsline {figure}{\numberline {E.6}{\ignorespaces Projections of the interconnection cost power overhead for different numbers of memory banks\relax }}{147}{figure.caption.55}
+\gdef \the@ipfilectr {}
