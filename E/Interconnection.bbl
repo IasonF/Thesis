@@ -10,6 +10,13 @@ Iason Filippopoulos, Francky Catthoor, and Per~Gunnar Kjeldsberg.
 International Technology~Roadmap for Semiconductors.
 \newblock Annual summary, 2013.
 
+\bibitem{kumar2005interconnections}
+Rakesh Kumar, Victor Zyuban, and Dean~M Tullsen.
+\newblock Interconnections in multi-core architectures: Understanding
+  mechanisms, overheads and scaling.
+\newblock In {\em Computer Architecture, 2005. ISCA'05. Proceedings. 32nd
+  International Symposium on}, pages 408--419. IEEE, 2005.
+
 \bibitem{Mei11}
 Pascal Meinerzhagen, SM~Yasser Sherazi, Andreas Burg, and Joachim~Neves
   Rodrigues.

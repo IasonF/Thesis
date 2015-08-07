@@ -117,13 +117,13 @@
 \gdef \the@ipfilectr {@-5}
 \contentsline {chapter}{\numberline {E}Technology scaling impact on the interconnection of clustered scratchpad memory architectures}{135}{appendix.E}
 \contentsline {section}{\numberline {E.1}Introduction}{139}{section.E.1}
-\contentsline {section}{\numberline {E.2}Related Work}{139}{section.E.2}
-\contentsline {section}{\numberline {E.3}Current technology}{139}{section.E.3}
-\contentsline {subsection}{\numberline {E.3.1}Generic Work-flow}{139}{subsection.E.3.1}
-\contentsline {subsection}{\numberline {E.3.2}Example design: synthesis and simulation}{140}{subsection.E.3.2}
-\contentsline {section}{\numberline {E.4}Technology Scaling}{142}{section.E.4}
-\contentsline {subsection}{\numberline {E.4.1}Memory Banks}{142}{subsection.E.4.1}
-\contentsline {subsection}{\numberline {E.4.2}Interconnection}{143}{subsection.E.4.2}
-\contentsline {section}{\numberline {E.5}Model Construction and Projection Results}{145}{section.E.5}
+\contentsline {section}{\numberline {E.2}Related Work}{140}{section.E.2}
+\contentsline {section}{\numberline {E.3}Current technology}{140}{section.E.3}
+\contentsline {subsection}{\numberline {E.3.1}Generic Work-flow}{140}{subsection.E.3.1}
+\contentsline {subsection}{\numberline {E.3.2}Example design: synthesis and simulation}{141}{subsection.E.3.2}
+\contentsline {section}{\numberline {E.4}Technology Scaling}{143}{section.E.4}
+\contentsline {subsection}{\numberline {E.4.1}Memory Banks}{144}{subsection.E.4.1}
+\contentsline {subsection}{\numberline {E.4.2}Interconnection}{146}{subsection.E.4.2}
+\contentsline {section}{\numberline {E.5}Model Construction and Projection Results}{146}{section.E.5}
 \contentsline {section}{\numberline {E.6}Conclusion}{148}{section.E.6}
 \gdef \the@ipfilectr {}

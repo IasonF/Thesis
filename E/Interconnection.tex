@@ -25,16 +25,58 @@ To be submitted
 
 \vspace*{\fill}
 \section*{\hspace*{\fill} Abstract \hspace*{\fill}}
-This work
+Power consumption is the key limitation in modern embedded devices.
+The memory architecture contributes significantly on the overall power consumption of the system.
+Among other proposed techniques, one effective system design approach to reduce the memory power needs is the design of a dynamically reconfigurable clustered memory architecture.
+The operationally independent memory banks provide an energy efficient platform, but comes with an interconnection overhead due to the connections between the memory banks. 
+Thus, there is a trade-off between the energy gains by increasing the number of memory banks and the increase on the interconnection overhead.
+This work explores the future development of the interconnection overhead, as the interconnection cost is expected to increase while the process technology shrinks to 5nm.
+The current study employs both CAD tools with simulation results using the current technology and projections provided by institutions.
+A model is developed that provide rough estimation about the interconnection cost overhead for clustered memory architectures consisting of two to five memory banks and a range of technologies from 40nm to 5nm.  
 \vspace*{\fill}
 \afterpage{\null\newpage}
 \newpage
 
 \section{Introduction}
 
-Power will be the key limiter to  as interconnection networks take up an increasingly significant portion of system power. 
+Embedded systems normally rely on battery and this fact reduces their usability.
+The power consumption can be divided between the processing elements and the memory subsystem.
+One efficient way to reduce the power consumed on the memory, when executing an application with dynamic memory needs, is to design a clustered memory architecture.
+A case study about the efficiency and the potential gains of this approach is presented in \cite{filippopoulos2013exploration}.
+In Fig.\ref{fig:platformE} the two different approaches are presented.
+The first has a large static memory and the second five smaller memory banks, while designer can choose other alternatives in between.
+The different memory banks can operate independently and  adjust to the application requirements.
+When the memory requirements of the application are small, unused memory banks can be switched off and the energy consumption is reduced, while the application still runs successfully on the system. 
+
+\begin{figure}
+ \centering
+ \includegraphics[width = \textwidth]{E/platform.pdf}
+  \caption{The alternative clustered memory architectures ranging from one to five memory banks}
+ \label{fig:platformE}
+ \end{figure}
+ 
+ The main drawback of the clustered memory architecture approach is the need for extra interconnection circuit.
+ Unfortunately, it is expected that the interconnection networks will take up an increasingly significant portion of system power in the system. 
+ Thus, there is a need to study the interconnection cost overhead to decide whether the power gains justify the use of a clustered memory architecture instead of a monolithic one.
+  The scope of this work is explores the future development of the interconnection overhead and develop a model that can provide rough estimation about that overhead.
+  System designers could use such a model to decide about the preferred memory architecture and the number of banks given the nature of the executed application and the target technology.
+  The model is based on the current technology and the projections about the future technology.
+  The current technology is available on several CAD tools.
+  The synthesis and the simulation of memory architectures similar to the one in Fig.\ref{fig:platformE} provide useful results.
+  The study of the future technology is based on the reports released by the International Technology Roadmap for Semiconductors (ITRS) \cite{itrs}.
+ The goal of the developed model is to provide rough estimation about the interconnection cost overhead for clustered memory architectures consisting of two to five memory banks and a range of technologies from 40nm to 5nm.  
+ 
+ The paper is organized as follows. The ...
 
 \section{Related Work}
+
+A comprehensive view of a class of interconnect architectures is presented in \cite{kumar2005interconnections}. 
+The authors examine the area, power, performance, and design issues for the on-chip interconnects.
+A few more on current papers... \ldots
+
+Successful examples of clustered memory arch ... \ldots
+
+Overview of the ITRS based paper \ldots
 
 \section{Current technology}
 \label{Current}
@@ -129,11 +171,6 @@ The clustered memory architecture can be divided into two parts, i.e. the memory
 
 \subsection{Memory Banks}
 
-The memory banks consist of the memory cells, which are built using gates.
-Thus, the predictions about the future behavior of the memory banks is based on the ITRS reports for logic.
-In the following years, the gate of the length is expected to be reduced as shown in \ref{fig:gateE}.
-The values are approaching 5nm around 2028, which is potentially the limit using the current manufacturing process.
-
 \begin{figure}
  \centering
  \includegraphics[width = \textwidth]{E/gate.pdf}
@@ -141,18 +178,25 @@ The values are approaching 5nm around 2028, which is potentially the limit using
  \label{fig:gateE}
  \end{figure}
  
- \begin{figure}
- \centering
- \includegraphics[width = \textwidth]{E/cellpower.pdf}
-  \caption{Normalized dynamic power and technology scaling}
- \label{fig:powerE}
- \end{figure}
+The memory banks consist of the memory cells, which are built using gates.
+Thus, the predictions about the future behavior of the memory banks is based on the ITRS reports for logic.
+In the following years, the gate of the length is expected to be reduced as shown in \ref{fig:gateE}.
+The values are approaching 5nm around 2028, which is potentially the limit using the current manufacturing process.
+
+
 
 The reduction on the gate length leads to a reduction of the memory cell and naturally smaller memory banks.
 The smaller memory banks affect the area of the design and the power consumption.
 The projections provided by ITRS regarding the power are presented in \ref{fig:powerE}. 
 There is a significant reduction on the power consumption in the short term and slighter reduction at the end of the projections.
 
+ \begin{figure}
+ \centering
+ \includegraphics[width = \textwidth]{E/cellpower.pdf}
+  \caption{Normalized dynamic power and technology scaling}
+ \label{fig:powerE}
+ \end{figure}
+ 
 \subsection{Interconnection}
 
 The interconnection cost is based on the projections about wiring, which differentiate compared to the projections regarding the logic gates.
@@ -197,20 +241,26 @@ The power values are per length unit and there are expected to raise due to the 
  \end{itemize}
  
  The development of the interconnection cost overhead using the proposed model is presented in Fig.\ref{fig:overheadE}.
+ The interconnection overhead is kept below 10\% for most of the cases.
+ It exceeds this limit in designs with 5 memory banks around a decade from now.
+ The overhead increases as we move from 2 to 5 memory banks, as it is expected.
+ However, the increase is much higher between a design of 4 and 5 memory banks.
  The model reproduces the results for the synthesized results presented in \ref{tab:overhead}.
-
+ 
  \begin{figure}
  \centering
  \includegraphics[width = \textwidth]{E/overhead.pdf}
   \caption{Projections of the interconnection cost power overhead for different numbers of memory banks}
  \label{fig:overheadE}
  \end{figure}
+ 
 
 \section{Conclusion}
 
-The model reproduces the results for the designs that can be synthesized nowadays and are presented in \ref{Current}. 
-
-The estimations for the future can be useful for system desi
+We proposed a model that can provide estimations about the interconnection overhead on a clustered memory architecture.
+The model suggests that overhead will be kept low in the short term and will increase within reasonable levels in the mid-long term.
+Therefore, the design of energy efficient clustered memory architecture will continue to be a good design choice.
+The estimations for the future can be useful for system designers that try to design power efficient architectures for applications with dynamic memory requirements thought their lifetime.
 
 \bibliographystyle{plain}
 \bibliography{reference}
