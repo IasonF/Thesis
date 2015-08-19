@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2014.6.24)  7 AUG 2015 12:58
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2014.6.24)  19 AUG 2015 17:41
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1017,14 +1017,31 @@ No file Thesis.nls.
 
 ] (./intro.tex
 Chapter 1.
-) (./background.tex [1
+
+Underfull \vbox (badness 1122) has occurred while \output is active []
+
+ [1
 
 
-] [2
+]
+[2]
+
+LaTeX Warning: Citation `Ben00b' in file `Thesis' on page 3 undefined on input 
+line 58.
+
+
+LaTeX Warning: Citation `Mac02' in file `Thesis' on page 3 undefined on input l
+ine 59.
+
+
+LaTeX Warning: Citation `Garcia' in file `Thesis' on page 3 undefined on input 
+line 64.
+
+[3]) (./background.tex [4] [5] [6
 
 ]
 Chapter 2.
-) (./method.tex [3] [4
+) (./method.tex [7] [8
 
 ]
 Chapter 3.
@@ -1042,11 +1059,11 @@ d
 ) (./research.tex
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [5]
+ [9]
 Overfull \vbox (6.65648pt too high) has occurred while \output is active []
 
 
-[6]
+[10]
 Chapter 4.
 
 Overfull \hbox (0.84485pt too wide) in paragraph at lines 4--4
@@ -1056,42 +1073,42 @@ Overfull \hbox (0.84485pt too wide) in paragraph at lines 4--4
 ) (./conclusions.tex
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [7
+ [11
 
 ]
 Overfull \vbox (107.72913pt too high) has occurred while \output is active []
 
 
-[8]
+[12]
 Chapter 5.
-) [9
+) [13
 
 ]
 \openout2 = `A/norchip.aux'.
 
- (./A/norchip.tex [10
+ (./A/norchip.tex [14
 
 
 
 ]
 Appendix A.
-[11] [12] [13] [14]
+[15] [16] [17] [18]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [15]
-[16] [17]
-<A/profiling_v2-eps-converted-to.pdf, id=954, 555.07375pt x 382.42876pt>
+ [19]
+[20] [21]
+<A/profiling_v2-eps-converted-to.pdf, id=969, 555.07375pt x 382.42876pt>
 File: A/profiling_v2-eps-converted-to.pdf Graphic file (type pdf)
 
 <use A/profiling_v2-eps-converted-to.pdf>
 Package pdftex.def Info: A/profiling_v2-eps-converted-to.pdf used on input line
  76.
 (pdftex.def)             Requested size: 286.80489pt x 197.59781pt.
- [18]
+ [22]
 Underfull \vbox (badness 1137) has occurred while \output is active []
 
- [19 <./A/profiling_v2-eps-converted-to.pdf>]
-<A/clustering_v2-eps-converted-to.pdf, id=1002, 561.09625pt x 389.455pt>
+ [23 <./A/profiling_v2-eps-converted-to.pdf>]
+<A/clustering_v2-eps-converted-to.pdf, id=1017, 561.09625pt x 389.455pt>
 File: A/clustering_v2-eps-converted-to.pdf Graphic file (type pdf)
 
 <use A/clustering_v2-eps-converted-to.pdf>
@@ -1101,35 +1118,35 @@ e 95.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [20 <./A/clustering_v2-eps-converted-to.pdf>]
-<A/platform_v10-eps-converted-to.pdf, id=1030, 81.30376pt x 95.35625pt>
+ [24 <./A/clustering_v2-eps-converted-to.pdf>]
+<A/platform_v10-eps-converted-to.pdf, id=1046, 81.30376pt x 95.35625pt>
 File: A/platform_v10-eps-converted-to.pdf Graphic file (type pdf)
 
 <use A/platform_v10-eps-converted-to.pdf>
 Package pdftex.def Info: A/platform_v10-eps-converted-to.pdf used on input line
  115.
 (pdftex.def)             Requested size: 286.80489pt x 336.46689pt.
- [21] [22 <./A/platform_v10-eps-converted-to.pdf>]
+ [25] [26 <./A/platform_v10-eps-converted-to.pdf>]
 Overfull \hbox (4.21152pt too wide) in paragraph at lines 122--123
 []\OT1/cmr/m/n/10.95 The mem-ory en-ergy con-sump-tion for ev-ery ac-cess in th
 e clus-tered scratch-
  []
 
-[23] <A/eegprof_v1-eps-converted-to.pdf, id=1079, 954.56625pt x 649.42625pt>
+[27] <A/eegprof_v1-eps-converted-to.pdf, id=1094, 954.56625pt x 649.42625pt>
 File: A/eegprof_v1-eps-converted-to.pdf Graphic file (type pdf)
 
 <use A/eegprof_v1-eps-converted-to.pdf>
 Package pdftex.def Info: A/eegprof_v1-eps-converted-to.pdf used on input line 1
 65.
 (pdftex.def)             Requested size: 286.80489pt x 195.11674pt.
- [24]
+ [28]
 Overfull \hbox (0.92952pt too wide) in paragraph at lines 174--175
 \OT1/cmr/m/n/10.95 The Viterbi al-go-rithm [[]] is widely used, both in the in-
 dus-try and academia,
  []
 
-[25 <./A/eegprof_v1-eps-converted-to.pdf>] [26]
-<A/results1-eps-converted-to.pdf, id=1110, 562.1pt x 420.57124pt>
+[29 <./A/eegprof_v1-eps-converted-to.pdf>] [30]
+<A/results1-eps-converted-to.pdf, id=1125, 562.1pt x 420.57124pt>
 File: A/results1-eps-converted-to.pdf Graphic file (type pdf)
 
 <use A/results1-eps-converted-to.pdf>
@@ -1137,53 +1154,53 @@ Package pdftex.def Info: A/results1-eps-converted-to.pdf used on input line 202
 .
 (pdftex.def)             Requested size: 358.50475pt x 268.24057pt.
 
-<A/res2-eps-converted-to.pdf, id=1111, 596.2275pt x 455.7025pt>
+<A/res2-eps-converted-to.pdf, id=1126, 596.2275pt x 455.7025pt>
 File: A/res2-eps-converted-to.pdf Graphic file (type pdf)
 
 <use A/res2-eps-converted-to.pdf>
 Package pdftex.def Info: A/res2-eps-converted-to.pdf used on input line 209.
 (pdftex.def)             Requested size: 358.50475pt x 274.00769pt.
- [27 <./A/results1-eps-converted-to.pdf>]
-[28 <./A/res2-eps-converted-to.pdf>] (./A/norchip.bbl [29] [30
+ [31 <./A/results1-eps-converted-to.pdf>]
+[32 <./A/res2-eps-converted-to.pdf>] (./A/norchip.bbl [33] [34
 
-] [31]
+] [35]
 Missing character: There is no â in font cmti10!
 Missing character: There is no € in font cmti10!
 Missing character: There is no ™ in font cmti10!
- [32]))
-[33]
+ [36]))
+[37]
 \openout2 = `B/meaow.aux'.
 
- (./B/meaow.tex [34
+ (./B/meaow.tex [38
 
 
 
 
 ]
 Appendix B.
-[35] [36] [37] [38] [39] [40]
-<B/Images/profiling2.pdf, id=1214, 728.7225pt x 562.1pt>
+[39] [40] [41] [42] [43] [44]
+<B/Images/profiling2.pdf, id=1228, 728.7225pt x 562.1pt>
 File: B/Images/profiling2.pdf Graphic file (type pdf)
 
 <use B/Images/profiling2.pdf>
 Package pdftex.def Info: B/Images/profiling2.pdf used on input line 76.
 (pdftex.def)             Requested size: 358.50475pt x 276.52927pt.
- [41] [42 <./B/Images/profiling2.pdf>]
-<B/Images/1DclusteringShort.pdf, id=1290, 511.9125pt x 354.32375pt>
+ [45] [46 <./B/Images/profiling2.pdf>]
+<B/Images/1DclusteringShort.pdf, id=1306, 511.9125pt x 354.32375pt>
 File: B/Images/1DclusteringShort.pdf Graphic file (type pdf)
 
 <use B/Images/1DclusteringShort.pdf>
 Package pdftex.def Info: B/Images/1DclusteringShort.pdf used on input line 96.
 (pdftex.def)             Requested size: 358.50475pt x 248.14388pt.
- [43 <./B/Images/1DclusteringShort.pdf>]
-<B/Images/switching.pdf, id=1310, 710.655pt x 534.99875pt>
+ [47 <./B/Images/1DclusteringShort.pdf>]
+<B/Images/switching.pdf, id=1325, 710.655pt x 534.99875pt>
 File: B/Images/switching.pdf Graphic file (type pdf)
 
 <use B/Images/switching.pdf>
 Package pdftex.def Info: B/Images/switching.pdf used on input line 113.
 (pdftex.def)             Requested size: 358.50475pt x 269.89876pt.
- [44] [45 <./B/Images/switching.pdf>]
-<B/Images/platform.pdf, id=1515, 263.98625pt x 80.3pt>
+ [48] [49 <./B/Images/switching.pdf>]
+<B/Images/platform.pdf, id=1529, 263.98625pt x 80.3pt>
 File: B/Images/platform.pdf Graphic file (type pdf)
 
 <use B/Images/platform.pdf>
@@ -1192,68 +1209,68 @@ Package pdftex.def Info: B/Images/platform.pdf used on input line 127.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [46 <./B/Images/platform.pdf>]
+ [50 <./B/Images/platform.pdf>]
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10.95> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 169.
- [47]
+ [51]
 Package hyperref Info: bookmark level for unknown algorithm defaults to 0 on in
 put line 188.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [48]
-[49]
+ [52]
+[53]
 Overfull \hbox (76.01587pt too wide) in paragraph at lines 224--247
  [] 
  []
 
-[50] <B/Images/6appsGains.pdf, id=1586, 929.4725pt x 618.31pt>
+[54] <B/Images/6appsGains.pdf, id=1601, 929.4725pt x 618.31pt>
 File: B/Images/6appsGains.pdf Graphic file (type pdf)
 
 <use B/Images/6appsGains.pdf>
 Package pdftex.def Info: B/Images/6appsGains.pdf used on input line 259.
 (pdftex.def)             Requested size: 358.50475pt x 238.47935pt.
- [51
+ [55
 
 
 
 ]
-<B/Images/banks2.pdf, id=1594, 507.8975pt x 411.5375pt>
+<B/Images/banks2.pdf, id=1609, 507.8975pt x 411.5375pt>
 File: B/Images/banks2.pdf Graphic file (type pdf)
 
 <use B/Images/banks2.pdf>
 Package pdftex.def Info: B/Images/banks2.pdf used on input line 271.
 (pdftex.def)             Requested size: 358.50475pt x 290.49818pt.
- [52 <./B/Images/6appsGains.pdf>]
-<B/Images/usecase.pdf, id=1607, 927.465pt x 614.295pt>
+ [56 <./B/Images/6appsGains.pdf>]
+<B/Images/usecase.pdf, id=1621, 927.465pt x 614.295pt>
 File: B/Images/usecase.pdf Graphic file (type pdf)
 
 <use B/Images/usecase.pdf>
 Package pdftex.def Info: B/Images/usecase.pdf used on input line 281.
 (pdftex.def)             Requested size: 358.50475pt x 237.45569pt.
- (./B/meaow.bbl [53 <./B/Images/banks2.pdf>] [54 <./B/Images/usecase.pdf>] [55
+ (./B/meaow.bbl [57 <./B/Images/banks2.pdf>] [58 <./B/Images/usecase.pdf>] [59
 
-])) [56]
+])) [60]
 \openout2 = `C/DAES.aux'.
 
  (./C/DAES.tex
 Appendix C.
-[57
+[61
 
 
 
 
-] [58] [59] [60] [61] [62] [63] [64]
+] [62] [63] [64] [65] [66] [67] [68]
 Underfull \vbox (badness 1596) has occurred while \output is active []
 
- [65]
-[66]
+ [69]
+[70]
 Overfull \hbox (2.5082pt too wide) in paragraph at lines 194--201
 []\OT1/cmr/m/n/10.95 The sys-tem sce-nario method-ol-ogy fol-lows a two stage e
 x-plo-ration, namely
  []
 
-<C/profiling2.pdf, id=1775, 728.7225pt x 562.1pt>
+<C/profiling2.pdf, id=1790, 728.7225pt x 562.1pt>
 File: C/profiling2.pdf Graphic file (type pdf)
  <use C/profiling2.pdf>
 Package pdftex.def Info: C/profiling2.pdf used on input line 207.
@@ -1261,23 +1278,23 @@ Package pdftex.def Info: C/profiling2.pdf used on input line 207.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [67 <./C/profiling2.pdf>] [68] <C/1Dclustering.pdf, id=1848, 845.1575pt x 597.
+ [71 <./C/profiling2.pdf>] [72] <C/1Dclustering.pdf, id=1863, 845.1575pt x 597.
 23125pt>
 File: C/1Dclustering.pdf Graphic file (type pdf)
 
 <use C/1Dclustering.pdf>
 Package pdftex.def Info: C/1Dclustering.pdf used on input line 248.
 (pdftex.def)             Requested size: 268.87856pt x 190.0061pt.
- [69 <./C/1Dclustering.pdf>]
+ [73 <./C/1Dclustering.pdf>]
 Underfull \vbox (badness 3118) has occurred while \output is active []
 
- [70]
-<C/2D.pdf, id=1875, 509.905pt x 379.4175pt>
+ [74]
+<C/2D.pdf, id=1889, 509.905pt x 379.4175pt>
 File: C/2D.pdf Graphic file (type pdf)
  <use C/2D.pdf>
 Package pdftex.def Info: C/2D.pdf used on input line 293.
 (pdftex.def)             Requested size: 268.87856pt x 200.07716pt.
- [71 <./C/2D.pdf>]
+ [75 <./C/2D.pdf>]
 LaTeX Font Info:    Try loading font information for OML+cmr on input line 325.
 
 
@@ -1286,17 +1303,17 @@ File: omlcmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OML/cmr/m/n' in size <10.95> not available
 (Font)              Font shape `OML/cmm/m/it' tried instead on input line 325.
- [72]
-<C/switching.pdf, id=1906, 710.655pt x 534.99875pt>
+ [76]
+<C/switching.pdf, id=1921, 710.655pt x 534.99875pt>
 File: C/switching.pdf Graphic file (type pdf)
  <use C/switching.pdf>
 Package pdftex.def Info: C/switching.pdf used on input line 347.
 (pdftex.def)             Requested size: 268.87856pt x 202.41998pt.
 
-[73]
+[77]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [74 <./C/switching.pdf>] <C/platform.pdf, id=2111, 263.98625pt x 80.3pt>
+ [78 <./C/switching.pdf>] <C/platform.pdf, id=2126, 263.98625pt x 80.3pt>
 File: C/platform.pdf Graphic file (type pdf)
 
 <use C/platform.pdf>
@@ -1305,7 +1322,7 @@ Package pdftex.def Info: C/platform.pdf used on input line 375.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [75 <./C/platform.pdf>] [76]
+ [79 <./C/platform.pdf>] [80]
 Overfull \hbox (37.58989pt too wide) in paragraph at lines 443--465
 [][] 
  []
@@ -1315,11 +1332,11 @@ Overfull \hbox (4.54619pt too wide) in paragraph at lines 470--493
 [][] 
  []
 
-[77] [78]
+[81] [82]
 Underfull \vbox (badness 3219) has occurred while \output is active []
 
- [79]
-[80] [81] [82]
+ [83]
+[84] [85] [86]
 Overfull \hbox (41.98283pt too wide) in paragraph at lines 613--613
  |[]\OT1/cmr/bx/n/12 Benchmark Ap-pli-ca-tions and Cor-re-spond-ing In-put Data
 bases| 
@@ -1330,28 +1347,28 @@ Overfull \hbox (9.15332pt too wide) in paragraph at lines 621--642
 [][] 
  []
 
-[83]
+[87]
 Overfull \hbox (1.98282pt too wide) in paragraph at lines 671--671
  |[]\OT1/cmr/bx/n/12 Classification of Ap-pli-ca-tions Based on Dy-namic Char-
  []
 
-[84] [85] [86] <C/6appsGains.pdf, id=2234, 641.39626pt x 315.1775pt>
+[88] [89] [90] <C/6appsGains.pdf, id=2249, 641.39626pt x 315.1775pt>
 File: C/6appsGains.pdf Graphic file (type pdf)
 
 <use C/6appsGains.pdf>
 Package pdftex.def Info: C/6appsGains.pdf used on input line 770.
 (pdftex.def)             Requested size: 358.50475pt x 176.17116pt.
- <C/banks2.pdf, id=2235, 507.8975pt x 411.5375pt>
+ <C/banks2.pdf, id=2250, 507.8975pt x 411.5375pt>
 File: C/banks2.pdf Graphic file (type pdf)
 
 <use C/banks2.pdf>
 Package pdftex.def Info: C/banks2.pdf used on input line 777.
 (pdftex.def)             Requested size: 268.87856pt x 217.86893pt.
- [87] [88 <./C/6appsGains.pdf> <./C/banks2.pdf>]
+ [91] [92 <./C/6appsGains.pdf> <./C/banks2.pdf>]
 Underfull \vbox (badness 3240) has occurred while \output is active []
 
- [89]
-<C/usecase.pdf, id=2263, 963.6pt x 515.9275pt>
+ [93]
+<C/usecase.pdf, id=2278, 963.6pt x 515.9275pt>
 File: C/usecase.pdf Graphic file (type pdf)
  <use C/usecase.pdf>
 Package pdftex.def Info: C/usecase.pdf used on input line 853.
@@ -1359,26 +1376,26 @@ Package pdftex.def Info: C/usecase.pdf used on input line 853.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [90 <./C/usecase.pdf>] (./C/DAES.bbl [91] [92
+ [94 <./C/usecase.pdf>] (./C/DAES.bbl [95] [96
 
-] [93] [94] [95]
+] [97] [98] [99]
 Underfull \hbox (badness 2799) in paragraph at lines 195--201
 []\OT1/cmr/m/n/10.95 Pascal Mein-erzha-gen, SM Yasser Sher-azi, An-dreas Burg, 
 and
  []
 
-[96])) [97]
+[100])) [101]
 \openout2 = `D/LayoutStorageOpt.aux'.
 
- (./D/LayoutStorageOpt.tex [98
+ (./D/LayoutStorageOpt.tex [102
 
 
 
 
 ]
 Appendix D.
-[99] [100] [101] [102] [103] [104] [105]
-<D/Images/motivation2.pdf, id=2379, 840.13875pt x 1188.44pt>
+[103] [104] [105] [106] [107] [108] [109]
+<D/Images/motivation2.pdf, id=2393, 840.13875pt x 1188.44pt>
 File: D/Images/motivation2.pdf Graphic file (type pdf)
 
 <use D/Images/motivation2.pdf>
@@ -1387,27 +1404,27 @@ Package pdftex.def Info: D/Images/motivation2.pdf used on input line 123.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [106]
-[107 <./D/Images/motivation2.pdf>] [108] [109] [110]
-<D/Images/Architecture.pdf, id=2467, 428.60126pt x 504.88625pt>
+ [110]
+[111 <./D/Images/motivation2.pdf>] [112] [113] [114]
+<D/Images/Architecture.pdf, id=2482, 428.60126pt x 504.88625pt>
 File: D/Images/Architecture.pdf Graphic file (type pdf)
 
 <use D/Images/Architecture.pdf>
 Package pdftex.def Info: D/Images/Architecture.pdf used on input line 236.
 (pdftex.def)             Requested size: 214.3001pt x 252.44249pt.
- [111] [112 <./D/Images/Architecture.pdf>]
+ [115] [116 <./D/Images/Architecture.pdf>]
 Overfull \hbox (37.58989pt too wide) in paragraph at lines 274--296
 [][] 
  []
 
-[113] <D/Images/workflow2.pdf, id=2502, 473.77pt x 715.67375pt>
+[117] <D/Images/workflow2.pdf, id=2517, 473.77pt x 715.67375pt>
 File: D/Images/workflow2.pdf Graphic file (type pdf)
 
 <use D/Images/workflow2.pdf>
 Package pdftex.def Info: D/Images/workflow2.pdf used on input line 341.
 (pdftex.def)             Requested size: 284.26419pt x 429.40756pt.
- [114] [115 <./D/Images/workflow2.pdf>] [116]
-<D/Images/AHpattern.pdf, id=2543, 668.4975pt x 181.67876pt>
+ [118] [119 <./D/Images/workflow2.pdf>] [120]
+<D/Images/AHpattern.pdf, id=2558, 668.4975pt x 181.67876pt>
 File: D/Images/AHpattern.pdf Graphic file (type pdf)
 
 <use D/Images/AHpattern.pdf>
@@ -1418,41 +1435,41 @@ Overfull \hbox (42.59685pt too wide) in paragraph at lines 384--385
  [][] 
  []
 
-[117 <./D/Images/AHpattern.pdf>]
-<D/Images/Algebra.pdf, id=2569, 525.965pt x 355.3275pt>
+[121 <./D/Images/AHpattern.pdf>]
+<D/Images/Algebra.pdf, id=2583, 525.965pt x 355.3275pt>
 File: D/Images/Algebra.pdf Graphic file (type pdf)
 
 <use D/Images/Algebra.pdf>
 Package pdftex.def Info: D/Images/Algebra.pdf used on input line 420.
 (pdftex.def)             Requested size: 315.58142pt x 213.19814pt.
- [118]
+ [122]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [119 <./D/Images/Algebra.pdf>] [120] [121]
-<D/Images/Example.pdf, id=2603, 511.9125pt x 434.62375pt>
+ [123 <./D/Images/Algebra.pdf>] [124] [125]
+<D/Images/Example.pdf, id=2618, 511.9125pt x 434.62375pt>
 File: D/Images/Example.pdf Graphic file (type pdf)
 
 <use D/Images/Example.pdf>
 Package pdftex.def Info: D/Images/Example.pdf used on input line 527.
 (pdftex.def)             Requested size: 255.95563pt x 217.31134pt.
- [122]
+ [126]
 Underfull \vbox (badness 5893) has occurred while \output is active []
 
- [123 <./D/Images/Example.pdf>] <D/Images/sor.pdf, id=2622, 511.9125pt x 434.62
+ [127 <./D/Images/Example.pdf>] <D/Images/sor.pdf, id=2636, 511.9125pt x 434.62
 375pt>
 File: D/Images/sor.pdf Graphic file (type pdf)
 
 <use D/Images/sor.pdf>
 Package pdftex.def Info: D/Images/sor.pdf used on input line 576.
 (pdftex.def)             Requested size: 255.95563pt x 217.31134pt.
- [124 <./D/Images/sor.pdf>]
-<D/Images/fft.pdf, id=2643, 511.9125pt x 434.62375pt>
+ [128 <./D/Images/sor.pdf>]
+<D/Images/fft.pdf, id=2657, 511.9125pt x 434.62375pt>
 File: D/Images/fft.pdf Graphic file (type pdf)
  <use D/Images/fft.pdf>
 Package pdftex.def Info: D/Images/fft.pdf used on input line 603.
 (pdftex.def)             Requested size: 255.95563pt x 217.31134pt.
 
-<D/Images/mest.pdf, id=2645, 511.9125pt x 434.62375pt>
+<D/Images/mest.pdf, id=2659, 511.9125pt x 434.62375pt>
 File: D/Images/mest.pdf Graphic file (type pdf)
  <use D/Images/mest.pdf>
 Package pdftex.def Info: D/Images/mest.pdf used on input line 618.
@@ -1460,11 +1477,11 @@ Package pdftex.def Info: D/Images/mest.pdf used on input line 618.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [125]
+ [129]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [126 <./D/Images/fft.pdf>] (./D/LayoutStorageOpt.bbl [127 <./D/Images/mest.pdf
->] [128
+ [130 <./D/Images/fft.pdf>] (./D/LayoutStorageOpt.bbl [131 <./D/Images/mest.pdf
+>] [132
 
 ]
 Underfull \hbox (badness 1565) in paragraph at lines 24--29
@@ -1475,41 +1492,41 @@ ncky
 Missing character: There is no â in font cmr10!
 Missing character: There is no € in font cmr10!
 Missing character: There is no ™ in font cmr10!
-[129] [130] [131]
+[133] [134] [135]
 Underfull \hbox (badness 2799) in paragraph at lines 181--187
 []\OT1/cmr/m/n/10.95 Pascal Mein-erzha-gen, SM Yasser Sher-azi, An-dreas Burg, 
 and
  []
 
-[132])) [133]
+[136])) [137]
 \openout2 = `E/Interconnection.aux'.
 
- (./E/Interconnection.tex [134
+ (./E/Interconnection.tex [138
 
 
 
 
 ]
 Appendix E.
-[135] [136] [137] [138] <E/platform.pdf, id=2718, 263.98625pt x 80.3pt>
+[139] [140] [141] [142] <E/platform.pdf, id=2734, 263.98625pt x 80.3pt>
 File: E/platform.pdf Graphic file (type pdf)
 
 <use E/platform.pdf>
 Package pdftex.def Info: E/platform.pdf used on input line 53.
 (pdftex.def)             Requested size: 358.50475pt x 109.05705pt.
- [139 <./E/platform.pdf>] [140] [141]
-<E/energy.pdf, id=2755, 433.62pt x 289.08pt>
+ [143 <./E/platform.pdf>] [144] [145]
+<E/energy.pdf, id=2769, 433.62pt x 289.08pt>
 File: E/energy.pdf Graphic file (type pdf)
  <use E/energy.pdf>
 Package pdftex.def Info: E/energy.pdf used on input line 131.
 (pdftex.def)             Requested size: 358.50475pt x 239.01443pt.
 
-<E/area.pdf, id=2756, 433.62pt x 289.08pt>
+<E/area.pdf, id=2770, 433.62pt x 289.08pt>
 File: E/area.pdf Graphic file (type pdf)
  <use E/area.pdf>
 Package pdftex.def Info: E/area.pdf used on input line 138.
 (pdftex.def)             Requested size: 358.50475pt x 239.01443pt.
- [142 <./E/energy.pdf>] <E/gate.pdf, id=2766, 433.62pt x 289.08pt>
+ [146 <./E/energy.pdf>] <E/gate.pdf, id=2780, 433.62pt x 289.08pt>
 File: E/gate.pdf Graphic file (type pdf)
  <use E/gate.pdf>
 Package pdftex.def Info: E/gate.pdf used on input line 176.
@@ -1517,7 +1534,7 @@ Package pdftex.def Info: E/gate.pdf used on input line 176.
 
 Underfull \vbox (badness 1024) has occurred while \output is active []
 
- [143 <./E/area.pdf>] <E/cellpower.pdf, id=2776, 614.295pt x 794.97pt>
+ [147 <./E/area.pdf>] <E/cellpower.pdf, id=2791, 614.295pt x 794.97pt>
 File: E/cellpower.pdf Graphic file (type pdf)
 
 <use E/cellpower.pdf>
@@ -1526,21 +1543,21 @@ Package pdftex.def Info: E/cellpower.pdf used on input line 195.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [144 <./E/gate.pdf>] [145 <./E/cellpower.pdf>]
-<E/intpower.pdf, id=2792, 614.295pt x 794.97pt>
+ [148 <./E/gate.pdf>] [149 <./E/cellpower.pdf>]
+<E/intpower.pdf, id=2807, 614.295pt x 794.97pt>
 File: E/intpower.pdf Graphic file (type pdf)
  <use E/intpower.pdf>
 Package pdftex.def Info: E/intpower.pdf used on input line 212.
 (pdftex.def)             Requested size: 358.50475pt x 463.94566pt.
- [146]
-[147 <./E/intpower.pdf>] <E/overhead.pdf, id=2809, 614.295pt x 794.97pt>
+ [150]
+[151 <./E/intpower.pdf>] <E/overhead.pdf, id=2823, 614.295pt x 794.97pt>
 File: E/overhead.pdf Graphic file (type pdf)
 
 <use E/overhead.pdf>
 Package pdftex.def Info: E/overhead.pdf used on input line 252.
 (pdftex.def)             Requested size: 358.50475pt x 463.94566pt.
- (./E/Interconnection.bbl [148] [149 <./E/overhead.pdf>]
-[150
+ (./E/Interconnection.bbl [152] [153 <./E/overhead.pdf>]
+[154
 
 ]
 Underfull \hbox (badness 4013) in paragraph at lines 21--27
@@ -1548,22 +1565,26 @@ Underfull \hbox (badness 4013) in paragraph at lines 21--27
 and
  []
 
-)) [151]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 194.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 194.
+)) [155]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 197.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 197.
  (./Thesis.aux (./A/norchip.aux) (./B/meaow.aux) (./C/DAES.aux)
 (./D/LayoutStorageOpt.aux) (./E/Interconnection.aux))
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 194.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 194.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 197.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 197.
 Package rerunfilecheck Info: File `Thesis.out' has not changed.
-(rerunfilecheck)             Checksum: A3586025176FA3C8200A235F5D54CBDD;9653.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 194.
+(rerunfilecheck)             Checksum: FB950221D21D283E7C74DD698A0649CE;9531.
+
+
+LaTeX Warning: There were undefined references.
+
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 197.
  ) 
 Here is how much of TeX's memory you used:
- 20969 strings out of 493117
- 376906 string characters out of 6135433
- 551267 words of memory out of 5000000
- 23368 multiletter control sequences out of 15000+600000
+ 20976 strings out of 493117
+ 376961 string characters out of 6135433
+ 551271 words of memory out of 5000000
+ 23371 multiletter control sequences out of 15000+600000
  15646 words of font info for 58 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  62i,13n,78p,2134b,944s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1587,10 +1608,10 @@ texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2014/te
 xmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2014/texm
 f-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2014/texmf
 -dist/fonts/type1/public/amsfonts/symbols/msam10.pfb>
-Output written on Thesis.pdf (167 pages, 4015282 bytes).
+Output written on Thesis.pdf (171 pages, 4024359 bytes).
 PDF statistics:
- 3010 PDF objects out of 3580 (max. 8388607)
- 2241 compressed objects within 23 object streams
- 543 named destinations out of 1000 (max. 500000)
+ 3026 PDF objects out of 3580 (max. 8388607)
+ 2253 compressed objects within 23 object streams
+ 547 named destinations out of 1000 (max. 500000)
  1155 words of extra memory for PDF output out of 10000 (max. 10000000)
 

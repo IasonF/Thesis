@@ -6,6 +6,11 @@ Modern embedded systems are capable of performing a wide range of tasks and thei
 The recent progress on the semiconductor processing technology greatly improves the performance of the embedded systems, due to the increased number of transistors on a single chip.
 The continuous performance improvement increases the possibilities for new embedded system designs.
 However, many embedded systems rely on a battery source, which puts a significant limitation on their lifetime and usage.
+The management of the energy consumption is the key factor towards increasing the lifetime of an embedded system relying on a battery source.
+%%Assuming that the development in the battery technology will follow the current trend, embedded systems should improve their energy efficiency based on the system design.
+A typical embedded system includes one or more processing elements (CPUs, GPUs, embedded processors etc.), a memory subsystem (cache, scratchpad, flash, etc.) and application specific hardware (antennas, sensors, etc.). 
+The memory subsystem is a significant contribution to the overall energy based on the study of existing and proposed embedded systems.
+Especially for applications that are data intensive, the memory architecture may have the highest energy footprint of the whole embedded system.
 
 In this thesis, we focus on the design of energy efficient memory architectures for embedded systems.
 A hardware/software co-design methodology is proposed for the reduction of the energy consumption on the memory subsystem. 
@@ -14,11 +19,10 @@ The different resource requirements, that change dynamically at run-time, are or
 Apart from the development of the methodology, an extended memory model is included in this work. 
 The memory models is based on existing state-of-the-art memories, available from industry and academia.
 In addition, the impact of the technology scaling is studied and the effectiveness of the proposed methodology is analyzed for the future memory architectures.
-
 We also investigate the combination of the developed methodology with known code transformation techniques, specifically data interleaving.
 The proposed design methodology aims to be compatible with the already available code optimization techniques.
-We further extend the evaluation of the memory design methodology using a test-case wireless system.
-The proposed reconfigurable memory subsystem is studied in a dynamic platform with several reconfiguration options that combine the memory and the processing elements.
+%We further extend the evaluation of the memory design methodology using a test-case wireless system.
+%The proposed reconfigurable memory subsystem is studied in a dynamic platform with several reconfiguration options that combine the memory and the processing elements.
 \vspace*{\fill}
 \afterpage{\null\newpage}
 \newpage

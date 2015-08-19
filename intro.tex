@@ -2,14 +2,95 @@
 \label{intro}
 
 
-\section{Embedded Systems and Energy Consumption - what is our general goal}
+\section{Embedded Systems and Energy Consumption}
 
-\section{Data Intensive Applications - what is our general goal}
+Embedded systems are usually designed to perform a specific tasks and often consist of domain-specific hardware.
+For example, typical embedded systems use optimized processing cores to perform signal processing instead of using general purpose CPUs.
+Some examples of embedded systems include TV sets, cellular phones, MP3 players, smart cameras, wireless access points and printers. 
+An embedded system is designed with strong requirements regarding size, performance and power consumption.
+The market demand is towards smaller and lighter devices.
+The ever-progressing semiconductor processing technique has dramatically increased the number of transistors on a single chip, which makes today's hardware increasingly powerful.
+Embedded systems often rely on a battery source to deliver the desired performance and the energy efficiency is a significant design factor.
+Assuming that the development in the battery technology will follow the current trend, embedded systems should improve their energy efficiency based on the system design.
 
-\section{Brief summary of current way of tackling and what has not been addressed here}
+Memory subsystem has to meet the same requirements regarding size, performance and power consumption.
+Many applications focusing on embedded systems are data intensive and the contribution of the memory to the overall system is significant.
+This work focus on the exploration of energy efficient memory organizations suitable for embedded systems.
+The goal is to provide a systematic way of designing a memory architecture that is energy efficient and meets performance requirements.
+The current work presents a methodology to exploit variations in memory needs during the lifetime of an application in order to optimize energy usage.
+
+\section{Dynamic Data Intensive Applications}
+
+Data intensive applications perform tasks that involve operations on large sets of data.
+Thus, the memory requirements of data intensive applications are high and the contribution of the memory important.
+The main focus of this thesis is on applications that are both dynamic and data intensive.
+The dynamism in this context refers to the significant changes in the behavior of the application.
+In more detail, the studied applications exhibit a dynamic variation in the memory requirements during their lifetime.
+The dynamic variation in the memory requirements can be input driver, which means that there is a wide variation on the execution of the application based on different inputs.
+Because of this behavior, a static study of the application code alone is insufficient since the targeted applications have non-deterministic behavior that is driven by input.
 
 \section{Problem Statement}
 
-\section{Proposed Solution}
+The general problem is expressed in the following form:
+\begin{quote}
+Given an embedded system application and its range of inputs, find the most suitable memory architecture and fully exploit its features to fulfill the performance requirements and reduce the energy consumption. 
+\end{quote} 
 
-\section{Thesis Outline - what is covered in which paper}
+The application is dynamic and the memory requirements vary through its lifetime, so there are opportunities for system optimization based on estimations on the system resources..
+In order to provide performance guaranties the estimations should be pessimistic, and not optimistic, as over-estimations are acceptable, but under-estimations are generally not.
+Currently used design approaches often use worst case estimations, which are obtained by statically analyzing the application. 
+However, these techniques are not efficient when focusing on dynamic and input driven applications.
+Due to the dynamism in target applications, the ratio of the worst case load versus the average load on the memory is normally high.
+Hence, if only the worst case estimations are used during design, the resulting system would not be able to exploit this gap. 
+
+A way to solve this problem is to design the system to meet the worst case requirements, but add reconfiguration knobs that can exploit the variation in the memory requirements (e.g., by switching off hardware components, which decreases the energy consumption).
+A run-time mechanism that predicts the current application needs in term of resources and exploits this information should be also integrated into the system.
+To enable this exploitation, the possible run-time situations (RTS) \nomenclature{RTS}{run-time situation} in which the application may run, together with their resource needs should be known and taken into account during design. 
+The number of different inputs and the variations in the memory requirements for each RTS provide a huge exploration space that is difficult to handle, as it is almost impossible to enumerate every possible case.
+Even if the explosion problem could be solved, it will be very difficult to predict at run-time in which RTS the application is running and the platform reconfiguration needed to better exploit the current RTS. 
+In addition, the run-time overhead for switching to a different reconfiguration for every RTS could not be  compensated from the improvements in the energy consumption, because the reconfiguration of the platform has an energy penalty. 
+
+\section{Current approaches and problems}
+
+The presented problem has been studied before and different ways of tackling it have been proposed.
+However, there are some aspects that have not been addressed before and are presented in this thesis.
+
+Most of the current approaches rely on a static analysis of the target application and several methodologies have been presented to generate a static application-specific memory hierarchy \cite{Ben00b}.
+Several techniques for designing energy efficient memory architectures for embedded systems are presented in \cite{Mac02}. 
+The main limitation on these methodologies is the fact that they are applicable to applications with very limited dynamism. 
+This work extends the state of the art by proposing a more generic approach, which is also suitable for applications with input driven dynamic behavior.  
+In addition, the current work differentiates by employing a platform that is reconfigurable at run-time.
+ 
+The approach of a reconfigurable memory platform has also been proposed several times and an extensive overview of current approaches is found in \cite{Garcia}.
+Most of the proposed solutions are focusing on tackling one specific case-study application, which is divided in a small number of different cases based on observations at the user level.
+However, our work differentiates by proposing a more generic and application agnostic methodology and analysis on the system level.
+Thus, it can efficiently handle a wider range of dynamic application characteristics.
+
+Another proposed approach to tackle the problem, is to focus on source code transformations, and especially loop transformations.
+These methods try to modify the application code and provide an improved version of the application with easier memory management.
+The main drawback of the code transformation approach is that it is not always possible to achieve the desired behavior, because the applications can be complex.
+In any case, these methods are fully complementary to the methodology presented in this thesis and should be performed as a prior step to the current work. 
+
+\section{Thesis contributions}
+
+In this thesis, we focus on the design of energy efficient memory architectures for embedded systems.
+A hardware/software co-design methodology is proposed for the reduction of the energy consumption on the memory subsystem. 
+The  methodology exploits variations in memory needs during the lifetime of an application in order to optimize energy usage. 
+The different resource requirements, that change dynamically at run-time, are organized into groups to efficiently handle a very large exploration space.
+Apart from the development of the methodology, an extended memory model is included in this work. 
+The memory models is based on existing state-of-the-art memories, available from industry and academia.
+
+In addition, the impact of the technology scaling is studied and the effectiveness of the proposed methodology is analyzed for the future memory architectures.
+We also investigate the combination of the developed methodology with known code transformation techniques, specifically data interleaving.
+The proposed design methodology aims to be compatible with the already available code optimization techniques.
+We further extend the evaluation of the memory design methodology using a test-case wireless system.
+The proposed reconfigurable memory subsystem is studied in a dynamic platform with several reconfiguration options that combine the memory and the processing elements.
+
+\section{Thesis Outline}
+
+The remainder of this thesis is organized as follows: Chapter 2 contains background information regarding the work performed in the arrays of data transformations and system scenarios. 
+Chapter 3 describes the research process and presents the developed methodology.
+Each paper is described in chapter 4 with a breakdown of the roles of each author. 
+Chapter 5 concludes the thesis with a summary of contributions. 
+The appendix holds each paper I have authored or coauthored in chronological order. 
+These papers are reproduced faithfully with regard to the published text, but has been reformatted to increase readability.
