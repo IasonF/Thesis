@@ -10,22 +10,25 @@
 \gdef \the@ipfilectr {}
 \gdef \the@ipfilectr {@-2}
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {B.1}{\ignorespaces Benchmark applications overview\relax }}{54}{table.caption.18}
+\contentsline {table}{\numberline {B.1}{\ignorespaces Relative dynamic energy for a range of memories with varying capacity and type\relax }}{60}{table.caption.19}
+\contentsline {table}{\numberline {B.2}{\ignorespaces Relative static power for a range of memories with varying capacity and type\relax }}{60}{table.caption.20}
+\contentsline {table}{\numberline {B.3}{\ignorespaces Benchmark applications overview\relax }}{65}{table.caption.21}
+\contentsline {table}{\numberline {B.4}{\ignorespaces Characterization of benchmark applications (See Tab.\nobreakspace {}\ref {tab:app1} for index\relax }}{67}{table.caption.22}
+\contentsline {table}{\numberline {B.5}{\ignorespaces Range of energy gains on the memory subsystem\relax }}{71}{table.caption.25}
 \gdef \the@ipfilectr {}
 \gdef \the@ipfilectr {@-3}
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {C.1}{\ignorespaces Relative dynamic energy for a range of memories with varying capacity and type\relax }}{82}{table.caption.28}
-\contentsline {table}{\numberline {C.2}{\ignorespaces Relative static power for a range of memories with varying capacity and type\relax }}{82}{table.caption.29}
-\contentsline {table}{\numberline {C.3}{\ignorespaces Benchmark applications overview\relax }}{87}{table.caption.30}
-\contentsline {table}{\numberline {C.4}{\ignorespaces Characterization of benchmark applications (See Tab.\nobreakspace {}\ref {tab:app1} for index\relax }}{89}{table.caption.31}
-\contentsline {table}{\numberline {C.5}{\ignorespaces Range of energy gains on the memory subsystem\relax }}{93}{table.caption.34}
+\contentsline {table}{\numberline {C.1}{\ignorespaces Relative dynamic energy for a range of memories with varying capacity and type\relax }}{96}{table.caption.30}
+\contentsline {table}{\numberline {C.2}{\ignorespaces Relative dynamic energy for different FU models\relax }}{98}{table.caption.31}
 \gdef \the@ipfilectr {}
 \gdef \the@ipfilectr {@-4}
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {D.1}{\ignorespaces Relative dynamic energy for a range of memories with varying capacity and type\relax }}{118}{table.caption.39}
-\contentsline {table}{\numberline {D.2}{\ignorespaces Relative dynamic energy for different FU models\relax }}{120}{table.caption.40}
+\contentsline {table}{\numberline {D.1}{\ignorespaces Percentage of energy overhead on interconnection\relax }}{125}{table.caption.43}
+\contentsline {table}{\numberline {D.2}{\ignorespaces Energy gains vs. interconnection overhead\relax }}{132}{table.caption.48}
 \gdef \the@ipfilectr {}
 \gdef \the@ipfilectr {@-5}
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {E.1}{\ignorespaces Percentage of energy overhead on interconnection\relax }}{146}{table.caption.52}
+\contentsline {table}{\numberline {E.1}{\ignorespaces Memory Banks Scenario Overhead\relax }}{155}{table.caption.57}
+\contentsline {table}{\numberline {E.2}{\ignorespaces Signal power–Channel 1 Scenario Overhead\relax }}{155}{table.caption.58}
+\contentsline {table}{\numberline {E.3}{\ignorespaces Signal power–Channel 2 Scenario Overhead\relax }}{156}{table.caption.59}
 \gdef \the@ipfilectr {}
