@@ -34,7 +34,7 @@ This work explores the future development of the interconnection overhead, as th
 The current study employs both CAD tools with simulation results using the current technology and projections provided by institutions.
 We use predictive technology models and the quantitative data are supported partly by information
 from ITRS and IMEC's interconnect technologists.
-A model is developed that provide rough estimation about the interconnection cost overhead for clustered memory architectures consisting of two to five memory banks and a range of technologies from 40nm to 5nm.  
+A model is developed that provide a sufficiently accurate estimation about the interconnection cost overhead for clustered memory architectures consisting of two to five memory banks and a range of technologies from 40nm to 5nm.  
 \vspace*{\fill}
 \afterpage{\null\newpage}
 \newpage
@@ -66,25 +66,42 @@ But it especially also allows to identify the best trade-off working points betw
 or less memory banks within the clustered approach. 
 Without this, an overly optimistic distribution across too many banks would seem to provide the
 best energy for a given application requirement.
-  The scope of this work is explores the future development of the interconnection overhead and develop a model that can provide rough estimation about that overhead.
+  The scope of this work is explores the future development of the interconnection overhead and develop a model that can provide a sufficiently accurate estimation about that overhead.
   System designers could use such a model to decide about the preferred memory architecture and the number of banks given the nature of the executed application and the target technology.
   The model is based on the current technology and the projections about the future technology.
   The current technology is available on several CAD tools.
   The synthesis and the simulation of memory architectures similar to the one in Fig.\ref{fig:platformE} provide useful results.
   The study of the future technology is based on the reports released by the International Technology Roadmap for Semiconductors (ITRS) \cite{itrs}.
- The goal of the developed model is to provide rough estimation about the interconnection cost overhead for clustered memory architectures consisting of two to five memory banks and a range of technologies from 40nm to 5nm.  
+ The goal of the developed model is to provide a sufficiently accurate estimation about the interconnection cost overhead for clustered memory architectures consisting of two to five memory banks and a range of technologies from 40nm to 5nm.  
  
- The paper is organized as follows. The ...
+The paper is organized as follows.
+Section~\ref{relatedE} surveys related work on on-chip interconnection with regard to the energy contribution and presents the research work on technology scaling. 
+Section~\ref{Current} presents the chosen work-flow and the synthesis for the target architecture using the current technology.
+In Section~\ref{future} the scaling projections for the different parts of the target architecture are presented.
+The development of a model that can provide a sufficiently accurate estimation on the power overhead for the interconnection on clustered memory architectures is presented in Section~\ref{resultsE}.
+Finally, conclusions are drawn in Section~\ref{conclusionE}.
 
 \section{Related Work}
+\label{relatedE}
 
 A comprehensive view of a class of interconnect architectures is presented in \cite{kumar2005interconnections}. 
 The authors examine the area, power, performance, and design issues for the on-chip interconnects.
-A few more on current papers... \ldots
+In \cite{rahimi2011fully} authors propose an interconnection network with high-performance for the communication between processors and memories in a cluster of processors.
+Another approach that focuses on the interconnection network between the memory and the processing cores is presented in \cite{kang2012high}. 
+The majority of the published work focuses on the interconnection between the processing cores on a system-on-chip.
+The current work differentiates by focusing on the interconnection between the memory banks.
 
-Successful examples of clustered memory arch ... \ldots
+Several examples of clustered memory architectures have been proposed.
+In \cite{cho2009adaptive} an adaptive scratch-pad memory is successfully used in order to handle the dynamic behavior of multimedia applications.
+In \cite{wang2005energy} a clustered memory architecture is employed and an algorithm is developed, which efficiently uses the memory banks to achieve the maximum energy saving while satisfying the given performance constraint.
+Our approach explores the effectiveness of similar architectures into the future, which is not studied before to the best of our knowledge.
 
-Overview of the ITRS based paper \ldots
+A comprehensive memory modeling tool and its application to the design and analysis of future memory hierarchies is developed in \cite{thoziyoor2008comprehensive}. 
+This tool uses CACTI model and aims to large general purpose DRAM and SRAM memory designs.
+However, the current work focuses on small scratch-pad memory design, which cannot be successfully covered by the CACTI model.
+A circuit level analysis on the interconnect delay from 10 nm node to 7 nm node is presented in \cite{pan2014system}.
+The authors in \cite{chen2014interconnect} analyzes the impact of interconnect variation at the system-level in terms of clock frequency based on a fast and efficient system-level design methodology. 
+The current work differentiates by focusing on the energy impact and providing a high-level prediction model.
 
 \section{Current technology}
 \label{Current}
@@ -107,7 +124,7 @@ The work-flow is divided in several sub-steps:
 \end{itemize}
 
 Regarding the first step, the memory models are presented in \cite{filippopoulos2013exploration}.
-The memory models include state-of-the-art standard cell-based memories (SCMEM) \cite{Mei11}, which are designed to be power efficient. 
+The memory models are part of a library containing standard cell-based memories (SCMEM) \cite{Mei11}, which are designed to be power efficient. 
 The energy numbers for the SCMEM are also derived from synthesis and simulation results.
 The presented work-flow is the typical procedure followed by an industry designer except the usage of SCMEM instead of other commercially available memory macros.
 SCMEM are preferred for their characteristics and especially their energy and area efficiency for reasonably small storage capacities, as argued in \cite{Mei10}. 
@@ -118,14 +135,27 @@ The usage of the custom memories provide the freedom to explore different memory
 
 For the second step, the RTL description connects the memories using MUX, signals and other components into a functional clustered memory architecture. 
 On the third step, the simulation and the verification performs a flash-write followed by a read on the whole memory architecture. 
+The read and write test-bench is representative for the data-intensive applications, which are the type of applications that should benefit the most from our approach. 
 The target technology depends on the available libraries.
 In this work, the TSMC library on 45nm is used.
 The place and route can be either performed automatically through the CAD tool or manually by the designer.
+In our case, the layout is automatically generated to reduce the needed time and effort. 
+However, the automatically generated layout is not ideal and a manual layout can be more efficient.
+The performance of the layout generation deteriorates for larger memory designs, so in the current work the clustered memory architectures are based on small memory banks.
+Although the layout could be improved further manually by the designer, all the designs are generated in the same way and the comparison between them, which is the main focus on this work, can give reliable results.
+
 
 The final step, includes the extraction of  parasitic, the static timing analysis and the annotation of the timing to the netlist.
 Afterwords, power simulations on the synthesized design are carried out using Synopsys PrimeTime, in order to obtain energy numbers.
 
 \subsection{Example design: synthesis and simulation}
+
+\begin{figure}
+ \centering
+ \includegraphics[width = \textwidth]{E/energy.pdf}
+  \caption{Energy breakdown between the memory banks and the interconnection}
+ \label{fig:energyE}
+ \end{figure}
 
 A group of clustered memory architectures is designed and synthesized following the presented work-flow.
 The simulation provides results for the current technology and the contribution of the interconnection to the overall energy consumption.
@@ -145,23 +175,22 @@ The second part is the interconnection cost between the different memory banks, 
 In other words, the interconnection outside the memory banks is given separately. 
 The interconnection between the different memory cells inside one bank is included on the energy of the memory bank.
 
-The energy breakdown between the first part of the memory banks and the second part of the interconnection (part2) is presented in Fig.\ref{fig:energyE}.
-The energy cost of the interconnection logic is small compared to the energy cost for the write and read operations on the memory banks.
-Tab.\ref{tab:overhead} contains the exact percentages of the energy overhead on the interconnection. 
-
-\begin{figure}
- \centering
- \includegraphics[width = \textwidth]{E/energy.pdf}
-  \caption{Energy breakdown between the memory banks and the interconnection}
- \label{fig:energyE}
- \end{figure}
- 
  \begin{figure}
  \centering
  \includegraphics[width = \textwidth]{E/area.pdf}
   \caption{Area breakdown between the memory banks and the interconnection}
  \label{fig:areaE}
  \end{figure}
+
+The example design is built using memory banks of 1KB and a bus width of 32bits.
+Each bank has one read and one write port and can operate independently.
+The memory banks are not directly connected to each other, but they connect to a multiplexer that can read and write data to the appropriate bank based on the data address. 
+The energy breakdown between the first part of the memory banks and the second part of the interconnection (part2) is presented in Fig.\ref{fig:energyE}.
+The energy cost of the interconnection logic is small compared to the energy cost for the write and read operations on the memory banks.
+Tab.\ref{tab:overhead} contains the exact percentages of the energy overhead on the interconnection. 
+The energy consumption for a monolithic approach with only one large 4KB memory is included in Fig.\ref{fig:energyE}.
+The comparison shows that the energy consumption is higher compared to a clustered memory, although there is no need for interconnection logic.
+It is expected that the energy consumption for each access operation is higher for a larger memory.
  
  \begin{table}[t!]
 \caption{Percentage of energy overhead on interconnection}
@@ -178,7 +207,12 @@ Overhead(\%) & 0	&	1.2627 & 1.3687 & 1.7683 & 3.0067 \\
  
 The changes in the area of the design is presented in Fig.\ref{fig:areaE}.
 The area used for the placement of the memory banks is separated from the area occupied by the interconnection.
-  
+The overhead calculation for additional banks takes into consideration the increase in the interconnect and the increase in address decoding and all other necessary design modifications.
+The last column corresponds to the area footprint for a monolithic 4KB memory.
+The area footprint for placing 4 banks of 1KB is larger than the area for one bank of 4KB.
+The higher area is needed for the wiring between the memory banks and the multiplexer.
+A manual layout can potentially reduce the area overhead, but it is beyond the scope of this work.
+
 In addition, the synthesis and simulation of the memory designs provide useful information about the dimensions of the memory banks, the length and the capacitance of the wires.
 Several interesting observations are possible based on the study of the current technology.
 The energy overhead on the interconnection of the banks grows when there are more memory banks connected, as expected.
@@ -188,6 +222,7 @@ The maximum area overhead is less than 10\%.
 This is explained by the need for extra wiring to connect the different memory banks.
 
 \section{Technology Scaling}
+\label{future}
 
 The technology scaling projections are based on the reports released by the International Technology Roadmap for Semiconductors (ITRS) \cite{itrs}.
 The clustered memory architecture can be divided into two parts, i.e. the memory banks and the interconnection.
@@ -201,22 +236,26 @@ The clustered memory architecture can be divided into two parts, i.e. the memory
  \label{fig:gateE}
  \end{figure}
  
+The memory banks consist of the memory cells, which are built using gates.
+Thus, the predictions about the future behavior of the memory banks is based on the ITRS reports for logic.
+The reports for logic are chosen, because the clustered memory architectures that are studied in this work are synthesized using standard cells.
+Different predictions and reports are provided by ITRS for other types of memories, such as DRAM.
+However, the proposed scratchpad memory architectures in the current are the preferred choice for our scope.
+Typically the memories used in embedded systems are smaller and more energy efficient than DRAM.
+
+In the following years, the gate of the length is expected to be reduced as shown in \ref{fig:gateE}.
+The values are approaching 5nm around 2028, which is potentially the limit using the current manufacturing process.
+The reduction on the gate length leads to a reduction of the memory cell and naturally smaller memory banks.
+The smaller memory banks affect the area of the design and the power consumption.
+The projections provided by ITRS regarding the power are presented in \ref{fig:powerE}. 
+There is a significant reduction on the power consumption in the short term and slighter reduction at the end of the projections.
+
   \begin{figure}
  \centering
  \includegraphics[width = \textwidth]{E/cellpower.pdf}
   \caption{Normalized dynamic power and technology scaling}
  \label{fig:powerE}
  \end{figure}
- 
-The memory banks consist of the memory cells, which are built using gates.
-Thus, the predictions about the future behavior of the memory banks is based on the ITRS reports for logic.
-In the following years, the gate of the length is expected to be reduced as shown in \ref{fig:gateE}.
-The values are approaching 5nm around 2028, which is potentially the limit using the current manufacturing process.
-
-The reduction on the gate length leads to a reduction of the memory cell and naturally smaller memory banks.
-The smaller memory banks affect the area of the design and the power consumption.
-The projections provided by ITRS regarding the power are presented in \ref{fig:powerE}. 
-There is a significant reduction on the power consumption in the short term and slighter reduction at the end of the projections.
 
 \subsection{Interconnection}
 
@@ -250,24 +289,20 @@ A different approach where delay-energy trade-offs are incorporated
 from the start should be developed in such a case.
 
 \section{Model Construction and Projection Results}
+\label{resultsE}
 
- \begin{figure}
- \centering
- \includegraphics[width = \textwidth]{E/overhead.pdf}
-  \caption{Projections of the interconnection cost power overhead for different numbers of memory banks}
- \label{fig:overheadE}
- \end{figure}
+\textit{pgk:  I would like to see more on how and why you ended up with this model.}
 
- The scope is to develop a model that can provide a rough estimation on the power overhead for the interconnection on clustered memory architectures.
+ The scope is to develop a model that can provide a sufficiently accurate estimation on the power overhead for the interconnection on clustered memory architectures.
  The model is based on the synthesis results of the currently feasible designs and study of the projections provided by ITRS.
  The input for the model is the process technology and the number of memory banks.
  The power consumption on the memory banks is calculated using Fig.\ref{fig:powerE}.
   The prediction of the power consumption on the interconnection logic is more complex.
  Based on the technology and the number of memory banks, the length of the wires is calculated and sequentially the capacitance.
  Normally the power consumption is given as  $Power = \dfrac{1}{2} \times f \times C \times V^{2} $, where  f is the operating frequency, C the capacitance and V the supply voltage.
- However, the simulation results and the projections provided by ITRS suggest that a more complex model of computation is needed.
+ However, the simulation results and the projections provided by ITRS suggest that a more complex model is needed.
  
- The model of computation for the interconnection power cost overhead for a given target technology $ t $ and a number of $ n $ banks of 1KB  is:
+ The model for the interconnection power cost overhead for a given target technology $ t $ and a number of $ n $ banks is:
  
  \begin{center}
  $ \dfrac{Interconnection_{power}}{MemoryCells_{power}}(t) = \dfrac{C(t,area(n)) \times V^{2} \times W(t) }{n \times Bank_{power}(t)} $ 
@@ -278,7 +313,7 @@ from the start should be developed in such a case.
  \begin{itemize}
  \item $C(t,n)$ is the capacitance of the interconnection wires for the given technology and the length of wiring based on the area, which is calculated for the different number of banks
  \item $ W(n) $ is a wiring efficiency factor based on the power curve in \ref{fig:intpowerE}
- \item $ Bank_{power} $ is the power consumption on a memory bank of 1KB for the given technology
+ \item $ Bank_{power} $ is the power consumption on a memory bank for the given technology
  \end{itemize}
  
  The development of the interconnection cost overhead using the proposed model is presented in Fig.\ref{fig:overheadE}.
@@ -298,8 +333,18 @@ To better illustrate the change in the optimum memory architecture for future te
 The EPIC (Efficient Pyramid Image Coder) is an image compression algorithm and its behavior on a clustered image architecture is presented in \cite{filippopoulos2013exploration}.
 The energy gains for the most energy efficient memory organizations are presented in Tab.\ref{tab:GainvsOverhead}.
 The sizes of the memory banks for each configuration are used to calculate the interconnection overhead for synthesizing in 45nm and 5nm.
-The energy gains are constant and independent of the technology, because the comparison is always between a monolithic and a clustered memory of the same technology.
-The 
+The percentage of the energy gains are constant and independent of the technology, because the comparison is always between a monolithic and a clustered memory architecture of the same technology.
+The percentage of the energy overhead due to the interconnection cost is also presented in Tab.\ref{tab:GainvsOverhead} both for the current and the most advanced technology.
+Based on the improvements and the overheads the most energy efficient design for a specific technology can be defined for the EPIC benchmark application.
+For the 45nm technology, a clustered memory architecture with five memory banks is the optimum, while for the 5nm technology four memory banks give the optimum solution.
+The addition of a fifth bank reduces the energy consumption by 2.7\%, as a result of the lower energy consumption inside the memory banks, but at the same time increases the energy consumption by 4.5\%, as a result of the higher energy consumption on the interconnection between the banks.
+
+ \begin{figure}
+ \centering
+ \includegraphics[width = \textwidth]{E/overhead.pdf}
+  \caption{Projections of the interconnection cost power overhead for different numbers of memory banks}
+ \label{fig:overheadE}
+ \end{figure} 
 
 \begin{center}
 	\begin{table}
@@ -308,7 +353,7 @@ The
 	{
 	\begin{tabular}{|c|c|c|c|}
 	\hline
-	Number of banks & Energy gains \% & Overhead \% (45nm) & Overhead \% (5nm) \\
+	Banks & Energy gains \% & Overhead \% (45nm) & Overhead \% (5nm) \\
 	\hline
 	2 & 40.1  & 0.8 & 4.6 \\
 	\hline 
@@ -321,16 +366,16 @@ The
 	\end{tabular}}
 	\end{table}
 \end{center}
-
-
   
 \section{Conclusion}
+\label{conclusionE}
 
 We proposed a model that can provide estimations about the interconnection overhead on a clustered memory architecture.
 The model suggests that overhead will be kept low in the short term and will increase within reasonable levels in the mid-long term.
 Therefore, the design of energy efficient clustered memory architecture will continue to be a good design choice.
 The estimations for the future can be useful for system designers that try to design power efficient architectures for applications with dynamic memory requirements thought their lifetime.
-
+Another contribution of the model is that it provides an early indication about the optimal number of banks for a given technology and design.
+This information reduces the design space exploration and the design time. 
 
 \bibliographystyle{plain}
 \bibliography{reference}

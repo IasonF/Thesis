@@ -39,20 +39,20 @@
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {D.1}{\ignorespaces The alternative clustered memory architectures ranging from one to five memory banks\relax }}{121}{figure.caption.40}
 \contentsline {figure}{\numberline {D.2}{\ignorespaces Energy breakdown between the memory banks and the interconnection\relax }}{125}{figure.caption.41}
-\contentsline {figure}{\numberline {D.3}{\ignorespaces Area breakdown between the memory banks and the interconnection\relax }}{126}{figure.caption.42}
-\contentsline {figure}{\numberline {D.4}{\ignorespaces Impact of technology scaling into gate length\relax }}{127}{figure.caption.44}
-\contentsline {figure}{\numberline {D.5}{\ignorespaces Normalized dynamic power and technology scaling\relax }}{127}{figure.caption.45}
-\contentsline {figure}{\numberline {D.6}{\ignorespaces Impact of technology scaling into the capacitance and the power of the interconnection part\relax }}{129}{figure.caption.46}
-\contentsline {figure}{\numberline {D.7}{\ignorespaces Projections of the interconnection cost power overhead for different numbers of memory banks\relax }}{130}{figure.caption.47}
+\contentsline {figure}{\numberline {D.3}{\ignorespaces Area breakdown between the memory banks and the interconnection\relax }}{127}{figure.caption.42}
+\contentsline {figure}{\numberline {D.4}{\ignorespaces Impact of technology scaling into gate length\relax }}{128}{figure.caption.44}
+\contentsline {figure}{\numberline {D.5}{\ignorespaces Normalized dynamic power and technology scaling\relax }}{130}{figure.caption.45}
+\contentsline {figure}{\numberline {D.6}{\ignorespaces Impact of technology scaling into the capacitance and the power of the interconnection part\relax }}{131}{figure.caption.46}
+\contentsline {figure}{\numberline {D.7}{\ignorespaces Projections of the interconnection cost power overhead for different numbers of memory banks\relax }}{134}{figure.caption.47}
 \gdef \the@ipfilectr {}
 \gdef \the@ipfilectr {@-5}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {E.1}{\ignorespaces Shannon–Hartley theorem\relax }}{145}{figure.caption.50}
-\contentsline {figure}{\numberline {E.2}{\ignorespaces Symbol error probability for 802.11ac Modulation schemes\relax }}{146}{figure.caption.51}
-\contentsline {figure}{\numberline {E.3}{\ignorespaces Symbol error probability for 802.11ac Modulation and Coding schemes\relax }}{147}{figure.caption.52}
-\contentsline {figure}{\numberline {E.4}{\ignorespaces RTS Characterization\relax }}{147}{figure.caption.53}
-\contentsline {figure}{\numberline {E.5}{\ignorespaces Data Burst Distribution\relax }}{151}{figure.caption.54}
-\contentsline {figure}{\numberline {E.6}{\ignorespaces Application Deadline Distribution\relax }}{151}{figure.caption.55}
-\contentsline {figure}{\numberline {E.7}{\ignorespaces Noise Distribution\relax }}{152}{figure.caption.56}
-\contentsline {figure}{\numberline {E.8}{\ignorespaces Power Gain\relax }}{156}{figure.caption.60}
+\contentsline {figure}{\numberline {E.1}{\ignorespaces Shannon–Hartley theorem\relax }}{149}{figure.caption.50}
+\contentsline {figure}{\numberline {E.2}{\ignorespaces Symbol error probability for 802.11ac Modulation schemes\relax }}{150}{figure.caption.51}
+\contentsline {figure}{\numberline {E.3}{\ignorespaces Symbol error probability for 802.11ac Modulation and Coding schemes\relax }}{151}{figure.caption.52}
+\contentsline {figure}{\numberline {E.4}{\ignorespaces RTS Characterization\relax }}{151}{figure.caption.53}
+\contentsline {figure}{\numberline {E.5}{\ignorespaces Data Burst Distribution\relax }}{155}{figure.caption.54}
+\contentsline {figure}{\numberline {E.6}{\ignorespaces Application Deadline Distribution\relax }}{155}{figure.caption.55}
+\contentsline {figure}{\numberline {E.7}{\ignorespaces Noise Distribution\relax }}{156}{figure.caption.56}
+\contentsline {figure}{\numberline {E.8}{\ignorespaces Power Gain\relax }}{160}{figure.caption.60}
 \gdef \the@ipfilectr {}

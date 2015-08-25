@@ -104,25 +104,25 @@
 \contentsline {chapter}{\numberline {D}Technology scaling impact on the interconnection of clustered scratchpad memory architectures}{117}{appendix.D}
 \contentsline {section}{\numberline {D.1}Introduction}{121}{section.D.1}
 \contentsline {section}{\numberline {D.2}Related Work}{122}{section.D.2}
-\contentsline {section}{\numberline {D.3}Current technology}{122}{section.D.3}
-\contentsline {subsection}{\numberline {D.3.1}Generic Work-flow}{122}{subsection.D.3.1}
-\contentsline {subsection}{\numberline {D.3.2}Example design: synthesis and simulation}{124}{subsection.D.3.2}
-\contentsline {section}{\numberline {D.4}Technology Scaling}{126}{section.D.4}
-\contentsline {subsection}{\numberline {D.4.1}Memory Banks}{128}{subsection.D.4.1}
-\contentsline {subsection}{\numberline {D.4.2}Interconnection}{128}{subsection.D.4.2}
-\contentsline {section}{\numberline {D.5}Model Construction and Projection Results}{130}{section.D.5}
-\contentsline {section}{\numberline {D.6}Conclusion}{132}{section.D.6}
+\contentsline {section}{\numberline {D.3}Current technology}{123}{section.D.3}
+\contentsline {subsection}{\numberline {D.3.1}Generic Work-flow}{123}{subsection.D.3.1}
+\contentsline {subsection}{\numberline {D.3.2}Example design: synthesis and simulation}{125}{subsection.D.3.2}
+\contentsline {section}{\numberline {D.4}Technology Scaling}{128}{section.D.4}
+\contentsline {subsection}{\numberline {D.4.1}Memory Banks}{129}{subsection.D.4.1}
+\contentsline {subsection}{\numberline {D.4.2}Interconnection}{129}{subsection.D.4.2}
+\contentsline {section}{\numberline {D.5}Model Construction and Projection Results}{132}{section.D.5}
+\contentsline {section}{\numberline {D.6}Conclusion}{133}{section.D.6}
 \gdef \the@ipfilectr {}
 \gdef \the@ipfilectr {@-5}
-\contentsline {chapter}{\numberline {E}Systematic Exploration of Power-Aware Scenarios for IEEE 802.11ac WLAN Systems}{135}{appendix.E}
-\contentsline {section}{\numberline {E.1}Introduction}{139}{section.E.1}
-\contentsline {section}{\numberline {E.2}Related Work}{140}{section.E.2}
-\contentsline {section}{\numberline {E.3}System Scenario Principles}{142}{section.E.3}
-\contentsline {section}{\numberline {E.4}System Model}{144}{section.E.4}
-\contentsline {subsection}{\numberline {E.4.1}Antennas Signal Power }{144}{subsection.E.4.1}
-\contentsline {subsection}{\numberline {E.4.2}Memory Banks}{148}{subsection.E.4.2}
-\contentsline {subsection}{\numberline {E.4.3}Combined Model}{150}{subsection.E.4.3}
-\contentsline {section}{\numberline {E.5}Case Study}{150}{section.E.5}
-\contentsline {section}{\numberline {E.6}Results}{154}{section.E.6}
-\contentsline {section}{\numberline {E.7}Conclusion}{157}{section.E.7}
+\contentsline {chapter}{\numberline {E}Systematic Exploration of Power-Aware Scenarios for IEEE 802.11ac WLAN Systems}{139}{appendix.E}
+\contentsline {section}{\numberline {E.1}Introduction}{143}{section.E.1}
+\contentsline {section}{\numberline {E.2}Related Work}{144}{section.E.2}
+\contentsline {section}{\numberline {E.3}System Scenario Principles}{146}{section.E.3}
+\contentsline {section}{\numberline {E.4}System Model}{148}{section.E.4}
+\contentsline {subsection}{\numberline {E.4.1}Antennas Signal Power }{148}{subsection.E.4.1}
+\contentsline {subsection}{\numberline {E.4.2}Memory Banks}{152}{subsection.E.4.2}
+\contentsline {subsection}{\numberline {E.4.3}Combined Model}{154}{subsection.E.4.3}
+\contentsline {section}{\numberline {E.5}Case Study}{154}{section.E.5}
+\contentsline {section}{\numberline {E.6}Results}{158}{section.E.6}
+\contentsline {section}{\numberline {E.7}Conclusion}{161}{section.E.7}
 \gdef \the@ipfilectr {}

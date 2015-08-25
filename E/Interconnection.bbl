@@ -1,4 +1,19 @@
-\begin{thebibliography}{1}
+\begin{thebibliography}{10}
+
+\bibitem{chen2014interconnect}
+James Hsueh-Chung Chen, Theodorus~E Standaert, Emre Alptekin, Terry Spooner,
+  Vamsi Paruchuri, et~al.
+\newblock Interconnect performance and scaling strategy at 7 nm node.
+\newblock In {\em Interconnect Technology Conference/Advanced Metallization
+  Conference (IITC/AMC), 2014 IEEE International}, pages 93--96. IEEE, 2014.
+
+\bibitem{cho2009adaptive}
+Dsanoo Cho, Sudeep Pasricha, Ilya Issenin, Nikil~D Dutt, Minwook Ahn, and
+  Yunheung Paek.
+\newblock Adaptive scratch pad memory management for dynamic behavior of
+  multimedia applications.
+\newblock {\em Computer-Aided Design of Integrated Circuits and Systems, IEEE
+  Transactions on}, 28(4):554--567, 2009.
 
 \bibitem{filippopoulos2013exploration}
 Iason Filippopoulos, Francky Catthoor, and Per~Gunnar Kjeldsberg.
@@ -10,12 +25,26 @@ Iason Filippopoulos, Francky Catthoor, and Per~Gunnar Kjeldsberg.
 International Technology~Roadmap for Semiconductors.
 \newblock Annual summary, 2013.
 
+\bibitem{kang2012high}
+Kyungsu Kang, Luca Benini, and Giovanni~De Micheli.
+\newblock A high-throughput and low-latency interconnection network for
+  multi-core clusters with 3-d stacked l2 tightly-coupled data memory.
+\newblock In {\em VLSI and System-on-Chip (VLSI-SoC), 2012 IEEE/IFIP 20th
+  International Conference on}, pages 283--286. IEEE, 2012.
+
 \bibitem{kumar2005interconnections}
 Rakesh Kumar, Victor Zyuban, and Dean~M Tullsen.
 \newblock Interconnections in multi-core architectures: Understanding
   mechanisms, overheads and scaling.
 \newblock In {\em Computer Architecture, 2005. ISCA'05. Proceedings. 32nd
   International Symposium on}, pages 408--419. IEEE, 2005.
+
+\bibitem{Mei10}
+P~Meinerzhagen, C~Roth, and A~Burg.
+\newblock Towards generic low-power area-efficient standard cell based memory
+  architectures.
+\newblock In {\em Circuits and Systems (MWSCAS), 2010 53rd IEEE International
+  Midwest Symposium on}, pages 129--132. IEEE, 2010.
 
 \bibitem{Mei11}
 Pascal Meinerzhagen, SM~Yasser Sherazi, Andreas Burg, and Joachim~Neves
@@ -24,5 +53,33 @@ Pascal Meinerzhagen, SM~Yasser Sherazi, Andreas Burg, and Joachim~Neves
   65-nm cmos technology.
 \newblock {\em IEEE Transactions on Emerging and Selected Topics in Circuits
   and Systems}, 1(2), 2011.
+
+\bibitem{pan2014system}
+Chenyun Pan and Azad Naeemi.
+\newblock System-level variation analysis for interconnection networks.
+\newblock In {\em Interconnect Technology Conference/Advanced Metallization
+  Conference (IITC/AMC), 2014 IEEE International}, pages 303--306. IEEE, 2014.
+
+\bibitem{rahimi2011fully}
+Abbas Rahimi, Igor Loi, Mohammad~Reza Kakoee, and Luca Benini.
+\newblock A fully-synthesizable single-cycle interconnection network for
+  shared-l1 processor clusters.
+\newblock In {\em Design, Automation \& Test in Europe Conference \& Exhibition
+  (DATE), 2011}, pages 1--6. IEEE, 2011.
+
+\bibitem{thoziyoor2008comprehensive}
+Shyamkumar Thoziyoor, Jung~Ho Ahn, Matteo Monchiero, Jay~B Brockman, and
+  Norman~P Jouppi.
+\newblock A comprehensive memory modeling tool and its application to the
+  design and analysis of future memory hierarchies.
+\newblock In {\em Computer Architecture, 2008. ISCA'08. 35th International
+  Symposium on}, pages 51--62. IEEE, 2008.
+
+\bibitem{wang2005energy}
+Zhong Wang and Xiaobo~Sharon Hu.
+\newblock Energy-aware variable partitioning and instruction scheduling for
+  multibank memory architectures.
+\newblock {\em ACM Transactions on Design Automation of Electronic Systems
+  (TODAES)}, 10(2):369--388, 2005.
 
 \end{thebibliography}

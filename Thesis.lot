@@ -23,12 +23,12 @@
 \gdef \the@ipfilectr {}
 \gdef \the@ipfilectr {@-4}
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {D.1}{\ignorespaces Percentage of energy overhead on interconnection\relax }}{125}{table.caption.43}
-\contentsline {table}{\numberline {D.2}{\ignorespaces Energy gains vs. interconnection overhead\relax }}{132}{table.caption.48}
+\contentsline {table}{\numberline {D.1}{\ignorespaces Percentage of energy overhead on interconnection\relax }}{127}{table.caption.43}
+\contentsline {table}{\numberline {D.2}{\ignorespaces Energy gains vs. interconnection overhead\relax }}{134}{table.caption.48}
 \gdef \the@ipfilectr {}
 \gdef \the@ipfilectr {@-5}
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {E.1}{\ignorespaces Memory Banks Scenario Overhead\relax }}{155}{table.caption.57}
-\contentsline {table}{\numberline {E.2}{\ignorespaces Signal power–Channel 1 Scenario Overhead\relax }}{155}{table.caption.58}
-\contentsline {table}{\numberline {E.3}{\ignorespaces Signal power–Channel 2 Scenario Overhead\relax }}{156}{table.caption.59}
+\contentsline {table}{\numberline {E.1}{\ignorespaces Memory Banks Scenario Overhead\relax }}{159}{table.caption.57}
+\contentsline {table}{\numberline {E.2}{\ignorespaces Signal power–Channel 1 Scenario Overhead\relax }}{159}{table.caption.58}
+\contentsline {table}{\numberline {E.3}{\ignorespaces Signal power–Channel 2 Scenario Overhead\relax }}{160}{table.caption.59}
 \gdef \the@ipfilectr {}
