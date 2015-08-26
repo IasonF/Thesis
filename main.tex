@@ -1,0 +1,329 @@
+\chapter{Introduction}
+\label{intro}
+
+
+\section{Embedded Systems and Energy Consumption}
+
+Embedded systems are usually designed to perform a specific tasks and often consist of domain-specific hardware.
+For example, typical embedded systems use optimized processing cores to perform signal processing instead of using general purpose CPUs.
+Some examples of embedded systems include TV sets, cellular phones, MP3 players, smart cameras, wireless access points and printers. 
+An embedded system is designed with strong requirements regarding size, performance and power consumption.
+The market demand is towards smaller and lighter devices.
+The ever-progressing semiconductor processing technique has dramatically increased the number of transistors on a single chip, which makes today's hardware increasingly powerful.
+Embedded systems often rely on a battery source to deliver the desired performance and the energy efficiency is a significant design factor.
+Assuming that the development in the battery technology will follow the current trend, embedded systems should improve their energy efficiency based on the system design.
+
+Memory subsystem has to meet the same requirements regarding size, performance and power consumption.
+Many applications focusing on embedded systems are data intensive and the contribution of the memory to the overall system is significant.
+This work focus on the exploration of energy efficient memory organizations suitable for embedded systems.
+The goal is to provide a systematic way of designing a memory architecture that is energy efficient and meets performance requirements.
+The current work presents a methodology to exploit variations in memory needs during the lifetime of an application in order to optimize energy usage.
+
+\section{Dynamic Data Intensive Applications}
+
+Data intensive applications perform tasks that involve operations on large sets of data.
+Thus, the memory requirements of data intensive applications are high and the contribution of the memory important.
+The main focus of this thesis is on applications that are both dynamic and data intensive.
+The dynamism in this context refers to the significant changes in the behavior of the application.
+In more detail, the studied applications exhibit a dynamic variation in the memory requirements during their lifetime.
+The dynamic variation in the memory requirements can be input driver, which means that there is a wide variation on the execution of the application based on different inputs.
+Because of this behavior, a static study of the application code alone is insufficient since the targeted applications have non-deterministic behavior that is driven by input.
+
+\section{Problem Statement}
+
+The general problem is expressed in the following form:
+\begin{quote}
+Given an embedded system application and its range of inputs, find the most suitable memory architecture and fully exploit its features to fulfill the performance requirements and reduce the energy consumption. 
+\end{quote} 
+
+The application is dynamic and the memory requirements vary through its lifetime, so there are opportunities for system optimization based on estimations on the system resources..
+In order to provide performance guaranties the estimations should be pessimistic, and not optimistic, as over-estimations are acceptable, but under-estimations are generally not.
+Currently used design approaches often use worst case estimations, which are obtained by statically analyzing the application. 
+However, these techniques are not efficient when focusing on dynamic and input driven applications.
+Due to the dynamism in target applications, the ratio of the worst case load versus the average load on the memory is normally high.
+Hence, if only the worst case estimations are used during design, the resulting system would not be able to exploit this gap. 
+
+A way to solve this problem is to design the system to meet the worst case requirements, but add reconfiguration knobs that can exploit the variation in the memory requirements (e.g., by switching off hardware components, which decreases the energy consumption).
+A run-time mechanism that predicts the current application needs in term of resources and exploits this information should be also integrated into the system.
+To enable this exploitation, the possible run-time situations (RTS) \nomenclature{RTS}{run-time situation} in which the application may run, together with their resource needs should be known and taken into account during design. 
+The number of different inputs and the variations in the memory requirements for each RTS provide a huge exploration space that is difficult to handle, as it is almost impossible to enumerate every possible case.
+Even if the explosion problem could be solved, it will be very difficult to predict at run-time in which RTS the application is running and the platform reconfiguration needed to better exploit the current RTS. 
+In addition, the run-time overhead for switching to a different reconfiguration for every RTS could not be  compensated from the improvements in the energy consumption, because the reconfiguration of the platform has an energy penalty. 
+
+\section{Current approaches and problems}
+
+The presented problem has been studied before and different ways of tackling it have been proposed.
+However, there are some aspects that have not been addressed before and are presented in this thesis.
+
+Most of the current approaches rely on a static analysis of the target application and several methodologies have been presented to generate a static application-specific memory hierarchy \cite{Ben00b}.
+Several techniques for designing energy efficient memory architectures for embedded systems are presented in \cite{Mac02}. 
+The main limitation on these methodologies is the fact that they are applicable to applications with very limited dynamism. 
+This work extends the state of the art by proposing a more generic approach, which is also suitable for applications with input driven dynamic behavior.  
+In addition, the current work differentiates by employing a platform that is reconfigurable at run-time.
+ 
+The approach of a reconfigurable memory platform has also been proposed several times and an extensive overview of current approaches is found in \cite{Garcia}.
+Most of the proposed solutions are focusing on tackling one specific case-study application, which is divided in a small number of different cases based on observations at the user level.
+However, our work differentiates by proposing a more generic and application agnostic methodology and analysis on the system level.
+Thus, it can efficiently handle a wider range of dynamic application characteristics.
+
+Another proposed approach to tackle the problem, is to focus on source code transformations, and especially loop transformations.
+These methods try to modify the application code and provide an improved version of the application with easier memory management.
+The main drawback of the code transformation approach is that it is not always possible to achieve the desired behavior, because the applications can be complex.
+In any case, these methods are fully complementary to the methodology presented in this thesis and should be performed as a prior step to the current work. 
+
+\section{Thesis contributions}
+
+In this thesis, we focus on the design of energy efficient memory architectures for embedded systems.
+A hardware/software co-design methodology is proposed for the reduction of the energy consumption on the memory subsystem. 
+The  methodology exploits variations in memory needs during the lifetime of an application in order to optimize energy usage. 
+The different resource requirements, that change dynamically at run-time, are organized into groups to efficiently handle a very large exploration space.
+Apart from the development of the methodology, an extended memory model is included in this work. 
+The memory models is based on existing state-of-the-art memories, available from industry and academia.
+
+In addition, the impact of the technology scaling is studied and the effectiveness of the proposed methodology is analyzed for the future memory architectures.
+We also investigate the combination of the developed methodology with known code transformation techniques, specifically data interleaving.
+The proposed design methodology aims to be compatible with the already available code optimization techniques.
+We further extend the evaluation of the memory design methodology using a test-case wireless system.
+The proposed reconfigurable memory subsystem is studied in a dynamic platform with several reconfiguration options that combine the memory and the processing elements.
+
+\section{Thesis Outline}
+
+The remainder of this thesis is organized as follows: Chapter 2 contains background information regarding the work performed in the arrays of data transformations and system scenarios. 
+Chapter 3 describes the research process and presents the developed methodology.
+Each paper is described in chapter 4 with a breakdown of the roles of each author. 
+Chapter 5 concludes the thesis with a summary of contributions. 
+The appendix holds each paper I have authored or coauthored in chronological order. 
+These papers are reproduced faithfully with regard to the published text, but has been reformatted to increase readability.
+
+\chapter{Background} %use enough space up to 15-20 pages
+\label{background}
+
+\section{Data and Memory Management Approaches}
+Literature other than DTSE...
+
+\section{Data Transfer and Storage Exploration}
+DTSE literature...
+
+\section{System Scenarios}
+All the literature with focus on the ones related
+
+\subsection{Use-Case vs. System Scenarios}
+
+Scenario based design has been used for a long time in different areas, like human-computer interaction or object oriented software engineering. 
+Examples...
+
+Use case scenario approaches generate different scenarios based on a user's behavior.
+Examples...
+
+System scenario methodology focuses on the behavior of the system to generate scenarios and can, therefore, fully exploit the detailed platform mapping information. 
+Examples...
+%In both these cases, these scenarios concretely describe, in an early phase of the development process, the use of a future system. In case of human-computer interaction, the scenarios appear like narrative descriptions of envisioned usage episodes, and in case of object oriented software engineering like a unified modeling language (UML) use-case diagram which enumerates, from functional and timing point of view, all possible user actions and the system reactions that are required to meet a proposed system function. These scenarios are called use-case scenarios.
+%In the embedded systems area, use-case scenarios are used in both hardware [52, 85] and software design [29]. In these cases, the scenarios focus on the application’s functional and timing behaviors and on its interaction with the users and environment, not on the resources required by a system to meet its constraints. These scenarios are used as an input during system design for user- centered design approaches.
+%This thesis concentrates on a different type of scenarios, so-called application scenarios, which may be derived from the behavior of the application. These scenarios are used to reduce the system cost by exploiting information about what can happen at runtime to make better design decisions. While use-case scenarios classify the application’s behavior based on the different ways it can be used, application scenarios classify it from the resource usage perspective, based on the cost trade-off aspects during the mapping to the platform. This second type of scenarios was for the first time explicitly identified and exploited by researchers from IMEC, Belgium, in [119].
+%Figure 2.1 depicts a design trajectory using use-case and application scenarios. It starts from a product idea, for which the stakeholders1 manually define the product’s functionality as use-case scenarios. These scenarios characterize the system from a user perspective and are used as an input to the design of an embedded system that includes both software and hardware components. In order to optimize the design of the system, the detection and usage of application scenarios augments this trajectory (the bottom gray box in the figure). Once the application is coded, its scenarios related to resource utilization are extracted in an automatic way, and they are considered for the decisions made during the following phases of the system design. Hence, the runtime behavior of the application is classified into several application scenarios, where the cost of the operation modes within a scenario is always fairly similar. For each individual scenario, more specific and aggressive design decisions can be made.
+%The sets of use-case scenarios and application scenarios are not necessarily disjoint, and it is possible that one or more use-case scenarios correspond to one application scenario. But still, usually they are not overlapping and it is likely that a use-case scenario is split into several application scenarios, or that several application scenarios intersect several use-case scenarios.
+
+
+\section{Scratch-pad Memory Architectures - related work incl}
+
+
+\chapter{Solution Approach}
+\label{method}
+%make a consistent story about how the papers are connetcted
+
+\section{Target platform architecture}
+
+\subsection{Target memory platform architecture}
+
+\subsection{Memory models}
+
+\subsection{Technology scaling}
+
+\section{Data variable based memory-aware system scenario methodology}
+
+\subsection{Design-time profiling based on data variables}
+
+\subsection{Design-time system scenario identification based on data variables}
+
+\subsection{Run-time system scenario detection and switching based on data variables}
+
+\subsection{Interleaving exploration based on data variables}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\chapter{Research Results and Contributions}
+\label{research}
+
+This thesis is a collection of papers that I have authored or coauthored during my time as a PhD student. 
+Each paper is presented in the appendix. 
+Rather than including the double-column PDF files, I have opted to reformat each paper to increase readability of the graphs and text. 
+However, I have not altered the text or figures, only the layout and size.
+The order of papers presented here are in rough chronological order and correspond to the different research contributions. 
+In practice, some of the research in these papers have been conducted concurrently.
+
+\section{Contribution A: Development of the Memory-Aware System Scenario Methodology}
+
+The main contribution of this thesis is the development of the system scenario methodology for dynamic data-intensive applications.
+The methodology provides a systematic way for design-time and run-time handling of the memory subsystem.
+The work for the development of the methodology is presented in one journal and two conference papers.
+
+\subsection{Energy Impact of Memory-Aware System Scenario Approach}
+
+\subsubsection{Abstract}
+
+System scenario methodologies propose the use of different scenarios, e.g., different platform configurations, in order to exploit variations in computational and memory needs during the lifetime of an application. In this paper several extensions are proposed for a system scenario based methodology with a focus on improving memory organization. The conventional methodology targets mostly execution time while this work aims at including memory costs into the exploration. The effectiveness of the proposed extensions is demonstrated and tested using two real applications, which are dynamic and suitable for execution on modern embedded systems. Reductions in memory energy consumption of 40 to 70\% is shown.
+
+\subsubsection{Retrospective View}
+
+This work is a case-study of two applications, that strongly motivates the potential gains from using system scenarios in the memory subsystem.
+The fact that the chosen applications are from two different domains, supports the effectiveness of the methodology across different domains.
+The main ideas of the methodology are presented, although the presentation is heavily coupled with the two case-study examples.
+
+\subsubsection{Roles of the Authors}
+
+I performed the necessary experiments and the writing of the paper, based on the ideas of Kjeldsberg and Catthoor. 
+Hammari provided one of the applications and Huisken helped in the development of the energy model.
+I orally presented the paper in the conference.
+
+\subsection{Exploration of energy efficient memory organizations for dynamic multimedia applications using system scenarios}
+
+\subsubsection{Abstract}
+
+We propose a memory-aware system scenario approach that exploits variations in memory needs during the lifetime of an application in order to optimize energy usage. 
+Different system scenarios capture the application's different resource requirements that change dynamically at run-time. 
+In addition to computational resources, the many possible memory platform configurations and data-to-memory assignments are important system scenario parameters. 
+In this work we focus on clustering of different memory requirements into groups and presenting the system scenario generation in detail.
+The clustering is a non-trivial problem due to the many different memory requirements, which leads to a very large exploration space.
+An extended memory model is used as a practical enabler, in order to evaluate the methodology. 
+The memory models include existing state-of-the-art memories, available from industry and academia, and we show how they are employed during the system design exploration phase. 
+Both commercial SRAM and standard cell based memory models are explored in this study. 
+The effectiveness of the proposed methodology is demonstrated and tested using a large set of multimedia benchmarks published in the Polybench, Mibench and Mediabench suites,
+representative for the domain of multimedia applications.
+Reduction in energy consumption in the memory subsystem ranges from 35\% to 55\% for the chosen set of benchmarks.
+
+\subsubsection{Retrospective View}
+
+This work is a complete and formal presentation of the methodology work-flow.
+The theoretical presentation is accompanied with an extensive number of results for a large set of benchmark applications.
+The methodology is both extended and better formulated compared to the previous paper.
+
+\subsubsection{Roles of the Authors}
+
+This work was first presented in embedded systems week, as an oral and poster submission.
+Later, it was extended and published as a journal paper.
+The main idea is based on the previous paper.
+I performed the necessary simulations and wrote the paper, based on suggestions and ideas from Kjeldsberg and Catthoor. 
+
+\section{Contribution B: Combined Implementation of the System Scenario Methodology on Memory Subsystem and PEs}
+
+\subsubsection{Abstract}
+
+This work explores the power management options for a transmitting wireless system using system scenarios. We exploit the variations in the communication channel and the protocol requirements during the lifetime of a transmission, in order to optimize energy usage. Both the transmission signal power and the memory subsystem are taken into consideration. Different system scenarios and the corresponding configurations capture the different resource requirements, which change dynamically during transmission. Signal power on the antenna and active memory banks are the two main platform parameters explored in this study and sufficiently detailed system models are presented for both. The trade-off between the accuracy of the generated system scenarios and the switching cost between them is analyzed. The exploration is performed for an increasing number of system scenarios, from 1 to 14, and the reported power gains are over 95\% and over 25\% on the signal power and the memory subsystems respectively.
+
+\subsubsection{Retrospective View}
+
+This work presents the implementation of the system scenario methodology to a wireless system.
+The memory-aware methodology developed in this thesis is combined with the general system scenario methodology for processing elements.
+The target application is a widely used and recent benchmark.
+The exploration includes all the different subsystems and an interesting analysis of the overhead on the scenario generation is presented.
+The use of system scenarios in the whole system improves the overall energy efficiency.
+
+\subsubsection{Roles of the Authors}
+
+My contribution on this work is the part of the work regarding the memory subsystem.
+Both the experimental and the writing part for the memory was performed by me. 
+Zompakis did all the experiments and the writing regarding the processing subsystem and the wireless application.
+The oral presentation was also performed by Zompakis.
+The rest of the authors contributed on the main idea and the improvement of the text.
+
+\section{Contribution C: Integrated Interleaving and Data-to-Memory Mapping}
+
+\subsubsection{Abstract}
+
+This work presents a methodology for efficient exploration of data interleaving and data-to-memory mapping options for SIMD (Single Instruction Multiple Data) platform architectures.
+The system architecture consists of  a reconfigurable clustered scratch-pad memory and a SIMD functional unit, which performs the same operation on multiple input data in parallel. 
+The memory accesses contribute substantially to the overall energy consumption of an embedded system executing a data intensive task. 
+The scope of this work is the reduction of the overall energy consumption by increasing the utilization of the functional units and decreasing the number of memory accesses.
+The presented methodology is tested using a number of benchmark applications with irregularities in their access scheme.
+Potential gains are calculated based on the energy models both for the processing and the memory part of the system.
+The reduction in energy consumption after efficient interleaving and mapping of data is between 40\% and 80\% for the complete system and the studied benchmarks.
+
+\subsubsection{Retrospective View}
+
+This work is also a combination of the developed methodology and another complementary approach.
+The developed methodology is compatible with code transformation techniques and this work focus on the data interleaving.
+The integration of the two required some modifications and the final work-flow was tested using a number of benchmarks.
+This work suggests that the memory-aware system scenario methodology is complementary to other techniques that improve energy efficiency.
+
+\subsubsection{Roles of the Authors}
+
+The initial idea for this work was given by Catthoor and was implemented by me with the help of Sharma.
+The majority of the paper was written by me and the rest by Sharma, while all the authors contributed on the further improvement of the text with their feedback.
+
+\section{Contribution D: Interconnection Cost Modeling and Scaling}
+
+\subsubsection{Abstract}
+Power consumption is the key limitation in modern embedded devices.
+The memory architecture contributes significantly on the overall power consumption of the system.
+Among other proposed techniques, one effective system design approach to reduce the memory power needs is the design of a dynamically reconfigurable clustered memory architecture.
+The operationally independent memory banks provide an energy efficient platform, but comes with an interconnection overhead due to the connections between the memory banks. 
+Thus, there is a trade-off between the energy gains by increasing the number of memory banks and the increase on the interconnection overhead.
+This work explores the future development of the interconnection overhead, as the interconnection cost is expected to increase while the process technology shrinks to 5nm.
+The current study employs both CAD tools with simulation results using the current technology and projections provided by institutions.
+We use predictive technology models and the quantitative data are supported partly by information
+from ITRS and IMEC's interconnect technologists.
+A model is developed that provide a sufficiently accurate estimation about the interconnection cost overhead for clustered memory architectures consisting of two to five memory banks and a range of technologies from 40nm to 5nm.  
+
+\subsubsection{Retrospective View}
+
+This work investigates the effectiveness of the memory-aware system scenario methodology in the future.
+A reconfigurable memory architecture is a requirement for the implementation of the methodology, thus it is important to study the development of similar architectures in the future. 
+
+\subsubsection{Roles of the Authors}
+
+I performed the necessary development work and wrote the paper, based on suggestions and ideas from Kjeldsberg and Catthoor. 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\chapter{Conclusions and Future Work}
+\label{conclusions}
+
+\section{Conclusions}
+
+The main scope of this dissertation is to develop a system scenario methodology that focuses on memory organization. 
+The developed methodology exploits memory requirement variations and achieves significant reduction of memory energy consumption, which is of great importance in embedded devices. Since memory size requirements are still met in all situations, performance is not reduced. 
+The memory-aware system scenario methodology is suited for applications that experience dynamic behavior with respect to memory organization utilization during their execution.
+A wide range of application domains, including multimedia, wireless and bio-medical applications, are tested to prove the effectiveness of the methodology.
+
+An extensive memory energy model is developed in order to have sufficiently accurate simulations and results.
+A library is built based on commercial and experimental state-of-the-art memory models.
+The library is employed for the construction of reconfigurable memory architectures, which are suitable for the implementation of system scenarios.
+Another model is developed to study the impact of the interconnect on the overall energy.
+The model suggests that overhead will be kept low in the short term and will increase within reasonable levels in the mid-long term.
+Therefore, the design of energy efficient clustered memory architecture will continue to be a good design choice.
+
+Apart from justifying the effectiveness of the system scenarios methodology on the memory, this work explores the compatibility of the methodology with other techniques.
+Firstly, the application of the system scenarios methodology in the complete system, including the memory and the processing subsystem, is studied.
+Secondly, the proposed methodology is integrated with code and data transformation techniques.
+A methodology for efficient exploration of data interleaving and data-to-memory mapping options is developed and tested.
+A wide range of applications is studied that allow us to draw conclusions about different kinds of dynamic behavior and their effect on the energy gains achieved using the methodology. 
+
+\section{Future Work}
+
+The future research to improve the current work can focus on the system scenario methodology and/or the memory models.
+
+One improvement is to fully automate the memory-aware system scenario methodology.
+The optimal implementation should take as an input the application code and the library of memory models and automatically generate the most energy efficient memory architecture.
+In the current work several scripts were developed to speedup the design space exploration, but the work-flow is not fully automated.
+The improvement of the prediction and the identification phase of the methodology could be another significant contribution. 
+A multidimensional scenario clustering for the whole system is an interesting improvement.
+The N-dimensional exploration space will include several parameters, such as memory energy, PE energy, execution time and reliability, and new methods should be developed to handle the explosion of the exploration space.
+
+The accuracy of the energy models can be significantly increased.
+More detailed models can be developed based on an extensive research and simulation.
+All the possible clustered memory architectures can be synthesized and tested to get a detailed report on the energy numbers, although it is a very time consuming task.
+Especially the interconnect model can be extended by taking the delay into consideration and the synthesis of more designs can steer the model.
+A manually improved placing and routing strategy will provide more accurate results regarding the overhead for clustered memory architectures.
+
+\addcontentsline{toc}{chapter}{Bibliography}	
+\bibliographystyle{plain}
+\bibliography{reference}

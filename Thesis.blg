@@ -1,22 +1,9 @@
 This is BibTeX, Version 0.99d (TeX Live 2014)
 Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: Thesis.aux
-The style file: plain.bst
 A level-1 auxiliary file: A/norchip.aux
-Illegal, another \bibstyle command---line 87 of file A/norchip.aux
- : \bibstyle
- :          {plain}
-I'm skipping whatever remains of this command
+The style file: plain.bst
 Illegal, another \bibdata command---line 88 of file A/norchip.aux
- : \bibdata
- :         {reference}
-I'm skipping whatever remains of this command
-A level-1 auxiliary file: B/meaow.aux
-Illegal, another \bibstyle command---line 61 of file B/meaow.aux
- : \bibstyle
- :          {plain}
-I'm skipping whatever remains of this command
-Illegal, another \bibdata command---line 62 of file B/meaow.aux
  : \bibdata
  :         {reference}
 I'm skipping whatever remains of this command
@@ -39,18 +26,53 @@ Illegal, another \bibdata command---line 96 of file D/LayoutStorageOpt.aux
  :         {reference}
 I'm skipping whatever remains of this command
 A level-1 auxiliary file: E/Interconnection.aux
-Illegal, another \bibstyle command---line 36 of file E/Interconnection.aux
+Illegal, another \bibstyle command---line 55 of file E/Interconnection.aux
  : \bibstyle
  :          {plain}
 I'm skipping whatever remains of this command
-Illegal, another \bibdata command---line 37 of file E/Interconnection.aux
+Illegal, another \bibdata command---line 56 of file E/Interconnection.aux
  : \bibdata
  :         {reference}
+I'm skipping whatever remains of this command
+A level-1 auxiliary file: F/dsd.aux
+Illegal, another \bibstyle command---line 72 of file F/dsd.aux
+ : \bibstyle
+ :          {plain}
+I'm skipping whatever remains of this command
+Illegal, another \bibdata command---line 73 of file F/dsd.aux
+ : \bibdata
+ :         {dsd_ref}
 I'm skipping whatever remains of this command
 Database file #1: reference.bib
 Warning--I didn't find a database entry for "Elena2012"
 Warning--I didn't find a database entry for "usecase"
 Warning--I didn't find a database entry for "Math"
+Warning--I didn't find a database entry for "rahimi2011fully"
+Warning--I didn't find a database entry for "kang2012high"
+Warning--I didn't find a database entry for "cho2009adaptive"
+Warning--I didn't find a database entry for "wang2005energy"
+Warning--I didn't find a database entry for "thoziyoor2008comprehensive"
+Warning--I didn't find a database entry for "pan2014system"
+Warning--I didn't find a database entry for "chen2014interconnect"
+Warning--I didn't find a database entry for "1"
+Warning--I didn't find a database entry for "2"
+Warning--I didn't find a database entry for "3"
+Warning--I didn't find a database entry for "17"
+Warning--I didn't find a database entry for "9"
+Warning--I didn't find a database entry for "10"
+Warning--I didn't find a database entry for "11"
+Warning--I didn't find a database entry for "12"
+Warning--I didn't find a database entry for "24"
+Warning--I didn't find a database entry for "22"
+Warning--I didn't find a database entry for "23"
+Warning--I didn't find a database entry for "13"
+Warning--I didn't find a database entry for "15"
+Warning--I didn't find a database entry for "16"
+Warning--I didn't find a database entry for "21"
+Warning--I didn't find a database entry for "20"
+Warning--I didn't find a database entry for "14"
+Warning--I didn't find a database entry for "18"
+Warning--I didn't find a database entry for "19"
 Warning--there's a number but no volume in Ben00c
 Warning--empty booktitle in graybox
 Warning--empty journal in lee2003compilation
@@ -58,7 +80,7 @@ Warning--empty title in Pal06
 Warning--there's a number but no volume in 8
 You've used 62 entries,
             2118 wiz_defined-function locations,
-            866 strings with 17012 characters,
+            883 strings with 17145 characters,
 and the built_in function-call counts, 25104 in all, are:
 = -- 2469
 > -- 1314
@@ -97,4 +119,4 @@ warning$ -- 5
 while$ -- 231
 width$ -- 64
 write$ -- 680
-(There were 10 error messages)
+(There were 9 error messages)
