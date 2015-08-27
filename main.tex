@@ -30,6 +30,7 @@ The dynamic variation in the memory requirements can be input driver, which mean
 Because of this behavior, a static study of the application code alone is insufficient since the targeted applications have non-deterministic behavior that is driven by input.
 
 \section{Problem Statement}
+\label{sec:problem}
 
 The general problem is expressed in the following form:
 \begin{quote}
@@ -99,24 +100,24 @@ These papers are reproduced faithfully with regard to the published text, but ha
 \label{background}
 
 \section{Data and Memory Management Approaches}
-Literature other than DTSE...
+%Literature other than DTSE...
 
 \section{Data Transfer and Storage Exploration}
-DTSE literature...
+%DTSE literature...
 
 \section{System Scenarios}
-All the literature with focus on the ones related
+%All the literature with focus on the ones related
 
 \subsection{Use-Case vs. System Scenarios}
 
-Scenario based design has been used for a long time in different areas, like human-computer interaction or object oriented software engineering. 
-Examples...
-
-Use case scenario approaches generate different scenarios based on a user's behavior.
-Examples...
-
-System scenario methodology focuses on the behavior of the system to generate scenarios and can, therefore, fully exploit the detailed platform mapping information. 
-Examples...
+%Scenario based design has been used for a long time in different areas, like human-computer interaction or object oriented software engineering. 
+%Examples...
+%
+%Use case scenario approaches generate different scenarios based on a user's behavior.
+%Examples...
+%
+%System scenario methodology focuses on the behavior of the system to generate scenarios and can, therefore, fully exploit the detailed platform mapping information. 
+%Examples...
 %In both these cases, these scenarios concretely describe, in an early phase of the development process, the use of a future system. In case of human-computer interaction, the scenarios appear like narrative descriptions of envisioned usage episodes, and in case of object oriented software engineering like a unified modeling language (UML) use-case diagram which enumerates, from functional and timing point of view, all possible user actions and the system reactions that are required to meet a proposed system function. These scenarios are called use-case scenarios.
 %In the embedded systems area, use-case scenarios are used in both hardware [52, 85] and software design [29]. In these cases, the scenarios focus on the application’s functional and timing behaviors and on its interaction with the users and environment, not on the resources required by a system to meet its constraints. These scenarios are used as an input during system design for user- centered design approaches.
 %This thesis concentrates on a different type of scenarios, so-called application scenarios, which may be derived from the behavior of the application. These scenarios are used to reduce the system cost by exploiting information about what can happen at runtime to make better design decisions. While use-case scenarios classify the application’s behavior based on the different ways it can be used, application scenarios classify it from the resource usage perspective, based on the cost trade-off aspects during the mapping to the platform. This second type of scenarios was for the first time explicitly identified and exploited by researchers from IMEC, Belgium, in [119].
@@ -126,29 +127,187 @@ Examples...
 
 \section{Scratch-pad Memory Architectures - related work incl}
 
-
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \chapter{Solution Approach}
 \label{method}
 %make a consistent story about how the papers are connetcted
+The proposed solution to the problem expressed in Sec.\ref{sec:problem} is discussed in this chapter.
+The solution approach is split into two parts, namely the platform and the methodology.
+The first part focuses on the memory architecture in which dynamic applications are executed.
+The second part focuses on the necessary steps to efficiently couple the applications and the platform.
 
 \section{Target platform architecture}
 
+Platform architecture is a crucial part of any system scenario methodology.
+The platform must provide a set of reconfigurable parameters, known as system knobs, that allow different configurations of the platform.
+The different configurations enable the better adaptation of the platform to the requirements of the application for the specific execution.
+Many system characteristics can be defined as system knobs and the most common example of such a system knob is the dynamic voltage and frequency scaling (DVFS).
+DVFS changes the voltage and the frequency of a processor dynamically.
+A lower frequency and voltage is often sufficient to meet the deadline of an application, while the power consumption of the processor is reduced.
+
 \subsection{Target memory platform architecture}
+
+A dynamic memory platform is necessary for the memory-aware system scenario methodology. 
+Each configuration of the memory platform corresponds to a different memory energy consumption and available memory space. 
+The dynamic memory platform is achieved by organizing the memory area in a varying number of banks that can be switched between different energy states. 
+The decision to use memory banks with varying sizes on the clustered memory organization increases the reconfiguration options and consequently the potential energy gains. 
+In general, smaller memories are more energy efficient compared to larger memories banks. 
+However, in some cases large memory banks are needed in order to fit the application data without the need for too many small memories causing complex interconnects. 
+The goal is to use the most energy efficient banks to store the most frequently used data. 
+
+A clustered memory organization with a varying number of memory banks of different sizes is explored.
+In  Appendix \ref{norchip} such a clustered scratchpad memory with four banks is introduced. 
+It is further expanded to explore memory designs with up to five banks in Appendix \ref{DAES}.
 
 \subsection{Memory models}
 
+The memory models that are used to built the clustered memory architecture heavily influence the design decisions.
+The memory architecture consists of the memory banks and the interconnection between the memory banks, which is necessary to connect the memory to the processor.
+The most important parameter of the memory models in the current work is the energy profile of the model, although other parameters are also included.
+The following models are used in this thesis:
+\begin{itemize}
+\item Formula-driven memory model presented in \cite{Artes2011}.
+The memory energy consumption for every access in the clustered scratchpad memory is calculated using a formula, which takes the size, the number of lines and the word length as input parameters.
+The leakage power is calculated in a similar way.
+The model supports three different states, namely active, shut-down and retention modes.
+This model is presented and employed on the work included in Appendix \ref{norchip}.
+
+\item Commercially available memory macros.  
+For those models delay, access energy and leakage power numbers are derived from a commercial memory compiler.
+The model supports four different states, namely active, shut-down, light-sleep and deep sleep modes.
+This model is presented and employed on the work included in Appendix \ref{DAES}.
+
+\item Experimental standard cell-based memory (SCMEM) \cite{Mei11}.
+The standard cell-based memories are synthesized using Cadence RTL compiler for TSMC 40nm standard library. 
+Afterwords, power simulations on the synthesized design are carried out using Synopsys PrimeTime, in order to obtain energy numbers.
+The model supports four different states, namely active, shut-down, light-sleep and deep sleep modes.
+This model is presented and employed on the work included in Appendix \ref{DAES}.
+
+\item Interconnection model based on synthesis results.
+The interconnection model is useful in order to estimate the energy consumption in the peripheral logic, outside the memory banks.
+This model is developed and presented in the work included in Appendix \ref{interconnection}.
+
+\end{itemize}
+
+There are advantages and disadvantages for each of the used models.
+The analytical model is easy to use, has very low computation time and can calculate energy numbers for any possible size of memory, because the input parameters can have any value.
+However, the accuracy of the model is lower compared to the other models.
+The MM model provides accurate energy numbers, but the designer must rely on a library of memory banks.
+The SCMEM model has also high accuracy, as the energy numbers are based on simulation.
+The designer has the freedom to develop any desirable configuration, although the process of writing, testing and simulating every new memory design is time-consuming.
+Thus, a library of SCMEM is made and the exploration is limited within the already synthesized models.
+The interconnection model is normally omitted, because the contribution of the interconnection to the overall energy consumption is very low.
+The model is based on synthesis, so it is accurate for the specific synthesized design but the generalization to other designs reduces the accuracy. 
+
 \subsection{Technology scaling}
+
+The proposed clustered memory architecture is an energy efficient platform for dynamic data-intensive applications.
+The impact of the technology scaling on the energy efficiency is also explored and presented in Appendix \ref{interconnection}. 
+The operationally independent memory banks provide an energy efficient platform, but comes with an interconnection overhead due to the connections between the memory banks. 
+The energy consumption on the memory banks is reduced due to the scaling that results in smaller memory cells with lower voltage.
+On the other hand, the energy consumption on the wiring follows a slower reduction curve.
+Thus, the interconnection energy overhead will increase in the future.
+A detailed memory and interconnect energy model is developed that includes the scaling impact.
+The model suggests that the proposed target memory platform will continue to be energy efficient.
 
 \section{Data variable based memory-aware system scenario methodology}
 
+The memory-aware system scenario methodology is based on the observation that the memory subsystem requirements at run-time vary significantly due to dynamic variations of memory needs in the application code. 
+Most existing design methodologies define the memory requirements as that of the most demanding task and tune the system in order to meet its needs \cite{tcm}. 
+Obviously, this approach leads to unused memory area for tasks with lower memory requirements, since those tasks could meet their needs using fewer resources and consequently consuming less energy. 
+
+Designing with system scenarios is workload adaptive and offers different configurations of the platform and the freedom of switching to the most efficient scenario at run-time. 
+A system scenario is a configuration of the system that combines similar run-time situations (RTSs). 
+An RTS consists of a running instance of a task and its corresponding cost (e.g., energy consumption) and one complete run of the application on the target platform represents a sequence of RTSs \cite{Elena2010}. 
+The system is configured to meet the cost requirements of an RTS by choosing the appropriate system scenario, which is the one that satisfies the requirements using minimal power. 
+
 \subsection{Design-time profiling based on data variables}
+
+Application profiling is the analysis of the memory requirements for the studied application and is performed at design-time.
+The analysis focuses on the allocated memory size during execution  for a wide range of inputs. 
+The profiling stage consists of running the application code with suitable input data often found in a database, in order to produce profiling results.  
+The profiling reveals parts of the application code with high memory activity and with varying memory access intensity, which possibly depends on input data variables. 
+Because of this behavior, a static study of the application code alone is insufficient since the target applications for this methodology have non-deterministic behavior that is driven by input.
+
+\textbf{!!Luc's question during 2nd oral!!}
+The whole set of possible inputs is studied and analyzed, which is timely possible during design-time.
+Even a bounded semi-infinite set of input values can be analyzed based on the application's code.
+For example, assuming that an input value is any real number in some range, the corresponding memory requirements are calculated by taking the minimum and maximum limits for that range.
+The minimum and maximum limits can be found with the help of the application's code.
+Thus, the profiling in this case should not be perceived as a training series but rather as a full analysis of the whole input space.
+Any possible application input during run-time belong to the input space analyzed during design-time.
+
+Profiling results provided to the designer include complete information about allocated memory size values together with the number of occurrences and duration for each of these memory size values. 
+Moreover, correlation between input data variable values and the resulting memory behavior can possibly be observed. 
+This information is useful for the clustering step that follows. 
+Profiling also reveals the worst case memory usage for a given set of inputs. 
+The memory usage is measured using techniques presented in \cite{Ang13b}, in which authors compute the minimum amount of memory resources required to store the elements of an application. 
+Appendix \ref{DAES} includes a detailed presentation of this step.
 
 \subsection{Design-time system scenario identification based on data variables}
 
+The scenario identification is the process of organizing the profiled memory sizes into groups with similar characteristics, which are defined as system scenarios. 
+Grouping or clustering is necessary, because it will be extremely costly to have a different scenario for every possible size, due to the number of memories needed. 
+Clustering neighboring RTSs is a rational choice, because two instances with similar memory needs have similar energy consumption. 
+The memory size and the frequency of each RTS are not the only two parameters that should be taken into consideration during the system scenario identification. 
+The memory size of each RTS results in a different energy cost depending on the way it is mapped into memory. 
+The impact of the different assignment possibilities is included into the clustering by introduction of energy as a cost metric. 
+Increasing the number of memory banks results in lower energy per access since the most accessed elements can be assigned to smaller and more energy efficient banks. Unused banks can be switched off.
+
+The system scenario identification step includes the selection of the data variables that determine the active system scenario. 
+This can be achieved by careful study of the application code, combined with the application's data input.
+The variable selection is done before clustering of RTSs into scenarios.
+For the choice of identification variables, there is a trade-off between the complexity and the accuracy of the scenario detection step.
+On one hand, if the identification is done using a group of complex variables and their correlation, there is a number of calculations needed in order to predict the active scenario. 
+On the other hand, if the value of a single variable is monitored for scenario identification, the scenario detection is straightforward.
+Obviously, the accuracy of the scenario detection is higher on the first case, while the computational needs for scenario detection are lower on the second case.
+In other words, the more accurate scenario detection, the more resources are used by the run-time manager for detection.
+
+Appendix \ref{DAES} includes a detailed presentation of this step.
+
 \subsection{Run-time system scenario detection and switching based on data variables}
+
+During run-time, all the switching decisions are taken based on the platform and application information. 
+In this work, we use a simple and straightforward switching approach.
+Memory models provide the necessary information for the switching decision, namely the energy and the time penalty for switching between stages.
+The switching step consists of all platform configuration decisions that can be made at run-time, such as the change in the power mode of memory units.
+Switching takes place when the switching cost is lower than the energy gains achieved by switching. 
+The run-time manager compares the memory energy consumption of executing the next task in the current active system scenario with the energy consumption of execution with the optimal system scenario. 
+If the difference is greater than the switching cost, then scenario switching is performed.
+Switching costs are defined by the platform and include all memory energy penalties for run-time reconfigurations of the platform, e.g., extra energy needed to change state of a memory unit.
+
+Appendix \ref{DAES} includes a detailed presentation of this step.
 
 \subsection{Interleaving exploration based on data variables}
 
+Interleaving exploration is a complementary technique applied on the application that can further improve energy gains.
+Interleaving is a data layout transformation for combining the storage of multiple arrays, so that blocks of data from different arrays are stored contiguously, in order to achieve spatial locality in memory accesses.
+By interleaving we are able to group the data to be accessed and thus reduce the number of memory accesses for accessing them.
+The basic principles of the performed interleaving exploration are presented in \cite{sharma2013data}.
+Interleaving improves the spatial locality and removes redundant data in order to achieve higher  utilization of the hardware resources, especially on single instruction multiple data (SIMD) architectures.
+
+The impact of the data interleaving exploration on the number of memory accesses is significant.
+When the accesses are irregular and the data are organized in index order, each memory access results in a small amount of useful data due to the presence of holes.
+In contrast the re-organization of the data provides a sequence of useful data without many holes between them.
+Thus, a single access to the memory results in a higher number of useful elements.
+The overall number of memory accesses is reduced, as each access has a higher utilization.
+
+The goal of the interleaving exploration is to select the optimal set of memory banks and to make  the optimal decision regarding the mapping of the data to the different memory banks.
+The parts of the interleaved data that consist mostly of useful elements are mapped into memory banks with low energy per access but at the same time with the necessary access time.
+The parts of the interleaved data that consist of access holes and rarely accessed elements are optimally mapped into memory banks with energy efficient retention states.
+In both cases the size of  the memory banks should be adequate to fit the stored data but at the same time as small as possible to avoid area and energy penalties.
+
+The interleaving decisions influence the data-to-memory mapping decisions and vice versa.
+Assuming that the mapping is performed first using the initial data the following interleaving options are reduced.
+For example, the decision to map two arrays on different memory banks removes the option to interleave them later.
+Optimizing both the interleaving and the memory mapping at the same time results in a large and inefficient loop of constrain propagation between the two exploration phases.
+In other words, the best interleaving solution, which avoid taking into account at all the distributed memory organization, would lead only to a local optimum.
+Applying the local optimum to the memory organization results may results in changes due to platform limitations and move to another optimum.
+Then, new iterations on data interleaving are maybe needed and so on.
+To solve this problem, all the platform parameters are upfront defined and taken into consideration for the interleaving exploration, which is performed first.
+Then, the best data interleaving options are propagated to the data-to-memory mapping step.
+
+Appendix \ref{interleaving} presents the full interleaving methodology.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \chapter{Research Results and Contributions}

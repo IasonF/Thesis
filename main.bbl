@@ -1,5 +1,12 @@
 \begin{thebibliography}{1}
 
+\bibitem{Artes2011}
+A.~Artes et~al.
+\newblock Run-time self-tuning banked loop buffer architecture for power
+  optimization of dynamic workload applications.
+\newblock In {\em VLSI and System-on-Chip (VLSI-SoC), 2011 IEEE/IFIP 19th
+  International Conference on}, pages 136 --141, oct. 2011.
+
 \bibitem{Ben00b}
 Luca Benini, Alberto Macii, and Massimo Poncino.
 \newblock A recursive algorithm for low-power memory partitioning.
@@ -12,9 +19,45 @@ Philip Garcia, Katherine Compton, Michael Schulte, Emily Blem, and Wenyin Fu.
 \newblock An overview of reconfigurable hardware in embedded systems.
 \newblock {\em EURASIP J. Embedded Syst.}, 2006(1):13--13, January 2006.
 
+\bibitem{Elena2010}
+E.~Hammari, F.~Catthoor, J.~Huisken, and P~G Kjeldsberg.
+\newblock Application of medium-grain multiprocessor mapping methodology to
+  epileptic seizure predictor.
+\newblock In {\em NORCHIP, 2010}, pages 1 --6, nov. 2010.
+
+\bibitem{Ang13b}
+A.~Kritikakou, F.~Catthoor, V.~Kelefouras, and C.~Goutis.
+\newblock Near-optimal and scalable intra-signal in-place for non-overlapping
+  and irregular access scheme.
+\newblock {\em ACM Trans. Design Automation of Electronic Systems (TODAES)},
+  conditionally accepted, 2013.
+
+\bibitem{tcm}
+Zhe Ma, Pol Marchal, Daniele~Paolo Scarpazza, Peng Yang, Chun Wong,
+  Jos{\'e}~Ignacio G{\'o}mez, Stefaan Himpe, Chantal Ykman-Couvreur, and
+  Francky Catthoor.
+\newblock {\em Systematic methodology for real-time cost-effective mapping of
+  dynamic concurrent task-based systems on heterogenous platforms}.
+\newblock Springer Science \& Business Media, 2007.
+
 \bibitem{Mac02}
 A.~Macii, L.~Benini, and M.~Poncino.
 \newblock {\em Memory Design Techniques for Low-Energy Embedded Systems}.
 \newblock Kluwer Academic Publishers, 2002.
+
+\bibitem{Mei11}
+Pascal Meinerzhagen, SM~Yasser Sherazi, Andreas Burg, and Joachim~Neves
+  Rodrigues.
+\newblock Benchmarking of standard-cell based memories in the sub-vt domain in
+  65-nm cmos technology.
+\newblock {\em IEEE Transactions on Emerging and Selected Topics in Circuits
+  and Systems}, 1(2), 2011.
+
+\bibitem{sharma2013data}
+Namita Sharma, TV~Aa, Prashant Agrawal, Praveen Raghavan, Preeti~Ranjan Panda,
+  and Francky Catthoor.
+\newblock Data memory optimization in lte downlink.
+\newblock In {\em Acoustics, Speech and Signal Processing (ICASSP), 2013 IEEE
+  International Conference on}, pages 2610--2614. IEEE, 2013.
 
 \end{thebibliography}
