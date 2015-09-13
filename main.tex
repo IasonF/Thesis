@@ -1,4 +1,4 @@
-\chapter{Introduction}
+ \chapter{Introduction}
 \label{intro}
 
 
@@ -101,28 +101,61 @@ These papers are reproduced faithfully with regard to the published text, but ha
 
 \section{Data and Memory Management Approaches}
 %Literature other than DTSE...
+Several techniques have been proposed to optimize the memory management based on the study of the processed data and an overview of them is presented in this section.
+Most techniques propose transformations on the (a) loop and control-flow, (b) data reorganization and mapping and (c) memory platform generation, and aim to tackle the problem of sub-optimal memory organization.
+The sub-optimal memory organization problem has been identified both in compiler theory [43] and high-level synthesis [519].
+
+The loop and control flow transformations aim at improving the data access locality and remove any mismatches in production and consumption ordering of data.
+They can be applied globally across the full code or into specific loops.
+Several research efforts provided very powerful environments for interactive loop transformations as long as no other transformations are required.
+In the parallel compiler domain, interactive environments like Tiny [556, 557], Omega at U.Maryland [265], SUIF at Stanford [18, 23, 220], the Paradigm compiler at Univ. of Illinois [45] (and earlier work [430]) and the ParaScope Editor [360] at Univ. of Rice have been presented. 
+Also non-singular transformations have been investigated in this context [265, 320]. 
+
+The data mapping optimizations focus on finding the optimal mapping of the different arrays into the memory.
+Energy-aware assignment of data to memory banks for several task-sets based on the MediaBench suit of benchmarks is presented in \cite{Mar03}. 
+Design methods with main focus on the traffic and latencies in the memory architecture are presented in \cite{chen1999loop}, \cite{grun2000mist}, \cite{jantsch1994hardware} and \cite{passes1995multi}.
+Improving memory energy efficiency based on a study of access patterns is discussed in \cite{kandemir2001improving}.
+
+Another approach to solve the problem is the memory platform generation.
+The authors in \cite{Ben00b} present a methodology to generate a static application-specific memory hierarchy. 
+Later, they extend their work in \cite{Ben00c} to a reconfigurable platform with multiple memory banks. 
+Several techniques for designing energy efficient memory architectures for embedded systems are presented in \cite{Mac02}. 
+In \cite{Pgk01} a large number of data and memory optimization techniques, that could be dependent or independent of a target platform, are discussed. 
+The authors in \cite{abraham1999automatic}, \cite{jacob1996analytical} and \cite{li1999hardware} present methodologies for designing memory hierarchies.
+Application specific memory design is a research topic in \cite{schmit1997synthesis}, while memory design for multimedia applications is presented in \cite{oshima1997high}.
 
 \section{Data Transfer and Storage Exploration}
-%DTSE literature...
+DTSE literature... 
+
 
 \section{System Scenarios}
-%All the literature with focus on the ones related
+All the literature with focus on the ones related
+Scenario based design has been used for a long time in different areas, like human-computer interaction or object oriented software engineering. 
+Examples...
+
 
 \subsection{Use-Case vs. System Scenarios}
 
-%Scenario based design has been used for a long time in different areas, like human-computer interaction or object oriented software engineering. 
-%Examples...
-%
-%Use case scenario approaches generate different scenarios based on a user's behavior.
-%Examples...
-%
-%System scenario methodology focuses on the behavior of the system to generate scenarios and can, therefore, fully exploit the detailed platform mapping information. 
-%Examples...
-%In both these cases, these scenarios concretely describe, in an early phase of the development process, the use of a future system. In case of human-computer interaction, the scenarios appear like narrative descriptions of envisioned usage episodes, and in case of object oriented software engineering like a unified modeling language (UML) use-case diagram which enumerates, from functional and timing point of view, all possible user actions and the system reactions that are required to meet a proposed system function. These scenarios are called use-case scenarios.
-%In the embedded systems area, use-case scenarios are used in both hardware [52, 85] and software design [29]. In these cases, the scenarios focus on the application’s functional and timing behaviors and on its interaction with the users and environment, not on the resources required by a system to meet its constraints. These scenarios are used as an input during system design for user- centered design approaches.
-%This thesis concentrates on a different type of scenarios, so-called application scenarios, which may be derived from the behavior of the application. These scenarios are used to reduce the system cost by exploiting information about what can happen at runtime to make better design decisions. While use-case scenarios classify the application’s behavior based on the different ways it can be used, application scenarios classify it from the resource usage perspective, based on the cost trade-off aspects during the mapping to the platform. This second type of scenarios was for the first time explicitly identified and exploited by researchers from IMEC, Belgium, in [119].
-%Figure 2.1 depicts a design trajectory using use-case and application scenarios. It starts from a product idea, for which the stakeholders1 manually define the product’s functionality as use-case scenarios. These scenarios characterize the system from a user perspective and are used as an input to the design of an embedded system that includes both software and hardware components. In order to optimize the design of the system, the detection and usage of application scenarios augments this trajectory (the bottom gray box in the figure). Once the application is coded, its scenarios related to resource utilization are extracted in an automatic way, and they are considered for the decisions made during the following phases of the system design. Hence, the runtime behavior of the application is classified into several application scenarios, where the cost of the operation modes within a scenario is always fairly similar. For each individual scenario, more specific and aggressive design decisions can be made.
-%The sets of use-case scenarios and application scenarios are not necessarily disjoint, and it is possible that one or more use-case scenarios correspond to one application scenario. But still, usually they are not overlapping and it is likely that a use-case scenario is split into several application scenarios, or that several application scenarios intersect several use-case scenarios.
+\begin{figure}[!t]
+	\centering
+	\includegraphics{Images/versus1.pdf}	
+	\caption{A scenario based design flow for embedded systems. Source: \cite{GheoThesis} }
+	\label{fig:versus}
+\end{figure}
+
+Use case scenario approaches generate different scenarios based on a user's behavior.
+	
+	Examples...
+	
+	System scenario methodology focuses on the behavior of the system to generate scenarios and can, therefore, fully exploit the detailed platform mapping information. 
+	Examples...
+	In contrast to use case scenario approaches in which scenarios are generated based on a user’s behaviour, the system scenario methodology focuses on behaviour of the system to generate scenarios.
+	Furthermore, compared with use case scenario ap- proaches in which scenarios are generated based on a user’s behavior \cite{usecase}, the system scenario methodology focuses on the behavior of the system to generate scenarios and can, therefore, fully exploit the detailed platform mapping information.
+	In both these cases, these scenarios concretely describe, in an early phase of the development process, the use of a future system. In case of human-computer interaction, the scenarios appear like narrative descriptions of envisioned usage episodes, and in case of object oriented software engineering like a unified modeling language (UML) use-case diagram which enumerates, from functional and timing point of view, all possible user actions and the system reactions that are required to meet a proposed system function. These scenarios are called use-case scenarios.
+	In the embedded systems area, use-case scenarios are used in both hardware [52, 85] and software design [29]. In these cases, the scenarios focus on the application’s functional and timing behaviors and on its interaction with the users and environment, not on the resources required by a system to meet its constraints. These scenarios are used as an input during system design for user- centered design approaches.
+	This thesis concentrates on a different type of scenarios, so-called application scenarios, which may be derived from the behavior of the application. These scenarios are used to reduce the system cost by exploiting information about what can happen at runtime to make better design decisions. While use-case scenarios classify the application’s behavior based on the different ways it can be used, application scenarios classify it from the resource usage perspective, based on the cost trade-off aspects during the mapping to the platform. This second type of scenarios was for the first time explicitly identified and exploited by researchers from IMEC, Belgium, in [119].
+	Figure 2.1 depicts a design trajectory using use-case and application scenarios. It starts from a product idea, for which the stakeholders1 manually define the product’s functionality as use-case scenarios. These scenarios characterize the system from a user perspective and are used as an input to the design of an embedded system that includes both software and hardware components. In order to optimize the design of the system, the detection and usage of application scenarios augments this trajectory (the bottom gray box in the figure). Once the application is coded, its scenarios related to resource utilization are extracted in an automatic way, and they are considered for the decisions made during the following phases of the system design. Hence, the runtime behavior of the application is classified into several application scenarios, where the cost of the operation modes within a scenario is always fairly similar. For each individual scenario, more specific and aggressive design decisions can be made.
+The sets of use-case scenarios and application scenarios are not necessarily disjoint, and it is possible that one or more use-case scenarios correspond to one application scenario. But still, usually they are not overlapping and it is likely that a use-case scenario is split into several application scenarios, or that several application scenarios intersect several use-case scenarios.
 
 
 \section{Scratch-pad Memory Architectures - related work incl}
@@ -340,7 +373,7 @@ The main ideas of the methodology are presented, although the presentation is he
 
 \subsubsection{Roles of the Authors}
 
-I performed the necessary experiments and the writing of the paper, based on the ideas of Kjeldsberg and Catthoor. 
+I developed the detailed approach and performed the necessary experiments and the writing of the paper, partly based on some initial ideas of Kjeldsberg and Catthoor. 
 Hammari provided one of the applications and Huisken helped in the development of the energy model.
 I orally presented the paper in the conference.
 
@@ -371,7 +404,7 @@ The methodology is both extended and better formulated compared to the previous 
 This work was first presented in embedded systems week, as an oral and poster submission.
 Later, it was extended and published as a journal paper.
 The main idea is based on the previous paper.
-I performed the necessary simulations and wrote the paper, based on suggestions and ideas from Kjeldsberg and Catthoor. 
+I performed the necessary simulations and wrote the paper, partly based on suggestions and ideas from Kjeldsberg and Catthoor. 
 
 \section{Contribution B: Combined Implementation of the System Scenario Methodology on Memory Subsystem and PEs}
 
@@ -389,11 +422,10 @@ The use of system scenarios in the whole system improves the overall energy effi
 
 \subsubsection{Roles of the Authors}
 
-My contribution on this work is the part of the work regarding the memory subsystem.
-Both the experimental and the writing part for the memory was performed by me. 
+My contribution on this work is the experimental and the writing part regarding the memory subsystem.
 Zompakis did all the experiments and the writing regarding the processing subsystem and the wireless application.
 The oral presentation was also performed by Zompakis.
-The rest of the authors contributed on the main idea and the improvement of the text.
+The rest of the authors contributed on the initial idea and the improvement of the text.
 
 \section{Contribution C: Integrated Interleaving and Data-to-Memory Mapping}
 
@@ -416,7 +448,7 @@ This work suggests that the memory-aware system scenario methodology is compleme
 
 \subsubsection{Roles of the Authors}
 
-The initial idea for this work was given by Catthoor and was implemented by me with the help of Sharma.
+The initial idea for this work is partly based on suggestions by Catthoor and the necessary experiments were implemented by me with the help of Sharma.
 The majority of the paper was written by me and the rest by Sharma, while all the authors contributed on the further improvement of the text with their feedback.
 
 \section{Contribution D: Interconnection Cost Modeling and Scaling}
@@ -440,7 +472,7 @@ A reconfigurable memory architecture is a requirement for the implementation of 
 
 \subsubsection{Roles of the Authors}
 
-I performed the necessary development work and wrote the paper, based on suggestions and ideas from Kjeldsberg and Catthoor. 
+I performed the necessary development work and wrote the paper, partly based on suggestions from Kjeldsberg and Catthoor. 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \chapter{Conclusions and Future Work}
@@ -468,7 +500,7 @@ A wide range of applications is studied that allow us to draw conclusions about 
 
 \section{Future Work}
 
-The future research to improve the current work can focus on the system scenario methodology and/or the memory models.
+The future research to improve the current work can focus on the system scenario methodology and/or the memory models and architectures.
 
 One improvement is to fully automate the memory-aware system scenario methodology.
 The optimal implementation should take as an input the application code and the library of memory models and automatically generate the most energy efficient memory architecture.
@@ -482,6 +514,9 @@ More detailed models can be developed based on an extensive research and simulat
 All the possible clustered memory architectures can be synthesized and tested to get a detailed report on the energy numbers, although it is a very time consuming task.
 Especially the interconnect model can be extended by taking the delay into consideration and the synthesis of more designs can steer the model.
 A manually improved placing and routing strategy will provide more accurate results regarding the overhead for clustered memory architectures.
+An architecture with point-to-point connections between all or some of the memory banks could be explored. 
+Such an architecture allows the direct transfer of data between the memory banks without the intervention of the processor.
+The data transfers between the memory banks may be useful in some cases, although the interconnection overhead is expected to increase significantly.
 
 \addcontentsline{toc}{chapter}{Bibliography}	
 \bibliographystyle{plain}

@@ -1,4 +1,11 @@
-\begin{thebibliography}{1}
+\begin{thebibliography}{10}
+
+\bibitem{abraham1999automatic}
+Santosh~G Abraham and Scott~A Mahlke.
+\newblock Automatic and efficient evaluation of memory hierarchies for embedded
+  systems.
+\newblock In {\em Microarchitecture, 1999. MICRO-32. Proceedings. 32nd Annual
+  International Symposium on}, pages 114--125. IEEE, 1999.
 
 \bibitem{Artes2011}
 A.~Artes et~al.
@@ -7,6 +14,12 @@ A.~Artes et~al.
 \newblock In {\em VLSI and System-on-Chip (VLSI-SoC), 2011 IEEE/IFIP 19th
   International Conference on}, pages 136 --141, oct. 2011.
 
+\bibitem{Ben00c}
+Luca Benini, Alberto Macii, Enrico Macii, and Massimo Poncino.
+\newblock Increasing energy efficiency of embedded systems by
+  application-specific memory hierarchy generation.
+\newblock {\em IEEE Design \& Test of Computers}, (2):74--85, 2000.
+
 \bibitem{Ben00b}
 Luca Benini, Alberto Macii, and Massimo Poncino.
 \newblock A recursive algorithm for low-power memory partitioning.
@@ -14,10 +27,22 @@ Luca Benini, Alberto Macii, and Massimo Poncino.
   Proceedings of the 2000 International Symposium on}, pages 78--83. IEEE,
   2000.
 
+\bibitem{chen1999loop}
+Fei Chen and Edwin Hsing-Mean Sha.
+\newblock Loop scheduling and partitions for hiding memory latencies.
+\newblock In {\em Proceedings of the 12th international symposium on System
+  synthesis}, page~64. IEEE Computer Society, 1999.
+
 \bibitem{Garcia}
 Philip Garcia, Katherine Compton, Michael Schulte, Emily Blem, and Wenyin Fu.
 \newblock An overview of reconfigurable hardware in embedded systems.
 \newblock {\em EURASIP J. Embedded Syst.}, 2006(1):13--13, January 2006.
+
+\bibitem{grun2000mist}
+Peter Grun, Nikil Dutt, and Alex Nicolau.
+\newblock Mist: An algorithm for memory miss traffic management.
+\newblock In {\em Proceedings of the 2000 IEEE/ACM international conference on
+  Computer-aided design}, pages 431--438. IEEE Press, 2000.
 
 \bibitem{Elena2010}
 E.~Hammari, F.~Catthoor, J.~Huisken, and P~G Kjeldsberg.
@@ -25,12 +50,37 @@ E.~Hammari, F.~Catthoor, J.~Huisken, and P~G Kjeldsberg.
   epileptic seizure predictor.
 \newblock In {\em NORCHIP, 2010}, pages 1 --6, nov. 2010.
 
+\bibitem{jacob1996analytical}
+Bruce~L Jacob, Peter~M Chen, Seth~R Silverman, and Trevor~N Mudge.
+\newblock An analytical model for designing memory hierarchies.
+\newblock {\em Computers, IEEE Transactions on}, 45(10):1180--1194, 1996.
+
+\bibitem{jantsch1994hardware}
+Axel Jantsch, Peeter Ellervee, Ahmed Hemani, Johnny {\"O}berg, and Hannu
+  Tenhunen.
+\newblock Hardware/software partitioning and minimizing memory interface
+  traffic.
+\newblock In {\em Proceedings of the conference on European design automation},
+  pages 226--231. IEEE Computer Society Press, 1994.
+
+\bibitem{kandemir2001improving}
+Mahmut Kandemir, Ugur Sezer, and Victor Delaluz.
+\newblock Improving memory energy using access pattern classification.
+\newblock In {\em Proceedings of the 2001 IEEE/ACM international conference on
+  Computer-aided design}, pages 201--206. IEEE Press, 2001.
+
 \bibitem{Ang13b}
 A.~Kritikakou, F.~Catthoor, V.~Kelefouras, and C.~Goutis.
 \newblock Near-optimal and scalable intra-signal in-place for non-overlapping
   and irregular access scheme.
 \newblock {\em ACM Trans. Design Automation of Electronic Systems (TODAES)},
   conditionally accepted, 2013.
+
+\bibitem{li1999hardware}
+Yanbing Li and Wayne~H Wolf.
+\newblock Hardware/software co-synthesis with memory hierarchies.
+\newblock {\em Computer-Aided Design of Integrated Circuits and Systems, IEEE
+  Transactions on}, 18(10):1405--1417, 1999.
 
 \bibitem{tcm}
 Zhe Ma, Pol Marchal, Daniele~Paolo Scarpazza, Peng Yang, Chun Wong,
@@ -45,6 +95,14 @@ A.~Macii, L.~Benini, and M.~Poncino.
 \newblock {\em Memory Design Techniques for Low-Energy Embedded Systems}.
 \newblock Kluwer Academic Publishers, 2002.
 
+\bibitem{Mar03}
+P.~Marchal, D.~Bruni, J.I. Gomez, L.~Benini, L.~Pinuel, F.~Catthoor, and
+  H.~Corporaal.
+\newblock Sdram-energy-aware memory allocation for dynamic multi-media
+  applications on multi-processor platforms.
+\newblock In {\em Design, Automation and Test in Europe Conference and
+  Exhibition, 2003}, pages 516--521, 2003.
+
 \bibitem{Mei11}
 Pascal Meinerzhagen, SM~Yasser Sherazi, Andreas Burg, and Joachim~Neves
   Rodrigues.
@@ -52,6 +110,32 @@ Pascal Meinerzhagen, SM~Yasser Sherazi, Andreas Burg, and Joachim~Neves
   65-nm cmos technology.
 \newblock {\em IEEE Transactions on Emerging and Selected Topics in Circuits
   and Systems}, 1(2), 2011.
+
+\bibitem{oshima1997high}
+Yoichi Oshima, Bing~J Sheu, and Steve~H Jen.
+\newblock High-speed memory architectures for multimedia applications.
+\newblock {\em Circuits and Devices Magazine, IEEE}, 13(1):8--13, 1997.
+
+\bibitem{Pgk01}
+Preeti~Ranjan Panda, Francky Catthoor, Nikil~D Dutt, Koen Danckaert, Erik
+  Brockmeyer, Chidamber Kulkarni, A~Vandercappelle, and Per~Gunnar Kjeldsberg.
+\newblock Data and memory optimization techniques for embedded systems.
+\newblock {\em ACM Transactions on Design Automation of Electronic Systems
+  (TODAES)}, 6(2):149--206, 2001.
+
+\bibitem{passes1995multi}
+NL~Passes, Edwin Hsing-Mean Sha, and Liang-Fang Chao.
+\newblock Multi-dimensional interleaving for time-and-memory design
+  optimization.
+\newblock In {\em Computer Design: VLSI in Computers and Processors, 1995.
+  ICCD'95. Proceedings., 1995 IEEE International Conference on}, pages
+  440--445. IEEE, 1995.
+
+\bibitem{schmit1997synthesis}
+Herman Schmit and Donald~E Thomas.
+\newblock Synthesis of application-specific memory designs.
+\newblock {\em Very Large Scale Integration (VLSI) Systems, IEEE Transactions
+  on}, 5(1):101--111, 1997.
 
 \bibitem{sharma2013data}
 Namita Sharma, TV~Aa, Prashant Agrawal, Praveen Raghavan, Preeti~Ranjan Panda,
