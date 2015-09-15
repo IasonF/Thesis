@@ -4,45 +4,47 @@ The top-level auxiliary file: main.aux
 The style file: plain.bst
 Database file #1: reference.bib
 Warning--there's a number but no volume in Ben00c
-You've used 22 entries,
+Warning--there's a number but no volume in 220
+Warning--can't use both volume and number fields in 360
+You've used 33 entries,
             2118 wiz_defined-function locations,
-            643 strings with 9167 characters,
-and the built_in function-call counts, 9602 in all, are:
-= -- 951
-> -- 506
-< -- 11
-+ -- 201
-- -- 176
-* -- 692
-:= -- 1516
-add.period$ -- 74
-call.type$ -- 22
-change.case$ -- 151
+            703 strings with 11296 characters,
+and the built_in function-call counts, 13943 in all, are:
+= -- 1359
+> -- 791
+< -- 14
++ -- 316
+- -- 278
+* -- 1032
+:= -- 2253
+add.period$ -- 108
+call.type$ -- 33
+change.case$ -- 231
 chr.to.int$ -- 0
-cite$ -- 23
-duplicate$ -- 370
-empty$ -- 705
-format.name$ -- 176
-if$ -- 2069
+cite$ -- 36
+duplicate$ -- 510
+empty$ -- 988
+format.name$ -- 278
+if$ -- 2946
 int.to.chr$ -- 0
-int.to.str$ -- 22
-missing$ -- 24
-newline$ -- 113
-num.names$ -- 44
-pop$ -- 178
+int.to.str$ -- 33
+missing$ -- 35
+newline$ -- 167
+num.names$ -- 66
+pop$ -- 268
 preamble$ -- 1
-purify$ -- 131
+purify$ -- 203
 quote$ -- 0
-skip$ -- 277
+skip$ -- 375
 stack$ -- 0
-substring$ -- 585
-swap$ -- 128
-text.length$ -- 11
+substring$ -- 794
+swap$ -- 161
+text.length$ -- 14
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 84
-warning$ -- 1
-while$ -- 86
-width$ -- 24
-write$ -- 250
-(There was 1 warning)
+type$ -- 124
+warning$ -- 3
+while$ -- 122
+width$ -- 35
+write$ -- 369
+(There were 3 warnings)

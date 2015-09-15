@@ -96,20 +96,19 @@ Chapter 5 concludes the thesis with a summary of contributions.
 The appendix holds each paper I have authored or coauthored in chronological order. 
 These papers are reproduced faithfully with regard to the published text, but has been reformatted to increase readability.
 
-\chapter{Background} %use enough space up to 15-20 pages
+\chapter{Background} 
 \label{background}
 
 \section{Data and Memory Management Approaches}
 %Literature other than DTSE...
 Several techniques have been proposed to optimize the memory management based on the study of the processed data and an overview of them is presented in this section.
 Most techniques propose transformations on the (a) loop and control-flow, (b) data reorganization and mapping and (c) memory platform generation, and aim to tackle the problem of sub-optimal memory organization.
-The sub-optimal memory organization problem has been identified both in compiler theory [43] and high-level synthesis [519].
+The sub-optimal memory organization problem has been identified both in compiler theory \cite{43} and high-level synthesis \cite{519}.
 
 The loop and control flow transformations aim at improving the data access locality and remove any mismatches in production and consumption ordering of data.
 They can be applied globally across the full code or into specific loops.
 Several research efforts provided very powerful environments for interactive loop transformations as long as no other transformations are required.
-In the parallel compiler domain, interactive environments like Tiny [556, 557], Omega at U.Maryland [265], SUIF at Stanford [18, 23, 220], the Paradigm compiler at Univ. of Illinois [45] (and earlier work [430]) and the ParaScope Editor [360] at Univ. of Rice have been presented. 
-Also non-singular transformations have been investigated in this context [265, 320]. 
+In the parallel compiler domain, interactive environments like Tiny \cite{556}, Omega at U.Maryland \cite{256}, SUIF at Stanford \cite{220}, the Paradigm compiler at Univ. of Illinois \cite{45} and the ParaScope Editor \cite{360} at Univ. of Rice have been presented. 
 
 The data mapping optimizations focus on finding the optimal mapping of the different arrays into the memory.
 Energy-aware assignment of data to memory banks for several task-sets based on the MediaBench suit of benchmarks is presented in \cite{Mar03}. 
@@ -125,8 +124,93 @@ The authors in \cite{abraham1999automatic}, \cite{jacob1996analytical} and \cite
 Application specific memory design is a research topic in \cite{schmit1997synthesis}, while memory design for multimedia applications is presented in \cite{oshima1997high}.
 
 \section{Data Transfer and Storage Exploration}
-DTSE literature... 
 
+A generic approach to tackle the access and power bottlenecks on the memory is the data transfer and storage exploration methodology (DTSE) presented in \cite{dtse}.
+The methodology presents several optimizations and their exploitation in a systematic way.
+All the means not related to process technology that can optimize power and performance are discussed in DTSE. 
+It is shown that this is feasible with quite spectacular effects by a more optimal design and mapping on the memory organization and system-level code transformations applied to the initial application specification. 
+The price paid there will be an increased system design complexity, which can be offset with appropriate design methodology support tools. 
+The global overview of the DTSE methodology is presented in Fig.\ref{fig:dtse}.
+
+\begin{figure}
+	\centering
+	\includegraphics[scale=0.9]{Images/dtse1.pdf}
+	\caption{DTSE methodology for data transfer and storage exploration. Source: \cite{palkovicThesis} }
+	\label{fig:dtse}
+\end{figure}
+
+Platform independent steps of the DTSE reduce the number of array accesses and enable later platform dependent optimization steps. 
+They are beneficial for any platform used later in the design-flow and are briefly presented:
+
+\begin{enumerate}
+
+\item Pruning.
+
+This step is necessary to identify and isolate the parts and data structures in the program which are data-dominant and thus relevant for the DTSE. 
+The pruning step also presents this code in a way which is optimally suited for transformations. 
+Thus mostly loops with large bounds and exhibiting good reuse of data and data structures such as array variables are exposed.
+ All the freedom is exposed explicitly, and the complexity of the exploration is reduced by hiding constructs that are not relevant. 
+ Apart from areas of power oriented gain, the parts of the program, which are a bottleneck for obtaining better performance need to be identified. 
+ These are mostly the data structures that have very little locality but are accessed heavily.
+ 
+ \item Global data-flow transformations.
+ 
+ The goal of the global data-flow optimization step is to reduce the number of bottlenecks in the algorithm that prevent optimizing code restructuring transformations from being applied and remove access redundancy in the data-flow. 
+ The transformations consist mainly of advanced signal substitution avoiding unnecessary copies of data, modifying computation order in associative chains enabling certain loop transformations, shifting of delay lines through the algorithm to reduce the storage requirements, and re-computation issues to reduce the number of transfers and storage size. 
+ 
+ \item Global loop and control-flow transformations.
+ 
+ The goal of the global loop and control-flow optimization step is to reduce the global lifetimes of the arrays and to increase the locality and regularity of the data accesses.
+  Locality of data accesses means that the accesses to the same memory location have to be close in time and the regularity means that the order of consumption should be the same as the order of production. 
+  The transformations remove system-level buffers introduced due to mismatches in production and consumption ordering (regularity problems). 
+  They allow also the data to be stored later in the design flow in smaller memories closer to the data paths.
+  
+  \item Data reuse exploration.
+  
+The goal of the data reuse decisions step is to better exploit a hierarchical memory organization to benefit from the available temporal locality in the data accesses. 
+An important consideration here is the distribution of the data over the hierarchy levels such that frequently accessed data can be read from smaller and less power consuming memories. 
+This obviously has a positive effect on the total power consumption of the application because the most frequently accessed data is then read from less power consuming memories. 
+Also the smaller memories can then be closer to the data paths thereby reducing the dissipation in the interconnect, especially if off-chip memory accesses are replaced by on-chip memory accesses.
+ 
+\end{enumerate}
+
+Platform dependent steps of the DTSE uses the information about the predefined memory organization to perform further optimizations. 
+Some substeps only apply for an (embedded) customizable memory organization which is becoming available on several platforms by partly powering down over-dimensioned memory blocks that are not fully needed. The platform dependent steps are briefly presented:
+
+\begin{enumerate}
+
+\item Memory Hierarchy Layer Assignment (MHLA).
+
+The MHLA step maps the most beneficial candidates from data reuse copy trees to a virtual memory hierarchy subsystem. 
+During MHLA, the data reuse copy trees resulting from the data reuse exploration and the corresponding transfers are partitioned over several hierarchical memory layers, based on the bandwidth and high-level memory size estimation. 
+The high-level memory class of each of the memory layers is determined (e.g., on-chip, off-chip, ROM, SRAM or DRAM and other RAM “flavors”). 
+The Data Reuse Analysis (DRA) and the MHLA steps have been integrated in the robust Memory Hierarchy (MH) tool based on the ATOMIUM framework.
+
+\item Storage Cycle Budget Distribution (SCBD)
+
+The goal of the SCBD step is to ensure that the (usually stringent) real-time constraints are met with a minimal cost penalty. 
+The major substep involves Storage Budget Optimization (SBO) to determine which data should be made simultaneously accessible in the memory architecture such that the real-time constraints can be met with minimal memory bandwidth related costs.
+This step mainly determines the bandwidth/latency requirements and the balancing of the available cycle budget over the different memory accesses.
+Additional loop transformations are performed to meet the real-time constraints, such as merging of loops without dependencies, software pipelining and partial loop unrolling. 
+These loop transformations normally do not influence the access order of data elements, so also the data reuse behavior remains the same.
+The data reuse transformations introduce dependencies in the code which constrain the freedom for SCBD transformations. 
+
+\item Memory/bank allocation and signal assignment (MAA).
+
+The goal of the memory allocation and assignment step is to determine an optimal memory architecture for the background data. 
+The step allocates memory units and ports (including their types) from a memory library and assigns the data to the best suited memory units, given the cycle budget and other timing constraints. 
+The combination of the SCBD and MAA tools allows to derive real Pareto trade-off curves of the background memory related cost (e.g., power) versus the cycle budget.
+
+\item Memory data layout optimization.
+
+In the memory allocation and signal-to-memory assignment step, arrays were assigned to physical memories or to banks within predefined memories. 
+However, the arrays are still multi-dimensional, while the memory itself knows only addresses. 
+In other words, the physical address for every signal element still has to be determined. 
+This transformation is the data layout decision.
+ Main memory data-layout optimization exploits the memory organization data freedom and thus reduces the conflict misses.
+For hardware-controlled caches advanced main memory layout organization techniques have been developed, which allow to remove most of the present conflict misses due to the limited cache associativity. % [130].
+
+\end{enumerate}
 
 \section{System Scenarios}
 All the literature with focus on the ones related

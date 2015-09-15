@@ -14,6 +14,17 @@ A.~Artes et~al.
 \newblock In {\em VLSI and System-on-Chip (VLSI-SoC), 2011 IEEE/IFIP 19th
   International Conference on}, pages 136 --141, oct. 2011.
 
+\bibitem{43}
+U~Banarjee, R~Eigenmann, A~Nicolau, and D~Padua.
+\newblock Automatic program parallelisation.
+\newblock {\em Proc IEEE}, 81, 1993.
+
+\bibitem{45}
+Prithviraj Banerjee, John Chandy, Manish Gupta, EW~Hodges, John~G Holm, Antonio
+  Lain, Daniel~J Palermo, Shankar Ramaswamy, Ernesto Su, et~al.
+\newblock The paradigm compiler for distributed-memory multicomputers.
+\newblock {\em Computer}, 28(10):37--47, 1995.
+
 \bibitem{Ben00c}
 Luca Benini, Alberto Macii, Enrico Macii, and Massimo Poncino.
 \newblock Increasing energy efficiency of embedded systems by
@@ -27,6 +38,19 @@ Luca Benini, Alberto Macii, and Massimo Poncino.
   Proceedings of the 2000 International Symposium on}, pages 78--83. IEEE,
   2000.
 
+\bibitem{220}
+E~Bugnion, Shih-Wei Liao, BR~Murphy, SP~Amarasinghe, JM~Anderson, MW~Hall, and
+  Monica~S Lam.
+\newblock Maximizing multiprocessor performance with the suif compiler.
+\newblock {\em Computer}, (12):84--85, 1996.
+
+\bibitem{dtse}
+Francky Catthoor, Sven Wuytack, G.E. de~Greef, Florin Banica, Lode
+  Nachtergaele, and Arnout Vandecappelle.
+\newblock {\em Custom Memory Management Methodology: Exploration of Memory
+  Organisation for Embedded Multimedia System Design}.
+\newblock Springer, 1998.
+
 \bibitem{chen1999loop}
 Fei Chen and Edwin Hsing-Mean Sha.
 \newblock Loop scheduling and partitions for hiding memory latencies.
@@ -38,11 +62,31 @@ Philip Garcia, Katherine Compton, Michael Schulte, Emily Blem, and Wenyin Fu.
 \newblock An overview of reconfigurable hardware in embedded systems.
 \newblock {\em EURASIP J. Embedded Syst.}, 2006(1):13--13, January 2006.
 
+\bibitem{GheoThesis}
+Stefan~Valentin Gheorghita.
+\newblock {\em Dealing with dynamism in embedded system design: application
+  scenarios}.
+\newblock PhD thesis, Technische Universiteit Eindhoven, 2007.
+
 \bibitem{grun2000mist}
 Peter Grun, Nikil Dutt, and Alex Nicolau.
 \newblock Mist: An algorithm for memory miss traffic management.
 \newblock In {\em Proceedings of the 2000 IEEE/ACM international conference on
   Computer-aided design}, pages 431--438. IEEE Press, 2000.
+
+\bibitem{usecase}
+Javier~J Gutierrez, Maria~J Escalona, Manuel Mejias, Jesus Torres, and Arturo~H
+  Centeno.
+\newblock A case study for generating test cases from use cases.
+\newblock In {\em Research Challenges in Information Science, 2008. RCIS 2008.
+  Second International Conference on}, pages 209--214. IEEE, 2008.
+
+\bibitem{360}
+Mary~W Hall, Timothy~J Harvey, Ken Kennedy, Nathaniel McIntosh, Kathryn~S
+  McKinley, Jeffrey~D Oldham, Michael~H Paleczny, and Gerald Roth.
+\newblock {\em Experiences using the ParaScope Editor: an interactive parallel
+  programming tool}, volume~28.
+\newblock ACM, 1993.
 
 \bibitem{Elena2010}
 E.~Hammari, F.~Catthoor, J.~Huisken, and P~G Kjeldsberg.
@@ -68,6 +112,12 @@ Mahmut Kandemir, Ugur Sezer, and Victor Delaluz.
 \newblock Improving memory energy using access pattern classification.
 \newblock In {\em Proceedings of the 2001 IEEE/ACM international conference on
   Computer-aided design}, pages 201--206. IEEE Press, 2001.
+
+\bibitem{256}
+Mahmut Kandemir, Narayanan Vijaykrishnan, Mary~Jane Irwin, and Wu~Ye.
+\newblock Influence of compiler optimizations on system power.
+\newblock In {\em Proceedings of the 37th Annual Design Automation Conference},
+  pages 304--307. ACM, 2000.
 
 \bibitem{Ang13b}
 A.~Kritikakou, F.~Catthoor, V.~Kelefouras, and C.~Goutis.
@@ -116,6 +166,10 @@ Yoichi Oshima, Bing~J Sheu, and Steve~H Jen.
 \newblock High-speed memory architectures for multimedia applications.
 \newblock {\em Circuits and Devices Magazine, IEEE}, 13(1):8--13, 1997.
 
+\bibitem{palkovicThesis}
+Martin Palkovic.
+\newblock Enhanced applicability of loop transformations, 2007.
+
 \bibitem{Pgk01}
 Preeti~Ranjan Panda, Francky Catthoor, Nikil~D Dutt, Koen Danckaert, Erik
   Brockmeyer, Chidamber Kulkarni, A~Vandercappelle, and Per~Gunnar Kjeldsberg.
@@ -143,5 +197,17 @@ Namita Sharma, TV~Aa, Prashant Agrawal, Praveen Raghavan, Preeti~Ranjan Panda,
 \newblock Data memory optimization in lte downlink.
 \newblock In {\em Acoustics, Speech and Signal Processing (ICASSP), 2013 IEEE
   International Conference on}, pages 2610--2614. IEEE, 2013.
+
+\bibitem{519}
+Ingrid Verbauwhede, Francky Catthoor, Joos Vandewalle, and Hugo De~Man.
+\newblock In-place memory management of algebraic algorithms on application
+  specific ics.
+\newblock {\em Journal of VLSI signal processing systems for signal, image and
+  video technology}, 3(3):193--200, 1991.
+
+\bibitem{556}
+Michael Wolfe.
+\newblock Data dependence and program restructuring.
+\newblock {\em The Journal of Supercomputing}, 4(4):321--344, 1991.
 
 \end{thebibliography}
