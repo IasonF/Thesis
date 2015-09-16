@@ -184,7 +184,7 @@ Some substeps only apply for an (embedded) customizable memory organization whic
 The MHLA step maps the most beneficial candidates from data reuse copy trees to a virtual memory hierarchy subsystem. 
 During MHLA, the data reuse copy trees resulting from the data reuse exploration and the corresponding transfers are partitioned over several hierarchical memory layers, based on the bandwidth and high-level memory size estimation. 
 The high-level memory class of each of the memory layers is determined (e.g., on-chip, off-chip, ROM, SRAM or DRAM and other RAM “flavors”). 
-The Data Reuse Analysis (DRA) and the MHLA steps have been integrated in the robust Memory Hierarchy (MH) tool based on the ATOMIUM framework.
+
 
 \item Storage Cycle Budget Distribution (SCBD)
 
@@ -203,9 +203,9 @@ The combination of the SCBD and MAA tools allows to derive real Pareto trade-off
 
 \item Memory data layout optimization.
 
-In the memory allocation and signal-to-memory assignment step, arrays were assigned to physical memories or to banks within predefined memories. 
+In the memory allocation and data-to-memory assignment step, arrays were assigned to physical memories or to banks within predefined memories. 
 However, the arrays are still multi-dimensional, while the memory itself knows only addresses. 
-In other words, the physical address for every signal element still has to be determined. 
+In other words, the physical address for every array element still has to be determined. 
 This transformation is the data layout decision.
  Main memory data-layout optimization exploits the memory organization data freedom and thus reduces the conflict misses.
 For hardware-controlled caches advanced main memory layout organization techniques have been developed, which allow to remove most of the present conflict misses due to the limited cache associativity. % [130].
@@ -213,10 +213,55 @@ For hardware-controlled caches advanced main memory layout organization techniqu
 \end{enumerate}
 
 \section{System Scenarios}
-All the literature with focus on the ones related
-Scenario based design has been used for a long time in different areas, like human-computer interaction or object oriented software engineering. 
-Examples...
 
+The concept of system scenarios has been presented before in a systematic way on a wide range of applications \cite{GheoThesis}.
+This section describes the basic concepts behind the system scenario methodology and its basic steps.
+The methodology is applied to a memory specific context in the rest of this thesis. 
+
+The goal of the system scenario methodology is, given an application, to exploit at design time its possible operation modes from the resource usage perspective, without getting into an explosion of details. 
+If the environment, the inputs and the hardware architecture status would always be the same, then it would be possible to optimally tune the system to that particular situation. 
+However, since a lot of parameters are changing all the time, the system must be designed for the worst case situation. 
+Still, it is possible to tune the system at run-time (e.g., change the processor frequency/supply voltage), based on the actual operation mode. 
+If this has to happen entirely during run-time, the overhead is most likely too large. 
+So, an optimal configuration of the system is selected up front, at design time. 
+However, if a different configuration would be stored for every possible operation mode, a huge database is required. 
+Therefore, the operation modes similar from the resource usage perspective are clustered together into a single scenario, for which we store a tuned configuration for the worst case of all operation modes included in it.
+The system scenario methodology deals with issues that are common: choosing a good scenario set, deciding which scenario to switch to (or not to switch) and using the scenario to change the system knobs. 
+This leads to the different steps of the methodology:
+
+\begin{enumerate}
+
+\item Profiling 
+
+This step combines static analysis and profiling of the application and is done at design time.
+The studied application is tested exploring the whole range of inputs that is rational for the application.
+The system resources and the associated cost are found.
+The costs are the resource usage (e.g., number of processor cycles or memory requirements).
+ If the information about all possible operation modes in which a system may run is known at design time, and the operation modes are considered in different steps of the embedded system design, a more efficient and effective system may be built, as specific and aggressive design decisions can be made for each operation mode.
+
+\item Identification
+
+In this step, the relevant operation mode
+parameters are selected and the operation modes are clustered into scenarios. 
+This clustering is based on the cost trade-offs of the operation modes, or an estimate thereof. 
+The identification step should take as much as possible into account the overhead costs introduced in the system by the following steps of the methodology. 
+As this is not easy to achieve, an alternative solution is to refine (i.e., to further cluster) the scenario identification during these steps. 
+
+\item Detection/Prediction 
+
+At run-time, a scenario has to be selected from the scenario set based on the actual parameter values. 
+In general, the parameter values are not known before the operation mode starts, so they have to be estimated, which leads to detection of the scenario. 
+Detection is not a trivial task: both the number of parameters and the number of scenarios may be considerable, so a simple lookup in a list of scenarios may not be feasible. 
+The detection incurs a certain run-time overhead, which depends on the chosen scenario set. 
+Therefore, the scenario set may be refined based on the detection overhead. 
+
+\item Switching
+
+Switching is the act of changing the system from one set of knob positions to another. This implies some overhead (e.g., time and energy), which may be large (e.g., when migrating a task from one processor to another). 
+Therefore, even when a certain scenario (different from the current one) is predicted, it is not always a good idea to switch to it, because the overhead may be larger than the gain. The switching step selects at design time an algorithm, which is used at runtime to decide whether to switch or not. 
+It also introduces in the application the way how to change the knob positions, and refines the scenario set by taking into account switching overhead.
+
+\end{enumerate}
 
 \subsection{Use-Case vs. System Scenarios}
 
@@ -227,22 +272,37 @@ Examples...
 	\label{fig:versus}
 \end{figure}
 
-Use case scenario approaches generate different scenarios based on a user's behavior.
-	
-	Examples...
-	
-	System scenario methodology focuses on the behavior of the system to generate scenarios and can, therefore, fully exploit the detailed platform mapping information. 
-	Examples...
-	In contrast to use case scenario approaches in which scenarios are generated based on a user’s behaviour, the system scenario methodology focuses on behaviour of the system to generate scenarios.
-	Furthermore, compared with use case scenario ap- proaches in which scenarios are generated based on a user’s behavior \cite{usecase}, the system scenario methodology focuses on the behavior of the system to generate scenarios and can, therefore, fully exploit the detailed platform mapping information.
-	In both these cases, these scenarios concretely describe, in an early phase of the development process, the use of a future system. In case of human-computer interaction, the scenarios appear like narrative descriptions of envisioned usage episodes, and in case of object oriented software engineering like a unified modeling language (UML) use-case diagram which enumerates, from functional and timing point of view, all possible user actions and the system reactions that are required to meet a proposed system function. These scenarios are called use-case scenarios.
-	In the embedded systems area, use-case scenarios are used in both hardware [52, 85] and software design [29]. In these cases, the scenarios focus on the application’s functional and timing behaviors and on its interaction with the users and environment, not on the resources required by a system to meet its constraints. These scenarios are used as an input during system design for user- centered design approaches.
-	This thesis concentrates on a different type of scenarios, so-called application scenarios, which may be derived from the behavior of the application. These scenarios are used to reduce the system cost by exploiting information about what can happen at runtime to make better design decisions. While use-case scenarios classify the application’s behavior based on the different ways it can be used, application scenarios classify it from the resource usage perspective, based on the cost trade-off aspects during the mapping to the platform. This second type of scenarios was for the first time explicitly identified and exploited by researchers from IMEC, Belgium, in [119].
-	Figure 2.1 depicts a design trajectory using use-case and application scenarios. It starts from a product idea, for which the stakeholders1 manually define the product’s functionality as use-case scenarios. These scenarios characterize the system from a user perspective and are used as an input to the design of an embedded system that includes both software and hardware components. In order to optimize the design of the system, the detection and usage of application scenarios augments this trajectory (the bottom gray box in the figure). Once the application is coded, its scenarios related to resource utilization are extracted in an automatic way, and they are considered for the decisions made during the following phases of the system design. Hence, the runtime behavior of the application is classified into several application scenarios, where the cost of the operation modes within a scenario is always fairly similar. For each individual scenario, more specific and aggressive design decisions can be made.
-The sets of use-case scenarios and application scenarios are not necessarily disjoint, and it is possible that one or more use-case scenarios correspond to one application scenario. But still, usually they are not overlapping and it is likely that a use-case scenario is split into several application scenarios, or that several application scenarios intersect several use-case scenarios.
+Another type of scenario that is used in several published works is the use-case scenario.
+Use-case scenario approaches generate different scenarios based on a user's behavior.
+These scenarios concretely describe, in an early phase of the development process, the use of a future system. 
+In case of human-computer interaction, the scenarios appear like narrative descriptions of envisioned usage episodes, and in case of object oriented software engineering like a unified modeling language (UML) use-case diagram which enumerates, from functional and timing point of view, all possible user actions and the system reactions that are required to meet a proposed system function. 
+In the embedded systems area, use-case scenarios are used in both hardware \cite{52} \cite{85} and software design \cite{29}. 
+In these cases, the scenarios focus on the application’s functional and timing behaviors and on its interaction with the users and environment, not on the resources required by a system to meet its constraints. 
+These scenarios are used as an input during system design for user-centered design approaches.	
 
+This thesis concentrates on system scenarios, which are derived from the behavior of the application. 
+These scenarios are used to reduce the system cost by exploiting information about what can happen at run-time to make better design decisions. 
+While use-case scenarios classify the application's behavior based on the different ways it can be used, application scenarios classify it from the resource usage perspective, based on the cost trade-off aspects during the mapping to the platform. 
+Fig.\ref{fig:versus} depicts a design trajectory using use-case and system scenarios. 
+It starts from a product idea, for which the product's functionality is manually defined. 
+These scenarios characterize the system from a user perspective and are used as an input to the design of an embedded system that includes both software and hardware components. 
+In order to optimize the design of the system, the detection and usage of application scenarios augments this trajectory (the bottom gray box in the figure). 
+Once the application is coded, its scenarios related to resource utilization are extracted in an automatic way, and they are considered for the decisions made during the following phases of the system design. 
+Hence, the run-time behavior of the application is classified into several application scenarios, where the cost of the operation modes within a scenario is always fairly similar. 
+For each individual scenario, more specific and aggressive design decisions can be made.
+	
+System scenario methodology focuses on the behavior of the system to generate scenarios and can, therefore, fully exploit the detailed platform mapping information. 
+In contrast to use case scenario approaches in which scenarios are generated based on a user's behavior, the system scenario methodology focuses on behavior of the system to generate scenarios.
+	Furthermore, compared with use case scenario approaches in which scenarios are generated based on a user's behavior \cite{usecase}, the system scenario methodology focuses on the behavior of the system to generate scenarios and can, therefore, fully exploit the detailed platform mapping information.
 
-\section{Scratch-pad Memory Architectures - related work incl}
+\section{Scratch-pad Memory Architectures}
+
+Scratch-pad memory architectures are employed in several studies with the objective of improving system performance and energy through means such as reduced memory access count or reduced cache misses. 
+Scratch-pad memories provide a good alternative to cache memories due to their higher flexibility.
+An example of using partitioning the data variables to scratch-pad memory and DRAM to minimize interference between variables is given in \cite{7}. 
+Several examples of clustered memory architectures have been proposed.
+In \cite{cho2009adaptive} an adaptive scratch-pad memory is successfully used in order to handle the dynamic behavior of multimedia applications.
+In \cite{wang2005energy} a clustered memory architecture is employed and an algorithm is developed, which efficiently uses the memory banks to achieve the maximum energy saving while satisfying the given performance constraint.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \chapter{Solution Approach}

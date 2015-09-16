@@ -57,6 +57,11 @@ Fei Chen and Edwin Hsing-Mean Sha.
 \newblock In {\em Proceedings of the 12th international symposium on System
   synthesis}, page~64. IEEE Computer Society, 1999.
 
+\bibitem{29}
+Bruce~Powel Douglass.
+\newblock {\em Real time UML: advances in the UML for real-time systems}.
+\newblock Addison-Wesley Professional, 2004.
+
 \bibitem{Garcia}
 Philip Garcia, Katherine Compton, Michael Schulte, Emily Blem, and Wenyin Fu.
 \newblock An overview of reconfigurable hardware in embedded systems.
@@ -93,6 +98,12 @@ E.~Hammari, F.~Catthoor, J.~Huisken, and P~G Kjeldsberg.
 \newblock Application of medium-grain multiprocessor mapping methodology to
   epileptic seizure predictor.
 \newblock In {\em NORCHIP, 2010}, pages 1 --6, nov. 2010.
+
+\bibitem{52}
+Mugurel~Theodor Ionita.
+\newblock {\em Scenario-based system architecting: a systematic approach to
+  developing future-proof system architectures}.
+\newblock PhD thesis, Technische Universiteit Eindhoven, 2005.
 
 \bibitem{jacob1996analytical}
 Bruce~L Jacob, Peter~M Chen, Seth~R Silverman, and Trevor~N Mudge.
@@ -184,6 +195,13 @@ NL~Passes, Edwin Hsing-Mean Sha, and Liang-Fang Chao.
 \newblock In {\em Computer Design: VLSI in Computers and Processors, 1995.
   ICCD'95. Proceedings., 1995 IEEE International Conference on}, pages
   440--445. IEEE, 1995.
+
+\bibitem{85}
+JoAnn~M Paul, Donald~E Thomas, and Alex Bobrek.
+\newblock Scenario-oriented design for single-chip heterogeneous
+  multiprocessors.
+\newblock {\em Very Large Scale Integration (VLSI) Systems, IEEE Transactions
+  on}, 14(8):868--880, 2006.
 
 \bibitem{schmit1997synthesis}
 Herman Schmit and Donald~E Thomas.
