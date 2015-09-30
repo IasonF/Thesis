@@ -21,6 +21,12 @@ Iason Filippopoulos, Francky Catthoor, and Per~Gunnar Kjeldsberg.
   multimedia applications using system scenarios.
 \newblock {\em Design Automation for Embedded Systems}, pages 1--24, 2013.
 
+\bibitem{Fil12}
+Iason Filippopoulos, Francky Catthoor, Per~Gunnar Kjeldsberg, Elena Hammari,
+  and Jos Huisken.
+\newblock Memory-aware system scenario approach energy impact.
+\newblock In {\em NORCHIP, 2012}, pages 1 --6, nov. 2012.
+
 \bibitem{itrs}
 International Technology~Roadmap for Semiconductors.
 \newblock Annual summary, 2013.

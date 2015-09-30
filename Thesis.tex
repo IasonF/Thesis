@@ -3,7 +3,7 @@
 % arara: bibtex  !!On each included chapter seperately!!
 % arara: pdflatex
 % arara: pdflatex
-% arara: nomencl
+% arara: nomencl : {makeindex Thesis.nlo -s nomencl.ist -o Thesis.nls}
 % arara: pdflatex: {synctex: yes, action: nonstopmode}
 
 %\documentclass[a4crop]{ntnuthesis} 
@@ -155,14 +155,6 @@
 %\thispagestyle{empty}
 \printnomenclature
 \cleardoublepage
-
-%Symbols
-\newpage
-\chapter*{List of Symbols\hfill} 
-\addcontentsline{toc}{chapter}{List of Symbols}
-\begin{flushleft}
-%	\input{symbols}
-\end{flushleft}
 
 \mainmatter
 

@@ -3,7 +3,7 @@
 \contentsline {section}{Acknowledgements}{v}{Doc-Start}
 \contentsline {chapter}{List of Tables}{xiii}{chapter*.2}
 \contentsline {chapter}{List of Figures}{xvi}{chapter*.3}
-\contentsline {chapter}{List of Symbols}{xvii}{chapter*.4}
+\contentsline {chapter}{List of Symbols}{xix}{chapter*.5}
 \gdef \the@ipfilectr {@-1}
 \contentsline {chapter}{\numberline {1}Introduction}{1}{chapter.1}
 \contentsline {section}{\numberline {1.1}Embedded Systems and Energy Consumption}{1}{section.1.1}
@@ -57,7 +57,7 @@
 \gdef \the@ipfilectr {}
 \gdef \the@ipfilectr {@-2}
 \contentsline {chapter}{\numberline {A}Energy Impact of Memory-Aware System Scenario Approach}{41}{appendix.A}
-\contentsline {section}{Abstract}{43}{section*.8}
+\contentsline {section}{Abstract}{43}{section*.9}
 \contentsline {section}{\numberline {A.1}Introduction}{45}{section.A.1}
 \contentsline {section}{\numberline {A.2}Related Work and Contribution Discussion}{46}{section.A.2}
 \contentsline {section}{\numberline {A.3}Extended System Scenario Methodology}{46}{section.A.3}
@@ -75,7 +75,7 @@
 \gdef \the@ipfilectr {}
 \gdef \the@ipfilectr {@-3}
 \contentsline {chapter}{\numberline {B}Exploration of energy efficient memory organizations for dynamic multimedia applications using system scenarios}{65}{appendix.B}
-\contentsline {section}{Abstract}{67}{section*.18}
+\contentsline {section}{Abstract}{67}{section*.19}
 \contentsline {section}{\numberline {B.1}Introduction}{69}{section.B.1}
 \contentsline {section}{\numberline {B.2}Motivational Example}{70}{section.B.2}
 \contentsline {section}{\numberline {B.3}Related Work and Contribution Discussion}{72}{section.B.3}
@@ -101,7 +101,7 @@
 \gdef \the@ipfilectr {}
 \gdef \the@ipfilectr {@-4}
 \contentsline {chapter}{\numberline {C}Systematic Exploration of Power-Aware Scenarios for IEEE 802.11ac WLAN Systems}{107}{appendix.C}
-\contentsline {section}{Abstract}{109}{section*.33}
+\contentsline {section}{Abstract}{109}{section*.34}
 \contentsline {section}{\numberline {C.1}Introduction}{111}{section.C.1}
 \contentsline {section}{\numberline {C.2}Related Work}{112}{section.C.2}
 \contentsline {section}{\numberline {C.3}System Scenario Principles}{114}{section.C.3}
@@ -116,7 +116,7 @@
 \gdef \the@ipfilectr {}
 \gdef \the@ipfilectr {@-5}
 \contentsline {chapter}{\numberline {D}Integrated Exploration Methodology for Data Interleaving and Data-to-Memory Mapping on SIMD architectures}{135}{appendix.D}
-\contentsline {section}{Abstract}{137}{section*.46}
+\contentsline {section}{Abstract}{137}{section*.47}
 \contentsline {section}{\numberline {D.1}Introduction}{139}{section.D.1}
 \contentsline {section}{\numberline {D.2}Motivational Example}{140}{section.D.2}
 \contentsline {section}{\numberline {D.3}Related work}{145}{section.D.3}
@@ -139,7 +139,7 @@
 \gdef \the@ipfilectr {}
 \gdef \the@ipfilectr {@-6}
 \contentsline {chapter}{\numberline {E}Technology scaling impact on the interconnection of clustered scratchpad memory architectures}{171}{appendix.E}
-\contentsline {section}{Abstract}{173}{section*.59}
+\contentsline {section}{Abstract}{173}{section*.60}
 \contentsline {section}{\numberline {E.1}Introduction}{175}{section.E.1}
 \contentsline {section}{\numberline {E.2}Related Work}{176}{section.E.2}
 \contentsline {section}{\numberline {E.3}Current technology}{177}{section.E.3}
@@ -147,8 +147,8 @@
 \contentsline {subsection}{\numberline {E.3.2}Example design: synthesis and simulation}{179}{subsection.E.3.2}
 \contentsline {section}{\numberline {E.4}Technology Scaling}{182}{section.E.4}
 \contentsline {subsection}{\numberline {E.4.1}Memory Banks}{183}{subsection.E.4.1}
-\contentsline {subsection}{\numberline {E.4.2}Interconnection}{183}{subsection.E.4.2}
-\contentsline {section}{\numberline {E.5}Model Construction and Projection Results}{186}{section.E.5}
-\contentsline {section}{\numberline {E.6}Conclusion}{187}{section.E.6}
-\contentsline {section}{Bibliography}{189}{section.E.6}
+\contentsline {subsection}{\numberline {E.4.2}Interconnection}{184}{subsection.E.4.2}
+\contentsline {section}{\numberline {E.5}Model Construction and Projection Results}{185}{section.E.5}
+\contentsline {section}{\numberline {E.6}Conclusion}{190}{section.E.6}
+\contentsline {section}{Bibliography}{190}{section.E.6}
 \gdef \the@ipfilectr {}

@@ -3,7 +3,7 @@
 \BOOKMARK [1][-]{Doc-Start}{Acknowledgements}{}% 3
 \BOOKMARK [0][-]{chapter*.2}{List of Tables}{}% 4
 \BOOKMARK [0][-]{chapter*.3}{List of Figures}{}% 5
-\BOOKMARK [0][-]{chapter*.4}{List of Symbols}{}% 6
+\BOOKMARK [0][-]{chapter*.5}{List of Symbols}{}% 6
 \BOOKMARK [0][-]{chapter.1}{Introduction}{}% 7
 \BOOKMARK [1][-]{section.1.1}{Embedded Systems and Energy Consumption}{chapter.1}% 8
 \BOOKMARK [1][-]{section.1.2}{Dynamic Data Intensive Applications}{chapter.1}% 9
@@ -39,7 +39,7 @@
 \BOOKMARK [1][-]{section.5.2}{Future Work}{chapter.5}% 39
 \BOOKMARK [0][-]{section.5.2}{Bibliography}{}% 40
 \BOOKMARK [0][-]{appendix.A}{Energy Impact of Memory-Aware System Scenario Approach}{}% 41
-\BOOKMARK [1][-]{section*.8}{Abstract}{appendix.A}% 42
+\BOOKMARK [1][-]{section*.9}{Abstract}{appendix.A}% 42
 \BOOKMARK [1][-]{section.A.1}{Introduction}{appendix.A}% 43
 \BOOKMARK [1][-]{section.A.2}{Related Work and Contribution Discussion}{appendix.A}% 44
 \BOOKMARK [1][-]{section.A.3}{Extended System Scenario Methodology}{appendix.A}% 45
@@ -55,7 +55,7 @@
 \BOOKMARK [1][-]{section.A.7}{Conclusion}{appendix.A}% 55
 \BOOKMARK [1][-]{section.A.7}{Bibliography}{appendix.A}% 56
 \BOOKMARK [0][-]{appendix.B}{Exploration of energy efficient memory organizations for dynamic multimedia applications using system scenarios}{}% 57
-\BOOKMARK [1][-]{section*.18}{Abstract}{appendix.B}% 58
+\BOOKMARK [1][-]{section*.19}{Abstract}{appendix.B}% 58
 \BOOKMARK [1][-]{section.B.1}{Introduction}{appendix.B}% 59
 \BOOKMARK [1][-]{section.B.2}{Motivational Example}{appendix.B}% 60
 \BOOKMARK [1][-]{section.B.3}{Related Work and Contribution Discussion}{appendix.B}% 61
@@ -79,7 +79,7 @@
 \BOOKMARK [1][-]{section.B.8}{Conclusions}{appendix.B}% 79
 \BOOKMARK [1][-]{section.B.8}{Bibliography}{appendix.B}% 80
 \BOOKMARK [0][-]{appendix.C}{Systematic Exploration of Power-Aware Scenarios for IEEE 802.11ac WLAN Systems}{}% 81
-\BOOKMARK [1][-]{section*.33}{Abstract}{appendix.C}% 82
+\BOOKMARK [1][-]{section*.34}{Abstract}{appendix.C}% 82
 \BOOKMARK [1][-]{section.C.1}{Introduction}{appendix.C}% 83
 \BOOKMARK [1][-]{section.C.2}{Related Work}{appendix.C}% 84
 \BOOKMARK [1][-]{section.C.3}{System Scenario Principles}{appendix.C}% 85
@@ -92,7 +92,7 @@
 \BOOKMARK [1][-]{section.C.7}{Conclusion}{appendix.C}% 92
 \BOOKMARK [1][-]{section.C.7}{Bibliography}{appendix.C}% 93
 \BOOKMARK [0][-]{appendix.D}{Integrated Exploration Methodology for Data Interleaving and Data-to-Memory Mapping on SIMD architectures}{}% 94
-\BOOKMARK [1][-]{section*.46}{Abstract}{appendix.D}% 95
+\BOOKMARK [1][-]{section*.47}{Abstract}{appendix.D}% 95
 \BOOKMARK [1][-]{section.D.1}{Introduction}{appendix.D}% 96
 \BOOKMARK [1][-]{section.D.2}{Motivational Example}{appendix.D}% 97
 \BOOKMARK [1][-]{section.D.3}{Related work}{appendix.D}% 98
@@ -113,7 +113,7 @@
 \BOOKMARK [1][-]{section.D.8}{Conclusion}{appendix.D}% 113
 \BOOKMARK [1][-]{section.D.8}{Bibliography}{appendix.D}% 114
 \BOOKMARK [0][-]{appendix.E}{Technology scaling impact on the interconnection of clustered scratchpad memory architectures}{}% 115
-\BOOKMARK [1][-]{section*.59}{Abstract}{appendix.E}% 116
+\BOOKMARK [1][-]{section*.60}{Abstract}{appendix.E}% 116
 \BOOKMARK [1][-]{section.E.1}{Introduction}{appendix.E}% 117
 \BOOKMARK [1][-]{section.E.2}{Related Work}{appendix.E}% 118
 \BOOKMARK [1][-]{section.E.3}{Current technology}{appendix.E}% 119
