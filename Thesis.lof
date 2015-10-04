@@ -1,62 +1,63 @@
 \gdef \the@ipfilectr {@-1}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {2.1}{\ignorespaces DTSE methodology for data transfer and storage exploration. Source: \cite {palkovicThesis} \relax }}{9}{figure.caption.6}
-\contentsline {figure}{\numberline {2.2}{\ignorespaces A scenario based design flow for embedded systems. Source: \cite {GheoThesis} \relax }}{15}{figure.caption.7}
+\contentsline {figure}{\numberline {2.1}{\ignorespaces DTSE methodology for data transfer and storage exploration. Source: \cite {palkovicThesis} \relax }}{9}{figure.caption.5}
+\contentsline {figure}{\numberline {2.2}{\ignorespaces A scenario based design flow for embedded systems. Source: \cite {GheoThesis} \relax }}{15}{figure.caption.6}
 \addvspace {10\p@ }
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Target platform with focus on memory organization. \relax }}{20}{figure.caption.7}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \gdef \the@ipfilectr {}
 \gdef \the@ipfilectr {@-2}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {A.1}{\ignorespaces Profiling results based on application code and input data.\relax }}{49}{figure.caption.10}
-\contentsline {figure}{\numberline {A.2}{\ignorespaces Scenario generation based on profiling information and memory models.\relax }}{50}{figure.caption.11}
-\contentsline {figure}{\numberline {A.3}{\ignorespaces Target platform with focus on memory organisation.\relax }}{52}{figure.caption.12}
-\contentsline {figure}{\numberline {A.4}{\ignorespaces Memory access pattern of epilepsy predictor. Profiling of data reuse size for 3 samples from a given (\cite {Iasemidis2005}) database. The number of elements accessed is input dependent. Only those of the 16K elements accessed multiple times should be saved in L1'. The rest are accessed from L1.\relax }}{55}{figure.caption.14}
-\contentsline {figure}{\numberline {A.5}{\ignorespaces Memory-aware scenario gains - Epileptic seizure predictor\relax }}{57}{figure.caption.16}
-\contentsline {figure}{\numberline {A.6}{\ignorespaces Memory-aware scenario gains - Viterbi encoder\relax }}{58}{figure.caption.17}
+\contentsline {figure}{\numberline {A.1}{\ignorespaces Profiling results based on application code and input data.\relax }}{55}{figure.caption.10}
+\contentsline {figure}{\numberline {A.2}{\ignorespaces Scenario generation based on profiling information and memory models.\relax }}{56}{figure.caption.11}
+\contentsline {figure}{\numberline {A.3}{\ignorespaces Target platform with focus on memory organisation.\relax }}{58}{figure.caption.12}
+\contentsline {figure}{\numberline {A.4}{\ignorespaces Memory access pattern of epilepsy predictor. Profiling of data reuse size for 3 samples from a given (\cite {Iasemidis2005}) database. The number of elements accessed is input dependent. Only those of the 16K elements accessed multiple times should be saved in L1'. The rest are accessed from L1.\relax }}{61}{figure.caption.14}
+\contentsline {figure}{\numberline {A.5}{\ignorespaces Memory-aware scenario gains - Epileptic seizure predictor\relax }}{63}{figure.caption.16}
+\contentsline {figure}{\numberline {A.6}{\ignorespaces Memory-aware scenario gains - Viterbi encoder\relax }}{64}{figure.caption.17}
 \gdef \the@ipfilectr {}
 \gdef \the@ipfilectr {@-3}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {B.1}{\ignorespaces Profiling results based on application code and input data\relax }}{75}{figure.caption.20}
-\contentsline {figure}{\numberline {B.2}{\ignorespaces Clustering of profiling results into three (a) or five (b) system scenarios\relax }}{77}{figure.caption.21}
-\contentsline {figure}{\numberline {B.3}{\ignorespaces Clustering of Pareto curves\relax }}{79}{figure.caption.22}
-\contentsline {figure}{\numberline {B.4}{\ignorespaces Run-time system scenario detection and switching based on the current input\relax }}{82}{figure.caption.23}
-\contentsline {figure}{\numberline {B.5}{\ignorespaces Alternative memory platforms with varying number of banks\relax }}{83}{figure.caption.24}
-\contentsline {figure}{\numberline {B.6}{\ignorespaces Energy gain for increasing number of system scenarios - Static platform corresponds to 0\%\relax }}{96}{figure.caption.29}
-\contentsline {figure}{\numberline {B.7}{\ignorespaces Bank sizes for the most efficient of the tested organizations for each benchmark\relax }}{96}{figure.caption.30}
-\contentsline {figure}{\numberline {B.8}{\ignorespaces Energy gain for use case scenarios and system scenarios\relax }}{98}{figure.caption.32}
+\contentsline {figure}{\numberline {B.1}{\ignorespaces Profiling results based on application code and input data\relax }}{81}{figure.caption.20}
+\contentsline {figure}{\numberline {B.2}{\ignorespaces Clustering of profiling results into three (a) or five (b) system scenarios\relax }}{83}{figure.caption.21}
+\contentsline {figure}{\numberline {B.3}{\ignorespaces Clustering of Pareto curves\relax }}{85}{figure.caption.22}
+\contentsline {figure}{\numberline {B.4}{\ignorespaces Run-time system scenario detection and switching based on the current input\relax }}{88}{figure.caption.23}
+\contentsline {figure}{\numberline {B.5}{\ignorespaces Alternative memory platforms with varying number of banks\relax }}{89}{figure.caption.24}
+\contentsline {figure}{\numberline {B.6}{\ignorespaces Energy gain for increasing number of system scenarios - Static platform corresponds to 0\%\relax }}{102}{figure.caption.29}
+\contentsline {figure}{\numberline {B.7}{\ignorespaces Bank sizes for the most efficient of the tested organizations for each benchmark\relax }}{102}{figure.caption.30}
+\contentsline {figure}{\numberline {B.8}{\ignorespaces Energy gain for use case scenarios and system scenarios\relax }}{104}{figure.caption.32}
 \gdef \the@ipfilectr {}
 \gdef \the@ipfilectr {@-4}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {C.1}{\ignorespaces Shannon–Hartley theorem\relax }}{117}{figure.caption.35}
-\contentsline {figure}{\numberline {C.2}{\ignorespaces Symbol error probability for 802.11ac Modulation schemes\relax }}{118}{figure.caption.36}
-\contentsline {figure}{\numberline {C.3}{\ignorespaces Symbol error probability for 802.11ac Modulation and Coding schemes\relax }}{119}{figure.caption.37}
-\contentsline {figure}{\numberline {C.4}{\ignorespaces RTS Characterization\relax }}{119}{figure.caption.38}
-\contentsline {figure}{\numberline {C.5}{\ignorespaces Data Burst Distribution\relax }}{123}{figure.caption.39}
-\contentsline {figure}{\numberline {C.6}{\ignorespaces Application Deadline Distribution\relax }}{123}{figure.caption.40}
-\contentsline {figure}{\numberline {C.7}{\ignorespaces Noise Distribution\relax }}{124}{figure.caption.41}
-\contentsline {figure}{\numberline {C.8}{\ignorespaces Power Gain\relax }}{128}{figure.caption.45}
+\contentsline {figure}{\numberline {C.1}{\ignorespaces Shannon–Hartley theorem\relax }}{123}{figure.caption.35}
+\contentsline {figure}{\numberline {C.2}{\ignorespaces Symbol error probability for 802.11ac Modulation schemes\relax }}{124}{figure.caption.36}
+\contentsline {figure}{\numberline {C.3}{\ignorespaces Symbol error probability for 802.11ac Modulation and Coding schemes\relax }}{125}{figure.caption.37}
+\contentsline {figure}{\numberline {C.4}{\ignorespaces RTS Characterization\relax }}{125}{figure.caption.38}
+\contentsline {figure}{\numberline {C.5}{\ignorespaces Data Burst Distribution\relax }}{129}{figure.caption.39}
+\contentsline {figure}{\numberline {C.6}{\ignorespaces Application Deadline Distribution\relax }}{129}{figure.caption.40}
+\contentsline {figure}{\numberline {C.7}{\ignorespaces Noise Distribution\relax }}{130}{figure.caption.41}
+\contentsline {figure}{\numberline {C.8}{\ignorespaces Power Gain\relax }}{135}{figure.caption.45}
 \gdef \the@ipfilectr {}
 \gdef \the@ipfilectr {@-5}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {D.1}{\ignorespaces Motivational Example. Representation of the initial set of data (a) and the interleaved set of data (b). Data-to-memory mapping for the initial (c) and the interleaved data (d) on a clustered scratch-pad memory architecture.\relax }}{143}{figure.caption.48}
-\contentsline {figure}{\numberline {D.2}{\ignorespaces Exploration options and system knobs depending on a general platform architecture\relax }}{148}{figure.caption.49}
-\contentsline {figure}{\numberline {D.3}{\ignorespaces Methodology steps\relax }}{151}{figure.caption.52}
-\contentsline {figure}{\numberline {D.4}{\ignorespaces Extraction of access pattern from application code\relax }}{153}{figure.caption.53}
-\contentsline {figure}{\numberline {D.5}{\ignorespaces Example of combination between two arrays and their access patterns\relax }}{155}{figure.caption.54}
-\contentsline {figure}{\numberline {D.6}{\ignorespaces Motivational Example\relax }}{159}{figure.caption.55}
-\contentsline {figure}{\numberline {D.7}{\ignorespaces SOR Benchmark\relax }}{160}{figure.caption.56}
-\contentsline {figure}{\numberline {D.8}{\ignorespaces FFT Benchmark\relax }}{162}{figure.caption.57}
-\contentsline {figure}{\numberline {D.9}{\ignorespaces Motion Estimation Benchmark\relax }}{163}{figure.caption.58}
+\contentsline {figure}{\numberline {D.1}{\ignorespaces Motivational Example. Representation of the initial set of data (a) and the interleaved set of data (b). Data-to-memory mapping for the initial (c) and the interleaved data (d) on a clustered scratch-pad memory architecture.\relax }}{149}{figure.caption.48}
+\contentsline {figure}{\numberline {D.2}{\ignorespaces Exploration options and system knobs depending on a general platform architecture\relax }}{154}{figure.caption.49}
+\contentsline {figure}{\numberline {D.3}{\ignorespaces Methodology steps\relax }}{157}{figure.caption.52}
+\contentsline {figure}{\numberline {D.4}{\ignorespaces Extraction of access pattern from application code\relax }}{159}{figure.caption.53}
+\contentsline {figure}{\numberline {D.5}{\ignorespaces Example of combination between two arrays and their access patterns\relax }}{161}{figure.caption.54}
+\contentsline {figure}{\numberline {D.6}{\ignorespaces Motivational Example\relax }}{165}{figure.caption.55}
+\contentsline {figure}{\numberline {D.7}{\ignorespaces SOR Benchmark\relax }}{166}{figure.caption.56}
+\contentsline {figure}{\numberline {D.8}{\ignorespaces FFT Benchmark\relax }}{168}{figure.caption.57}
+\contentsline {figure}{\numberline {D.9}{\ignorespaces Motion Estimation Benchmark\relax }}{169}{figure.caption.58}
 \gdef \the@ipfilectr {}
 \gdef \the@ipfilectr {@-6}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {E.1}{\ignorespaces The alternative clustered memory architectures ranging from one to five memory banks\relax }}{176}{figure.caption.61}
-\contentsline {figure}{\numberline {E.2}{\ignorespaces Energy breakdown between the memory banks and the interconnection\relax }}{180}{figure.caption.62}
-\contentsline {figure}{\numberline {E.3}{\ignorespaces Area breakdown between the memory banks and the interconnection\relax }}{181}{figure.caption.64}
-\contentsline {figure}{\numberline {E.4}{\ignorespaces Impact of technology scaling into gate length\relax }}{183}{figure.caption.65}
-\contentsline {figure}{\numberline {E.5}{\ignorespaces Memory Banks: Normalized dynamic power and technology scaling\relax }}{184}{figure.caption.66}
-\contentsline {figure}{\numberline {E.6}{\ignorespaces Interconnection: Impact of technology scaling into the capacitance and the power of the interconnection part\relax }}{185}{figure.caption.67}
-\contentsline {figure}{\numberline {E.7}{\ignorespaces Projections of the interconnection cost power overhead for different numbers of memory banks\relax }}{189}{figure.caption.69}
+\contentsline {figure}{\numberline {E.1}{\ignorespaces The alternative clustered memory architectures ranging from one to five memory banks\relax }}{182}{figure.caption.61}
+\contentsline {figure}{\numberline {E.2}{\ignorespaces Energy breakdown between the memory banks and the interconnection\relax }}{186}{figure.caption.62}
+\contentsline {figure}{\numberline {E.3}{\ignorespaces Area breakdown between the memory banks and the interconnection\relax }}{187}{figure.caption.64}
+\contentsline {figure}{\numberline {E.4}{\ignorespaces Impact of technology scaling into gate length\relax }}{189}{figure.caption.65}
+\contentsline {figure}{\numberline {E.5}{\ignorespaces Memory Banks: Normalized dynamic power and technology scaling\relax }}{190}{figure.caption.66}
+\contentsline {figure}{\numberline {E.6}{\ignorespaces Interconnection: Impact of technology scaling into the capacitance and the power of the interconnection part\relax }}{191}{figure.caption.67}
+\contentsline {figure}{\numberline {E.7}{\ignorespaces Projections of the interconnection cost power overhead for different numbers of memory banks\relax }}{195}{figure.caption.69}
 \gdef \the@ipfilectr {}

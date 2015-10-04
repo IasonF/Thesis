@@ -2,7 +2,54 @@
 
  \nomgroup{A}
 
-  \item [{RTS}]\begingroup run-time situation\nomeqref {1.0}
-		\nompageref{3}
+  \item [{BER}]\begingroup bit error rate\nomeqref {A.1}\nompageref{63}
+  \item [{CAD}]\begingroup computer aided design\nomeqref {E.0}
+		\nompageref{179}
+  \item [{CFG}]\begingroup control flow graph\nomeqref {A.0}
+		\nompageref{52}
+  \item [{CGRA}]\begingroup coarse-grain reconfigurable array\nomeqref {D.6}
+		\nompageref{155}
+  \item [{DCT}]\begingroup discrete cosine transformation\nomeqref {B.1}
+		\nompageref{98}
+  \item [{DTSE}]\begingroup data transfer and storage exploration\nomeqref {2.0}
+		\nompageref{8}
+  \item [{DVFS}]\begingroup dynamic voltage and frequency scaling\nomeqref {2.0}
+		\nompageref{13}
+  \item [{EEG}]\begingroup electroencephalogram\nomeqref {A.1}
+		\nompageref{60}
+  \item [{EPIC}]\begingroup efficient pyramid image coder\nomeqref {E.0}
+		\nompageref{194}
+  \item [{FFT}]\begingroup fast Fourier transformation\nomeqref {D.6}
+		\nompageref{163}
+  \item [{FU}]\begingroup functional unit\nomeqref {D.6}
+		\nompageref{156}
+  \item [{GLT}]\begingroup global loop transformations\nomeqref {A.0}
+		\nompageref{52}
+  \item [{ITRS}]\begingroup international technology roadmap for semiconductors\nomeqref {E.0}
+		\nompageref{181}
+  \item [{MHLA}]\begingroup memory hierarchy layer assignment\nomeqref {2.0}
+		\nompageref{11}
+  \item [{MM}]\begingroup memory macros\nomeqref {B.0}\nompageref{90}
+  \item [{MUX}]\begingroup multiplexer\nomeqref {E.0}\nompageref{184}
+  \item [{RTL}]\begingroup register transfer language\nomeqref {B.0}
+		\nompageref{90}
+  \item [{RTS}]\begingroup run-time situation\nomeqref {2.0}
+		\nompageref{12}
+  \item [{SCBD}]\begingroup storage cycle budget distribution\nomeqref {2.0}
+		\nompageref{11}
+  \item [{SCMEM}]\begingroup standard cell-based memory\nomeqref {3.0}
+		\nompageref{21}
+  \item [{SIMD}]\begingroup single instruction multiple data\nomeqref {3.0}
+		\nompageref{26}
+  \item [{SNR}]\begingroup signal to noise ratio\nomeqref {A.1}
+		\nompageref{62}
+  \item [{SOR}]\begingroup successive over relaxation\nomeqref {D.6}
+		\nompageref{163}
+  \item [{TSMC}]\begingroup Taiwan semiconductor manufacturing company\nomeqref {E.0}
+		\nompageref{185}
+  \item [{UML}]\begingroup unified modeling language\nomeqref {2.0}
+		\nompageref{14}
+  \item [{WCET}]\begingroup worst case execution time\nomeqref {A.0}
+		\nompageref{53}
 
 \end{thenomenclature}

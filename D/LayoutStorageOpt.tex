@@ -6,14 +6,17 @@ Iason Filippopoulos, Namita Sharma, Francky Catthoor, \\ Per Gunnar Kjeldsberg a
 \\
 ACM Transactions on Embedded Computing Systems
 \\
-Submitted in 2015
+Submitted in 2015 
+\\
+(currently under second round of review)
 \end{center}
 \afterpage{\null\newpage}
 \newpage
 
 \vspace*{\fill}
-\addcontentsline{toc}{section}{Abstract}
+\phantomsection
 \section*{\hspace*{\fill} Abstract \hspace*{\fill}}
+\addcontentsline{toc}{section}{Abstract}
 This work presents a methodology for efficient exploration of data interleaving and data-to-memory mapping options for SIMD (Single Instruction Multiple Data) platform architectures.
 The system architecture consists of  a reconfigurable clustered scratch-pad memory and a SIMD functional unit, which performs the same operation on multiple input data in parallel. 
 The memory accesses contribute substantially to the overall energy consumption of an embedded system executing a data intensive task. 
@@ -301,14 +304,14 @@ It is clearly shown that the choice of memory units has an important impact on t
 
 The processing of the interleaved data is performed in the part of the architecture consisting of the SIMD FU and the central vector register file, as shown in Fig.\ref{fig:arch}.
 For efficient utilization of the vector FU, the register file has a wide interface (256 bit wide) with the scratchpad memory and allows testing for word length of 4, 8 and 16 elements, assuming that each array element is 16 bit wide.  
-This processor belongs to the class of coarse-grain reconfigurable array (CGRA) processors and is described in more detail in \cite{lee2003compilation}.
+This processor belongs to the class of coarse-grain reconfigurable array (CGRA) \nomenclature{CGRA}{coarse-grain reconfigurable array} processors and is described in more detail in \cite{lee2003compilation}.
 The HDL model of the processor is synthesized using Cadence RTL compiler \cite{cadencecompiler} and the energy numbers are extracted using Synopsys Primepower \cite{kai2003synopsys}.
 
 For efficient utilization of the vector FU, the register file has a wide interface with the clustered scratch-pad memory. 
 Since the target architecture is a configurable processor that can be customized in various ways, the standard evaluation and execution mechanism is to run the programs on a processor simulator. 
 An XML based language is used to describe the architecture, and a cycle-accurate simulator of the processor is used to simulate the generated code on the architecture. 
 The energy consumption information for different types of instructions and different widths is available for the FU models.
-The width of the FU corresponds to the number of pairs of array elements on which the specific instruction is performed.
+The width of the FU \nomenclature{FU}{functional unit} corresponds to the number of pairs of array elements on which the specific instruction is performed.
 Relative values for a subset of them is presented in Table \ref{tab:models2}. 
 It is clearly shown that the wider FUs have a significantly higher energy consumption compared to FUs that operate on only two element.
 Thus, it is important to achieve high utilization of wider FUs to achieve both performance and energy gains.
@@ -472,12 +475,12 @@ One element from each array is used to calculate an intermediate result on every
 The interleaving is easy because the four arrays have the same pattern.
 Further interleaving within the array can result in even longer sequences of useful elements.
 The access pattern is repeated for every four elements (1A-3H), so the scaling for the different word lengths (4, 8 and 16) is expected to be good. 
-\item Successive Over Relaxation (SOR) is a method for evaluating partial differential equations or solving a linear system of equations.
+\item Successive Over Relaxation (SOR) \nomenclature{SOR}{successive over relaxation} is a method for evaluating partial differential equations or solving a linear system of equations.
 The SOR benchmark has a more irregular access pattern.
 The interleaving exploration provides sequences of three or six sequential useful elements.
 Thus, the utilization on the SIMD architecture is expected to be lower.
 This application is an representative example from the equation solver domain.
-\item FFT benchmark has an irregular pattern during the access of the pilot matrices. 
+\item FFT \nomenclature{FFT}{fast Fourier transformation} benchmark has an irregular pattern during the access of the pilot matrices. 
 The interleaving exploration for FFT is presented in \cite{sharma2013data}.
 The number of matrices is higher and more interleaving options are present.
 However, the interleaving cannot provide an acceptable solution for 16 sequential useful elements.

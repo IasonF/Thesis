@@ -14,8 +14,9 @@ Springer
 \newpage
 
 \vspace*{\fill}
-\addcontentsline{toc}{section}{Abstract}
+\phantomsection
 \section*{\hspace*{\fill} Abstract \hspace*{\fill}}
+\addcontentsline{toc}{section}{Abstract}
 We propose a memory-aware system scenario approach that exploits variations in memory needs during the lifetime of an application in order to optimize energy usage. 
 Different system scenarios capture the application's different resource requirements that change dynamically at run-time. 
 In addition to computational resources, the many possible memory platform configurations and data-to-memory assignments are important system scenario parameters. 
@@ -388,10 +389,10 @@ The goal is to use the most energy efficient banks to store the most frequently 
 The calculations needed for enabling the minimum number of banks is simple, given the application requirements for the current input and the sizes of the five memory banks.
 
 \subsection{Models of Different Memory Types}
-The dynamic memory organization is constructed using commercially available SRAM memory models (MM).
+The dynamic memory organization is constructed using commercially available SRAM memory models (MM) \nomenclature{MM}{memory macros}.
 For those models delay and energy numbers are derived from a commercial memory compiler.
 In addition, experimental standard cell-based memories (SCMEM) \cite{Mei11}  are  considered for smaller memories due to their energy and area efficiency for reasonably small storage capacities, as argued in \cite{Mei10}. 
-The standard cell-based memories are synthesized using Cadence RTL compiler for TSMC 40nm standard library. 
+The standard cell-based memories are synthesized using Cadence RTL \nomenclature{RTL}{register transfer language} compiler for TSMC 40nm standard library. 
 Afterwords, power simulations on the synthesized design are carried out using Synopsys PrimeTime, in order to obtain energy numbers.
 Both MMs and SCMEMs can operate under a wide range of supply voltages, thus support different operating modes that provide an important exploration space.
 \begin{itemize}
@@ -611,7 +612,7 @@ Multimedia applications often exhibit such a dynamic variation in memory require
 The effectiveness is demonstrated and tested using a variety of open multimedia benchmarks, which can be found in the Polybench \cite{Poly}, Mibench \cite{mibench} and Mediabench \cite{mediabench} benchmark suites.
 The broad set of multimedia benchmarks under exploration is representative for the entire domain of multimedia applications. 
 
-\subsection{Benchmark Applications and \\ Corresponding Input Databases}
+\subsection{Benchmark Applications and Corresponding Input Databases}
 
 An overview of the benchmark applications that were tested is presented in Tab.~\ref{tab:app1}. 
 
@@ -661,7 +662,7 @@ The number of steps is increased on every next iteration, in order to generate a
 The set of input data is a random sequence of input signals and each of them corresponds to a different number of steps.
 \textit{Mesa 3D} is an open graphics library with a dynamic loop bound in its kernel that provides the desired dynamic behavior. 
 
-The discrete cosine transformation (DCT) block used in the \textit{JPEG compression} algorithm has a memory footprint that is heavily influenced by the block size. 
+The discrete cosine transformation (DCT) \nomenclature{DCT}{discrete cosine transformation} block used in the \textit{JPEG compression} algorithm has a memory footprint that is heavily influenced by the block size. 
 The input database consists of an ascending size sequence of blocks. 
 For the \textit{PGP encryption} algorithm the encryption length parameter has an important impact on memory size, which can be exploited using system scenarios. 
 Thus, we create a database starting from the lowest encryption length value of 384 and gradually increasing it up to 2048. 
@@ -768,7 +769,7 @@ In Tab.~\ref{tab:ranges} the minimum and maximum energy gains for each benchmark
 
 \begin{figure}
 \centering
-\includegraphics[width=\textwidth]{C/6appsGains.pdf}
+\includegraphics[width=1.1\textwidth]{C/6appsGains.pdf}
 \caption{Energy gain for increasing number of system scenarios - Static platform corresponds to 0\%}
 \label{fig:gainsC}
 \end{figure}

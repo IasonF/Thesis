@@ -17,7 +17,7 @@
 \begin{center}
 Iason Filippopoulos, Francky Catthoor, Per Gunnar Kjeldsberg
 \\
-To be submitted
+Technical report
 \\
 2015
 \end{center}
@@ -25,15 +25,16 @@ To be submitted
 \newpage
 
 \vspace*{\fill}
-\addcontentsline{toc}{section}{Abstract}
+\phantomsection
 \section*{\hspace*{\fill} Abstract \hspace*{\fill}}
+\addcontentsline{toc}{section}{Abstract}
 Power consumption is the key limitation in modern embedded devices.
 The memory architecture contributes significantly on the overall power consumption of the system.
 Among other proposed techniques, one effective system design approach to reduce the memory power needs is the design of a dynamically reconfigurable clustered memory architecture.
 The operationally independent memory banks provide an energy efficient platform, but comes with an interconnection overhead due to the connections between the memory banks. 
 Thus, there is a trade-off between the energy gains by increasing the number of memory banks and the increase on the interconnection overhead.
 This work explores the future development of the interconnection overhead, as the interconnection cost is expected to increase while the process technology shrinks to 5nm.
-The current study employs both CAD tools with simulation results using the current technology and projections provided by institutions.
+The current study employs both CAD \nomenclature{CAD}{computer aided design} tools with simulation results using the current technology and projections provided by institutions.
 We use predictive technology models and the quantitative data are supported partly by information
 from ITRS and IMEC's interconnect technologists.
 A model is developed that provide a sufficiently accurate estimation about the interconnection cost overhead for clustered memory architectures consisting of two to five memory banks and a range of technologies from 40nm to 5nm.  
@@ -65,7 +66,7 @@ Without this, an overly optimistic distribution across too many banks would seem
   The model is based on the current technology and the projections about the future technology.
   The current technology is available on several CAD tools.
   The synthesis and the simulation of memory architectures similar to the one in Fig.\ref{fig:platformE} provide useful results.
-  The study of the future technology is based on the reports released by the International Technology Roadmap for Semiconductors (ITRS) \cite{itrs}.
+  The study of the future technology is based on the reports released by the International Technology Roadmap for Semiconductors (ITRS) \cite{itrs} \nomenclature{ITRS}{international technology roadmap for semiconductors}.
  The goal of the developed model is to provide a sufficiently accurate estimation about the interconnection cost overhead for clustered memory architectures consisting of two to five memory banks and a range of technologies from 40nm to 5nm.  
 
 %%%%%%
@@ -141,11 +142,11 @@ The sizes of the memory banks in the target memory organization are too small to
 Another factor for this decision is the fact that a rectangular cell array is not necessarily the optimal solution in terms of energy consumption.
 The usage of the custom memories provide the freedom to explore different memory organizations by combining banks of different sizes and structures.  
 
-For the second step, the RTL description connects the memories using MUX, signals and other components into a functional clustered memory architecture. 
+For the second step, the RTL description connects the memories using MUX \nomenclature{MUX}{multiplexer}, signals and other components into a functional clustered memory architecture. 
 On the third step, the simulation and the verification performs a flash-write followed by a read on the whole memory architecture. 
 The read and write test-bench is representative for the data-intensive applications, which are the type of applications that should benefit the most from our approach. 
 The target technology depends on the available libraries.
-In this work, the TSMC library on 45nm is used.
+In this work, the TSMC \nomenclature{TSMC}{Taiwan semiconductor manufacturing company}, library on 45nm is used.
 The place and route can be either performed automatically through the CAD tool or manually by the designer.
 In our case, the layout is automatically generated to reduce the needed time and effort. 
 However, the automatically generated layout is not ideal and a manual layout can be more efficient.
@@ -252,7 +253,7 @@ This is explained by the need for extra wiring to connect the different memory b
 \section{Technology Scaling}
 \label{future}
 
-The technology scaling projections are based on the reports released by the International Technology Roadmap for Semiconductors (ITRS) \cite{itrs}.
+The technology scaling projections are based on the reports released by the International Technology Roadmap for Semiconductors (ITRS)  \cite{itrs}.
 The clustered memory architecture can be divided into two parts, i.e. the memory banks and the interconnection.
 
 \subsection{Memory Banks}
@@ -399,7 +400,7 @@ The model provides the necessary information to the system designer and steers t
 The improvement in the designer's decision is a strong motivation for the development of the model. 
 
 To better illustrate the change in the optimum memory architecture for future technologies, an example application is chosen.
-The EPIC (Efficient Pyramid Image Coder) is an image compression algorithm and its behavior on a clustered image architecture is presented in \cite{filippopoulos2013exploration}.
+The EPIC (Efficient Pyramid Image Coder) \nomenclature{EPIC}{efficient pyramid image coder} is an image compression algorithm and its behavior on a clustered image architecture is presented in \cite{filippopoulos2013exploration}.
 The energy gains for the most energy efficient memory organizations are presented in Tab.\ref{tab:GainvsOverhead}.
 The sizes of the memory banks for each configuration are used to calculate the interconnection overhead for synthesizing in 45nm and 5nm.
 The percentage of the energy gains are constant and independent of the technology, because the comparison is always between a monolithic and a clustered memory architecture of the same technology.
