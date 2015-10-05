@@ -17,13 +17,13 @@
 \contentsline {section}{\numberline {2.4}Scratch-pad Memory Architectures}{16}{section.2.4}
 \contentsline {chapter}{\numberline {3}Proposed technology platform and design methodology approach}{19}{chapter.3}
 \contentsline {section}{\numberline {3.1}Target platform architecture}{19}{section.3.1}
-\contentsline {subsection}{\numberline {3.1.1}Target memory platform architecture}{20}{subsection.3.1.1}
+\contentsline {subsection}{\numberline {3.1.1}Target memory platform architecture}{21}{subsection.3.1.1}
 \contentsline {subsection}{\numberline {3.1.2}Memory models}{21}{subsection.3.1.2}
 \contentsline {subsection}{\numberline {3.1.3}Technology scaling}{22}{subsection.3.1.3}
 \contentsline {section}{\numberline {3.2}Data variable based memory-aware system scenario methodology}{23}{section.3.2}
-\contentsline {subsection}{\numberline {3.2.1}Design-time profiling based on data variables}{23}{subsection.3.2.1}
-\contentsline {subsection}{\numberline {3.2.2}Design-time system scenario identification based on data variables}{24}{subsection.3.2.2}
-\contentsline {subsection}{\numberline {3.2.3}Run-time system scenario detection and switching based on data variables}{25}{subsection.3.2.3}
+\contentsline {subsection}{\numberline {3.2.1}Design-time profiling based on data variables}{24}{subsection.3.2.1}
+\contentsline {subsection}{\numberline {3.2.2}Design-time system scenario identification based on data variables}{25}{subsection.3.2.2}
+\contentsline {subsection}{\numberline {3.2.3}Run-time system scenario detection and switching based on data variables}{26}{subsection.3.2.3}
 \contentsline {subsection}{\numberline {3.2.4}Interleaving exploration based on data variables}{26}{subsection.3.2.4}
 \contentsline {chapter}{\numberline {4}Research Results and Contributions}{29}{chapter.4}
 \contentsline {section}{\numberline {4.1}Contribution A: Development of the Memory-Aware System Scenario Methodology}{29}{section.4.1}
@@ -138,14 +138,16 @@
 \contentsline {chapter}{\numberline {E}Technology scaling impact on the interconnection of clustered scratchpad memory architectures}{177}{appendix.E}
 \contentsline {section}{Abstract}{179}{section*.60}
 \contentsline {section}{\numberline {E.1}Introduction}{181}{section.E.1}
-\contentsline {section}{\numberline {E.2}Related Work}{182}{section.E.2}
-\contentsline {section}{\numberline {E.3}Current technology}{183}{section.E.3}
-\contentsline {subsection}{\numberline {E.3.1}Generic Work-flow}{183}{subsection.E.3.1}
-\contentsline {subsection}{\numberline {E.3.2}Example design: synthesis and simulation}{185}{subsection.E.3.2}
-\contentsline {section}{\numberline {E.4}Technology Scaling}{188}{section.E.4}
+\contentsline {section}{\numberline {E.2}Related Work}{183}{section.E.2}
+\contentsline {section}{\numberline {E.3}Current technology}{184}{section.E.3}
+\contentsline {subsection}{\numberline {E.3.1}Generic Work-flow}{184}{subsection.E.3.1}
+\contentsline {subsection}{\numberline {E.3.2}Example design: synthesis and simulation}{186}{subsection.E.3.2}
+\contentsline {section}{\numberline {E.4}Technology Scaling}{189}{section.E.4}
 \contentsline {subsection}{\numberline {E.4.1}Memory Banks}{189}{subsection.E.4.1}
 \contentsline {subsection}{\numberline {E.4.2}Interconnection}{190}{subsection.E.4.2}
-\contentsline {section}{\numberline {E.5}Model Construction and Projection Results}{191}{section.E.5}
+\contentsline {section}{\numberline {E.5}Model Construction and Projection Results}{192}{section.E.5}
+\contentsline {subsection}{\numberline {E.5.1}Model Construction}{192}{subsection.E.5.1}
+\contentsline {subsection}{\numberline {E.5.2}Results}{196}{subsection.E.5.2}
 \contentsline {section}{\numberline {E.6}Conclusion}{196}{section.E.6}
-\contentsline {section}{Bibliography}{196}{section.E.6}
+\contentsline {section}{Bibliography}{197}{section.E.6}
 \gdef \the@ipfilectr {}

@@ -4,7 +4,7 @@
 \nomenclatureentry{aRTS@[{RTS}]\begingroup run-time situation\nomeqref {2.0}|nompageref}{12}
 \nomenclatureentry{aDVFS@[{DVFS}]\begingroup dynamic voltage and frequency scaling\nomeqref {2.0}|nompageref}{13}
 \nomenclatureentry{aUML@[{UML}]\begingroup unified modeling language\nomeqref {2.0}|nompageref}{14}
-\nomenclatureentry{aSCMEM@[{SCMEM}]\begingroup standard cell-based memory\nomeqref {3.0}|nompageref}{21}
+\nomenclatureentry{aSCMEM@[{SCMEM}]\begingroup standard cell-based memory\nomeqref {3.0}|nompageref}{22}
 \nomenclatureentry{aSIMD@[{SIMD}]\begingroup single instruction multiple data\nomeqref {3.0}|nompageref}{26}
 \nomenclatureentry{aCFG@[{CFG}]\begingroup control flow graph\nomeqref {A.0}|nompageref}{52}
 \nomenclatureentry{aGLT@[{GLT}]\begingroup global loop transformations\nomeqref {A.0}|nompageref}{52}
@@ -21,6 +21,6 @@
 \nomenclatureentry{aFFT@[{FFT}]\begingroup fast Fourier transformation\nomeqref {D.6}|nompageref}{163}
 \nomenclatureentry{aCAD@[{CAD}]\begingroup computer aided design\nomeqref {E.0}|nompageref}{179}
 \nomenclatureentry{aITRS@[{ITRS}]\begingroup international technology roadmap for semiconductors\nomeqref {E.0}|nompageref}{181}
-\nomenclatureentry{aMUX@[{MUX}]\begingroup multiplexer\nomeqref {E.0}|nompageref}{184}
+\nomenclatureentry{aMUX@[{MUX}]\begingroup multiplexer\nomeqref {E.0}|nompageref}{185}
 \nomenclatureentry{aTSMC@[{TSMC}]\begingroup Taiwan semiconductor manufacturing company\nomeqref {E.0}|nompageref}{185}
-\nomenclatureentry{aEPIC@[{EPIC}]\begingroup efficient pyramid image coder\nomeqref {E.0}|nompageref}{194}
+\nomenclatureentry{aEPIC@[{EPIC}]\begingroup efficient pyramid image coder\nomeqref {E.0}|nompageref}{196}

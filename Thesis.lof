@@ -54,10 +54,10 @@
 \gdef \the@ipfilectr {@-6}
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {E.1}{\ignorespaces The alternative clustered memory architectures ranging from one to five memory banks\relax }}{182}{figure.caption.61}
-\contentsline {figure}{\numberline {E.2}{\ignorespaces Energy breakdown between the memory banks and the interconnection\relax }}{186}{figure.caption.62}
-\contentsline {figure}{\numberline {E.3}{\ignorespaces Area breakdown between the memory banks and the interconnection\relax }}{187}{figure.caption.64}
-\contentsline {figure}{\numberline {E.4}{\ignorespaces Impact of technology scaling into gate length\relax }}{189}{figure.caption.65}
-\contentsline {figure}{\numberline {E.5}{\ignorespaces Memory Banks: Normalized dynamic power and technology scaling\relax }}{190}{figure.caption.66}
-\contentsline {figure}{\numberline {E.6}{\ignorespaces Interconnection: Impact of technology scaling into the capacitance and the power of the interconnection part\relax }}{191}{figure.caption.67}
+\contentsline {figure}{\numberline {E.2}{\ignorespaces Normalized energy breakdown between the memory banks and the interconnection\relax }}{186}{figure.caption.62}
+\contentsline {figure}{\numberline {E.3}{\ignorespaces Normalized area breakdown between the memory banks and the interconnection\relax }}{188}{figure.caption.64}
+\contentsline {figure}{\numberline {E.4}{\ignorespaces Impact of technology scaling into gate length\relax }}{190}{figure.caption.65}
+\contentsline {figure}{\numberline {E.5}{\ignorespaces Memory Banks: Normalized dynamic power and technology scaling\relax }}{191}{figure.caption.66}
+\contentsline {figure}{\numberline {E.6}{\ignorespaces Interconnection: Impact of technology scaling into the capacitance and the power of the interconnection part\relax }}{192}{figure.caption.67}
 \contentsline {figure}{\numberline {E.7}{\ignorespaces Projections of the interconnection cost power overhead for different numbers of memory banks\relax }}{195}{figure.caption.69}
 \gdef \the@ipfilectr {}

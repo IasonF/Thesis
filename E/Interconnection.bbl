@@ -15,6 +15,19 @@ Dsanoo Cho, Sudeep Pasricha, Ilya Issenin, Nikil~D Dutt, Minwook Ahn, and
 \newblock {\em Computer-Aided Design of Integrated Circuits and Systems, IEEE
   Transactions on}, 28(4):554--567, 2009.
 
+\bibitem{itrs}
+International~Roadmap Committee et~al.
+\newblock International technology roadmap for semiconductors: 2013 edition
+  executive summary.
+\newblock {\em Semiconductor Industry Association, San Francisco, CA, available
+  at: http://www. itrs. net/Links/2013ITRS/2013Chapters/2013ExecutiveSummary.
+  pdf}, 2013.
+
+\bibitem{itrs2}
+International~Roadmap Committee et~al.
+\newblock Process integration, devices, and structures (pids).
+\newblock {\em Semiconductor Industry Association, San Francisco, CA}, 2013.
+
 \bibitem{filippopoulos2013exploration}
 Iason Filippopoulos, Francky Catthoor, and Per~Gunnar Kjeldsberg.
 \newblock Exploration of energy efficient memory organisations for dynamic
@@ -26,10 +39,6 @@ Iason Filippopoulos, Francky Catthoor, Per~Gunnar Kjeldsberg, Elena Hammari,
   and Jos Huisken.
 \newblock Memory-aware system scenario approach energy impact.
 \newblock In {\em NORCHIP, 2012}, pages 1 --6, nov. 2012.
-
-\bibitem{itrs}
-International Technology~Roadmap for Semiconductors.
-\newblock Annual summary, 2013.
 
 \bibitem{kang2012high}
 Kyungsu Kang, Luca Benini, and Giovanni~De Micheli.
@@ -45,8 +54,13 @@ Rakesh Kumar, Victor Zyuban, and Dean~M Tullsen.
 \newblock In {\em Computer Architecture, 2005. ISCA'05. Proceedings. 32nd
   International Symposium on}, pages 408--419. IEEE, 2005.
 
+\bibitem{liu1994power}
+Dake Liu and Christer Svensson.
+\newblock Power consumption estimation in cmos vlsi chips.
+\newblock {\em Solid-State Circuits, IEEE Journal of}, 29(6):663--670, 1994.
+
 \bibitem{Mei10}
-P~Meinerzhagen, C~Roth, and A~Burg.
+Pascal Meinerzhagen, Christian Roth, and Andreas Burg.
 \newblock Towards generic low-power area-efficient standard cell based memory
   architectures.
 \newblock In {\em Circuits and Systems (MWSCAS), 2010 53rd IEEE International
@@ -60,6 +74,11 @@ Pascal Meinerzhagen, SM~Yasser Sherazi, Andreas Burg, and Joachim~Neves
 \newblock {\em IEEE Transactions on Emerging and Selected Topics in Circuits
   and Systems}, 1(2), 2011.
 
+\bibitem{muralimanohar2007interconnect}
+Naveen Muralimanohar and Rajeev Balasubramonian.
+\newblock Interconnect design considerations for large nuca caches.
+\newblock {\em ACM SIGARCH Computer Architecture News}, 35(2):369--380, 2007.
+
 \bibitem{pan2014system}
 Chenyun Pan and Azad Naeemi.
 \newblock System-level variation analysis for interconnection networks.
@@ -72,6 +91,13 @@ Abbas Rahimi, Igor Loi, Mohammad~Reza Kakoee, and Luca Benini.
   shared-l1 processor clusters.
 \newblock In {\em Design, Automation \& Test in Europe Conference \& Exhibition
   (DATE), 2011}, pages 1--6. IEEE, 2011.
+
+\bibitem{steinke2002assigning}
+Stefan Steinke, Lars Wehmeyer, Bo-Sik Lee, and Peter Marwedel.
+\newblock Assigning program and data objects to scratchpad for energy
+  reduction.
+\newblock In {\em Design, Automation and Test in Europe Conference and
+  Exhibition, 2002. Proceedings}, pages 409--415. IEEE, 2002.
 
 \bibitem{thoziyoor2008comprehensive}
 Shyamkumar Thoziyoor, Jung~Ho Ahn, Matteo Monchiero, Jay~B Brockman, and
@@ -87,5 +113,11 @@ Zhong Wang and Xiaobo~Sharon Hu.
   multibank memory architectures.
 \newblock {\em ACM Transactions on Design Automation of Electronic Systems
   (TODAES)}, 10(2):369--388, 2005.
+
+\bibitem{wong2000modeling}
+Shyh-Chyi Wong, Gwo-Yann Lee, and Dye-Jyun Ma.
+\newblock Modeling of interconnect capacitance, delay, and crosstalk in vlsi.
+\newblock {\em Semiconductor Manufacturing, IEEE Transactions on},
+  13(1):108--111, 2000.
 
 \end{thebibliography}
