@@ -85,17 +85,19 @@ Philip Garcia, Katherine Compton, Michael Schulte, Emily Blem, and Wenyin Fu.
 \newblock An overview of reconfigurable hardware in embedded systems.
 \newblock {\em EURASIP J. Embedded Syst.}, 2006(1):13--13, January 2006.
 
-\bibitem{Gheorghita2007}
-Stefan~Valentin Gheorghita, , et~al.
-\newblock System-scenario-based design of dynamic embedded systems.
-\newblock {\em ACM Trans. Des. Autom. Electron. Syst.}, 14(1):3:1--3:45,
-  January 2009.
-
 \bibitem{GheoThesis}
 Stefan~Valentin Gheorghita.
 \newblock {\em Dealing with dynamism in embedded system design: application
   scenarios}.
 \newblock PhD thesis, Technische Universiteit Eindhoven, 2007.
+
+\bibitem{Gheorghita2007}
+Stefan~Valentin Gheorghita, Martin Palkovic, Juan Hamers, Arnout Vandecappelle,
+  Stelios Mamagkakis, Twan Basten, Lieven Eeckhout, Henk Corporaal, Francky
+  Catthoor, and Frederik Vandeputte.
+\newblock System-scenario-based design of dynamic embedded systems.
+\newblock {\em ACM Transactions on Design Automation of Electronic Systems
+  (TODAES)}, 14(1):3, 2009.
 
 \bibitem{grun2000mist}
 Peter Grun, Nikil Dutt, and Alex Nicolau.

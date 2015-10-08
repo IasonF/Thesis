@@ -138,7 +138,7 @@ A generic approach to tackle the access and power bottlenecks on the memory is t
 The methodology presents several optimizations and their exploitation in a systematic way. 
 The main idea is a more optimal design and mapping of data on the memory organization by applying system-level code transformations to the initial application specification. 
 The price paid there will be an increased system design complexity, which can be offset with appropriate design methodology support tools. 
-The global overview of the DTSE methodology is presented in Fig.\ref{fig:dtse}.
+The global overview of the DTSE methodology is presented in Fig. \ref{fig:dtse}.
 
 \begin{figure}
 	\centering
@@ -282,7 +282,7 @@ The energy consumption is significantly reduced without violation of the executi
 
 \begin{figure}[!t]
 	\centering
-	\includegraphics[width=0.9\textwidth]{Images/versus.pdf}	
+	\includegraphics[width=0.9\textwidth]{Images/versus2.pdf}	
 	\caption{A scenario based design flow for embedded systems. Source: \cite{GheoThesis} }
 	\label{fig:versus}
 \end{figure}
@@ -299,7 +299,7 @@ These scenarios are used as an input during system design for user-centered desi
 This thesis concentrates on system scenarios, which are derived from the behavior of the application. 
 These scenarios are used to reduce the system cost by exploiting information about what can happen at run-time to make better design decisions. 
 While use-case scenarios classify the application's behavior based on the different ways it can be used, application scenarios classify it from the resource usage perspective, based on the cost trade-off aspects during the mapping to the platform. 
-Fig.\ref{fig:versus} depicts a design trajectory using use-case and system scenarios. 
+Fig. \ref{fig:versus} depicts a design trajectory using use-case and system scenarios. 
 It starts from a product idea, for which the product's functionality is manually defined. 
 These scenarios characterize the system from a user perspective and are used as an input to the design of an embedded system that includes both software and hardware components. 
 In order to optimize the design of the system, the detection and usage of application scenarios augments this trajectory (the bottom gray box in the figure). 
@@ -353,7 +353,7 @@ A memory bank can have several operational modes with different access time and 
 	\label{fig:pltfrm}
 \end{figure}
 
-A generic reconfigurable architecture template, which is suitable for implementing system scenarios, is shown in Fig.~\ref{fig:pltfrm}. 
+A generic reconfigurable architecture template, which is suitable for implementing system scenarios, is shown in Fig. \ref{fig:pltfrm}. 
 This dynamic memory organization consists of two software controlled SRAM scratchpad memories, L1 and L1', and a processing element with its registers. 
 For simplicity it is assumed that all data needed during execution is available in the L1 scratchpad memory without any time penalties even when large background memories are used. 
 This assumption is reasonable for the kind of applications that are generally executed in embedded systems and can, e.g., be achieved through prefetching. 
