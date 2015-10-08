@@ -142,7 +142,7 @@ The global overview of the DTSE methodology is presented in Fig.\ref{fig:dtse}.
 
 \begin{figure}
 	\centering
-	\includegraphics[scale=0.9]{Images/dtse1.pdf}
+	\includegraphics[scale=0.7]{Images/dtse3.pdf}
 	\caption{DTSE methodology for data transfer and storage exploration. Source: \cite{palkovicThesis} }
 	\label{fig:dtse}
 \end{figure}
@@ -282,7 +282,7 @@ The energy consumption is significantly reduced without violation of the executi
 
 \begin{figure}[!t]
 	\centering
-	\includegraphics{Images/versus1.pdf}	
+	\includegraphics[width=0.9\textwidth]{Images/versus.pdf}	
 	\caption{A scenario based design flow for embedded systems. Source: \cite{GheoThesis} }
 	\label{fig:versus}
 \end{figure}
@@ -428,14 +428,36 @@ The model suggests that the proposed target memory platform will continue to be 
 
 \section{Data variable based memory-aware system scenario methodology}
 
+\subsection{Methodology Overview}
+
 The memory-aware system scenario methodology is based on the observation that the memory subsystem requirements at run-time vary significantly due to dynamic variations of memory needs in the application code. 
 Most existing design methodologies define the memory requirements as that of the most demanding task and tune the system in order to meet its needs \cite{tcm}. 
 Obviously, this approach leads to unused memory area for tasks with lower memory requirements, since those tasks could meet their needs using fewer resources and consequently consuming less energy. 
 
+The implementation of the system scenario methodology deals with two main problems: 
+\begin{itemize}
+ \item The extra overhead introduced by the system scenarios. The usage of system scenarios introduces different types of overheads: from switching between scenarios, from storing code for a set of scenarios instead of a single application instance, from predicting the operation mode, etc.
+ \item The new functionality added to handle the system scenarios at run-time. The usage of system scenarios requires the implementation of extra functionality: deciding which scenario to switch to (or not to switch), using the scenario to change the system configuration, etc.
+\end{itemize}
+ 
+ The decision of what constitutes a scenario has to take into account all these overheads, which leads to a complicated problem. 
+ Therefore, the system scenario approach is divided into discrete steps presented in Fig. \ref{fig:overview}.
+ The implementation of new functionality has to exploit all the possible system knobs of the platform.
+ Therefore, a library of reconfigurable memory models is employed in this work.
+
+\begin{figure}
+\centering
+	\includegraphics[width=0.8\textwidth]{Images/overview.pdf}
+	\caption{System scenario methodology steps. Source: \cite{GheoThesis} }
+	\label{fig:overview}
+\end{figure}
+
 Designing with system scenarios is workload adaptive and offers different configurations of the platform and the freedom of switching to the most efficient scenario at run-time. 
 A system scenario is a configuration of the system that combines similar RTSs.
 The system is configured to meet the cost requirements of an RTS by choosing the appropriate system scenario, which is the one that satisfies the requirements using minimal power.
-The possible run-time situations (RTS)  in which the application may run, together with their resource needs should be known and taken into account during design.  
+The possible RTSs  in which the application may run, together with their resource needs should be known and taken into account during design.  
+
+
 
 \subsection{Design-time profiling based on data variables}
 
@@ -646,7 +668,7 @@ The full paper is presented in Appendix \ref{interleaving}.
 
 \section{Contribution D: Interconnection Cost Modeling and Scaling}
 
-The work related to this contribution is presented as a technical report and will be submitted as a journal paper in the future.
+The work related to this contribution is presented as a technical.
 
 \subsubsection{Abstract}
 Power consumption is the key limitation in modern embedded devices.

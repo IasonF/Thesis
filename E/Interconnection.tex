@@ -169,10 +169,14 @@ The leakage is higher inside the memory banks than the interconnection, but in b
 
 \begin{figure}
  \centering
- \includegraphics[width = 0.9\textwidth]{E/energy2.pdf}
-  \caption{Normalized energy breakdown between the memory banks and the interconnection}
+ \begin{minipage}{0.9\textwidth} % choose width suitably
+ \includegraphics[width =\linewidth]{E/energy2.pdf}
+ {\footnotesize Note: The small interconnection overhead is not easily visible in the figure without zooming in the top of the bars.\par}
+\end{minipage}
+  \caption{Normalized energy breakdown between the memory banks and the interconnection.}
  \label{fig:energyE}
  \end{figure}
+
 
 A group of clustered memory architectures is designed and synthesized following the presented work-flow.
 The simulation provides results for the current technology and the contribution of the interconnection to the overall energy consumption.
@@ -236,7 +240,7 @@ The example design is built using memory banks of 1KB and a bus width of 32bits.
 Each bank has one read and one write port and can operate independently.
 The memory banks are not directly connected to each other, but they connect to a multiplexer that can read and write data to the appropriate bank based on the data address. 
 The energy breakdown between the first part of the memory banks and the second part of the interconnection (part2) is presented in Fig. \ref{fig:energyE}.
-The energy cost of the interconnection logic is small compared to the energy cost for the write and read operations on the memory banks.
+The energy cost of the interconnection logic is very small compared to the energy cost for the write and read operations on the memory banks.
 Tab. \ref{tab:overhead} contains the exact percentages of the energy overhead on the interconnection. 
 The energy consumption for a monolithic approach with only one large 4KB memory is included in Fig. \ref{fig:energyE}.
 The comparison shows that the energy consumption is higher compared to a clustered memory, although there is no need for interconnection logic.

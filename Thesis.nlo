@@ -5,7 +5,7 @@
 \nomenclatureentry{aDVFS@[{DVFS}]\begingroup dynamic voltage and frequency scaling\nomeqref {2.0}|nompageref}{13}
 \nomenclatureentry{aUML@[{UML}]\begingroup unified modeling language\nomeqref {2.0}|nompageref}{14}
 \nomenclatureentry{aSCMEM@[{SCMEM}]\begingroup standard cell-based memory\nomeqref {3.0}|nompageref}{22}
-\nomenclatureentry{aSIMD@[{SIMD}]\begingroup single instruction multiple data\nomeqref {3.0}|nompageref}{26}
+\nomenclatureentry{aSIMD@[{SIMD}]\begingroup single instruction multiple data\nomeqref {3.0}|nompageref}{27}
 \nomenclatureentry{aCFG@[{CFG}]\begingroup control flow graph\nomeqref {A.0}|nompageref}{52}
 \nomenclatureentry{aGLT@[{GLT}]\begingroup global loop transformations\nomeqref {A.0}|nompageref}{52}
 \nomenclatureentry{aWCET@[{WCET}]\begingroup worst case execution time\nomeqref {A.0}|nompageref}{53}
