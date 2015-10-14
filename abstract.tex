@@ -6,23 +6,23 @@ Modern embedded systems are capable of performing a wide range of tasks and thei
 The recent progress in semiconductor processing technology greatly improves the performance of the embedded systems, due to the increased number of transistors on a single chip.
 The continuous performance improvement, for example higher clock frequencies and lower supply voltage, increases the possibilities for new embedded system designs.
 However, many embedded systems rely on a battery source, which puts a significant limitation on their lifetime and usage.
-The management of the energy consumption is the key factor towards increasing the lifetime of an embedded system relying on a battery source.
+The management of the energy consumption is a key factor towards increasing the lifetime of an embedded system relying on a battery source.
 %%Assuming that the development in the battery technology will follow the current trend, embedded systems should improve their energy efficiency based on the system design.
 A typical embedded system includes one or more processing elements (CPUs, GPUs, embedded processors etc.), a memory subsystem (cache, scratchpad, flash, etc.) and application specific hardware (antennas, sensors, etc.). 
-The memory subsystem has a significant contribution to the overall energy consumption based on the study of several embedded systems.
+The memory subsystem contributes significantly  to the overall energy consumption as shown in many studies of  embedded system applications and platforms.
 Especially for applications that are data intensive, the memory architecture may have the highest energy footprint of the whole embedded system.
 
 %In this thesis, we focus on the design of energy efficient memory architectures for embedded systems.
 A hardware/software co-design methodology is proposed for the reduction of the energy consumption in the memory subsystem based on the system scenario methodology.
 In general, system scenario methodologies propose the use of different platform configurations in order to exploit run-time variations in application needs.
 The current methodology exploits variations in memory needs during the lifetime of an application in order to optimize energy usage. 
-The different resource requirements, that change dynamically at run-time, are organized into groups to efficiently handle a very large exploration space.
+The different resource requirements, that change dynamically at run-time, are grouped into scenarios to efficiently handle a very large exploration space.
 Apart from the development of the methodology, an extended memory model is included in this work. 
 The memory models is based on existing state-of-the-art memories, available from industry and academia.
 In addition, the impact of the technology scaling is studied and the effectiveness of the proposed methodology is analyzed for the future memory architectures.
 We also investigate the combination of the developed methodology with known code transformation techniques, specifically data interleaving.
 The proposed design methodology aims at being compatible with the already available code optimization techniques.
-Actual decrease in energy consumption for a selection of studied applications ranges between 30\% and 60\%. 
+Actual decrease in memory energy consumption for a selection of studied applications ranges between 30\% and 60\%. 
 %We further extend the evaluation of the memory design methodology using a test-case wireless system.
 %The proposed reconfigurable memory subsystem is studied in a dynamic platform with several reconfiguration options that combine the memory and the processing elements.
 %\vspace*{\fill}

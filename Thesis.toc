@@ -47,7 +47,7 @@
 \contentsline {section}{\numberline {4.4}Contribution D: Interconnection Cost Modeling and Scaling}{34}{section.4.4}
 \contentsline {subsubsection}{Abstract}{34}{section.4.4}
 \contentsline {subsubsection}{Main Contributions}{34}{section.4.4}
-\contentsline {subsubsection}{Roles of the Authors}{34}{section.4.4}
+\contentsline {subsubsection}{Roles of the Authors}{35}{section.4.4}
 \contentsline {chapter}{\numberline {5}Conclusions and Future Work}{37}{chapter.5}
 \contentsline {section}{\numberline {5.1}Conclusions}{37}{section.5.1}
 \contentsline {section}{\numberline {5.2}Future Work}{38}{section.5.2}
@@ -148,7 +148,7 @@
 \contentsline {subsection}{\numberline {E.4.2}Interconnection}{190}{subsection.E.4.2}
 \contentsline {section}{\numberline {E.5}Model Construction and Projection Results}{192}{section.E.5}
 \contentsline {subsection}{\numberline {E.5.1}Model Construction}{192}{subsection.E.5.1}
-\contentsline {subsection}{\numberline {E.5.2}Results}{196}{subsection.E.5.2}
-\contentsline {section}{\numberline {E.6}Conclusion}{196}{section.E.6}
+\contentsline {subsection}{\numberline {E.5.2}Results}{195}{subsection.E.5.2}
+\contentsline {section}{\numberline {E.6}Conclusion}{197}{section.E.6}
 \contentsline {section}{Bibliography}{197}{section.E.6}
 \gdef \the@ipfilectr {}

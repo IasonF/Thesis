@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2014.6.24)  8 OCT 2015 16:57
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2014.6.24)  14 OCT 2015 14:31
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1047,7 +1047,7 @@ Chapter 2.
 [7] <Images/dtse3.pdf, id=994, 293.095pt x 688.5725pt>
 File: Images/dtse3.pdf Graphic file (type pdf)
  <use Images/dtse3.pdf>
-Package pdftex.def Info: Images/dtse3.pdf used on input line 145.
+Package pdftex.def Info: Images/dtse3.pdf used on input line 147.
 (pdftex.def)             Requested size: 205.16508pt x 481.99745pt.
 
 [8] [9 <./Images/dtse3.pdf>] [10]
@@ -1058,7 +1058,7 @@ Missing character: There is no ‚ in font cmr10!
 Missing character: There is no Ä in font cmr10!
 Missing character: There is no ù in font cmr10!
  [11]
-Overfull \hbox (1.62903pt too wide) in paragraph at lines 226--228
+Overfull \hbox (1.62903pt too wide) in paragraph at lines 228--230
 \OT1/cmr/m/n/10.95 This sec-tion de-scribes the ba-sic con-cepts be-hind the sy
 s-tem sce-nario method-
  []
@@ -1067,7 +1067,7 @@ s-tem sce-nario method-
 File: Images/versus2.pdf Graphic file (type pdf)
 
 <use Images/versus2.pdf>
-Package pdftex.def Info: Images/versus2.pdf used on input line 285.
+Package pdftex.def Info: Images/versus2.pdf used on input line 287.
 (pdftex.def)             Requested size: 322.65207pt x 228.00734pt.
 Missing character: There is no ‚ in font cmr10!
 Missing character: There is no Ä in font cmr10!
@@ -1080,16 +1080,16 @@ Chapter 3.
 File: Images/platform.pdf Graphic file (type pdf)
 
 <use Images/platform.pdf>
-Package pdftex.def Info: Images/platform.pdf used on input line 351.
+Package pdftex.def Info: Images/platform.pdf used on input line 353.
 (pdftex.def)             Requested size: 250.95222pt x 294.34996pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [20 <./Images/platform.pdf>]
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10.95> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 385.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 387.
  [21] [22]
-Overfull \hbox (4.44658pt too wide) in paragraph at lines 429--429
+Overfull \hbox (4.44658pt too wide) in paragraph at lines 431--431
  |[]\OT1/cmr/bx/n/14.4 Data vari-able based memory-aware sys-tem sce-
  []
 
@@ -1097,10 +1097,10 @@ Overfull \hbox (4.44658pt too wide) in paragraph at lines 429--429
 File: Images/overview.pdf Graphic file (type pdf)
 
 <use Images/overview.pdf>
-Package pdftex.def Info: Images/overview.pdf used on input line 450.
+Package pdftex.def Info: Images/overview.pdf used on input line 452.
 (pdftex.def)             Requested size: 286.80489pt x 101.95526pt.
  [24 <./Images/overview.pdf>] [25]
-Overfull \hbox (8.84946pt too wide) in paragraph at lines 507--507
+Overfull \hbox (8.84946pt too wide) in paragraph at lines 509--509
  |[]\OT1/cmr/bx/n/12 Run-time sys-tem sce-nario de-tec-tion and switch-ing base
 d
  []
@@ -1108,7 +1108,7 @@ d
 [26] [27] [28]
 Chapter 4.
 
-Overfull \hbox (1.5703pt too wide) in paragraph at lines 568--568
+Overfull \hbox (1.5703pt too wide) in paragraph at lines 574--574
  |[]\OT1/cmr/bx/n/12 Energy Im-pact of Memory-Aware Sys-tem Sce-nario Ap-
  []
 
@@ -1123,7 +1123,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [31]
 [32]
-Overfull \hbox (2.84569pt too wide) in paragraph at lines 664--668
+Overfull \hbox (2.84569pt too wide) in paragraph at lines 670--674
 \OT1/cmr/m/n/10.95 The nec-es-sary ex-per-i-ments were im-ple-mented by me with
  the help of Sharma.
  []
@@ -1522,7 +1522,7 @@ Appendix D.
 File: D/Images/motivation2.pdf Graphic file (type pdf)
 
 <use D/Images/motivation2.pdf>
-Package pdftex.def Info: D/Images/motivation2.pdf used on input line 128.
+Package pdftex.def Info: D/Images/motivation2.pdf used on input line 130.
 (pdftex.def)             Requested size: 322.65207pt x 456.41743pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -1533,10 +1533,10 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 File: D/Images/Architecture.pdf Graphic file (type pdf)
 
 <use D/Images/Architecture.pdf>
-Package pdftex.def Info: D/Images/Architecture.pdf used on input line 241.
+Package pdftex.def Info: D/Images/Architecture.pdf used on input line 243.
 (pdftex.def)             Requested size: 214.3001pt x 252.44249pt.
  [153] [154 <./D/Images/Architecture.pdf>]
-Overfull \hbox (37.58989pt too wide) in paragraph at lines 279--301
+Overfull \hbox (37.58989pt too wide) in paragraph at lines 281--303
 [][] 
  []
 
@@ -1544,21 +1544,21 @@ Overfull \hbox (37.58989pt too wide) in paragraph at lines 279--301
 File: D/Images/workflow2.pdf Graphic file (type pdf)
 
 <use D/Images/workflow2.pdf>
-Package pdftex.def Info: D/Images/workflow2.pdf used on input line 346.
+Package pdftex.def Info: D/Images/workflow2.pdf used on input line 348.
 (pdftex.def)             Requested size: 284.26419pt x 429.40756pt.
  [156] [157 <./D/Images/workflow2.pdf>] [158]
 <D/Images/AHpattern.pdf, id=2867, 668.4975pt x 181.67876pt>
 File: D/Images/AHpattern.pdf Graphic file (type pdf)
 
 <use D/Images/AHpattern.pdf>
-Package pdftex.def Info: D/Images/AHpattern.pdf used on input line 389.
+Package pdftex.def Info: D/Images/AHpattern.pdf used on input line 391.
 (pdftex.def)             Requested size: 358.50475pt x 97.43419pt.
  [159 <./D/Images/AHpattern.pdf>]
 <D/Images/Algebra.pdf, id=2892, 525.965pt x 355.3275pt>
 File: D/Images/Algebra.pdf Graphic file (type pdf)
 
 <use D/Images/Algebra.pdf>
-Package pdftex.def Info: D/Images/Algebra.pdf used on input line 425.
+Package pdftex.def Info: D/Images/Algebra.pdf used on input line 427.
 (pdftex.def)             Requested size: 315.58142pt x 213.19814pt.
  [160]
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -1568,7 +1568,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 File: D/Images/Example.pdf Graphic file (type pdf)
 
 <use D/Images/Example.pdf>
-Package pdftex.def Info: D/Images/Example.pdf used on input line 532.
+Package pdftex.def Info: D/Images/Example.pdf used on input line 534.
 (pdftex.def)             Requested size: 255.95563pt x 217.31134pt.
  [164]
 Underfull \vbox (badness 5893) has occurred while \output is active []
@@ -1578,19 +1578,19 @@ Underfull \vbox (badness 5893) has occurred while \output is active []
 File: D/Images/sor.pdf Graphic file (type pdf)
 
 <use D/Images/sor.pdf>
-Package pdftex.def Info: D/Images/sor.pdf used on input line 581.
+Package pdftex.def Info: D/Images/sor.pdf used on input line 583.
 (pdftex.def)             Requested size: 255.95563pt x 217.31134pt.
  [166 <./D/Images/sor.pdf>]
 <D/Images/fft.pdf, id=2966, 511.9125pt x 434.62375pt>
 File: D/Images/fft.pdf Graphic file (type pdf)
  <use D/Images/fft.pdf>
-Package pdftex.def Info: D/Images/fft.pdf used on input line 608.
+Package pdftex.def Info: D/Images/fft.pdf used on input line 610.
 (pdftex.def)             Requested size: 255.95563pt x 217.31134pt.
 
 <D/Images/mest.pdf, id=2968, 511.9125pt x 434.62375pt>
 File: D/Images/mest.pdf Graphic file (type pdf)
  <use D/Images/mest.pdf>
-Package pdftex.def Info: D/Images/mest.pdf used on input line 623.
+Package pdftex.def Info: D/Images/mest.pdf used on input line 625.
 (pdftex.def)             Requested size: 255.95563pt x 217.31134pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -1639,7 +1639,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [183]
-[184] <E/energy2.pdf, id=3106, 433.62pt x 289.08pt>
+[184] <E/energy2.pdf, id=3107, 433.62pt x 289.08pt>
 File: E/energy2.pdf Graphic file (type pdf)
  <use E/energy2.pdf>
 Package pdftex.def Info: E/energy2.pdf used on input line 173.
@@ -1651,43 +1651,44 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 Underfull \vbox (badness 3000) has occurred while \output is active []
 
  [186 <./E/energy2.pdf>]
-Overfull \hbox (2.54732pt too wide) in paragraph at lines 202--202
+Overfull \hbox (2.54732pt too wide) in paragraph at lines 203--203
  []\OT1/cmr/m/n/10.95 Interconnection 
  []
 
-<E/area.pdf, id=3120, 433.62pt x 289.08pt>
+<E/area.pdf, id=3121, 433.62pt x 289.08pt>
 File: E/area.pdf Graphic file (type pdf)
  <use E/area.pdf>
-Package pdftex.def Info: E/area.pdf used on input line 234.
+Package pdftex.def Info: E/area.pdf used on input line 235.
 (pdftex.def)             Requested size: 322.65207pt x 215.11122pt.
- [187] [188 <./E/area.pdf>] <E/gate.pdf, id=3138, 433.62pt x 289.08pt>
+ [187] [188 <./E/area.pdf>] <E/gate.pdf, id=3139, 433.62pt x 289.08pt>
 File: E/gate.pdf Graphic file (type pdf)
  <use E/gate.pdf>
-Package pdftex.def Info: E/gate.pdf used on input line 276.
+Package pdftex.def Info: E/gate.pdf used on input line 277.
 (pdftex.def)             Requested size: 322.65207pt x 215.11122pt.
  [189]
-<E/cellpower.pdf, id=3148, 433.62pt x 289.08pt>
+<E/cellpower.pdf, id=3149, 433.62pt x 289.08pt>
 File: E/cellpower.pdf Graphic file (type pdf)
  <use E/cellpower.pdf>
-Package pdftex.def Info: E/cellpower.pdf used on input line 297.
+Package pdftex.def Info: E/cellpower.pdf used on input line 298.
 (pdftex.def)             Requested size: 322.65207pt x 215.11122pt.
- [190 <./E/gate.pdf>] <E/intpower.pdf, id=3159, 433.62pt x 289.08pt>
+ [190 <./E/gate.pdf>] <E/intpower.pdf, id=3160, 433.62pt x 289.08pt>
 File: E/intpower.pdf Graphic file (type pdf)
 
 <use E/intpower.pdf>
-Package pdftex.def Info: E/intpower.pdf used on input line 316.
+Package pdftex.def Info: E/intpower.pdf used on input line 317.
 (pdftex.def)             Requested size: 322.65207pt x 215.11122pt.
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [191 <./E/cellpower.pdf>] [192 <./E/intpower.pdf>] [193]
-<E/overhead.pdf, id=3197, 433.62pt x 289.08pt>
+ [191 <./E/cellpower.pdf>] [192 <./E/intpower.pdf>]
+[193] <E/overhead.pdf, id=3197, 433.62pt x 289.08pt>
 File: E/overhead.pdf Graphic file (type pdf)
  <use E/overhead.pdf>
-Package pdftex.def Info: E/overhead.pdf used on input line 426.
+Package pdftex.def Info: E/overhead.pdf used on input line 424.
 (pdftex.def)             Requested size: 322.65207pt x 215.11122pt.
- [194]
-[195 <./E/overhead.pdf>] [196] (./E/Interconnection.bbl [197] [198
+
+[194] [195 <./E/overhead.pdf>]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [196]
+(./E/Interconnection.bbl [197] [198
 
 ]
 Underfull \hbox (badness 10000) in paragraph at lines 19--25
@@ -1737,7 +1738,7 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 191.
 Here is how much of TeX's memory you used:
  21250 strings out of 493117
  380402 string characters out of 6135433
- 555400 words of memory out of 5000000
+ 555410 words of memory out of 5000000
  23494 multiletter control sequences out of 15000+600000
  15646 words of font info for 58 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -1762,7 +1763,7 @@ texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2014/te
 xmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2014/texm
 f-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2014/texmf
 -dist/fonts/type1/public/amsfonts/symbols/msam10.pfb>
-Output written on Thesis.pdf (221 pages, 3898071 bytes).
+Output written on Thesis.pdf (221 pages, 3899878 bytes).
 PDF statistics:
  3452 PDF objects out of 3580 (max. 8388607)
  2777 compressed objects within 28 object streams

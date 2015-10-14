@@ -59,6 +59,6 @@
 \contentsline {figure}{\numberline {E.3}{\ignorespaces Normalized area breakdown between the memory banks and the interconnection\relax }}{188}{figure.caption.65}
 \contentsline {figure}{\numberline {E.4}{\ignorespaces Impact of technology scaling into gate length\relax }}{190}{figure.caption.66}
 \contentsline {figure}{\numberline {E.5}{\ignorespaces Memory Banks: Normalized dynamic power and technology scaling\relax }}{191}{figure.caption.67}
-\contentsline {figure}{\numberline {E.6}{\ignorespaces Interconnection: Impact of technology scaling into the capacitance and the power of the interconnection part\relax }}{192}{figure.caption.68}
+\contentsline {figure}{\numberline {E.6}{\ignorespaces Interconnection: Impact of technology scaling on the capacitance and the power consumption of the interconnection part\relax }}{192}{figure.caption.68}
 \contentsline {figure}{\numberline {E.7}{\ignorespaces Projections of the interconnection cost power overhead for different numbers of memory banks\relax }}{195}{figure.caption.70}
 \gdef \the@ipfilectr {}
