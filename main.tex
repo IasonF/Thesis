@@ -166,7 +166,7 @@ Thus mostly loops with large bounds and exhibiting good reuse of data and data s
  \item Global data-flow transformations.
  
  The goal of the global data-flow optimization step is to reduce the number of bottlenecks in the algorithm that prevent optimizing code restructuring transformations from being applied and to remove access redundancy in the data-flow. 
- The transformations consist mainly of advanced signal substitution avoiding unnecessary copies of data, modifying computation order in associative chains enabling certain loop transformations, shifting of delay lines through the algorithm to reduce the storage requirements, and re-computation issues to reduce the number of transfers and the storage size. 
+ The transformations consist mainly of advanced variable substitution avoiding unnecessary copies of data, modifying computation order in associative chains enabling certain loop transformations, shifting of delay lines through the algorithm to reduce the storage requirements, and re-computation issues to reduce the number of transfers and the storage size. 
  
  \item Global loop and control-flow transformations.
  
@@ -212,7 +212,7 @@ The combination of the SCBD and MAA tools allows to derive real Pareto trade-off
 \item Memory data layout optimization.
 
 In the memory allocation and data-to-memory assignment step, arrays were assigned to physical memories or to banks within predefined memories. 
-However, the arrays are still multi-dimensional, while the memory itself knows only addresses. 
+However, the arrays are still multi-dimensional, while the memory itself knows only one dimensional addresses. 
 In other words, the physical address for every array element still has to be determined. 
 This transformation is the data layout decision.
  Main memory data-layout optimization exploits the memory organization data freedom and thus reduces the conflict misses.
@@ -278,7 +278,16 @@ It also introduces in the application the way how to change the knob positions, 
 \end{enumerate}
 
 System scenarios have been applied in several cases and for a wide range of applications \cite{tcm}.
-The energy consumption is significantly reduced without violation of the execution time deadlines.
+The system scenario approach was presented for the first time in \cite{yang2002}, where it was used to improve the mapping of dynamic applications onto a multiprocessor platform.
+System scenarios have been applied in several cases and mostly emphasize on exploiting scenarios, and not on identifying and predicting them. 
+In \cite{Chu02}, the authors propose the usage of system scenarios for multimedia applications using a processor that supports DVFS. 
+The studied applications are split into parts with large variation in terms of execution time. 
+The proposed approach supplies the information of the execution time variations in run-time, which enables the DVFS reconfiguration of the processor.
+In \cite{sasanka2002}, authors manually identify system scenarios and define the most energy efficient architecture configuration that meets the timing constraints. 
+Again, a single processor is used and its supply voltage can be changed. 
+In \cite{choi2002}, system scenario approach is used in order to choose the lowest supply voltage for which the timing constraints of an MPEG decoder are met. 
+In all cases, the energy consumption is significantly reduced without violation of the execution time deadlines.
+
 
 \subsection{Use-Case vs. System Scenarios}
 
@@ -496,7 +505,7 @@ Increasing the number of memory banks results in lower energy per access since t
 Unused banks can be switched off.
 
 The system scenario identification step includes the selection of the data variables that determine the active system scenario. 
-This can be achieved by careful study of the application code, combined with the application's data input.
+This can be achieved by manual inspection of the application code, combined with the application's data input.
 The variable selection is done before clustering of RTSs into scenarios.
 For the choice of identification variables, there is a trade-off between the complexity and the accuracy of the scenario detection step.
 On one hand, if the identification is done using a group of complex variables and their correlation, there is a number of calculations needed in order to predict the active scenario. 
@@ -748,6 +757,6 @@ in order to take thisintocaccount as part of the exploration trade-off.
 The data transfers between the memory banks may be useful in some cases, although the interconnection overhead is expected to increase significantly.
 
 
-\addcontentsline{toc}{chapter}{Bibliography}	
-\bibliographystyle{plain}
-\bibliography{reference}
+%\addcontentsline{toc}{chapter}{Bibliography}	
+%\bibliographystyle{plain}
+%\bibliography{reference}

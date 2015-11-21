@@ -1,122 +1,55 @@
 This is BibTeX, Version 0.99d (TeX Live 2014)
 Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: Thesis.aux
-A level-1 auxiliary file: A/norchip.aux
 The style file: plain.bst
-Illegal, another \bibdata command---line 88 of file A/norchip.aux
- : \bibdata
- :         {reference}
-I'm skipping whatever remains of this command
-A level-1 auxiliary file: C/DAES.aux
-Illegal, another \bibstyle command---line 119 of file C/DAES.aux
- : \bibstyle
- :          {plain}
-I'm skipping whatever remains of this command
-Illegal, another \bibdata command---line 120 of file C/DAES.aux
- : \bibdata
- :         {reference}
-I'm skipping whatever remains of this command
-A level-1 auxiliary file: D/LayoutStorageOpt.aux
-Illegal, another \bibstyle command---line 95 of file D/LayoutStorageOpt.aux
- : \bibstyle
- :          {plain}
-I'm skipping whatever remains of this command
-Illegal, another \bibdata command---line 96 of file D/LayoutStorageOpt.aux
- : \bibdata
- :         {reference}
-I'm skipping whatever remains of this command
-A level-1 auxiliary file: E/Interconnection.aux
-Illegal, another \bibstyle command---line 55 of file E/Interconnection.aux
- : \bibstyle
- :          {plain}
-I'm skipping whatever remains of this command
-Illegal, another \bibdata command---line 56 of file E/Interconnection.aux
- : \bibdata
- :         {reference}
-I'm skipping whatever remains of this command
-A level-1 auxiliary file: F/dsd.aux
-Illegal, another \bibstyle command---line 72 of file F/dsd.aux
- : \bibstyle
- :          {plain}
-I'm skipping whatever remains of this command
-Illegal, another \bibdata command---line 73 of file F/dsd.aux
- : \bibdata
- :         {dsd_ref}
-I'm skipping whatever remains of this command
 Database file #1: reference.bib
-Warning--I didn't find a database entry for "Elena2012"
-Warning--I didn't find a database entry for "usecase"
-Warning--I didn't find a database entry for "Math"
-Warning--I didn't find a database entry for "rahimi2011fully"
-Warning--I didn't find a database entry for "kang2012high"
-Warning--I didn't find a database entry for "cho2009adaptive"
-Warning--I didn't find a database entry for "wang2005energy"
-Warning--I didn't find a database entry for "thoziyoor2008comprehensive"
-Warning--I didn't find a database entry for "pan2014system"
-Warning--I didn't find a database entry for "chen2014interconnect"
-Warning--I didn't find a database entry for "1"
-Warning--I didn't find a database entry for "2"
-Warning--I didn't find a database entry for "3"
-Warning--I didn't find a database entry for "17"
-Warning--I didn't find a database entry for "9"
-Warning--I didn't find a database entry for "10"
-Warning--I didn't find a database entry for "11"
-Warning--I didn't find a database entry for "12"
-Warning--I didn't find a database entry for "24"
-Warning--I didn't find a database entry for "22"
-Warning--I didn't find a database entry for "23"
-Warning--I didn't find a database entry for "13"
-Warning--I didn't find a database entry for "15"
-Warning--I didn't find a database entry for "16"
-Warning--I didn't find a database entry for "21"
-Warning--I didn't find a database entry for "20"
-Warning--I didn't find a database entry for "14"
-Warning--I didn't find a database entry for "18"
-Warning--I didn't find a database entry for "19"
-Warning--there's a number but no volume in Ben00c
+Warning--entry type for "4" isn't style-file defined
+--line 221 of file reference.bib
+Warning--there's a number but no volume in 16
 Warning--empty booktitle in graybox
 Warning--empty journal in lee2003compilation
+Warning--can't use both volume and number fields in 22
 Warning--empty title in Pal06
-Warning--there's a number but no volume in 8
-You've used 62 entries,
+Warning--there's a number but no volume in 8b
+You've used 123 entries,
             2118 wiz_defined-function locations,
-            883 strings with 17145 characters,
-and the built_in function-call counts, 25104 in all, are:
-= -- 2469
-> -- 1314
-< -- 27
-+ -- 525
-- -- 454
-* -- 1765
-:= -- 3998
-add.period$ -- 200
-call.type$ -- 62
-change.case$ -- 398
+            1119 strings with 28571 characters,
+and the built_in function-call counts, 50229 in all, are:
+= -- 4985
+> -- 2647
+< -- 57
++ -- 1055
+- -- 918
+* -- 3594
+:= -- 8051
+add.period$ -- 410
+call.type$ -- 123
+change.case$ -- 799
 chr.to.int$ -- 0
-cite$ -- 67
-duplicate$ -- 968
-empty$ -- 1881
-format.name$ -- 454
-if$ -- 5389
+cite$ -- 129
+duplicate$ -- 1907
+empty$ -- 3719
+format.name$ -- 918
+if$ -- 10732
 int.to.chr$ -- 0
-int.to.str$ -- 62
-missing$ -- 61
-newline$ -- 308
-num.names$ -- 124
-pop$ -- 492
+int.to.str$ -- 123
+missing$ -- 126
+newline$ -- 613
+num.names$ -- 246
+pop$ -- 956
 preamble$ -- 1
-purify$ -- 344
+purify$ -- 694
 quote$ -- 0
-skip$ -- 730
+skip$ -- 1380
 stack$ -- 0
-substring$ -- 1459
-swap$ -- 307
-text.length$ -- 27
+substring$ -- 2954
+swap$ -- 588
+text.length$ -- 57
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 238
-warning$ -- 5
-while$ -- 231
-width$ -- 64
-write$ -- 680
-(There were 9 error messages)
+type$ -- 468
+warning$ -- 6
+while$ -- 474
+width$ -- 126
+write$ -- 1373
+(There were 7 warnings)

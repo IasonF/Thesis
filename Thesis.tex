@@ -30,14 +30,6 @@
 \makenomenclature
 
 %Bibliography
-%\usepackage{url}
-%\usepackage{natbib}%\usepackage[sectionbib]{natbib} DEN ITAN COMMENTED
-\usepackage{chapterbib}
-%\bibpunct[:]{(}{)}{;}{a}{}{,} %citation structure DEN ITAN COMMENTED
-%\bibpunct{(}{)}{,}{a}{}{;} 
-%\bibpunct{[}{]}{,}{a}{}{;}
-%\bibpunct{(}{)}{;}{a}{}{,} % to follow the A&A style
-%\usepackage{chapterbib}
 \usepackage{hyperref}
 %for blank pages:
 \usepackage{afterpage}
@@ -68,9 +60,6 @@
 
 %spaces under sections
 \usepackage[compact]{titlesec}
-%\titlespacing{\section}{0pt}{*0}{*0}
-%\titlespacing{\subsection}{0pt}{*0}{*0}
-%\titlespacing{\subsubsection}{0pt}{*0}{*0}
 \titlespacing*{\section}
 {0pt}{5.5ex plus 1ex minus .2ex}{4.3ex plus .2ex}
 \titlespacing*{\subsection}
@@ -160,32 +149,18 @@
 \mainmatter
 
 \cleardoublepage
-%Chapters
-\include{main} 
-%\input{intro}
-%\input{background}
-%\input{method}
-%\input{research}
-%\input{conclusions}   
+\input{main} 
+  
+\addcontentsline{toc}{chapter}{Bibliography}
+%\chapter*{Bibliography}
+\bibliographystyle{plain}
+\bibliography{reference}
 
-
-%<<byman
-%% Configuration of the header strings for the Appendices
-%\renewcommand{\chaptermark}[1]{%
-%  \markboth{\MakeUppercase{\appendixname\ \thechapter}}%
-%  {\MakeUppercase{#1}}
-%}
-%\fancyhead[RE,LO]{}
-%
-%\appendix
-%byman>>
 \appendix
-\include{A/norchip} 
-%\include{B/meaow} 
-\include{C/DAES}
-\include{F/dsd}
-\include{D/LayoutStorageOpt}
-\include{E/Interconnection}
-
+\input{A/norchip} 
+\input{C/DAES}
+\input{F/dsd}
+\input{D/LayoutStorageOpt}
+\input{E/Interconnection}
 
 \end{document}

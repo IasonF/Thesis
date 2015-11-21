@@ -190,11 +190,11 @@ An overview of the related work on those two areas is presented.
 
 Data layout optimizations aim to arrange data in memory with the objective of improving system performance and energy through means such as reduced memory access count or reduced cache misses. 
 Several generic data layout techniques have been explored by researchers at various levels in the memory hierarchy. 
-In \cite{4},  cache partitioning, a layout technique for arrays, maps each array to different cache partitions to reduce conflicts. 
-In \cite{5} authors address the problem for cache miss reduction by evaluating the tiling size for arrays and merging the arrays appropriately for each loop nest. 
-Memory Hierarchy Layer Assignment (MHLA), an optimization methodology for data memory hierarchy presented in \cite{6}, determines for each data set an appropriate layer in the hierarchy and type of memory (single/dual port) taking data re-use into account. 
-The strategy in \cite{7} partitions the variables to scratch-pad memory and DRAM to minimize interference between variables. 
- The cache-oriented techniques proposed earlier by researchers in \cite{8} do not find a straightforward application in our context, where the target system hardware consists of a scratch-pad memory and a SIMD functional unit.
+In \cite{4b},  cache partitioning, a layout technique for arrays, maps each array to different cache partitions to reduce conflicts. 
+In \cite{5b} authors address the problem for cache miss reduction by evaluating the tiling size for arrays and merging the arrays appropriately for each loop nest. 
+Memory Hierarchy Layer Assignment (MHLA), an optimization methodology for data memory hierarchy presented in \cite{6b}, determines for each data set an appropriate layer in the hierarchy and type of memory (single/dual port) taking data re-use into account. 
+The strategy in \cite{7b} partitions the variables to scratch-pad memory and DRAM to minimize interference between variables. 
+ The cache-oriented techniques proposed earlier by researchers in \cite{8b} do not find a straightforward application in our context, where the target system hardware consists of a scratch-pad memory and a SIMD functional unit.
  The current work explores the assignment of data to the memory and the effect of different interleaving decisions on the overall energy consumption.
 
 Several techniques for designing energy efficient memory architectures for embedded systems are presented in \cite{Mac02}. 
@@ -650,8 +650,8 @@ A wide range of applications is studied that allow us to draw conclusions about 
 The improvement in the total system energy consumption after efficient interleaving and mapping of data is between 40\% and 80\% for the studied benchmarks having the type of irregularities in their access scheme that benefit most from the methodology.
 
 % Bibliography
-\addcontentsline{toc}{section}{Bibliography}	
-\bibliographystyle{plain}
-\bibliography{reference}
+%\addcontentsline{toc}{section}{Bibliography}	
+%\bibliographystyle{plain}
+%\bibliography{reference}
 %\bibliographystyle{ACM-Reference-Format-Journals}
 %\bibliography{reference}

@@ -1,4 +1,4 @@
-\begin{thebibliography}{10}
+\begin{thebibliography}{100}
 
 \bibitem{abraham1999automatic}
 Santosh~G Abraham and Scott~A Mahlke.
@@ -8,17 +8,48 @@ Santosh~G Abraham and Scott~A Mahlke.
   International Symposium on}, pages 114--125. IEEE, 1999.
 
 \bibitem{Artes2011}
-A.~Artes et~al.
+Antonio Artes, Jose~L Ayala, Ashoka~Visweswara Sathanur, Jos Huisken, and
+  Francky Catthoor.
 \newblock Run-time self-tuning banked loop buffer architecture for power
   optimization of dynamic workload applications.
 \newblock In {\em VLSI and System-on-Chip (VLSI-SoC), 2011 IEEE/IFIP 19th
-  International Conference on}, pages 136 --141, oct. 2011.
+  International Conference on}, pages 136--141. IEEE, 2011.
+
+\bibitem{45}
+Prithviraj Banerjee, John Chandy, Manish Gupta, EW~Hodges, John~G Holm, Antonio
+  Lain, Daniel~J Palermo, Shankar Ramaswamy, Ernesto Su, et~al.
+\newblock The paradigm compiler for distributed-memory multicomputers.
+\newblock {\em Computer}, 28(10):37--47, 1995.
+
+\bibitem{43}
+Utpal Banerjee, Rudolf Eigenmann, Alexandru Nicolau, David~A Padua, et~al.
+\newblock Automatic program parallelization.
+\newblock {\em Proceedings of the IEEE}, 81(2):211--243, 1993.
+
+\bibitem{11}
+Gaurav Bansal, Ziaul Hasan, Md~Jahangir Hossain, and Vijay~K Bhargava.
+\newblock Subcarrier and power adaptation for multiuser ofdm-based cognitive
+  radio systems.
+\newblock In {\em Communications (NCC), 2010 National Conference on}, pages
+  1--5. IEEE, 2010.
+
+\bibitem{10}
+Gaurav Bansal, Md~Jahangir Hossain, and Vijay~K Bhargava.
+\newblock Optimal and suboptimal power allocation schemes for ofdm-based
+  cognitive radio systems.
+\newblock {\em Wireless Communications, IEEE Transactions on},
+  7(11):4710--4718, 2008.
+
+\bibitem{18}
+Andrew Bateman.
+\newblock {\em Digital communications: design for the real world}.
+\newblock Addison-Wesley, 1999.
 
 \bibitem{Ben00c}
 Luca Benini, Alberto Macii, Enrico Macii, and Massimo Poncino.
 \newblock Increasing energy efficiency of embedded systems by
   application-specific memory hierarchy generation.
-\newblock {\em IEEE Design \& Test of Computers}, (2):74--85, 2000.
+\newblock {\em IEEE Design \& Test of Computers}, 1(2):74--85, 2000.
 
 \bibitem{Ben00b}
 Luca Benini, Alberto Macii, and Massimo Poncino.
@@ -35,12 +66,18 @@ Nathan Binkert, Bradford Beckmann, Gabriel Black, Steven~K. Reinhardt, Ali
 \newblock The gem5 simulator.
 \newblock {\em SIGARCH Comput. Archit. News}, 39(2):1--7, August 2011.
 
-\bibitem{6}
+\bibitem{6b}
 Erik Brockmeyer, Bart Durinck, Henk Corporaal, and Francky Catthoor.
 \newblock Layer assignment techniques for low energy in multi-layered memory
   organizations.
 \newblock In {\em Designing Embedded Processors}, pages 157--190. Springer,
   2007.
+
+\bibitem{220}
+E~Bugnion, Shih-Wei Liao, BR~Murphy, SP~Amarasinghe, JM~Anderson, MW~Hall, and
+  Monica~S Lam.
+\newblock Maximizing multiprocessor performance with the suif compiler.
+\newblock {\em Computer}, 4(12):84--85, 1996.
 
 \bibitem{cadencecompiler}
 RTL Cadence.
@@ -53,11 +90,31 @@ Francky Catthoor, Sven Wuytack, G.E. de~Greef, Florin Banica, Lode
   Organisation for Embedded Multimedia System Design}.
 \newblock Springer, 1998.
 
+\bibitem{3}
+Nanda~Kishore Chavali and Venkata Krishna~Reddy Pilli.
+\newblock Adaptive time synchronization for vht wireless lan.
+\newblock In {\em Proceedings of the International Conference on Advances in
+  Computing, Communications and Informatics}, pages 312--317. ACM, 2012.
+
 \bibitem{chen1999loop}
 Fei Chen and Edwin Hsing-Mean Sha.
 \newblock Loop scheduling and partitions for hiding memory latencies.
 \newblock In {\em Proceedings of the 12th international symposium on System
   synthesis}, page~64. IEEE Computer Society, 1999.
+
+\bibitem{chen2014interconnect}
+James Hsueh-Chung Chen, Theodorus~E Standaert, Emre Alptekin, Terry Spooner,
+  Vamsi Paruchuri, et~al.
+\newblock Interconnect performance and scaling strategy at 7 nm node.
+\newblock In {\em Interconnect Technology Conference/Advanced Metallization
+  Conference (IITC/AMC), 2014 IEEE International}, pages 93--96. IEEE, 2014.
+
+\bibitem{9}
+Wei Chen, Pingyi Fan, and Zhigang Cao.
+\newblock Water filling in cellar: the optimal power allocation policy with
+  channel and buffer state information.
+\newblock In {\em Communications, 2005. ICC 2005. 2005 IEEE International
+  Conference on}, volume~1, pages 537--541. IEEE, 2005.
 
 \bibitem{Che09}
 Eric Cheung, Harry Hsieh, and Felice Balarin.
@@ -65,12 +122,42 @@ Eric Cheung, Harry Hsieh, and Felice Balarin.
 \newblock In {\em Design Automation Conference, 2009. ASP-DAC 2009. Asia and
   South Pacific}, pages 811--816. IEEE, 2009.
 
+\bibitem{choi2002}
+Kihwan Choi, Karthik Dantu, Wei-Chung Cheng, and Massoud Pedram.
+\newblock Frame-based dynamic voltage and frequency scaling for a mpeg decoder.
+\newblock In {\em Proceedings of the 2002 IEEE/ACM international conference on
+  Computer-aided design}, pages 732--737. ACM, 2002.
+
 \bibitem{Chu02}
 Eui-Young Chung, Giovanni De~Micheli, and Luca Benini.
 \newblock Contents provider-assisted dynamic voltage scaling for low energy
   multimedia applications.
 \newblock In {\em Proceedings of the 2002 international symposium on Low power
   electronics and design}, ISLPED '02, pages 42--47, 2002.
+
+\bibitem{itrs}
+International~Roadmap Committee et~al.
+\newblock International technology roadmap for semiconductors: 2013 edition
+  executive summary.
+\newblock {\em Semiconductor Industry Association, San Francisco, CA, available
+  at: http://www. itrs. net/Links/2013ITRS/2013Chapters/2013ExecutiveSummary.
+  pdf}, 2013.
+
+\bibitem{itrs2}
+International~Roadmap Committee et~al.
+\newblock Process integration, devices, and structures (pids).
+\newblock {\em Semiconductor Industry Association, San Francisco, CA}, 2013.
+
+\bibitem{1}
+Xavier Costa-P{\'e}rez, Andreas Festag, Hans-Joerg Kolbe, Juergen Quittek,
+  Stefan Schmid, Martin Stiemerling, Joerg Swetina, and Hans Van Der~Veen.
+\newblock Latest trends in telecommunication standards.
+\newblock {\em ACM SIGCOMM Computer Communication Review}, 43(2):64--71, 2013.
+
+\bibitem{29}
+Bruce~Powel Douglass.
+\newblock {\em Real time UML: advances in the UML for real-time systems}.
+\newblock Addison-Wesley Professional, 2004.
 
 \bibitem{filippopoulos2013exploration}
 Iason Filippopoulos, Francky Catthoor, and Per~Gunnar Kjeldsberg.
@@ -84,20 +171,62 @@ Iason Filippopoulos, Francky Catthoor, Per~Gunnar Kjeldsberg, Elena Hammari,
 \newblock Memory-aware system scenario approach energy impact.
 \newblock In {\em NORCHIP, 2012}, pages 1 --6, nov. 2012.
 
-\bibitem{itrs}
-International Technology~Roadmap for Semiconductors.
-\newblock Annual summary, 2013.
+\bibitem{20}
+Iason Filippopoulos, Francky Catthoor, Per~Gunnar Kjeldsberg, Elena Hammari,
+  and Jos Huisken.
+\newblock Memory-aware system scenario approach energy impact.
+\newblock In {\em NORCHIP, 2012}, pages 1--6. IEEE, 2012.
+
+\bibitem{gajski1994specification}
+Daniel~D Gajski, Frank Vahid, Sanjiv Narayan, and Jie Gong.
+\newblock {\em Specification and design of embedded systems}.
+\newblock PTR Prentice Hall Englewood Cliffs, New Jesey, USA, 1994.
 
 \bibitem{Garcia}
 Philip Garcia, Katherine Compton, Michael Schulte, Emily Blem, and Wenyin Fu.
 \newblock An overview of reconfigurable hardware in embedded systems.
 \newblock {\em EURASIP J. Embedded Syst.}, 2006(1):13--13, January 2006.
 
+\bibitem{GheoThesis}
+Stefan~Valentin Gheorghita.
+\newblock {\em Dealing with dynamism in embedded system design: application
+  scenarios}.
+\newblock PhD thesis, Technische Universiteit Eindhoven, 2007.
+
+\bibitem{13}
+Stefan~Valentin Gheorghita.
+\newblock {\em Dealing with dynamism in embedded system design: application
+  scenarios}.
+\newblock PhD thesis, Technische Universiteit Eindhoven, 2007.
+
+\bibitem{15}
+Stefan~Valentin Gheorghita, Twan Basten, and Henk Corporaal.
+\newblock Intra-task scenario-aware voltage scheduling.
+\newblock In {\em Proceedings of the 2005 international conference on
+  Compilers, architectures and synthesis for embedded systems}, pages 177--184.
+  ACM, 2005.
+
+\bibitem{14}
+Stefan~Valentin Gheorghita, Twan Basten, and Henk Corporaal.
+\newblock Application scenarios in streaming-oriented embedded system design.
+\newblock In {\em System-on-Chip, 2006. International Symposium on}, pages
+  1--4. IEEE, 2006.
+
 \bibitem{Gheorghita2007}
-Stefan~Valentin Gheorghita, , et~al.
+Stefan~Valentin Gheorghita, Martin Palkovic, Juan Hamers, Arnout Vandecappelle,
+  Stelios Mamagkakis, Twan Basten, Lieven Eeckhout, Henk Corporaal, Francky
+  Catthoor, and Frederik Vandeputte.
 \newblock System-scenario-based design of dynamic embedded systems.
-\newblock {\em ACM Trans. Des. Autom. Electron. Syst.}, 14(1):3:1--3:45,
-  January 2009.
+\newblock {\em ACM Transactions on Design Automation of Electronic Systems
+  (TODAES)}, 14(1):3, 2009.
+
+\bibitem{17}
+Stefan~Valentin Gheorghita, Martin Palkovic, Juan Hamers, Arnout Vandecappelle,
+  Stelios Mamagkakis, Twan Basten, Lieven Eeckhout, Henk Corporaal, Francky
+  Catthoor, Frederik Vandeputte, et~al.
+\newblock System-scenario-based design of dynamic embedded systems.
+\newblock {\em ACM Transactions on Design Automation of Electronic Systems
+  (TODAES)}, 14(1):3, 2009.
 
 \bibitem{Gonzalez1996}
 R.~Gonzalez and M.~Horowitz.
@@ -125,11 +254,40 @@ M.R. Guthaus, J.S. Ringenberg, D.~Ernst, T.M. Austin, T.~Mudge, and R.B. Brown.
 \newblock In {\em Workload Characterization, 2001. WWC-4. 2001 IEEE
   International Workshop on}, pages 3--14. IEEE, 2001.
 
+\bibitem{usecase}
+Javier~J Gutierrez, Maria~J Escalona, Manuel Mejias, Jesus Torres, and Arturo~H
+  Centeno.
+\newblock A case study for generating test cases from use cases.
+\newblock In {\em Research Challenges in Information Science, 2008. RCIS 2008.
+  Second International Conference on}, pages 209--214. IEEE, 2008.
+
+\bibitem{360}
+Mary~W Hall, Timothy~J Harvey, Ken Kennedy, Nathaniel McIntosh, Kathryn~S
+  McKinley, Jeffrey~D Oldham, Michael~H Paleczny, and Gerald Roth.
+\newblock {\em Experiences using the ParaScope Editor: an interactive parallel
+  programming tool}, volume~28.
+\newblock ACM, 1993.
+
+\bibitem{16}
+Juan Hamers and Lieven Eeckhout.
+\newblock Scenario-based resource prediction for qos-aware media processing.
+\newblock {\em Computer}, (10):56--63, 2010.
+
 \bibitem{Elena2010}
 E.~Hammari, F.~Catthoor, J.~Huisken, and P~G Kjeldsberg.
 \newblock Application of medium-grain multiprocessor mapping methodology to
   epileptic seizure predictor.
 \newblock In {\em NORCHIP, 2010}, pages 1 --6, nov. 2010.
+
+\bibitem{Elena2012}
+Elena Hammari, Francky Catthoor, Per~Gunnar Kjeldsberg, Jos Huisken,
+  K~Tsakalis, and L~Iasemidis.
+\newblock Identifying data-dependent system scenarios in a dynamic embedded
+  system.
+\newblock In {\em Proceedings of the International Conference on Engineering of
+  Reconfigurable Systems and Algorithms (ERSA)}, page~1. The Steering Committee
+  of The World Congress in Computer Science, Computer Engineering and Applied
+  Computing (WorldComp), 2012.
 
 \bibitem{graybox}
 Stefaan Himpe, Francky Catthoor, G~De~Coninck, and J~Van~Meerbergen.
@@ -150,10 +308,47 @@ L.D. Iasemidis et~al.
 \newblock Long-term prospective on-line real-time seizure prediction.
 \newblock {\em Clinical Neurophysiology}, 116(3):532--544, 2005.
 
+\bibitem{4}
+IEEE.
+\newblock Specification frame work for ac: Ieee 802.11-09/0992r21, 2011.
+
+\bibitem{52}
+Mugurel~Theodor Ionita.
+\newblock {\em Scenario-based system architecting: a systematic approach to
+  developing future-proof system architectures}.
+\newblock PhD thesis, Technische Universiteit Eindhoven, 2005.
+
+\bibitem{ishitobi2007code}
+Yuriko Ishitobi, Tohru Ishihara, and Hiroto Yasuura.
+\newblock Code placement for reducing the energy consumption of embedded
+  processors with scratchpad and cache memories.
+\newblock In {\em Embedded Systems for Real-Time Multimedia, 2007. ESTIMedia
+  2007. IEEE/ACM/IFIP Workshop on}, pages 13--18. IEEE, 2007.
+
+\bibitem{istepanian2004guest}
+Robert~SH Istepanian, Emil Jovanov, and YT~Zhang.
+\newblock Guest editorial introduction to the special section on m-health:
+  Beyond seamless mobility and global wireless health-care connectivity.
+\newblock {\em Information Technology in Biomedicine, IEEE Transactions on},
+  8(4):405--414, 2004.
+
 \bibitem{jacob1996analytical}
 Bruce~L Jacob, Peter~M Chen, Seth~R Silverman, and Trevor~N Mudge.
 \newblock An analytical model for designing memory hierarchies.
 \newblock {\em Computers, IEEE Transactions on}, 45(10):1180--1194, 1996.
+
+\bibitem{6}
+Jiho Jang and Kwang~Bok Lee.
+\newblock Transmit power adaptation for multiuser ofdm systems.
+\newblock {\em Selected Areas in Communications, IEEE Journal on},
+  21(2):171--178, 2003.
+
+\bibitem{5}
+Jiho Jang, Kwang~Bok Lee, and Yong-Hwan Lee.
+\newblock Frequency-time domain transmit power adaptation for a multicarrier
+  system in fading channels.
+\newblock In {\em Personal, Indoor and Mobile Radio Communications, 2001 12th
+  IEEE International Symposium on}, volume~1, pages D--100. IEEE, 2001.
 
 \bibitem{jantsch1994hardware}
 Axel Jantsch, Peeter Ellervee, Ahmed Hemani, Johnny {\"O}berg, and Hannu
@@ -162,6 +357,12 @@ Axel Jantsch, Peeter Ellervee, Ahmed Hemani, Johnny {\"O}berg, and Hannu
   traffic.
 \newblock In {\em Proceedings of the conference on European design automation},
   pages 226--231. IEEE Computer Society Press, 1994.
+
+\bibitem{cho2009adaptive}
+Dah-Jing Jwo, Chien-Hao Tseng, Mu-Yen Chen, and Ta-Shun Cho.
+\newblock {\em Adaptive and nonlinear kalman filtering for GPS navigation
+  processing}.
+\newblock INTECH Open Access Publisher, 2009.
 
 \bibitem{kai2003synopsys}
 Wang Kai and Xu~Zhiwei.
@@ -173,12 +374,25 @@ Mahmut Kandemir, Ugur Sezer, and Victor Delaluz.
 \newblock In {\em Proceedings of the 2001 IEEE/ACM international conference on
   Computer-aided design}, pages 201--206. IEEE Press, 2001.
 
-\bibitem{Ang13b}
-A.~Kritikakou, F.~Catthoor, V.~Kelefouras, and C.~Goutis.
-\newblock Near-optimal and scalable intra-signal in-place for non-overlapping
-  and irregular access scheme.
-\newblock {\em ACM Trans. Design Automation of Electronic Systems (TODAES)},
-  conditionally accepted, 2013.
+\bibitem{256}
+Mahmut Kandemir, Narayanan Vijaykrishnan, Mary~Jane Irwin, and Wu~Ye.
+\newblock Influence of compiler optimizations on system power.
+\newblock In {\em Proceedings of the 37th Annual Design Automation Conference},
+  pages 304--307. ACM, 2000.
+
+\bibitem{kang2012high}
+Kyungsu Kang, Luca Benini, and Giovanni~De Micheli.
+\newblock A high-throughput and low-latency interconnection network for
+  multi-core clusters with 3-d stacked l2 tightly-coupled data memory.
+\newblock In {\em VLSI and System-on-Chip (VLSI-SoC), 2012 IEEE/IFIP 20th
+  International Conference on}, pages 283--286. IEEE, 2012.
+
+\bibitem{12}
+Xin Kang, Ying-Chang Liang, Arumugam Nallanathan, Krishna Garg, and Rui Zhang.
+\newblock Optimal power allocation for fading channels in cognitive radio
+  networks: Ergodic capacity and outage capacity.
+\newblock {\em Wireless Communications, IEEE Transactions on}, 8(2):940--950,
+  2009.
 
 \bibitem{Ang13}
 A~Kritikakou, F~Catthoor, V~Kelefouras, and C~Goutis.
@@ -186,6 +400,12 @@ A~Kritikakou, F~Catthoor, V~Kelefouras, and C~Goutis.
   management.
 \newblock {\em ACM transaction architecture and code optimization},
   11(1):1--25, 2014.
+
+\bibitem{Ang13b}
+Angeliki Kritikakou, Francky Catthoor, and Costas Goutis.
+\newblock Intra-signal in-place methodology for non-overlapping scenario.
+\newblock In {\em Scalable and Near-Optimal Design Space Exploration for
+  Embedded Systems}, pages 97--123. Springer, 2014.
 
 \bibitem{kritikakou2013phd}
 Angeliki~Stavros Kritikakou.
@@ -195,7 +415,7 @@ Angeliki~Stavros Kritikakou.
 \newblock PhD thesis, Department of Electrical and Computer Engineering School
   of Engineering, University of Patras, 2013.
 
-\bibitem{5}
+\bibitem{5b}
 Chidamber Kulkarni, C~Ghez, Miguel Miranda, Francky Catthoor, and Hugo De~Man.
 \newblock Cache conscious data layout organization for conflict miss reduction
   in embedded multimedia applications.
@@ -226,6 +446,24 @@ Yanbing Li and Wayne~H Wolf.
 \newblock {\em Computer-Aided Design of Integrated Circuits and Systems, IEEE
   Transactions on}, 18(10):1405--1417, 1999.
 
+\bibitem{23}
+Chien-Ching Lin, Yen-Hsu Shih, Hsie-Chia Chang, and Chen-Yi Lee.
+\newblock Design of a power-reduction viterbi decoder for wlan applications.
+\newblock {\em Circuits and Systems I: Regular Papers, IEEE Transactions on},
+  52(6):1148--1156, 2005.
+
+\bibitem{22}
+Yuan Lin, Hyunseok Lee, Mark Woh, Yoav Harel, Scott Mahlke, Trevor Mudge,
+  Chaitali Chakrabarti, and Krisztian Flautner.
+\newblock Soda: A low-power architecture for software radio.
+\newblock In {\em ACM SIGARCH Computer Architecture News}, volume~34, pages
+  89--101. IEEE Computer Society, 2006.
+
+\bibitem{liu1994power}
+Dake Liu and Christer Svensson.
+\newblock Power consumption estimation in cmos vlsi chips.
+\newblock {\em Solid-State Circuits, IEEE Journal of}, 29(6):663--670, 1994.
+
 \bibitem{tcm}
 Zhe Ma, Pol Marchal, Daniele~Paolo Scarpazza, Peng Yang, Chun Wong,
   Jos{\'e}~Ignacio G{\'o}mez, Stefaan Himpe, Chantal Ykman-Couvreur, and
@@ -247,7 +485,7 @@ Afzal Malik, Bill Moyer, and Dan Cermak.
   Proceedings of the 2000 International Symposium on}, pages 241--243. IEEE,
   2000.
 
-\bibitem{4}
+\bibitem{4b}
 Naraig Manjikian and Tarek Abdelrahman.
 \newblock Array data layout for the reduction of cache conflicts.
 \newblock In {\em Proceedings of the 8th International Conference on Parallel
@@ -262,6 +500,13 @@ P.~Marchal, D.~Bruni, J.I. Gomez, L.~Benini, L.~Pinuel, F.~Catthoor, and
   Exhibition, 2003}, pages 516--521, 2003.
 
 \bibitem{Mei10}
+P~Meinerzhagen, C~Roth, and A~Burg.
+\newblock Towards generic low-power area-efficient standard cell based memory
+  architectures.
+\newblock In {\em Circuits and Systems (MWSCAS), 2010 53rd IEEE International
+  Midwest Symposium on}, pages 129--132. IEEE, 2010.
+
+\bibitem{19}
 P~Meinerzhagen, C~Roth, and A~Burg.
 \newblock Towards generic low-power area-efficient standard cell based memory
   architectures.
@@ -289,6 +534,11 @@ Sparsh Mittal.
 \newblock {\em Sustainable Computing: Informatics and Systems}, 4(1):33--43,
   2014.
 
+\bibitem{muralimanohar2007interconnect}
+Naveen Muralimanohar and Rajeev Balasubramonian.
+\newblock Interconnect design considerations for large nuca caches.
+\newblock {\em ACM SIGARCH Computer Architecture News}, 35(2):369--380, 2007.
+
 \bibitem{Valgrind}
 Nicholas Nethercote and Julian Seward.
 \newblock How to shadow every byte of memory used by a program.
@@ -307,6 +557,11 @@ M.~Palkovic, H.~Corporaal, and F.~Catthoor.
 \newblock In {\em System-on-Chip, 2007 International Symposium on}, pages 1
   --4, nov. 2007.
 
+\bibitem{palkovicThesis}
+Martin Palkovic.
+\newblock Enhanced applicability of loop transformations.
+\newblock {\em Dissertation Abstracts International}, 68(04), 2007.
+
 \bibitem{Pal06}
 Martin Palkovic, Francky Catthoor, and Henk Corporaal.
 \newblock In {\em Proc. of the 4th Workshop on Optimizations for DSP and
@@ -318,6 +573,12 @@ Martin Palkovic et~al.
   systems.
 \newblock {\em Journal of Low Power Electronics, Volume 2, Number 1}, 2006.
 
+\bibitem{pan2014system}
+Chenyun Pan and Azad Naeemi.
+\newblock System-level variation analysis for interconnection networks.
+\newblock In {\em Interconnect Technology Conference/Advanced Metallization
+  Conference (IITC/AMC), 2014 IEEE International}, pages 303--306. IEEE, 2014.
+
 \bibitem{Pgk01}
 Preeti~Ranjan Panda, Francky Catthoor, Nikil~D Dutt, Koen Danckaert, Erik
   Brockmeyer, Chidamber Kulkarni, A~Vandercappelle, and Per~Gunnar Kjeldsberg.
@@ -325,21 +586,28 @@ Preeti~Ranjan Panda, Francky Catthoor, Nikil~D Dutt, Koen Danckaert, Erik
 \newblock {\em ACM Transactions on Design Automation of Electronic Systems
   (TODAES)}, 6(2):149--206, 2001.
 
-\bibitem{7}
+\bibitem{7b}
 Preeti~Ranjan Panda, Nikil~D Dutt, and Alexandru Nicolau.
 \newblock {\em Memory issues in embedded systems-on-chip: optimizations and
   exploration}.
 \newblock Springer Science \& Business Media, 1999.
 
-\bibitem{8}
+\bibitem{8b}
 Preeti~Ranjan Panda, Nikil~D Dutt, Alexandru Nicolau, Francky Catthoor, Arnout
   Vandecappelle, Erik Brockmeyer, Chidamber Kulkarni, and Eddy De~Greef.
 \newblock Data memory organization and optimizations in application-specific
   systems.
 \newblock {\em IEEE Design \& Test of Computers}, (3):56--57, 2001.
 
+\bibitem{park2001battery}
+Sung Park, Andreas Savvides, and Mani Srivastava.
+\newblock Battery capacity measurement and analysis using lithium coin cell
+  battery.
+\newblock In {\em Proceedings of the 2001 international symposium on Low power
+  electronics and design}, pages 382--387. ACM, 2001.
+
 \bibitem{passes1995multi}
-NL~Passes, Edwin Hsing-Mean Sha, and Liang-Fang Chao.
+NL~Passes, Edwin~HM Sha, and Liang-Fang Chao.
 \newblock Multi-dimensional interleaving for time-and-memory design
   optimization.
 \newblock In {\em Computer Design: VLSI in Computers and Processors, 1995.
@@ -352,6 +620,13 @@ D.A. Patterson and J.L. Hennessy.
   the HW/SW Intelface}.
 \newblock Morgan Kaufmann, 1994.
 
+\bibitem{85}
+JoAnn~M Paul, Donald~E Thomas, and Alex Bobrek.
+\newblock Scenario-oriented design for single-chip heterogeneous
+  multiprocessors.
+\newblock {\em Very Large Scale Integration (VLSI) Systems, IEEE Transactions
+  on}, 14(8):868--880, 2006.
+
 \bibitem{dvfs}
 A.~Portero et~al.
 \newblock Dynamic voltage scaling for power efficient mpeg4-sp implementation.
@@ -361,6 +636,33 @@ A.~Portero et~al.
 \bibitem{Poly}
 L.N. Pouchet.
 \newblock Polybench: The polyhedral benchmark suite.
+
+\bibitem{7}
+John~G Proakis.
+\newblock {\em Intersymbol Interference in Digital Communication Systems}.
+\newblock Wiley Online Library, 2001.
+
+\bibitem{rahimi2011fully}
+Abbas Rahimi, Igor Loi, Mohammad~Reza Kakoee, and Luca Benini.
+\newblock A fully-synthesizable single-cycle interconnection network for
+  shared-l1 processor clusters.
+\newblock In {\em Design, Automation \& Test in Europe Conference \& Exhibition
+  (DATE), 2011}, pages 1--6. IEEE, 2011.
+
+\bibitem{Math}
+Herbert~John Ryser.
+\newblock {\em Combinatorial mathematics}.
+\newblock MAA Washington, 1963.
+
+\bibitem{sangiovanni2007embedded}
+Alberto Sangiovanni-Vincentelli and Marco Di~Natale.
+\newblock Embedded system design for automotive applications.
+\newblock {\em Computer}, 4(10):42--51, 2007.
+
+\bibitem{sasanka2002}
+Ruchira Sasanka, Christopher~J Hughes, and Sarita~V Adve.
+\newblock Joint local and global hardware adaptations for energy.
+\newblock {\em ACM SIGARCH Computer Architecture News}, 30(5):144--155, 2002.
 
 \bibitem{schmit1997synthesis}
 Herman Schmit and Donald~E Thomas.
@@ -381,6 +683,21 @@ Tajana {\v{S}}imuni{\'c}, Luca Benini, and Giovanni De~Micheli.
 \newblock In {\em Proceedings of the 36th annual ACM/IEEE Design Automation
   Conference}, pages 867--872. ACM, 1999.
 
+\bibitem{steinke2002assigning}
+Stefan Steinke, Lars Wehmeyer, Bo-Sik Lee, and Peter Marwedel.
+\newblock Assigning program and data objects to scratchpad for energy
+  reduction.
+\newblock In {\em Design, Automation and Test in Europe Conference and
+  Exhibition, 2002. Proceedings}, pages 409--415. IEEE, 2002.
+
+\bibitem{suhendra2006integrated}
+Vivy Suhendra, Chandrashekar Raghavan, and Tulika Mitra.
+\newblock Integrated scratchpad memory optimization and task scheduling for
+  mpsoc architectures.
+\newblock In {\em Proceedings of the 2006 international conference on
+  Compilers, architecture and synthesis for embedded systems}, pages 401--410.
+  ACM, 2006.
+
 \bibitem{avd}
 Sriram Swaminathan et~al.
 \newblock A dynamically reconfigurable adaptive viterbi decoder.
@@ -388,11 +705,87 @@ Sriram Swaminathan et~al.
   symposium on Field-programmable gate arrays}, FPGA '02, pages 227--236, New
   York, NY, USA, 2002. ACM.
 
+\bibitem{thoziyoor2008comprehensive}
+Shyamkumar Thoziyoor, Jung~Ho Ahn, Matteo Monchiero, Jay~B Brockman, and
+  Norman~P Jouppi.
+\newblock A comprehensive memory modeling tool and its application to the
+  design and analysis of future memory hierarchies.
+\newblock In {\em Computer Architecture, 2008. ISCA'08. 35th International
+  Symposium on}, pages 51--62. IEEE, 2008.
+
+\bibitem{2}
+Tore Ulvers{\o}y.
+\newblock Software defined radio: Challenges and opportunities.
+\newblock {\em Communications Surveys \& Tutorials, IEEE}, 12(4):531--550,
+  2010.
+
+\bibitem{519}
+Ingrid Verbauwhede, Francky Catthoor, Joos Vandewalle, and Hugo De~Man.
+\newblock In-place memory management of algebraic algorithms on application
+  specific ics.
+\newblock {\em Journal of VLSI signal processing systems for signal, image and
+  video technology}, 3(3):193--200, 1991.
+
 \bibitem{viterbi}
 A.~Viterbi.
 \newblock Error bounds for convolutional codes and an asymptotically optimum
   decoding algorithm.
 \newblock {\em Information Theory, IEEE Transactions on}, 13(2):260 --269,
   april 1967.
+
+\bibitem{wang2005energy}
+Zhong Wang and Xiaobo~Sharon Hu.
+\newblock Energy-aware variable partitioning and instruction scheduling for
+  multibank memory architectures.
+\newblock {\em ACM Transactions on Design Automation of Electronic Systems
+  (TODAES)}, 10(2):369--388, 2005.
+
+\bibitem{556}
+Michael Wolfe.
+\newblock Data dependence and program restructuring.
+\newblock {\em The Journal of Supercomputing}, 4(4):321--344, 1991.
+
+\bibitem{8}
+Cheong~Yui Wong, Roger~S Cheng, K~Ben Lataief, and Ross~D Murch.
+\newblock Multiuser ofdm with adaptive subcarrier, bit, and power allocation.
+\newblock {\em Selected Areas in Communications, IEEE Journal on},
+  17(10):1747--1758, 1999.
+
+\bibitem{wong2000modeling}
+Shyh-Chyi Wong, Gwo-Yann Lee, and Dye-Jyun Ma.
+\newblock Modeling of interconnect capacitance, delay, and crosstalk in vlsi.
+\newblock {\em Semiconductor Manufacturing, IEEE Transactions on},
+  13(1):108--111, 2000.
+
+\bibitem{yang2002}
+Peng Yang, Paul Marchal, Chun Wong, Stefaan Himpe, Francky Catthoor, Patrick
+  David, Johan Vounckx, and Rudy Lauwereins.
+\newblock Managing dynamic concurrent tasks in embedded real-time multimedia
+  systems.
+\newblock In {\em Proceedings of the 15th international symposium on System
+  Synthesis}, pages 112--119. ACM, 2002.
+
+\bibitem{24}
+Ch~Ykman-Couvreur, Vincent Nollet, Fr~Catthoor, and Henk Corporaal.
+\newblock Fast multi-dimension multi-choice knapsack heuristic for mp-soc
+  run-time management.
+\newblock In {\em System-on-Chip, 2006. International Symposium on}, pages
+  1--4. IEEE, 2006.
+
+\bibitem{zompakis2014systematic}
+Nikolaos Zompakis, Iason Filippopoulos, Per~Gunnar Kjeldsberg, Francky
+  Catthoor, and Dimitrios Soudris.
+\newblock Systematic exploration of power-aware scenarios for ieee 802.11 ac
+  wlan systems.
+\newblock In {\em Digital System Design (DSD), 2014 17th Euromicro Conference
+  on}, pages 28--35. IEEE, 2014.
+
+\bibitem{21}
+Nikolaos Zompakis, Antonis Papanikolaou, Praveen Raghavan, Dimitrios Soudris,
+  and Francky Catthoor.
+\newblock Enabling efficient system configurations for dynamic wireless
+  applications using system scenarios.
+\newblock {\em International journal of wireless information networks},
+  20(2):140--156, 2013.
 
 \end{thebibliography}
