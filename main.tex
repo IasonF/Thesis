@@ -370,6 +370,8 @@ For simplicity it is assumed that all data needed during execution is available 
 This assumption is reasonable for the kind of applications that are generally executed in embedded systems and can, e.g., be achieved through prefetching. 
 Registers are used to save currently used elements, and between the registers and the L1 scratchpad a much smaller L1' scratchpad is introduced. 
 This is a clustered memory that consists of a number of memory banks, which support different operational modes.
+This work focuses solely on the exploration of the L1' scratchpad memory architecture.
+The registers and the background memory are only presented in Fig. \ref{fig:pltfrm} to provide a broader overview of the system architecture.
 
 \subsection{Target memory platform architecture}
 
@@ -484,6 +486,7 @@ For example, assuming that an input value dynamically changes within a range, th
 The minimum and maximum limits can be found with the help of the application's code.
 Thus, the profiling in this case should not be perceived as a training series but rather as a full analysis of the whole input space.
 All possible application inputs that can occur at run-time belong to the input space analyzed at design-time.
+There are several ways that profiling can be performed. Current program monitoring software cannot offer the needed level of detail. Debuggers and memory tools, such as Valgrind \cite{Valgrind}, or direct hard-coded profiling are preferable methods, because of their higher accuracy.
 
 Profiling results provided to the designer include complete information about allocated memory size values together with the number of occurrences and duration for each of these memory size values. 
 Moreover, correlation between input data variable values and the resulting memory behavior can possibly be observed. 
@@ -497,12 +500,17 @@ Appendix \ref{DAES} includes a detailed presentation of this step. Appendix \ref
 The scenario identification is the process of organizing the profiled memory sizes into groups with similar characteristics, which are defined as system scenarios. 
 Grouping or clustering is necessary, because it will be extremely costly to have a different scenario for every possible size, due to the number of memories needed. 
 Clustering neighboring RTSs is a rational choice, because two instances with similar memory needs have similar energy consumption. 
+Independently of the size of the exploration space, i.e. the number of different inputs and RTSs, the number of scenarios is kept low.
+This is achieved by clustering more RTSs into the same scenario when the number of RTSs is higher.
+The scenario identification phase always aim at providing a number of scenarios that can be handled by the run-time manager without introducing extreme overheads. 
+
 The memory size and the frequency of occurrence of each RTS are not the only two parameters that should be taken into consideration during the system scenario identification. 
 The memory size of each RTS results in a different energy cost depending on the way it is mapped into memory. 
 The impact of the different assignment possibilities is included into the clustering by introduction of energy as a cost metric. 
 The different assignments and their characteristics are explored using the principles of the DTSE methodology.
 Increasing the number of memory banks results in lower energy per access since the most accessed elements can be assigned to smaller and more energy efficient banks. 
 Unused banks can be switched off.
+The scenario identification is performed semi-manually by developing application specific scripts that explore the grouping possibilities for the extracted RTSs.
 
 The system scenario identification step includes the selection of the data variables that determine the active system scenario. 
 This can be achieved by manual inspection of the application code, combined with the application's data input.
@@ -725,11 +733,29 @@ Another model is developed to study the impact of the interconnect on the overal
 The model suggests that overhead will be kept low in the short term and will increase within reasonable levels in the mid-long term.
 Therefore, the design of energy efficient clustered memory architecture will continue to be a good design choice.
 
+The testing of the methodology on two applications from bioengineering and wireless communications domains justifies its effectiveness in reduction of memory energy consumption. 
+The memory-aware system scenario methodology is also tested using a wide range of multimedia applications, which allow us to draw conclusions about different kinds of dynamic behavior and their effect on the energy gains achieved using the methodology. 
+The results demonstrate the effectiveness of the methodology reducing the memory energy consumption with between 35\% and 55\%. 
+Since memory size requirements are still met in all situations, performance is not reduced. 
+The presented results conclude that the memory-aware system scenario methodology is suited for applications that experience dynamic behaviour with respect to memory organisation utilization during their execution.
+
+
 Apart from justifying the effectiveness of the system scenarios methodology on the memory, this work explores the compatibility of the methodology with other techniques.
 Firstly, the application of the system scenarios methodology in the complete system, including the memory and the processing subsystem, is studied.
+The power management options for a transmitting wireless system using system scenarios is explored. 
+The dynamic parameters and the variations during the transmission for the targeted wireless protocol are analyzed. 
+Based on the analysis and the system models, system scenarios are generated for the case study, in order to optimize energy usage. 
+Both the signal power and the memory subsystem are taken into consideration. 
+The results demonstrate the effectiveness of the methodology and illustrate the interesting trade-off between the clustering overhead and the switching cost. 
+
 Secondly, the proposed methodology is integrated with code and data transformation techniques.
-A methodology for efficient exploration of data interleaving and data-to-memory mapping options is developed and tested.
+This work presents a methodology for efficient exploration of data interleaving and data-to-memory mapping options for SIMD (Single Instruction Multiple Data) platform architectures.
+The methodology focuses on reducing the overall energy consumption by reducing the number of memory accesses and the energy per access.
 A wide range of applications is studied that allow us to draw conclusions about different kinds of dynamic behavior and their effect on the energy gains achieved using the methodology. 
+The improvement in the total system energy consumption after efficient interleaving and mapping of data is between 40\% and 80\% for the studied benchmarks having the type of irregularities in their access scheme that benefit most from the methodology.
+
+The development of an interconnection model for the proposed memory architecture suggests that the interconnection overhead will be kept low in the short term and will increase within reasonable levels in the mid-long term.
+Therefore, this thesis concludes that the design of energy efficient clustered memory architecture will continue to be a good design choice.
 
 \section{Future Work}
 
