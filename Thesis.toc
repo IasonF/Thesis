@@ -23,115 +23,115 @@
 \contentsline {subsection}{\numberline {3.2.1}Methodology Overview}{23}{subsection.3.2.1}
 \contentsline {subsection}{\numberline {3.2.2}Design-time profiling based on data variables}{24}{subsection.3.2.2}
 \contentsline {subsection}{\numberline {3.2.3}Design-time system scenario identification based on data variables}{25}{subsection.3.2.3}
-\contentsline {subsection}{\numberline {3.2.4}Run-time system scenario detection and switching based on data variables}{26}{subsection.3.2.4}
+\contentsline {subsection}{\numberline {3.2.4}Run-time system scenario detection and switching based on data variables}{27}{subsection.3.2.4}
 \contentsline {subsection}{\numberline {3.2.5}Interleaving exploration based on data variables}{27}{subsection.3.2.5}
-\contentsline {chapter}{\numberline {4}Research Results and Contributions}{29}{chapter.4}
-\contentsline {section}{\numberline {4.1}Contribution A: Development of the Memory-Aware System Scenario Methodology}{29}{section.4.1}
-\contentsline {subsection}{\numberline {4.1.1}Energy Impact of Memory-Aware System Scenario Approach}{30}{subsection.4.1.1}
-\contentsline {subsubsection}{Abstract}{30}{subsection.4.1.1}
-\contentsline {subsubsection}{Main Contributions}{30}{subsection.4.1.1}
-\contentsline {subsubsection}{Roles of the Authors}{30}{subsection.4.1.1}
-\contentsline {subsection}{\numberline {4.1.2}Exploration of energy efficient memory organizations for dynamic multimedia applications using system scenarios}{30}{subsection.4.1.2}
-\contentsline {subsubsection}{Abstract}{30}{subsection.4.1.2}
-\contentsline {subsubsection}{Main Contributions}{31}{subsection.4.1.2}
-\contentsline {subsubsection}{Roles of the Authors}{31}{subsection.4.1.2}
-\contentsline {section}{\numberline {4.2}Contribution B: Combined Implementation of the System Scenario Methodology on Memory Subsystem and Processing Elements}{32}{section.4.2}
-\contentsline {subsubsection}{Abstract}{32}{section.4.2}
-\contentsline {subsubsection}{Main Contributions}{32}{section.4.2}
-\contentsline {subsubsection}{Roles of the Authors}{32}{section.4.2}
-\contentsline {section}{\numberline {4.3}Contribution C: Integrated Interleaving and Data-to-Memory Mapping}{33}{section.4.3}
-\contentsline {subsubsection}{Abstract}{33}{section.4.3}
-\contentsline {subsubsection}{Main Contributions}{33}{section.4.3}
-\contentsline {subsubsection}{Roles of the Authors}{33}{section.4.3}
-\contentsline {section}{\numberline {4.4}Contribution D: Interconnection Cost Modeling and Scaling}{34}{section.4.4}
-\contentsline {subsubsection}{Abstract}{34}{section.4.4}
-\contentsline {subsubsection}{Main Contributions}{34}{section.4.4}
-\contentsline {subsubsection}{Roles of the Authors}{35}{section.4.4}
-\contentsline {chapter}{\numberline {5}Conclusions and Future Work}{37}{chapter.5}
-\contentsline {section}{\numberline {5.1}Conclusions}{37}{section.5.1}
-\contentsline {section}{\numberline {5.2}Future Work}{39}{section.5.2}
-\contentsline {chapter}{Bibliography}{39}{section.5.2}
-\contentsline {chapter}{\numberline {A}Energy Impact of Memory-Aware \\ System Scenario Approach}{55}{appendix.A}
-\contentsline {section}{Abstract}{57}{section*.10}
-\contentsline {section}{\numberline {A.1}Introduction}{59}{section.A.1}
-\contentsline {section}{\numberline {A.2}Related Work and Contribution Discussion}{60}{section.A.2}
-\contentsline {section}{\numberline {A.3}Extended System Scenario Methodology}{60}{section.A.3}
-\contentsline {subsection}{\numberline {A.3.1}General description of system scenario methodology}{61}{subsection.A.3.1}
-\contentsline {subsection}{\numberline {A.3.2}Design-time Profiling}{62}{subsection.A.3.2}
-\contentsline {subsection}{\numberline {A.3.3}Design-time Scenario Identification and Prediction}{63}{subsection.A.3.3}
-\contentsline {subsection}{\numberline {A.3.4}Run-time Identification, Detection, and Switching}{65}{subsection.A.3.4}
-\contentsline {section}{\numberline {A.4}Target Platform}{65}{section.A.4}
-\contentsline {section}{\numberline {A.5}Application Benchmarks}{67}{section.A.5}
-\contentsline {subsection}{\numberline {A.5.1}Epileptic Seizure Predictor}{68}{subsection.A.5.1}
-\contentsline {subsection}{\numberline {A.5.2}Viterbi Algorithm Encoder}{69}{subsection.A.5.2}
-\contentsline {section}{\numberline {A.6}Results}{70}{section.A.6}
-\contentsline {section}{\numberline {A.7}Conclusion}{72}{section.A.7}
-\contentsline {chapter}{\numberline {B}Exploration of energy efficient memory organizations for dynamic multimedia applications using system scenarios}{75}{appendix.B}
-\contentsline {section}{Abstract}{77}{section*.19}
-\contentsline {section}{\numberline {B.1}Introduction}{79}{section.B.1}
-\contentsline {section}{\numberline {B.2}Motivational Example}{80}{section.B.2}
-\contentsline {section}{\numberline {B.3}Related Work and Contribution Discussion}{82}{section.B.3}
-\contentsline {section}{\numberline {B.4}Data Variable Based Memory-Aware System Scenario Methodology}{84}{section.B.4}
-\contentsline {subsection}{\numberline {B.4.1}Design-time Profiling Based on Data Variables}{86}{subsection.B.4.1}
-\contentsline {subsection}{\numberline {B.4.2}Design-time System Scenario Identification Based on Data Variables}{87}{subsection.B.4.2}
-\contentsline {subsection}{\numberline {B.4.3}Run-time System Scenario Detection and Switching Based on Data Variables}{90}{subsection.B.4.3}
-\contentsline {section}{\numberline {B.5}Target Platform and Energy Models}{92}{section.B.5}
-\contentsline {subsection}{\numberline {B.5.1}Target Memory Platform Architecture}{93}{subsection.B.5.1}
-\contentsline {subsection}{\numberline {B.5.2}Models of Different Memory Types}{94}{subsection.B.5.2}
-\contentsline {subsection}{\numberline {B.5.3}Total Energy Consumption Calculation}{97}{subsection.B.5.3}
-\contentsline {subsection}{\numberline {B.5.4}Memory Architecture Exploration}{98}{subsection.B.5.4}
-\contentsline {section}{\numberline {B.6}Application Benchmarks}{100}{section.B.6}
-\contentsline {subsection}{\numberline {B.6.1}Benchmark Applications and \\ Corresponding Input Databases}{101}{subsection.B.6.1}
-\contentsline {subsection}{\numberline {B.6.2}Classification of Applications Based on Dynamic Characteristics}{102}{subsection.B.6.2}
-\contentsline {section}{\numberline {B.7}Results}{104}{section.B.7}
-\contentsline {subsection}{\numberline {B.7.1}Classification of the Applications}{105}{subsection.B.7.1}
-\contentsline {subsection}{\numberline {B.7.2}Switching Overhead}{107}{subsection.B.7.2}
-\contentsline {subsection}{\numberline {B.7.3}Comparison with Use Case Scenario}{108}{subsection.B.7.3}
-\contentsline {subsection}{\numberline {B.7.4}Run-Time Overhead}{108}{subsection.B.7.4}
-\contentsline {section}{\numberline {B.8}Conclusions}{109}{section.B.8}
-\contentsline {chapter}{\numberline {C}Systematic Exploration of Power-Aware Scenarios for IEEE 802.11ac WLAN Systems}{111}{appendix.C}
-\contentsline {section}{Abstract}{113}{section*.33}
-\contentsline {section}{\numberline {C.1}Introduction}{115}{section.C.1}
-\contentsline {section}{\numberline {C.2}Related Work}{116}{section.C.2}
-\contentsline {section}{\numberline {C.3}System Scenario Principles}{118}{section.C.3}
-\contentsline {section}{\numberline {C.4}System Model}{120}{section.C.4}
-\contentsline {subsection}{\numberline {C.4.1}Antennas Signal Power }{120}{subsection.C.4.1}
-\contentsline {subsection}{\numberline {C.4.2}Memory Banks}{124}{subsection.C.4.2}
-\contentsline {subsection}{\numberline {C.4.3}Combined Model}{126}{subsection.C.4.3}
-\contentsline {section}{\numberline {C.5}Case Study}{126}{section.C.5}
-\contentsline {section}{\numberline {C.6}Results}{130}{section.C.6}
-\contentsline {section}{\numberline {C.7}Conclusion}{131}{section.C.7}
-\contentsline {chapter}{\numberline {D}Integrated Exploration Methodology for Data Interleaving and Data-to-Memory Mapping on SIMD architectures}{135}{appendix.D}
-\contentsline {section}{Abstract}{137}{section*.45}
-\contentsline {section}{\numberline {D.1}Introduction}{139}{section.D.1}
-\contentsline {section}{\numberline {D.2}Motivational Example}{140}{section.D.2}
-\contentsline {section}{\numberline {D.3}Related work}{145}{section.D.3}
-\contentsline {section}{\numberline {D.4}Target Architecture and Energy Models}{146}{section.D.4}
-\contentsline {subsection}{\numberline {D.4.1}Memory Models}{147}{subsection.D.4.1}
-\contentsline {subsection}{\numberline {D.4.2}Functional Unit Models}{149}{subsection.D.4.2}
-\contentsline {section}{\numberline {D.5}System Design Exploration Work-flow}{150}{section.D.5}
-\contentsline {subsection}{\numberline {D.5.1}Formal Model Representation of Access Patterns }{153}{subsection.D.5.1}
-\contentsline {subsection}{\numberline {D.5.2}Data Interleaving Exploration}{153}{subsection.D.5.2}
-\contentsline {subsection}{\numberline {D.5.3}Data-to-Memory Mapping Exploration}{154}{subsection.D.5.3}
-\contentsline {subsection}{\numberline {D.5.4}One way constraint propagation}{156}{subsection.D.5.4}
-\contentsline {section}{\numberline {D.6}Applications}{156}{section.D.6}
-\contentsline {section}{\numberline {D.7}Results}{157}{section.D.7}
-\contentsline {subsection}{\numberline {D.7.1}Motivational Example}{158}{subsection.D.7.1}
-\contentsline {subsection}{\numberline {D.7.2}SOR Benchmark}{160}{subsection.D.7.2}
-\contentsline {subsection}{\numberline {D.7.3}FFT Benchmark}{161}{subsection.D.7.3}
-\contentsline {subsection}{\numberline {D.7.4}Motion Estimation Benchmark}{162}{subsection.D.7.4}
-\contentsline {section}{\numberline {D.8}Conclusion}{163}{section.D.8}
-\contentsline {chapter}{\numberline {E}Technology scaling impact on the interconnection of clustered scratchpad memory architectures}{165}{appendix.E}
-\contentsline {section}{Abstract}{167}{section*.57}
-\contentsline {section}{\numberline {E.1}Introduction}{169}{section.E.1}
-\contentsline {section}{\numberline {E.2}Related Work}{171}{section.E.2}
-\contentsline {section}{\numberline {E.3}Current technology}{172}{section.E.3}
-\contentsline {subsection}{\numberline {E.3.1}Generic Work-flow}{172}{subsection.E.3.1}
-\contentsline {subsection}{\numberline {E.3.2}Example design: synthesis and simulation}{174}{subsection.E.3.2}
-\contentsline {section}{\numberline {E.4}Technology Scaling}{177}{section.E.4}
-\contentsline {subsection}{\numberline {E.4.1}Memory Banks}{177}{subsection.E.4.1}
-\contentsline {subsection}{\numberline {E.4.2}Interconnection}{178}{subsection.E.4.2}
-\contentsline {section}{\numberline {E.5}Model Construction and Projection Results}{180}{section.E.5}
-\contentsline {subsection}{\numberline {E.5.1}Model Construction}{180}{subsection.E.5.1}
-\contentsline {subsection}{\numberline {E.5.2}Results}{183}{subsection.E.5.2}
-\contentsline {section}{\numberline {E.6}Conclusion}{185}{section.E.6}
+\contentsline {chapter}{\numberline {4}Research Results and Contributions}{31}{chapter.4}
+\contentsline {section}{\numberline {4.1}Contribution A: Development of the Memory-Aware System Scenario Methodology}{31}{section.4.1}
+\contentsline {subsection}{\numberline {4.1.1}Energy Impact of Memory-Aware System Scenario Approach}{32}{subsection.4.1.1}
+\contentsline {subsubsection}{Abstract}{32}{subsection.4.1.1}
+\contentsline {subsubsection}{Main Contributions}{32}{subsection.4.1.1}
+\contentsline {subsubsection}{Roles of the Authors}{32}{subsection.4.1.1}
+\contentsline {subsection}{\numberline {4.1.2}Exploration of energy efficient memory organizations for dynamic multimedia applications using system scenarios}{32}{subsection.4.1.2}
+\contentsline {subsubsection}{Abstract}{32}{subsection.4.1.2}
+\contentsline {subsubsection}{Main Contributions}{33}{subsection.4.1.2}
+\contentsline {subsubsection}{Roles of the Authors}{33}{subsection.4.1.2}
+\contentsline {section}{\numberline {4.2}Contribution B: Combined Implementation of the System Scenario Methodology on Memory Subsystem and Processing Elements}{34}{section.4.2}
+\contentsline {subsubsection}{Abstract}{34}{section.4.2}
+\contentsline {subsubsection}{Main Contributions}{34}{section.4.2}
+\contentsline {subsubsection}{Roles of the Authors}{34}{section.4.2}
+\contentsline {section}{\numberline {4.3}Contribution C: Integrated Interleaving and Data-to-Memory Mapping}{35}{section.4.3}
+\contentsline {subsubsection}{Abstract}{35}{section.4.3}
+\contentsline {subsubsection}{Main Contributions}{35}{section.4.3}
+\contentsline {subsubsection}{Roles of the Authors}{35}{section.4.3}
+\contentsline {section}{\numberline {4.4}Contribution D: Interconnection Cost Modeling and Scaling}{36}{section.4.4}
+\contentsline {subsubsection}{Abstract}{36}{section.4.4}
+\contentsline {subsubsection}{Main Contributions}{36}{section.4.4}
+\contentsline {subsubsection}{Roles of the Authors}{37}{section.4.4}
+\contentsline {chapter}{\numberline {5}Conclusions and Future Work}{39}{chapter.5}
+\contentsline {section}{\numberline {5.1}Conclusions}{39}{section.5.1}
+\contentsline {section}{\numberline {5.2}Future Work}{41}{section.5.2}
+\contentsline {chapter}{Bibliography}{41}{section.5.2}
+\contentsline {chapter}{\numberline {A}Energy Impact of Memory-Aware \\ System Scenario Approach}{57}{appendix.A}
+\contentsline {section}{Abstract}{59}{section*.10}
+\contentsline {section}{\numberline {A.1}Introduction}{61}{section.A.1}
+\contentsline {section}{\numberline {A.2}Related Work and Contribution Discussion}{62}{section.A.2}
+\contentsline {section}{\numberline {A.3}Extended System Scenario Methodology}{62}{section.A.3}
+\contentsline {subsection}{\numberline {A.3.1}General description of system scenario methodology}{63}{subsection.A.3.1}
+\contentsline {subsection}{\numberline {A.3.2}Design-time Profiling}{64}{subsection.A.3.2}
+\contentsline {subsection}{\numberline {A.3.3}Design-time Scenario Identification and Prediction}{65}{subsection.A.3.3}
+\contentsline {subsection}{\numberline {A.3.4}Run-time Identification, Detection, and Switching}{67}{subsection.A.3.4}
+\contentsline {section}{\numberline {A.4}Target Platform}{67}{section.A.4}
+\contentsline {section}{\numberline {A.5}Application Benchmarks}{69}{section.A.5}
+\contentsline {subsection}{\numberline {A.5.1}Epileptic Seizure Predictor}{70}{subsection.A.5.1}
+\contentsline {subsection}{\numberline {A.5.2}Viterbi Algorithm Encoder}{71}{subsection.A.5.2}
+\contentsline {section}{\numberline {A.6}Results}{72}{section.A.6}
+\contentsline {section}{\numberline {A.7}Conclusion}{74}{section.A.7}
+\contentsline {chapter}{\numberline {B}Exploration of energy efficient memory organizations for dynamic multimedia applications using system scenarios}{77}{appendix.B}
+\contentsline {section}{Abstract}{79}{section*.19}
+\contentsline {section}{\numberline {B.1}Introduction}{81}{section.B.1}
+\contentsline {section}{\numberline {B.2}Motivational Example}{82}{section.B.2}
+\contentsline {section}{\numberline {B.3}Related Work and Contribution Discussion}{84}{section.B.3}
+\contentsline {section}{\numberline {B.4}Data Variable Based Memory-Aware System Scenario Methodology}{86}{section.B.4}
+\contentsline {subsection}{\numberline {B.4.1}Design-time Profiling Based on Data Variables}{88}{subsection.B.4.1}
+\contentsline {subsection}{\numberline {B.4.2}Design-time System Scenario Identification Based on Data Variables}{89}{subsection.B.4.2}
+\contentsline {subsection}{\numberline {B.4.3}Run-time System Scenario Detection and Switching Based on Data Variables}{92}{subsection.B.4.3}
+\contentsline {section}{\numberline {B.5}Target Platform and Energy Models}{94}{section.B.5}
+\contentsline {subsection}{\numberline {B.5.1}Target Memory Platform Architecture}{95}{subsection.B.5.1}
+\contentsline {subsection}{\numberline {B.5.2}Models of Different Memory Types}{96}{subsection.B.5.2}
+\contentsline {subsection}{\numberline {B.5.3}Total Energy Consumption Calculation}{99}{subsection.B.5.3}
+\contentsline {subsection}{\numberline {B.5.4}Memory Architecture Exploration}{100}{subsection.B.5.4}
+\contentsline {section}{\numberline {B.6}Application Benchmarks}{102}{section.B.6}
+\contentsline {subsection}{\numberline {B.6.1}Benchmark Applications and \\ Corresponding Input Databases}{103}{subsection.B.6.1}
+\contentsline {subsection}{\numberline {B.6.2}Classification of Applications Based on Dynamic Characteristics}{104}{subsection.B.6.2}
+\contentsline {section}{\numberline {B.7}Results}{106}{section.B.7}
+\contentsline {subsection}{\numberline {B.7.1}Classification of the Applications}{107}{subsection.B.7.1}
+\contentsline {subsection}{\numberline {B.7.2}Switching Overhead}{109}{subsection.B.7.2}
+\contentsline {subsection}{\numberline {B.7.3}Comparison with Use Case Scenario}{110}{subsection.B.7.3}
+\contentsline {subsection}{\numberline {B.7.4}Run-Time Overhead}{110}{subsection.B.7.4}
+\contentsline {section}{\numberline {B.8}Conclusions}{111}{section.B.8}
+\contentsline {chapter}{\numberline {C}Systematic Exploration of Power-Aware Scenarios for IEEE 802.11ac WLAN Systems}{113}{appendix.C}
+\contentsline {section}{Abstract}{115}{section*.33}
+\contentsline {section}{\numberline {C.1}Introduction}{117}{section.C.1}
+\contentsline {section}{\numberline {C.2}Related Work}{118}{section.C.2}
+\contentsline {section}{\numberline {C.3}System Scenario Principles}{120}{section.C.3}
+\contentsline {section}{\numberline {C.4}System Model}{122}{section.C.4}
+\contentsline {subsection}{\numberline {C.4.1}Antennas Signal Power }{122}{subsection.C.4.1}
+\contentsline {subsection}{\numberline {C.4.2}Memory Banks}{126}{subsection.C.4.2}
+\contentsline {subsection}{\numberline {C.4.3}Combined Model}{128}{subsection.C.4.3}
+\contentsline {section}{\numberline {C.5}Case Study}{128}{section.C.5}
+\contentsline {section}{\numberline {C.6}Results}{132}{section.C.6}
+\contentsline {section}{\numberline {C.7}Conclusion}{133}{section.C.7}
+\contentsline {chapter}{\numberline {D}Integrated Exploration Methodology for Data Interleaving and Data-to-Memory Mapping on SIMD architectures}{137}{appendix.D}
+\contentsline {section}{Abstract}{139}{section*.45}
+\contentsline {section}{\numberline {D.1}Introduction}{141}{section.D.1}
+\contentsline {section}{\numberline {D.2}Motivational Example}{142}{section.D.2}
+\contentsline {section}{\numberline {D.3}Related work}{147}{section.D.3}
+\contentsline {section}{\numberline {D.4}Target Architecture and Energy Models}{148}{section.D.4}
+\contentsline {subsection}{\numberline {D.4.1}Memory Models}{149}{subsection.D.4.1}
+\contentsline {subsection}{\numberline {D.4.2}Functional Unit Models}{151}{subsection.D.4.2}
+\contentsline {section}{\numberline {D.5}System Design Exploration Work-flow}{152}{section.D.5}
+\contentsline {subsection}{\numberline {D.5.1}Formal Model Representation of Access Patterns }{155}{subsection.D.5.1}
+\contentsline {subsection}{\numberline {D.5.2}Data Interleaving Exploration}{155}{subsection.D.5.2}
+\contentsline {subsection}{\numberline {D.5.3}Data-to-Memory Mapping Exploration}{156}{subsection.D.5.3}
+\contentsline {subsection}{\numberline {D.5.4}One way constraint propagation}{158}{subsection.D.5.4}
+\contentsline {section}{\numberline {D.6}Applications}{158}{section.D.6}
+\contentsline {section}{\numberline {D.7}Results}{159}{section.D.7}
+\contentsline {subsection}{\numberline {D.7.1}Motivational Example}{160}{subsection.D.7.1}
+\contentsline {subsection}{\numberline {D.7.2}SOR Benchmark}{162}{subsection.D.7.2}
+\contentsline {subsection}{\numberline {D.7.3}FFT Benchmark}{163}{subsection.D.7.3}
+\contentsline {subsection}{\numberline {D.7.4}Motion Estimation Benchmark}{164}{subsection.D.7.4}
+\contentsline {section}{\numberline {D.8}Conclusion}{165}{section.D.8}
+\contentsline {chapter}{\numberline {E}Technology scaling impact on the interconnection of clustered scratchpad memory architectures}{167}{appendix.E}
+\contentsline {section}{Abstract}{169}{section*.57}
+\contentsline {section}{\numberline {E.1}Introduction}{171}{section.E.1}
+\contentsline {section}{\numberline {E.2}Related Work}{173}{section.E.2}
+\contentsline {section}{\numberline {E.3}Current technology}{174}{section.E.3}
+\contentsline {subsection}{\numberline {E.3.1}Generic Work-flow}{174}{subsection.E.3.1}
+\contentsline {subsection}{\numberline {E.3.2}Example design: synthesis and simulation}{176}{subsection.E.3.2}
+\contentsline {section}{\numberline {E.4}Technology Scaling}{179}{section.E.4}
+\contentsline {subsection}{\numberline {E.4.1}Memory Banks}{179}{subsection.E.4.1}
+\contentsline {subsection}{\numberline {E.4.2}Interconnection}{180}{subsection.E.4.2}
+\contentsline {section}{\numberline {E.5}Model Construction and Projection Results}{182}{section.E.5}
+\contentsline {subsection}{\numberline {E.5.1}Model Construction}{182}{subsection.E.5.1}
+\contentsline {subsection}{\numberline {E.5.2}Results}{185}{subsection.E.5.2}
+\contentsline {section}{\numberline {E.6}Conclusion}{187}{section.E.6}

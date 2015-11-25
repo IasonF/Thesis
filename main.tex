@@ -337,6 +337,12 @@ In \cite{cho2009adaptive} an adaptive scratch-pad memory is successfully used in
 In \cite{wang2005energy} a clustered memory architecture is employed and an algorithm is developed, which efficiently uses the memory banks to achieve the maximum energy saving while satisfying the given performance constraint.
 The current approach differentiates by presenting a methodology that combines design-time exploration and a scratchpad memory that is dynamically reconfigurable at run-time.
 
+A network-on-chip approach for a distributed memory system is presented in \cite{ahmed1}.
+The memory architecture is part of a coarse grain reconfigurable architecture (CGRA) and the distributed memories provide data to the processing elements through the network.
+A network-on-chip is not employed in the current study as it would introduce unnecessary overhead.
+Authors in \cite{ahmed2} present a framework that extends conventional scratchpad memory to support dynamic application mapping in CGRAs. 
+The proposed technique solves the addressing problem and enables the run-time application mapping.
+
 %You could for instance discuss in Section 3 how your approach can improve steps of DTSE and/or how your approach is complementary to DTSE.
 \chapter{Proposed technology platform and design methodology approach}
 \label{method}
@@ -407,8 +413,8 @@ The model supports four different states, namely active, shut-down, light-sleep 
 This model is presented and employed on the work included in Appendix \ref{DAES}.
 
 \item Experimental standard cell-based memory (SCMEM) \nomenclature{SCMEM}{standard cell-based memory} \cite{Mei11} .
-The standard cell-based memories are synthesized using Cadence RTL compiler for TSMC 40nm standard library. 
-Afterwards, power simulations on the synthesized design are carried out using Synopsys PrimeTime, in order to obtain energy numbers.
+The standard cell-based memories are synthesized using Cadence RTL compiler for TSMC 40nm standard library.
+Afterwards, placing and routing of the design is performed and power simulations on the synthesized design are carried out using Synopsys PrimeTime, in order to obtain energy numbers.
 The model supports four different states, namely active, shut-down, light-sleep and deep sleep modes.
 This model is presented and employed in the work included in Appendix \ref{DAES} and \ref{interconnection}.
 
@@ -425,6 +431,7 @@ The MM model provides accurate energy numbers, but the designer must rely on a l
 The SCMEM model has also high accuracy, as the energy numbers are based on synthesis and simulation.
 The designer has the freedom to develop any desirable configuration, although the process of writing, testing and simulating every new memory design is time-consuming.
 Thus, a library of SCMEM is made and the exploration is limited within the already synthesized models.
+The differences in the results presented in Appendix \ref{norchip} and \ref{DAES} is mainly due to the different models and their accuracy. 
 The interconnection model is normally omitted, because the contribution of the interconnection to the overall energy consumption is low.
 The model is based on synthesis, so it is accurate for the specific synthesized design but the generalization to other designs reduces the accuracy. 
 
@@ -520,6 +527,7 @@ On one hand, if the identification is done using a group of complex variables an
 On the other hand, if the value of a single variable is monitored for scenario identification, the scenario detection is straightforward.
 Obviously, the accuracy of the scenario detection can be higher in the first case, while the computational needs for scenario detection are lower in the second case.
 In other words, the more accurate scenario detection, the more resources are used by the run-time manager for detection.
+In principle, the number of identification variables should be low and in most of the studied applications only a couple of identification variables are enough. 
 
 Appendix \ref{DAES} includes a detailed presentation of this step. Appendix \ref{dsd} gives an example of how the methodology can be applied to a wireless application.
 

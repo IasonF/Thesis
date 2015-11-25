@@ -171,12 +171,6 @@ Iason Filippopoulos, Francky Catthoor, Per~Gunnar Kjeldsberg, Elena Hammari,
 \newblock Memory-aware system scenario approach energy impact.
 \newblock In {\em NORCHIP, 2012}, pages 1 --6, nov. 2012.
 
-\bibitem{20}
-Iason Filippopoulos, Francky Catthoor, Per~Gunnar Kjeldsberg, Elena Hammari,
-  and Jos Huisken.
-\newblock Memory-aware system scenario approach energy impact.
-\newblock In {\em NORCHIP, 2012}, pages 1--6. IEEE, 2012.
-
 \bibitem{gajski1994specification}
 Daniel~D Gajski, Frank Vahid, Sanjiv Narayan, and Jie Gong.
 \newblock {\em Specification and design of embedded systems}.
@@ -704,6 +698,22 @@ Sriram Swaminathan et~al.
 \newblock In {\em Proceedings of the 2002 ACM/SIGDA tenth international
   symposium on Field-programmable gate arrays}, FPGA '02, pages 227--236, New
   York, NY, USA, 2002. ACM.
+
+\bibitem{ahmed2}
+Muhammad~Adeel Tajammul, SMA Jafri, Peeter Ellerve, Ahmed Hemani, Hannu
+  Tenhunen, and Juha Plosila.
+\newblock Dymep: An infrastructure to support dynamic memory binding for
+  runtime mapping in cgras.
+\newblock In {\em VLSI Design (VLSID), 2015 28th International Conference on},
+  pages 547--552. IEEE, 2015.
+
+\bibitem{ahmed1}
+Muhammad~Adeel Tajammul, Muhammad~Ali Shami, Ahmed Hemani, and Sridharan
+  Moorthi.
+\newblock Noc based distributed partitionable memory system for a coarse grain
+  reconfigurable architecture.
+\newblock In {\em VLSI Design (VLSI Design), 2011 24th International Conference
+  on}, pages 232--237. IEEE, 2011.
 
 \bibitem{thoziyoor2008comprehensive}
 Shyamkumar Thoziyoor, Jung~Ho Ahn, Matteo Monchiero, Jay~B Brockman, and
