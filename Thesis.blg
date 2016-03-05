@@ -4,52 +4,52 @@ The top-level auxiliary file: Thesis.aux
 The style file: plain.bst
 Database file #1: reference.bib
 Warning--entry type for "4" isn't style-file defined
---line 239 of file reference.bib
+--line 334 of file reference.bib
+Warning--can't use both author and editor fields in Gemmeke2016
 Warning--there's a number but no volume in 16
 Warning--empty booktitle in graybox
 Warning--empty journal in lee2003compilation
 Warning--can't use both volume and number fields in 22
 Warning--empty title in Pal06
-Warning--there's a number but no volume in 8b
-You've used 124 entries,
+You've used 126 entries,
             2118 wiz_defined-function locations,
-            1130 strings with 29112 characters,
-and the built_in function-call counts, 50863 in all, are:
-= -- 5053
-> -- 2675
-< -- 58
-+ -- 1066
-- -- 928
-* -- 3636
-:= -- 8139
-add.period$ -- 414
-call.type$ -- 124
-change.case$ -- 807
+            1147 strings with 29786 characters,
+and the built_in function-call counts, 52095 in all, are:
+= -- 5182
+> -- 2721
+< -- 63
++ -- 1084
+- -- 944
+* -- 3712
+:= -- 8303
+add.period$ -- 423
+call.type$ -- 126
+change.case$ -- 821
 chr.to.int$ -- 0
-cite$ -- 130
-duplicate$ -- 1934
-empty$ -- 3766
-format.name$ -- 928
-if$ -- 10878
+cite$ -- 132
+duplicate$ -- 1996
+empty$ -- 3868
+format.name$ -- 944
+if$ -- 11178
 int.to.chr$ -- 0
-int.to.str$ -- 124
-missing$ -- 127
-newline$ -- 618
-num.names$ -- 248
-pop$ -- 967
+int.to.str$ -- 126
+missing$ -- 129
+newline$ -- 628
+num.names$ -- 252
+pop$ -- 991
 preamble$ -- 1
-purify$ -- 701
+purify$ -- 713
 quote$ -- 0
-skip$ -- 1404
+skip$ -- 1454
 stack$ -- 0
-substring$ -- 3007
-swap$ -- 603
-text.length$ -- 58
+substring$ -- 3083
+swap$ -- 641
+text.length$ -- 63
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 472
+type$ -- 480
 warning$ -- 6
-while$ -- 479
-width$ -- 127
-write$ -- 1385
+while$ -- 490
+width$ -- 129
+write$ -- 1412
 (There were 7 warnings)

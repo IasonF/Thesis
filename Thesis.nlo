@@ -5,23 +5,19 @@
 \nomenclatureentry{aDVFS@[{DVFS}]\begingroup dynamic voltage and frequency scaling\nomeqref {2.0}|nompageref}{13}
 \nomenclatureentry{aUML@[{UML}]\begingroup unified modeling language\nomeqref {2.0}|nompageref}{15}
 \nomenclatureentry{aSCMEM@[{SCMEM}]\begingroup standard cell-based memory\nomeqref {3.0}|nompageref}{22}
-\nomenclatureentry{aSIMD@[{SIMD}]\begingroup single instruction multiple data\nomeqref {3.0}|nompageref}{27}
+\nomenclatureentry{aSIMD@[{SIMD}]\begingroup single instruction multiple data\nomeqref {3.0}|nompageref}{28}
 \nomenclatureentry{aCAD@[{CAD}]\begingroup computer aided design\nomeqref {4.0}|nompageref}{36}
-\nomenclatureentry{aCFG@[{CFG}]\begingroup control flow graph\nomeqref {A.0}|nompageref}{62}
-\nomenclatureentry{aGLT@[{GLT}]\begingroup global loop transformations\nomeqref {A.0}|nompageref}{62}
-\nomenclatureentry{aWCET@[{WCET}]\begingroup worst case execution time\nomeqref {A.0}|nompageref}{63}
-\nomenclatureentry{aEEG@[{EEG}]\begingroup electroencephalogram\nomeqref {A.1}|nompageref}{70}
-\nomenclatureentry{aSNR@[{SNR}]\begingroup signal to noise ratio\nomeqref {A.1}|nompageref}{72}
-\nomenclatureentry{aBER@[{BER}]\begingroup bit error rate\nomeqref {A.1}|nompageref}{73}
-\nomenclatureentry{aMM@[{MM}]\begingroup memory macros\nomeqref {B.0}|nompageref}{96}
-\nomenclatureentry{aRTL@[{RTL}]\begingroup register transfer language\nomeqref {B.0}|nompageref}{96}
-\nomenclatureentry{aDCT@[{DCT}]\begingroup discrete cosine transformation\nomeqref {B.1}|nompageref}{104}
-\nomenclatureentry{aCGRA@[{CGRA}]\begingroup coarse-grain reconfigurable array\nomeqref {D.6}|nompageref}{151}
-\nomenclatureentry{aFU@[{FU}]\begingroup functional unit\nomeqref {D.6}|nompageref}{152}
-\nomenclatureentry{aSOR@[{SOR}]\begingroup successive over relaxation\nomeqref {D.6}|nompageref}{159}
-\nomenclatureentry{aFFT@[{FFT}]\begingroup fast Fourier transformation\nomeqref {D.6}|nompageref}{159}
-\nomenclatureentry{aCAD@[{CAD}]\begingroup computer aided design\nomeqref {E.0}|nompageref}{169}
-\nomenclatureentry{aITRS@[{ITRS}]\begingroup international technology roadmap for semiconductors\nomeqref {E.0}|nompageref}{171}
-\nomenclatureentry{aMUX@[{MUX}]\begingroup multiplexer\nomeqref {E.0}|nompageref}{175}
-\nomenclatureentry{aTSMC@[{TSMC}]\begingroup Taiwan semiconductor manufacturing company\nomeqref {E.0}|nompageref}{175}
-\nomenclatureentry{aEPIC@[{EPIC}]\begingroup efficient pyramid image coder\nomeqref {E.0}|nompageref}{186}
+\nomenclatureentry{aCFG@[{CFG}]\begingroup control flow graph\nomeqref {A.0}|nompageref}{64}
+\nomenclatureentry{aGLT@[{GLT}]\begingroup global loop transformations\nomeqref {A.0}|nompageref}{64}
+\nomenclatureentry{aWCET@[{WCET}]\begingroup worst case execution time\nomeqref {A.0}|nompageref}{65}
+\nomenclatureentry{aEEG@[{EEG}]\begingroup electroencephalogram\nomeqref {A.1}|nompageref}{72}
+\nomenclatureentry{aSNR@[{SNR}]\begingroup signal to noise ratio\nomeqref {A.1}|nompageref}{74}
+\nomenclatureentry{aBER@[{BER}]\begingroup bit error rate\nomeqref {A.1}|nompageref}{75}
+\nomenclatureentry{aMM@[{MM}]\begingroup memory macros\nomeqref {B.0}|nompageref}{98}
+\nomenclatureentry{aRTL@[{RTL}]\begingroup register transfer language\nomeqref {B.0}|nompageref}{98}
+\nomenclatureentry{aDCT@[{DCT}]\begingroup discrete cosine transformation\nomeqref {B.1}|nompageref}{106}
+\nomenclatureentry{aCAD@[{CAD}]\begingroup computer aided design\nomeqref {E.0}|nompageref}{173}
+\nomenclatureentry{aITRS@[{ITRS}]\begingroup international technology roadmap for semiconductors\nomeqref {E.0}|nompageref}{175}
+\nomenclatureentry{aMUX@[{MUX}]\begingroup multiplexer\nomeqref {E.0}|nompageref}{179}
+\nomenclatureentry{aTSMC@[{TSMC}]\begingroup Taiwan semiconductor manufacturing company\nomeqref {E.0}|nompageref}{179}
+\nomenclatureentry{aEPIC@[{EPIC}]\begingroup efficient pyramid image coder\nomeqref {E.0}|nompageref}{190}

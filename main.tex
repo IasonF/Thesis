@@ -279,13 +279,13 @@ It also introduces in the application the way how to change the knob positions, 
 
 System scenarios have been applied in several cases and for a wide range of applications \cite{tcm}.
 The system scenario approach was presented for the first time in \cite{yang2002}, where it was used to improve the mapping of dynamic applications onto a multiprocessor platform.
-System scenarios have been applied in several cases and mostly emphasize on exploiting scenarios, and not on identifying and predicting them. 
+In general, previous work on system scenarios has mostly emphasized on exploiting scenarios, and not on identifying and predicting them. 
 In \cite{Chu02}, the authors propose the usage of system scenarios for multimedia applications using a processor that supports DVFS. 
 The studied applications are split into parts with large variation in terms of execution time. 
 The proposed approach supplies the information of the execution time variations in run-time, which enables the DVFS reconfiguration of the processor.
 In \cite{sasanka2002}, authors manually identify system scenarios and define the most energy efficient architecture configuration that meets the timing constraints. 
 Again, a single processor is used and its supply voltage can be changed. 
-In \cite{choi2002}, system scenario approach is used in order to choose the lowest supply voltage for which the timing constraints of an MPEG decoder are met. 
+In \cite{choi2002}, a system scenario approach is used in order to choose the lowest supply voltage for which the timing constraints of an MPEG decoder are met. 
 In all cases, the energy consumption is significantly reduced without violation of the execution time deadlines.
 
 
@@ -339,9 +339,13 @@ The current approach differentiates by presenting a methodology that combines de
 
 A network-on-chip approach for a distributed memory system is presented in \cite{ahmed1}.
 The memory architecture is part of a coarse grain reconfigurable architecture (CGRA) and the distributed memories provide data to the processing elements through the network.
-A network-on-chip is not employed in the current study as it would introduce unnecessary overhead.
+A network-on-chip is not employed in the current study as it for our applications would introduce unnecessary overhead.
 Authors in \cite{ahmed2} present a framework that extends conventional scratchpad memory to support dynamic application mapping in CGRAs. 
+The dynamic application mapping leads to addressing problems in scratchpad memories, because the data are mapped to a scratchpad memory at compile time.
+The corresponding addresses are also defined during compile time and there is no run-time mechanism that can search and fetch the data, if there are mapped in a different location on a scratchpad memory.
+However, dynamic re-mapping of application's data can be useful in some cases.
 The proposed technique solves the addressing problem and enables the run-time application mapping.
+The dynamic re-mapping during run-time is beyond the scope of the current work and the typical addressing operation of a scratchpad memory architecture is used.
 
 %You could for instance discuss in Section 3 how your approach can improve steps of DTSE and/or how your approach is complementary to DTSE.
 \chapter{Proposed technology platform and design methodology approach}
@@ -397,6 +401,9 @@ It is further expanded to explore memory designs with up to five banks in Append
 \subsection{Memory models}
 
 The memory models that are used to build the clustered memory architecture heavily influence the design decisions.
+The presented memory model is based on silicon characterization results undertaken by the low-power digital design team at IMEC-nl \cite{Gemmeke2016}.
+For this purpose dedicated memory instances were designed and taped-out in a 40nm low-power process.
+Measurements covered 50 parts capturing voltage and temperature dependencies of active and passive power as well as limiting operating conditions in terms of speed and minimal data retention voltage.
 The memory architecture consists of the memory banks and the interconnection between the memory banks, which is necessary to connect the memory to the processor.
 The most important parameter of the memory models in the current work is the energy profile of the model, although other parameters are also included.
 The following models are used in this thesis:
@@ -414,7 +421,8 @@ This model is presented and employed on the work included in Appendix \ref{DAES}
 
 \item Experimental standard cell-based memory (SCMEM) \nomenclature{SCMEM}{standard cell-based memory} \cite{Mei11} .
 The standard cell-based memories are synthesized using Cadence RTL compiler for TSMC 40nm standard library.
-Afterwards, placing and routing of the design is performed and power simulations on the synthesized design are carried out using Synopsys PrimeTime, in order to obtain energy numbers.
+Afterwards, place and route of the design is performed and the final IC layout is extracted, which contains the necessary information, such as the capacitance of each component.
+The layout is used during power simulations, which are carried out using Synopsys PrimeTime, in order to obtain the energy numbers.
 The model supports four different states, namely active, shut-down, light-sleep and deep sleep modes.
 This model is presented and employed in the work included in Appendix \ref{DAES} and \ref{interconnection}.
 
@@ -432,7 +440,7 @@ The SCMEM model has also high accuracy, as the energy numbers are based on synth
 The designer has the freedom to develop any desirable configuration, although the process of writing, testing and simulating every new memory design is time-consuming.
 Thus, a library of SCMEM is made and the exploration is limited within the already synthesized models.
 The differences in the results presented in Appendix \ref{norchip} and \ref{DAES} is mainly due to the different models and their accuracy. 
-The interconnection model is normally omitted, because the contribution of the interconnection to the overall energy consumption is low.
+The interconnection model is in both cases omitted, because the contribution of the interconnection to the overall energy consumption is low.
 The model is based on synthesis, so it is accurate for the specific synthesized design but the generalization to other designs reduces the accuracy. 
 
 \subsection{Technology scaling}
@@ -509,7 +517,7 @@ Grouping or clustering is necessary, because it will be extremely costly to have
 Clustering neighboring RTSs is a rational choice, because two instances with similar memory needs have similar energy consumption. 
 Independently of the size of the exploration space, i.e. the number of different inputs and RTSs, the number of scenarios is kept low.
 This is achieved by clustering more RTSs into the same scenario when the number of RTSs is higher.
-The scenario identification phase always aim at providing a number of scenarios that can be handled by the run-time manager without introducing extreme overheads. 
+The scenario identification phase always aims at providing a number of scenarios that can be handled by the run-time manager without introducing extreme overheads. 
 
 The memory size and the frequency of occurrence of each RTS are not the only two parameters that should be taken into consideration during the system scenario identification. 
 The memory size of each RTS results in a different energy cost depending on the way it is mapped into memory. 
@@ -517,7 +525,7 @@ The impact of the different assignment possibilities is included into the cluste
 The different assignments and their characteristics are explored using the principles of the DTSE methodology.
 Increasing the number of memory banks results in lower energy per access since the most accessed elements can be assigned to smaller and more energy efficient banks. 
 Unused banks can be switched off.
-The scenario identification is performed semi-manually by developing application specific scripts that explore the grouping possibilities for the extracted RTSs.
+The scenario identification is performed semi-automatically by developing application specific scripts that explore the grouping possibilities for the extracted RTSs.
 
 The system scenario identification step includes the selection of the data variables that determine the active system scenario. 
 This can be achieved by manual inspection of the application code, combined with the application's data input.
@@ -745,12 +753,12 @@ The testing of the methodology on two applications from bioengineering and wirel
 The memory-aware system scenario methodology is also tested using a wide range of multimedia applications, which allow us to draw conclusions about different kinds of dynamic behavior and their effect on the energy gains achieved using the methodology. 
 The results demonstrate the effectiveness of the methodology reducing the memory energy consumption with between 35\% and 55\%. 
 Since memory size requirements are still met in all situations, performance is not reduced. 
-The presented results conclude that the memory-aware system scenario methodology is suited for applications that experience dynamic behaviour with respect to memory organisation utilization during their execution.
+The presented results show that the memory-aware system scenario methodology is suited for applications that experience dynamic behaviour with respect to memory organisation utilization during their execution.
 
 
 Apart from justifying the effectiveness of the system scenarios methodology on the memory, this work explores the compatibility of the methodology with other techniques.
 Firstly, the application of the system scenarios methodology in the complete system, including the memory and the processing subsystem, is studied.
-The power management options for a transmitting wireless system using system scenarios is explored. 
+The power management options for a wireless system using system scenarios is explored. 
 The dynamic parameters and the variations during the transmission for the targeted wireless protocol are analyzed. 
 Based on the analysis and the system models, system scenarios are generated for the case study, in order to optimize energy usage. 
 Both the signal power and the memory subsystem are taken into consideration. 
@@ -775,6 +783,14 @@ In the current work several scripts were developed to speed up the design space 
 The improvement of the prediction and the identification phase of the methodology could be another significant contribution. 
 A multidimensional scenario clustering for the whole system is an interesting improvement.
 The N-dimensional exploration space will include several parameters, such as memory energy, processing element energy, execution time and reliability, and new methods should be developed to handle the explosion of the exploration space.
+
+The system scenarios currently focus on analyzing one specific application.
+A future extension would be to study a number of concurrent task executed on a given embedded systems.
+In that case the system scenarios can overlap between applications, i.e. one scenario may group RTSs from different applications.
+However, the system requirements of the different applications should be comparable for the methodology to be applicable.
+Another research direction could be the exploration of the effects that an update version of the studied application has on the system.
+The system scenario methodology uses a hardware/software co-design approach, so a difference in the application code may have a significant impact on the effectiveness of the designed memory platform. 
+A possible solution could be the addition of a margin to each system scenario by the designer.
 
 The accuracy of the energy models can be significantly increased.
 More detailed models can be developed based on extensive research and simulation.

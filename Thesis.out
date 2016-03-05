@@ -99,24 +99,21 @@
 \BOOKMARK [2][-]{subsection.D.5.2}{Data Interleaving Exploration}{section.D.5}% 99
 \BOOKMARK [2][-]{subsection.D.5.3}{Data-to-Memory Mapping Exploration}{section.D.5}% 100
 \BOOKMARK [2][-]{subsection.D.5.4}{One way constraint propagation}{section.D.5}% 101
-\BOOKMARK [1][-]{section.D.6}{Applications}{appendix.D}% 102
-\BOOKMARK [1][-]{section.D.7}{Results}{appendix.D}% 103
-\BOOKMARK [2][-]{subsection.D.7.1}{Motivational Example}{section.D.7}% 104
-\BOOKMARK [2][-]{subsection.D.7.2}{SOR Benchmark}{section.D.7}% 105
-\BOOKMARK [2][-]{subsection.D.7.3}{FFT Benchmark}{section.D.7}% 106
-\BOOKMARK [2][-]{subsection.D.7.4}{Motion Estimation Benchmark}{section.D.7}% 107
-\BOOKMARK [1][-]{section.D.8}{Conclusion}{appendix.D}% 108
-\BOOKMARK [0][-]{appendix.E}{Technology scaling impact on the interconnection of clustered scratchpad memory architectures}{}% 109
-\BOOKMARK [1][-]{section*.57}{Abstract}{appendix.E}% 110
-\BOOKMARK [1][-]{section.E.1}{Introduction}{appendix.E}% 111
-\BOOKMARK [1][-]{section.E.2}{Related Work}{appendix.E}% 112
-\BOOKMARK [1][-]{section.E.3}{Current technology}{appendix.E}% 113
-\BOOKMARK [2][-]{subsection.E.3.1}{Generic Work-flow}{section.E.3}% 114
-\BOOKMARK [2][-]{subsection.E.3.2}{Example design: synthesis and simulation}{section.E.3}% 115
-\BOOKMARK [1][-]{section.E.4}{Technology Scaling}{appendix.E}% 116
-\BOOKMARK [2][-]{subsection.E.4.1}{Memory Banks}{section.E.4}% 117
-\BOOKMARK [2][-]{subsection.E.4.2}{Interconnection}{section.E.4}% 118
-\BOOKMARK [1][-]{section.E.5}{Model Construction and Projection Results}{appendix.E}% 119
-\BOOKMARK [2][-]{subsection.E.5.1}{Model Construction}{section.E.5}% 120
-\BOOKMARK [2][-]{subsection.E.5.2}{Results}{section.E.5}% 121
-\BOOKMARK [1][-]{section.E.6}{Conclusion}{appendix.E}% 122
+\BOOKMARK [1][-]{section.D.6}{Applications and Experimental Evaluation}{appendix.D}% 102
+\BOOKMARK [2][-]{subsection.D.6.1}{Benchmark Applications}{section.D.6}% 103
+\BOOKMARK [2][-]{subsection.D.6.2}{Results}{section.D.6}% 104
+\BOOKMARK [1][-]{section.D.7}{Conclusion}{appendix.D}% 105
+\BOOKMARK [0][-]{appendix.E}{Technology scaling impact on the interconnection of clustered scratchpad memory architectures}{}% 106
+\BOOKMARK [1][-]{section*.57}{Abstract}{appendix.E}% 107
+\BOOKMARK [1][-]{section.E.1}{Introduction}{appendix.E}% 108
+\BOOKMARK [1][-]{section.E.2}{Related Work}{appendix.E}% 109
+\BOOKMARK [1][-]{section.E.3}{Current technology}{appendix.E}% 110
+\BOOKMARK [2][-]{subsection.E.3.1}{Generic Work-flow}{section.E.3}% 111
+\BOOKMARK [2][-]{subsection.E.3.2}{Example design: synthesis and simulation}{section.E.3}% 112
+\BOOKMARK [1][-]{section.E.4}{Technology Scaling}{appendix.E}% 113
+\BOOKMARK [2][-]{subsection.E.4.1}{Memory Banks}{section.E.4}% 114
+\BOOKMARK [2][-]{subsection.E.4.2}{Interconnection}{section.E.4}% 115
+\BOOKMARK [1][-]{section.E.5}{Model Construction and Projection Results}{appendix.E}% 116
+\BOOKMARK [2][-]{subsection.E.5.1}{Model Construction}{section.E.5}% 117
+\BOOKMARK [2][-]{subsection.E.5.2}{Results}{section.E.5}% 118
+\BOOKMARK [1][-]{section.E.6}{Conclusion}{appendix.E}% 119
